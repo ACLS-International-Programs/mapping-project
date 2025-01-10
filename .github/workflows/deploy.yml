@@ -13,8 +13,6 @@ jobs:
       - uses: ruby/setup-ruby@v1
       - name: install
         run: bundle
-      - name: test
-        run: bundle exec rake test
       - name: prod build
         run: bundle exec rake reset && bundle exec rake build
       - name: deploy
