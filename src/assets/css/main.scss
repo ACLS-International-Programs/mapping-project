@@ -1,0 +1,87 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+// Import IBM Plex Mono from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+// Custom variables
+$background-color: #F6F1D9;
+
+// Font family variables
+$global-font-family: 'IBM Plex Mono', monospace;
+$header-font-family: 'IBM Plex Mono', monospace;
+$caption-font-family: 'IBM Plex Mono', monospace;
+$sans-serif: 'IBM Plex Mono', monospace;
+$monospace: 'IBM Plex Mono', monospace;
+$title-font-family: 'IBM Plex Mono', monospace;
+
+// Font weight variables
+$global-font-weight: 300;
+$header-font-weight: 300;
+$title-font-weight: 300;
+$caption-font-weight: 300;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// 1. Font-weight enforcement for base elements
+body {
+  font-weight: 300;
+}
+
+// Font size for paragraphs
+p {
+  font-size: 15px !important;
+}
+
+// 2. Sidebar color
+.sidebar {
+  background-color: #2B3AA8 !important;
+  min-height: 500px !important; // Adjust this number as needed
+  padding-left: 20px !important;  // Left spacing
+  padding-right: 20px !important; // Right spacing
+}
+
+// Makes all text in the sidebar this light color
+.sidebar, 
+.sidebar a,
+.sidebar h1,
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar h5,
+.sidebar h6,
+.sidebar p,
+.sidebar span {
+  color: #E6E1C9 !important;
+}
+
+// 3. Weights for headings
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300 !important;
+  font-family: 'IBM Plex Mono', monospace !important;
+}
+
+// 4. Weights for Titles
+.site-title {
+  font-weight: 300 !important;
+  font-family: 'IBM Plex Mono', monospace !important;
+}
+
+.page__title,
+.archive__item-title {
+  font-weight: 300 !important;
+  font-family: 'IBM Plex Mono', monospace !important;
+}
+
+// 5. Navigation and menu items
+.masthead__menu-item,
+.nav__title,
+.nav__sub-title {
+  font-weight: 300 !important;
+  font-family: 'IBM Plex Mono', monospace !important;
+}
