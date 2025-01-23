@@ -28,60 +28,69 @@ $caption-font-weight: 300;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// 1. Font-weight enforcement for base elements
+// 1. Global base styles
 body {
   font-weight: 300;
-}
-
-// Font size for paragraphs
-p {
+ }
+ 
+ p {
   font-size: 15px !important;
-}
-
-// 2. Sidebar color
-.sidebar {
+ }
+ 
+ // 2. Global link styles
+ a, a:hover, a:visited {
+  text-decoration: none !important;
+  color: inherit !important;
+ }
+ 
+ // 3. Typography and font families
+ h1, h2, h3, h4, h5, h6,
+ .site-title,
+ .page__title,
+ .archive__item-title,
+ .masthead__menu-item,
+ .nav__title,
+ .nav__sub-title {
+  font-weight: 300 !important;
+  font-family: 'IBM Plex Mono', monospace !important;
+ }
+ 
+ // 4. Sidebar styles
+ .sidebar {
   background-color: #2B3AA8 !important;
-  min-height: 500px !important; // Adjust this number as needed
-  padding-left: 20px !important;  // Left spacing
-  padding-right: 20px !important; // Right spacing
-}
-
-// Makes all text in the sidebar this light color
-.sidebar, 
-.sidebar a,
-.sidebar h1,
-.sidebar h2,
-.sidebar h3,
-.sidebar h4,
-.sidebar h5,
-.sidebar h6,
-.sidebar p,
-.sidebar span {
+  min-height: 500px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  opacity: 1 !important;  // Force full opacity
+  transition: none !important;  // Disable transitions
+ }
+ 
+ // Sidebar text colors
+ .sidebar, 
+ .sidebar a,
+ .sidebar h1,
+ .sidebar h2,
+ .sidebar h3,
+ .sidebar h4,
+ .sidebar h5,
+ .sidebar h6,
+ .sidebar p,
+ .sidebar span {
   color: #E6E1C9 !important;
+ }
+ 
+ // Sidebar hover effects
+ .sidebar h5 a:hover {
+  opacity: 0.8 !important;
+ }
+
+// Ensure opacity stays at 1 even on hover
+.sidebar.sidebar__right:hover {
+  opacity: 1 !important;
+  background-color: #2B3AA8 !important;
 }
 
-// 3. Weights for headings
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 300 !important;
-  font-family: 'IBM Plex Mono', monospace !important;
-}
-
-// 4. Weights for Titles
-.site-title {
-  font-weight: 300 !important;
-  font-family: 'IBM Plex Mono', monospace !important;
-}
-
-.page__title,
-.archive__item-title {
-  font-weight: 300 !important;
-  font-family: 'IBM Plex Mono', monospace !important;
-}
-
-// 5. Navigation and menu items
-.masthead__menu-item,
-.nav__title,
-.nav__sub-title {
-  font-weight: 300 !important;
-  font-family: 'IBM Plex Mono', monospace !important;
+// Override any transition effects
+.sidebar.sidebar__right * {
+  transition: none !important;
 }

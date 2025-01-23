@@ -23,7 +23,7 @@ subtitle                 : "An initiative of the Luce/ACLS Program in China Stud
 name                     : "Your Name"
 description              : "An amazing website."
 url                      : ""
-baseurl                  : "/mapping-project"
+baseurl                  : ""
 source                   : src
 repository               : "jm-chris/mapping-project"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
