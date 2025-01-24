@@ -28,82 +28,66 @@ $caption-font-weight: 300;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// 1. Global base styles
+// 1. Base styles
 body {
   font-weight: 300;
- }
- 
- p {
-  font-size: 15px !important;
- }
- 
- // 2. Links in headers should not have underlines
- p {
+}
+
+p {
+  font-size: 16px !important;
+  
   a, a:visited {
     color: inherit !important;
     text-decoration: underline !important;
     text-decoration-color: #2136cc !important;
-    text-decoration-thickness: 2px !important;
+    text-decoration-thickness: 1.5px !important;
+    text-underline-offset: 4px !important;
   }
- }
- 
- h1, h2, h3, h4, h5, h6 {
+}
+
+// 2. Typography and heading styles
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.page__title,
+.archive__item-title,
+.masthead__menu-item,
+.nav__title,
+.nav__sub-title {
+  font-weight: 300 !important;
+  font-family: 'IBM Plex Mono', monospace !important;
+  
   a, a:visited {
     color: inherit !important;
     text-decoration: none !important;
   }
- }
- 
- // 3. Typography and font families
- h1, h2, h3, h4, h5, h6,
- .site-title,
- .page__title,
- .archive__item-title,
- .masthead__menu-item,
- .nav__title,
- .nav__sub-title {
-  font-weight: 300 !important;
-  font-family: 'IBM Plex Mono', monospace !important;
- }
- 
- // 4. Sidebar styles
- .sidebar {
-  background-color: #2136cc !important;
-  min-height: 500px !important;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-  opacity: 1 !important;  // Force full opacity
-  transition: none !important;  // Disable transitions
-  margin-top: 40px !important;
-  top: 40px !important;
- }
- 
- // Sidebar text colors
- .sidebar, 
- .sidebar a,
- .sidebar h1,
- .sidebar h2,
- .sidebar h3,
- .sidebar h4,
- .sidebar h5,
- .sidebar h6,
- .sidebar p,
- .sidebar span {
-  color: #E6E1C9 !important;
- }
- 
- // Sidebar hover effects
- .sidebar h5 a:hover {
-  opacity: 0.8 !important;
- }
-
-// Ensure opacity stays at 1 even on hover
-.sidebar.sidebar__right:hover {
-  opacity: 1 !important;
-  background-color: #2136cc !important;
 }
 
-// Override any transition effects
-.sidebar.sidebar__right * {
+// 3. Sidebar styles
+.sidebar {
+  background-color: #2136cc !important;
+  min-height: 500px !important;
+  padding: 0 20px !important;
+  margin-top: 40px !important;
+  top: 40px !important;
+  opacity: 1 !important;
   transition: none !important;
+  
+  &, a, h1, h2, h3, h4, h5, h6, p, span {
+    color: #E6E1C9 !important;
+  }
+  
+  h5 a:hover {
+    opacity: 0.8 !important;
+  }
+}
+
+.sidebar.sidebar__right {
+  &:hover {
+    opacity: 1 !important;
+    background-color: #2136cc !important;
+  }
+  
+  * {
+    transition: none !important;
+  }
 }
