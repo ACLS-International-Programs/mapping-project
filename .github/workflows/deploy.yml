@@ -20,5 +20,6 @@ jobs:
       - name: deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
+          cname: mapping-project.org
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
