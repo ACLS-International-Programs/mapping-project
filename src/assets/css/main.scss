@@ -37,10 +37,21 @@ body {
   font-size: 15px !important;
  }
  
- // 2. Global link styles
- a, a:hover, a:visited {
-  text-decoration: none !important;
-  color: inherit !important;
+ // 2. Links in headers should not have underlines
+ p {
+  a, a:visited {
+    color: inherit !important;
+    text-decoration: underline !important;
+    text-decoration-color: #2136cc !important;
+    text-decoration-thickness: 2px !important;
+  }
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  a, a:visited {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
  }
  
  // 3. Typography and font families
@@ -57,12 +68,14 @@ body {
  
  // 4. Sidebar styles
  .sidebar {
-  background-color: #2B3AA8 !important;
+  background-color: #2136cc !important;
   min-height: 500px !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
   opacity: 1 !important;  // Force full opacity
   transition: none !important;  // Disable transitions
+  margin-top: 40px !important;
+  top: 40px !important;
  }
  
  // Sidebar text colors
@@ -87,7 +100,7 @@ body {
 // Ensure opacity stays at 1 even on hover
 .sidebar.sidebar__right:hover {
   opacity: 1 !important;
-  background-color: #2B3AA8 !important;
+  background-color: #2136cc !important;
 }
 
 // Override any transition effects
