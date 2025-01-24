@@ -13,6 +13,8 @@ jobs:
       - uses: ruby/setup-ruby@v1
       - name: install
         run: bundle
+      - name: pregenerate pages
+        run: bundle exec jekyll pagemaster resources --force
       - name: prod build
         run: bundle exec rake reset && bundle exec rake build
       - name: deploy

@@ -1,0 +1,21 @@
+---
+layout: single
+classes: wide
+---
+
+{% if page.alternatetitle %}
+<h6>ALTERNATE TITLE</h6>
+{{ page.alternatetitle }}
+{% endif %}
+
+<h6>CATEGORY</h6>
+{{ page.category }}
+
+<h6>INSTITUTION</h6>
+{{ page.institution }}
+
+<h6>URL</h6>
+<a target="_blank" label="external link to {{ page.title }}" href="{{ page.external_url }}">{{ page.external_url }}</a>
+
+<h6>DESCRIPTION</h6>
+{{ page.description }}

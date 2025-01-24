@@ -11,8 +11,14 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 theme: "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+collections:
+  resources:
+    output: true
+    source: mapping-project.csv
+    id_key: objectid
+    layout: resource
 
 # Site Settings
 locale: "en-US"
@@ -252,6 +258,7 @@ pagination:
 
 # Plugins (previously gems:)
 plugins:
+  - pagemaster
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
