@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/mapping-project/about/</loc>
+<loc>/about/</loc>
 </url>
 <url>
-<loc>/mapping-project/accesspartners/</loc>
+<loc>/accesspartners/</loc>
 </url>
 <url>
-<loc>/mapping-project/databaseworkflows/</loc>
+<loc>/databaseworkflows/</loc>
 </url>
 <url>
-<loc>/mapping-project/directory/</loc>
+<loc>/directory/</loc>
 </url>
 <url>
-<loc>/mapping-project/</loc>
+<loc>/</loc>
 </url>
 <url>
-<loc>/mapping-project/news/</loc>
+<loc>/news/</loc>
 </url>
 <url>
-<loc>/mapping-project/sampleresource/</loc>
+<loc>/sampleresource/</loc>
 </url>
 <url>
-<loc>/mapping-project/sampleresource/</loc>
+<loc>/sampleresource/</loc>
 </url>
 </urlset>
