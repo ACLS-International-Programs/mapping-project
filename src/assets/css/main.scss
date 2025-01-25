@@ -18,12 +18,14 @@ $caption-font-family: 'IBM Plex Mono', monospace;
 $sans-serif: 'IBM Plex Mono', monospace;
 $monospace: 'IBM Plex Mono', monospace;
 $title-font-family: 'IBM Plex Mono', monospace;
+$toc-font-family: 'IBM Plex Mono', monospace;
 
 // Font weight variables
 $global-font-weight: 300;
 $header-font-weight: 300;
 $title-font-weight: 300;
 $caption-font-weight: 300;
+$toc-font-weight: 300;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
@@ -90,4 +92,39 @@ h1, h2, h3, h4, h5, h6,
   * {
     transition: none !important;
   }
+}
+
+// 4. Feature row styles
+h6 {
+  margin-top: 0;     // Only remove top margin
+  line-height: 1;    // Tighten line height
+}
+
+// 5. Grid styling to match site aesthetic
+.grid__item {
+  .archive__item-title {
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-weight: 300;
+    font-size: 0.75rem;
+  }
+  
+  .archive__item-excerpt {
+    font-size: 0.65rem;
+    color: inherit;
+  }
+
+  .archive__item-teaser {
+    max-height: 180px;
+    padding: 1rem;
+  }
+}
+// 6. Table of contents styles
+.toc a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.toc a:hover {
+  text-decoration: underline;
 }

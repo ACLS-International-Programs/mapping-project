@@ -1,0 +1,16 @@
+---
+title: "DIRECTORY"
+layout: single
+collection: resources
+classes: wide
+---
+DIRECTORY LIST VIEW | <a href="/directorygrid/">VIEW AS GRID</a>
+<br>
+<br>
+<br>
+<ul>
+    {% assign sorted_resources = site.resources | sort: 'title' %}
+    {% for resource in sorted_resources %}
+      <li><a href="{{ resource.url }}">{{ resource.title }}</a></li>
+    {% endfor %}
+    </ul>
