@@ -20,6 +20,7 @@ collections:
     id_key: objectid
     layout: resource
     permalink: /:collection/:path/
+    category_key: category
 
 # Site Settings
 locale: "en-US"
