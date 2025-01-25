@@ -2,12 +2,6 @@
 layout: single
 classes: wide
 ---
-{% raw %}
-{% assign teaser_image = site.data.category_images[page.category] %}
-{% if teaser_image %}
-  <img src="{{ teaser_image | relative_url }}" alt="{{ page.title }}" style="width: 200px; height: 300px;">
-{% endif %}
-{% endraw %}
 <br>
 {% if page.alternatetitle %}
 <h6>ALTERNATE TITLE</h6>

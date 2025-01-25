@@ -105,19 +105,20 @@ h6 {
   .archive__item-title {
     font-family: 'IBM Plex Mono', monospace !important;
     font-weight: 300;
-    font-size: 0.75rem;
+    font-size: 0.70rem;
   }
   
   .archive__item-excerpt {
-    font-size: 0.65rem;
+    font-size: 0.60rem;
     color: inherit;
   }
 
   .archive__item-teaser {
-    max-height: 180px;
-    padding: 1rem;
+    max-height: 150px;
+    padding: .5rem;
   }
 }
+
 // 6. Table of contents styles
 .toc a {
   color: inherit;
