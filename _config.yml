@@ -149,12 +149,12 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
+    - label: "ACLS"
+      icon: "ACLS"
+      url: assets/images/ACLS_pipe_Myraid.png
+    - label: "Luce"
+      icon: "Luce"
+      url: assets/images/LUCE-Logo-Full-Color-L.png
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url:
