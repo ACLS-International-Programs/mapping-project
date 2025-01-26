@@ -41,7 +41,7 @@ p {
   a, a:visited {
     color: inherit !important;
     text-decoration: underline !important;
-    text-decoration-color: #2136cc !important;
+    text-decoration-color: #2B3AA8 !important;
     text-decoration-thickness: 1.5px !important;
     text-underline-offset: 4px !important;
   }
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6,
 
 // 3. Sidebar styles
 .sidebar {
-  background-color: #2136cc !important;
+  background-color: #2B3AA8 !important;
   min-height: 500px !important;
   padding: 0 20px !important;
   margin-top: 40px !important;
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6,
   transition: none !important;
   
   &, a, h1, h2, h3, h4, h5, h6, p, span {
-    color: #E6E1C9 !important;
+    color: #F6F1D9 !important;
   }
   
   h5:first-of-type {
@@ -86,6 +86,26 @@ h1, h2, h3, h4, h5, h6,
     opacity: 0.8 !important;
   }
 }
+
+.sidebar {
+  @media screen and (max-width: 768px) {
+    margin-top: 0 !important;
+    top: 0 !important;
+    padding: 0.5rem !important;
+    min-height: auto !important;
+    width: 100% !important;
+    position: relative !important;
+  }
+ }
+ 
+ // Make sidebar text more readable on mobile
+ .sidebar h5 {
+  @media screen and (max-width: 768px) {
+    font-size: 0.9rem !important;
+    line-height: 1.3 !important;
+    padding: 0.3rem 0 !important;
+  }
+ }
 
 // 4. Feature row styles
 h6 {
@@ -122,3 +142,14 @@ h6 {
 .toc a:hover {
   text-decoration: underline;
 }
+
+// 7. Hero--overlay styles
+.page__hero--overlay {
+  .btn {
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-weight: 300;
+    color: #F6F1D9 !important;
+    text-decoration: none !important;
+    font-size: 0.60rem;  // Added smaller font size
+  }
+ }
