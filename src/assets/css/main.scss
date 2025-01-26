@@ -78,19 +78,12 @@ h1, h2, h3, h4, h5, h6,
     color: #E6E1C9 !important;
   }
   
-  h5 a:hover {
-    opacity: 0.8 !important;
-  }
-}
-
-.sidebar.sidebar__right {
-  &:hover {
-    opacity: 1 !important;
-    background-color: #2136cc !important;
+  h5:first-of-type {
+    margin-top: 50px !important;
   }
   
-  * {
-    transition: none !important;
+  h5 a:hover {
+    opacity: 0.8 !important;
   }
 }
 
@@ -114,7 +107,7 @@ h6 {
   }
 
   .archive__item-teaser {
-    max-height: 150px;
+    max-height: 140px;
     padding: .5rem;
   }
 }
