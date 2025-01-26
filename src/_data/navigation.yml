@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Search"
-    url: /searchdirectory.html
+  - title: "SEARCH"
+    url: /searchdirectory
   - title: "HOME"
-    url: /index.html
+    url: /index
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

@@ -92,17 +92,17 @@ body {
   }
   
   @media screen and (max-width: 768px) {
-    margin-top: 0 !important;
+    margin-top: 0.5 !important;
     top: 0 !important;
     padding: 0.5rem !important;
     min-height: auto !important;
-    width: 100% !important;
+    width: 80% !important;
     position: relative !important;
     
     h5 {
-      font-size: 1.3rem !important;
-      line-height: 0.9 !important;
-      padding: 0.3rem 0 !important;
+      font-size: 1.0rem !important;
+      line-height: 1.0 !important;
+      padding: 0.3rem !important;
     }
   }
  }
