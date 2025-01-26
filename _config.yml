@@ -25,7 +25,7 @@ collections:
 # Site Settings
 locale: "en-US"
 rtl: # true, false (default) # turns direction of the page into right to left for RTL languages
-title: "CHINA STUDIES DIGITAL MAPPING PROJECT"
+title: "China Studies Digital Mapping Project"
 title_separator: "-"
 subtitle: "An initiative of the Luce/ACLS Program in China Studies"
 name: "Your Name"
@@ -36,7 +36,7 @@ source: src
 # repository: "jm-chris/mapping-project"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+masthead_title: "CHINA STUDIES DIGITAL MAPPING PROJECT"
 breadcrumbs: # true, false (default)
 words_per_minute: 200
 enable_copy_code_button: # true, false (default)
@@ -77,7 +77,7 @@ reCaptcha:
 atom_feed:
   path: # blank (default) uses feed.xml
   hide: # true, false (default)
-search: true
+search: false
 search_full_content: true
 search_provider: lunr
 lunr:

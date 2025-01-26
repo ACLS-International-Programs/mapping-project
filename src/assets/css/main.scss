@@ -86,24 +86,13 @@ h1, h2, h3, h4, h5, h6,
     opacity: 0.8 !important;
   }
 }
-
-.sidebar {
-  @media screen and (max-width: 768px) {
-    margin-top: 0 !important;
-    top: 0 !important;
-    padding: 0.5rem !important;
-    min-height: auto !important;
-    width: 100% !important;
-    position: relative !important;
-  }
- }
  
  // Make sidebar text more readable on mobile
  .sidebar h5 {
   @media screen and (max-width: 768px) {
-    font-size: 1.3rem !important;
+    font-size: 0.9rem !important;
     line-height: 0.9 !important;
-    padding: 0.3rem 0 !important;
+    padding: 0.0rem 0 !important;
   }
  }
 
