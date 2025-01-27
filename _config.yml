@@ -151,17 +151,17 @@ footer:
   links:
     - label: "ACLS"
       icon: "ACLS"
-      url: assets/images/ACLS_pipe_Myraid.png
+      # url: assets/images/ACLS_pipe_Myraid.png
     - label: "Luce"
       icon: "Luce"
-      url: assets/images/LUCE-Logo-Full-Color-L.png
+      # url: assets/images/LUCE-Logo-Full-Color-L.png
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
-    - label: "Bitbucket"
+    - label: "Bitbucket"  
       icon: "fab fa-fw fa-bitbucket"
       # url:
     - label: "Instagram"
