@@ -91,19 +91,22 @@ body {
     opacity: 0.8 !important;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
     margin-top: 0.5 !important;
     top: 0 !important;
-    padding: 0.75rem !important;
+    padding: .75rem !important;
     min-height: auto !important;
     width: 75% !important;
     position: relative !important;
     
     h5 {
-      font-size: 1.0rem !important;
+      font-size: 1.1rem !important;
       line-height: 1.0 !important;
-      padding: 0.3rem !important;
+      padding: .3rem !important;
     }
+  }
+    h5:first-of-type {
+      margin-top: -5px !important;
   }
  }
  
