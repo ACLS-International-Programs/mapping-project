@@ -28,8 +28,8 @@ rtl: # true, false (default) # turns direction of the page into right to left fo
 title: "China Studies Digital Mapping Project"
 title_separator: "-"
 subtitle: "An initiative of the Luce/ACLS Program in China Studies"
-name: """
-description: Resources for the field of China studies
+name: ""
+description: "Resources for the field of China studies"
 url: ""
 baseurl: ""
 source: src
