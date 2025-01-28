@@ -1,0 +1,19 @@
+---
+layout: single
+---
+
+{{ content }}
+
+{% assign categories = site.resources | map: "category" | uniq | sort %}
+
+{% for category in categories %}
+  <div class="category-section">
+    <h6 style="text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; font-weight: 300; margin-bottom: 1rem;">{{ category }}</h6>
+    <div class="grid__wrapper">
+      {% assign category_resources = site.resources | where: "category", category | sort: "title" %}
+      {% for post in category_resources %}
+        {% include archive-single.html type="grid" %}
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}

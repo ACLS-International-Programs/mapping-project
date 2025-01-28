@@ -34,7 +34,7 @@ url: ""
 baseurl: ""
 source: src
 # repository: "jm-chris/mapping-project"
-teaser: "assets/images/mappingprojectog.png"
+teaser: 
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: "CHINA STUDIES DIGITAL MAPPING PROJECT"
 breadcrumbs: # true, false (default)

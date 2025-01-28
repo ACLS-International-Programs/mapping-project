@@ -78,7 +78,7 @@ a, a:link, a:hover, a:active {
  }
 
  // 3. Sidebar
- .sidebar {
+  .sidebar {
   background-color: #2B3AA8 !important;
   min-height: 500px !important;
   padding: 0 20px !important;
@@ -160,3 +160,33 @@ a, a:link, a:hover, a:active {
     font-size: 0.60rem;
   }
  }
+
+ // 4. Grid Items
+ .grid__item {
+  .archive__item-title {
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-weight: 300;
+    font-size: 0.70rem;
+  }
+  
+  .archive__item-excerpt {
+    font-size: 0.60rem;
+    color: inherit;
+  }
+ 
+  .archive__item-teaser {
+    max-height: 140px;
+    padding: .5rem;
+  }
+ }
+
+ .category-section {
+  margin-bottom: 3rem;
+  
+  .grid__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 0rem 2rem;  // First value (1rem) is row gap, second value (2rem) is column gap
+    justify-content: start;
+  }
+}
