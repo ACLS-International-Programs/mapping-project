@@ -41,7 +41,7 @@ var store = [{
         "url": "/resources/15/",
         "teaser": null
       },{
-        "title": "PRC History",
+        "title": "PRC History Group Resource List",
         "excerpt":" ","categories": ["Recommended Subject Guides, Bibliographies, and Translations"],
         "tags": [],
         "url": "/resources/16/",
@@ -269,7 +269,7 @@ var store = [{
         "url": "/resources/5/",
         "teaser": null
       },{
-        "title": "Dictionnaire Biographique de la Chine Occupée / Biographical Dictionary Of Occupied China",
+        "title": "Dictionnaire Biographique de la Chine Occupée\n",
         "excerpt":" ","categories": ["Biographical Databases"],
         "tags": [],
         "url": "/resources/50/",
@@ -287,7 +287,7 @@ var store = [{
         "url": "/resources/52/",
         "teaser": null
       },{
-        "title": "PRC State Council Archive (English)",
+        "title": "PRC State Council Archive (EN)\n",
         "excerpt":" ","categories": ["Contemporary Documents"],
         "tags": [],
         "url": "/resources/53/",
