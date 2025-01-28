@@ -11,16 +11,23 @@
 {% endif %}
 
 <div class="{{ include.type | default: 'list' }}__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %} style="background-color: white; padding: 0; padding-bottom: 10px; border-radius: 5px; width: 200px; margin: 0 auto;">
-  {% if include.type == "grid" %}
-    {% assign teaser_image = site.data.category_images[post.category] %}
-    {% if teaser_image %}
-      <div class="archive__item-teaser">
-        <img src="{{ teaser_image }}" alt="{{ post.title }}">
-      </div>
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"
+    {% if post.locale %} lang="{{ post.locale }}"{% endif %}
+    {% if include.type == 'grid' %}
+      style="background-color: white; padding: 0; padding-bottom: 10px; border-radius: 5px; width: 200px; margin: 0 auto;"
+    {% endif %}>
+    
+    {% if include.type == "grid" %}
+      {% assign teaser_image = site.data.category_images[post.category] %}
+      {% if teaser_image %}
+        <div class="archive__item-teaser">
+          <img src="{{ teaser_image }}" alt="{{ post.title }}">
+        </div>
+      {% endif %}
     {% endif %}
-  {% endif %}
-  <h2 class="archive__item-title no_toc" itemprop="headline" style="width: 180px; margin: 0 auto;">
+
+    <h2 class="archive__item-title no_toc" itemprop="headline" 
+      {% if include.type == 'grid' %}style="width: 180px; margin: 0 auto;"{% endif %}>
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
