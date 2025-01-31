@@ -14,12 +14,22 @@ header:
 ---
 <div style="text-align: center;">
     VIEW BY: <a href="/directorycategory/">CATEGORY</a> | <a href="/directorygrid/">GRID</a> | LIST
-  </div>
+</div>
 <br>
 <br>
-<ul>
-    {% assign sorted_resources = site.resources | sort: 'title' %}
-    {% for resource in sorted_resources %}
-      <li><a href="{{ resource.url }}">{{ resource.title }}</a></li>
+
+{% assign categories = site.resources | map: "category" | uniq | sort %}
+
+{% for category in categories %}
+  <h2 style="text-transform: uppercase;">{{ category }}</h2>
+  <ul>
+    {% assign category_resources = site.resources | where: "category", category | sort: "title" %}
+    {% for resource in category_resources %}
+      <li>
+        <a href="{{ resource.url }}">{{ resource.title }}</a>
+        <p style="margin-left: 2em; margin-top: 0.5em; font-size: 0.9em;">{{ resource.description }}</p>
+      </li>
     {% endfor %}
-    </ul>
+  </ul>
+  <br>
+{% endfor %}
