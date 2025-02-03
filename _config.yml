@@ -114,7 +114,11 @@ social:
 
 # Analytics
 analytics:
+<<<<<<< HEAD
   provider: google-gtag
+=======
+  provider: "google-gtag"
+>>>>>>> 680492d (set up analytics 2)
   google:
     tracking_id: G-8KPV5SKVTP
     anonymize_ip: false
