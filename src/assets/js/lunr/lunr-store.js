@@ -16,21 +16,12 @@ var store = [
       {%- endif -%}
       {
         "title": {{ doc.title | jsonify }},
-        "excerpt":
-            {{ doc.description | newline_to_br |
-              replace:"<br />", " " |
-              replace:"</p>", " " |
-              replace:"</h1>", " " |
-              replace:"</h2>", " " |
-              replace:"</h3>", " " |
-              replace:"</h4>", " " |
-              replace:"</h5>", " " |
-              replace:"</h6>", " "|
-            strip_html | strip_newlines | jsonify }},
-        "categories": {{ doc.categories | jsonify }},
+        "alternatetitle": {{ doc.alternatetitle | jsonify }},
+        "description": {{ doc.description | jsonify }},
+        "institution": {{ doc.institution | jsonify }},
+        "category": {{ doc.category | jsonify }},
         "tags": {{ doc.tags | jsonify }},
-        "url": {{ doc.url | relative_url | jsonify }},
-        "teaser": {{ teaser | relative_url | jsonify }}
+        "url": {{ doc.url | relative_url | jsonify }}
       }{%- unless forloop.last and l -%},{%- endunless -%}
     {%- endfor -%}
   {%- endfor -%}{%- if site.lunr.search_within_pages -%},
