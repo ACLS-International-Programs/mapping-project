@@ -6,6 +6,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
     steps:
       - uses: actions/checkout@v4
         with:
