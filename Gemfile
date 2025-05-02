@@ -24,3 +24,7 @@ gem "http_parser.rb", "~> 0.6.0", platforms: [:jruby]
 # Standard library gems
 gem "base64"
 gem "csv"
+
+group :development do 
+  gem "html-proofer"
+end

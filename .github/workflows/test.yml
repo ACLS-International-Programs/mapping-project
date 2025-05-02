@@ -1,8 +1,12 @@
-name: gh:deploy
+name: test
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,11 +21,11 @@ jobs:
         run: bundle
       - name: pregenerate pages
         run: bundle exec jekyll pagemaster resources --force
-      - name: prod build
+      - name: build
         run: bundle exec jekyll clean && bundle exec rake build
-      - name: deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          cname: mapping-project.org
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+      - name: test internal links
+        continue-on-error: true
+        run: bundle exec rake test:links:internal
+      - name: test external links
+        continue-on-error: true
+        run: bundle exec rake test:links:external
