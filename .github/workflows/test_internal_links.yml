@@ -24,8 +24,4 @@ jobs:
       - name: build
         run: bundle exec jekyll clean && bundle exec rake build
       - name: test internal links
-        continue-on-error: true
         run: bundle exec rake test:links:internal
-      - name: test external links
-        continue-on-error: true
-        run: bundle exec rake test:links:external

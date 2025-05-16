@@ -1,0 +1,27 @@
+name: test
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: ruby/setup-ruby@v1
+      - name: install
+        run: bundle
+      - name: pregenerate pages
+        run: bundle exec jekyll pagemaster resources --force
+      - name: build
+        run: bundle exec jekyll clean && bundle exec rake build
+      - name: test external links
+        run: bundle exec rake test:links:external
