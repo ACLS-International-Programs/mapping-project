@@ -8,8 +8,11 @@ search: false
 // Import IBM Plex Mono from Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-// Custom variables
-$background-color: #F6F1D9;
+// ============================================================================
+// CUSTOM VARIABLES
+// ============================================================================
+
+$background-color: #FAFAFA; // alabaster background color
 
 // Font family variables
 $global-font-family: 'IBM Plex Mono', monospace;
@@ -27,15 +30,22 @@ $title-font-weight: 300;
 $caption-font-weight: 300;
 $toc-font-weight: 300;
 
+// ============================================================================
+// MINIMAL MISTAKES IMPORTS
+// ============================================================================
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// 1. Base & Typography
+// ============================================================================
+// 1. BASE & TYPOGRAPHY
+// ============================================================================
+
 body {
   font-weight: 300;
- }
- 
- p {
+}
+
+p {
   font-size: 16px !important;
   
   a, a:visited {
@@ -45,16 +55,19 @@ body {
     text-decoration-thickness: 1.5px !important;
     text-underline-offset: 4px !important;
   }
- }
- 
- // 2. Headings & Navigation
- h1, h2, h3, h4, h5, h6,
- .site-title,
- .page__title,
- .archive__item-title,
- .masthead__menu-item,
- .nav__title,
- .nav__sub-title {
+}
+
+// ============================================================================
+// 2. HEADINGS & NAVIGATION
+// ============================================================================
+
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.page__title,
+.archive__item-title,
+.masthead__menu-item,
+.nav__title,
+.nav__sub-title {
   font-weight: 300 !important;
   font-family: 'IBM Plex Mono', monospace !important;
   
@@ -62,23 +75,29 @@ body {
     color: inherit !important;
     text-decoration: none !important;
   }
- }
- 
- h6 {
+}
+
+h6 {
   margin-top: 0;
   line-height: 1;
- }
- 
-// Global Link Styles
+}
+
+// ============================================================================
+// 3. GLOBAL LINK STYLES
+// ============================================================================
+
 a, a:link, a:hover, a:active {
   color: inherit !important;
   text-decoration-color: #2B3AA8 !important;
   text-decoration-thickness: 1.5px !important;
   text-underline-offset: 4px !important;
- }
+}
 
- // 3. Sidebar
-  .sidebar {
+// ============================================================================
+// 4. SIDEBAR
+// ============================================================================
+
+.sidebar {
   background-color: #2B3AA8 !important;
   min-height: 500px !important;
   padding: 0 20px !important;
@@ -88,7 +107,7 @@ a, a:link, a:hover, a:active {
   transition: none !important;
   
   &, a, h1, h2, h3, h4, h5, h6, p, span {
-    color: #F6F1D9 !important;
+    color: #FAFAFA !important;
   }
   
   h5:first-of-type {
@@ -99,6 +118,7 @@ a, a:link, a:hover, a:active {
     opacity: 0.8 !important;
   }
   
+  // Mobile responsive styles
   @media screen and (max-width: 768px) {
     margin-top: 0.5 !important;
     top: 0 !important;
@@ -116,10 +136,76 @@ a, a:link, a:hover, a:active {
       margin-top: -5px !important;
     }
   }
- }
- 
- // 4. Grid Items
- .grid__item {
+  
+  // Override Minimal Mistakes nav styles for navigation-based sidebar
+  .nav__list {
+    border: none !important;
+    
+    // Hide the checkbox toggle for mobile
+    input[type="checkbox"] {
+      display: none;
+    }
+    
+    label[for="ac-toc"] {
+      display: none;
+    }
+    
+    .nav__items {
+      margin: 0 !important;
+      padding: 0 !important;
+      list-style: none !important;
+      font-size: inherit !important;
+      
+      li {
+        border: none !important;
+        border-top: none !important;
+        border-bottom: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        margin-bottom: 1.5em !important;
+        
+        &:first-child {
+          margin-top: 50px !important;
+        }
+        
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+        
+        // Target the nav__sub-title span wrapper
+        .nav__sub-title {
+          display: block !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          border: none !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          text-transform: none !important;
+          
+          h5 {
+            margin: 0 !important;
+            margin-bottom: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            border: none !important;
+            font-size: 1.25em !important;
+            line-height: 1.2 !important;
+            
+            a {
+              font-size: inherit !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ============================================================================
+// 5. GRID ITEMS (Archive & Feature Items)
+// ============================================================================
+
+.grid__item {
   .archive__item-title {
     font-family: 'IBM Plex Mono', monospace !important;
     font-weight: 300;
@@ -135,10 +221,28 @@ a, a:link, a:hover, a:active {
     max-height: 140px;
     padding: .5rem;
   }
- }
- 
- // 5. Table of Contents
- .toc {
+}
+
+// ============================================================================
+// 6. CATEGORY SECTION
+// ============================================================================
+
+.category-section {
+  margin-bottom: 3rem;
+  
+  .grid__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 0rem 2rem;
+    justify-content: start;
+  }
+}
+
+// ============================================================================
+// 7. TABLE OF CONTENTS
+// ============================================================================
+
+.toc {
   a {
     color: inherit;
     text-decoration: none;
@@ -148,45 +252,26 @@ a, a:link, a:hover, a:active {
       text-decoration: underline;
     }
   }
- }
- 
- // 6. Hero Overlay
- .page__hero--overlay {
+}
+
+// ============================================================================
+// 8. HERO OVERLAY
+// ============================================================================
+
+.page__hero--overlay {
   .btn {
     font-family: 'IBM Plex Mono', monospace !important;
     font-weight: 300;
-    color: #F6F1D9 !important;
+    color: #FAFAFA !important;
     text-decoration: none !important;
     font-size: 0.60rem;
   }
- }
+}
 
- // 4. Grid Items
- .grid__item {
-  .archive__item-title {
-    font-family: 'IBM Plex Mono', monospace !important;
-    font-weight: 300;
-    font-size: 0.70rem;
-  }
-  
-  .archive__item-excerpt {
-    font-size: 0.60rem;
-    color: inherit;
-  }
- 
-  .archive__item-teaser {
-    max-height: 140px;
-    padding: .5rem;
-  }
- }
+// ============================================================================
+// 9. MASTHEAD (HEADER)
+// ============================================================================
 
- .category-section {
-  margin-bottom: 3rem;
-  
-  .grid__wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 200px);
-    gap: 0rem 2rem;  // First value (1rem) is row gap, second value (2rem) is column gap
-    justify-content: start;
-  }
+.masthead {
+  border-bottom-color: #3d4144 !important; // Match your text/link color
 }
