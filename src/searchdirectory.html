@@ -1,5 +1,748 @@
 ---
-title: SEARCH THE DIRECTORY
-layout: search
-permalink: /searchdirectory
+title: "SEARCH DIRECTORY"
+layout: single
+search: false
+classes: wide
+excerpt: "Search and filter China studies databases and repositories"
+header:
+    overlay_color: "#2B3AA8"
+    actions:
+    -   label: "View All"
+        url: "/directory/"
+    -   label: "Download as .csv"
+        url: "/assets/files/mapping-project.csv"
 ---
+
+<style>
+/* Override Minimal Mistakes sidebar spacing */
+.page {
+    width: 100% !important;
+    padding-right: 0 !important;
+}
+
+.page__inner-wrap {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.page__content {
+    width: 100% !important;
+    padding: 0 1rem !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+}
+
+/* Make page title border invisible */
+.page__title {
+    border-bottom-color: transparent !important;
+}
+
+@media (min-width: 80em) {
+    .page__content {
+        width: 100% !important;
+        padding: 0 2rem !important;
+    }
+}
+
+/* Search Box - Full Width at Top */
+.search-box-container {
+    margin-bottom: 2.5rem;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: stretch;
+    border: 2px solid #333;
+    border-radius: 4px;
+    overflow: hidden;
+    background: white;
+    transition: border-color 0.2s;
+}
+
+.search-wrapper:focus-within {
+    border-color: #2B3AA8;
+}
+
+.field-select {
+    padding: 0.75rem 1.25rem;
+    padding-right: 2.5rem;
+    border: none;
+    border-right: 2px solid #333;
+    font-size: 0.95rem;
+    background: white;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    appearance: none;
+    outline: none;
+    line-height: normal;
+    margin: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+}
+
+.field-select:focus {
+    outline: none;
+}
+
+.search-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    font-size: 0.95rem;
+    background: transparent;
+    outline: none;
+    line-height: normal;
+    margin: 0;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.clear-btn {
+    padding: 0 1rem;
+    background: transparent;
+    color: #666;
+    border: none;
+    border-left: 2px solid #333;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.clear-btn:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.search-btn {
+    padding: 0 1rem;
+    background: transparent;
+    color: #666;
+    border: none;
+    border-left: 2px solid #333;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.search-btn:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+/* Faceted Search Styles */
+.faceted-search-container {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.search-sidebar {
+    flex: 0 0 320px;
+    min-width: 320px;
+}
+
+.search-main {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Facet Groups */
+.facet-group {
+    margin-bottom: 1.25rem;
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.facet-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2B3AA8;
+    margin: 0 0 0.75rem 0;
+    letter-spacing: 0.5px;
+}
+
+.facet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.facet-item {
+    margin-bottom: 0.4rem;
+}
+
+.facet-checkbox {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    padding: 0.3rem 0.25rem;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+.facet-checkbox:hover {
+    background-color: #f8f9fa;
+}
+
+.facet-checkbox input[type="checkbox"] {
+    margin-right: 0.5rem;
+    margin-top: 0.2rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.facet-label {
+    flex: 1;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+}
+
+.facet-count {
+    color: #6c757d;
+    font-size: 0.85rem;
+    margin-left: 0.4rem;
+    flex-shrink: 0;
+}
+
+/* Results */
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.results-count {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.active-filters {
+    margin-bottom: 1.25rem;
+}
+
+.filter-tag {
+    display: inline-block;
+    background: #2B3AA8;
+    color: white;
+    padding: 0.35rem 0.7rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.filter-tag button {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 0.4rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.results-list {
+    list-style: none;
+    padding: 0;
+}
+
+.result-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.result-title a {
+    color: #2B3AA8;
+    text-decoration: none;
+}
+
+.result-title a:hover {
+    text-decoration: underline;
+}
+
+.result-meta {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-bottom: 0.6rem;
+}
+
+.result-category {
+    display: inline-block;
+    background: #e9ecef;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.result-institution {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.result-description {
+    line-height: 1.5;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+.no-results {
+    text-align: center;
+    padding: 3rem;
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .faceted-search-container {
+        flex-direction: column;
+    }
+    
+    .search-sidebar {
+        flex: 1;
+        min-width: 100%;
+    }
+    
+    .search-row {
+        flex-direction: column;
+    }
+    
+    .field-select {
+        width: 100%;
+    }
+}
+
+/* Show More/Less for long facet lists */
+.facet-list.collapsed .facet-item:nth-child(n+8) {
+    display: none;
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    color: #2B3AA8;
+    cursor: pointer;
+    padding: 0.4rem 0;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    margin-top: 0.25rem;
+}
+
+.show-more-btn:hover {
+    color: #1a2570;
+}
+</style>
+
+<!-- Search Box - Full Width at Top -->
+<div class="search-box-container">
+    <div class="search-wrapper">
+        <select id="searchField" class="field-select" aria-label="Search field">
+            <option value="all">All Fields</option>
+            <option value="title">Title</option>
+            <option value="description">Description</option>
+            <option value="category">Category</option>
+            <option value="institution">Institution</option>
+        </select>
+        <input 
+            type="text" 
+            id="searchInput" 
+            class="search-input" 
+            placeholder="Search"
+            autocomplete="off"
+            aria-label="Search query"
+        >
+        <button id="clearBtn" class="clear-btn" aria-label="Clear search" title="Clear">×</button>
+        <button class="search-btn" aria-label="Search" title="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="faceted-search-container">
+    <!-- Sidebar with facets -->
+    <aside class="search-sidebar">
+        <div id="categoryFacet" class="facet-group">
+            <h3 class="facet-title">Category</h3>
+            <ul class="facet-list" id="categoryList"></ul>
+        </div>
+
+        <div id="institutionFacet" class="facet-group">
+            <h3 class="facet-title">Institution</h3>
+            <ul class="facet-list collapsed" id="institutionList"></ul>
+            <button class="show-more-btn" id="institutionShowMore" style="display: none;">
+                Show more
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main results area -->
+    <main class="search-main">
+        <div class="results-header">
+            <div class="results-count" id="resultsCount">Loading...</div>
+        </div>
+        
+        <div id="activeFilters" class="active-filters"></div>
+        
+        <ul class="results-list" id="resultsList"></ul>
+    </main>
+</div>
+
+<script src="{{ '/assets/js/resources-data.js' | relative_url }}"></script>
+<script>
+// Faceted Search Implementation
+class FacetedSearch {
+    constructor(data) {
+        this.allResources = data;
+        this.filteredResources = data;
+        this.activeFilters = {
+            category: new Set(),
+            institution: new Set(),
+            searchText: '',
+            searchField: 'all'
+        };
+        
+        this.init();
+    }
+    
+    init() {
+        this.buildFacets();
+        this.displayResults();
+        this.attachEventListeners();
+        this.updateResultsCount();
+    }
+    
+    buildFacets() {
+        // Build category facets
+        const categories = this.getFacetCounts('category');
+        this.renderFacets('categoryList', categories, 'category');
+        
+        // Build institution facets
+        const institutions = this.getFacetCounts('institution');
+        this.renderFacets('institutionList', institutions, 'institution');
+        
+        // Show "Show more" button if needed for institutions
+        if (institutions.length > 7) {
+            document.getElementById('institutionShowMore').style.display = 'block';
+        }
+    }
+    
+    getFacetCounts(field) {
+        const counts = {};
+        this.filteredResources.forEach(resource => {
+            const value = resource[field];
+            if (value && value.trim()) {
+                counts[value] = (counts[value] || 0) + 1;
+            }
+        });
+        
+        return Object.entries(counts)
+            .sort((a, b) => b[1] - a[1])
+            .map(([value, count]) => ({ value, count }));
+    }
+    
+    renderFacets(listId, facets, facetType) {
+        const list = document.getElementById(listId);
+        list.innerHTML = '';
+        
+        facets.forEach(({ value, count }) => {
+            const li = document.createElement('li');
+            li.className = 'facet-item';
+            
+            const label = document.createElement('label');
+            label.className = 'facet-checkbox';
+            
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.value = value;
+            checkbox.dataset.facet = facetType;
+            checkbox.checked = this.activeFilters[facetType].has(value);
+            
+            const labelText = document.createElement('span');
+            labelText.className = 'facet-label';
+            labelText.textContent = value;
+            
+            const countSpan = document.createElement('span');
+            countSpan.className = 'facet-count';
+            countSpan.textContent = `(${count})`;
+            
+            label.appendChild(checkbox);
+            label.appendChild(labelText);
+            label.appendChild(countSpan);
+            li.appendChild(label);
+            list.appendChild(li);
+        });
+    }
+    
+    attachEventListeners() {
+        // Search input
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            this.activeFilters.searchText = e.target.value.toLowerCase();
+            this.applyFilters();
+        });
+        
+        // Search field selector
+        document.getElementById('searchField').addEventListener('change', (e) => {
+            this.activeFilters.searchField = e.target.value;
+            this.applyFilters();
+        });
+        
+        // Clear button
+        document.getElementById('clearBtn').addEventListener('click', () => {
+            this.clearAllFilters();
+        });
+        
+        // Facet checkboxes
+        document.addEventListener('change', (e) => {
+            if (e.target.type === 'checkbox' && e.target.dataset.facet) {
+                const facetType = e.target.dataset.facet;
+                const value = e.target.value;
+                
+                if (e.target.checked) {
+                    this.activeFilters[facetType].add(value);
+                } else {
+                    this.activeFilters[facetType].delete(value);
+                }
+                
+                this.applyFilters();
+            }
+        });
+        
+        // Show more/less for institutions
+        const showMoreBtn = document.getElementById('institutionShowMore');
+        showMoreBtn.addEventListener('click', () => {
+            const list = document.getElementById('institutionList');
+            const isCollapsed = list.classList.contains('collapsed');
+            
+            if (isCollapsed) {
+                list.classList.remove('collapsed');
+                showMoreBtn.textContent = 'Show less';
+            } else {
+                list.classList.add('collapsed');
+                showMoreBtn.textContent = 'Show more';
+            }
+        });
+    }
+    
+    applyFilters() {
+        // Start with all resources
+        let filtered = this.allResources;
+        
+        // Apply category filter
+        if (this.activeFilters.category.size > 0) {
+            filtered = filtered.filter(r => 
+                this.activeFilters.category.has(r.category)
+            );
+        }
+        
+        // Apply institution filter
+        if (this.activeFilters.institution.size > 0) {
+            filtered = filtered.filter(r => 
+                r.institution && this.activeFilters.institution.has(r.institution)
+            );
+        }
+        
+        // Apply text search
+        if (this.activeFilters.searchText) {
+            filtered = filtered.filter(r => {
+                const searchText = this.activeFilters.searchText;
+                const field = this.activeFilters.searchField;
+                
+                if (field === 'all') {
+                    return this.searchInAllFields(r, searchText);
+                } else {
+                    const fieldValue = (r[field] || '').toLowerCase();
+                    return fieldValue.includes(searchText);
+                }
+            });
+        }
+        
+        this.filteredResources = filtered;
+        this.buildFacets();
+        this.displayResults();
+        this.displayActiveFilters();
+        this.updateResultsCount();
+    }
+    
+    searchInAllFields(resource, searchText) {
+        const searchableFields = ['title', 'description', 'institution', 'category'];
+        return searchableFields.some(field => {
+            const value = (resource[field] || '').toLowerCase();
+            return value.includes(searchText);
+        });
+    }
+    
+    displayResults() {
+        const resultsList = document.getElementById('resultsList');
+        resultsList.innerHTML = '';
+        
+        if (this.filteredResources.length === 0) {
+            resultsList.innerHTML = '<div class="no-results">No resources found matching your criteria.</div>';
+            return;
+        }
+        
+        this.filteredResources.forEach(resource => {
+            const li = document.createElement('li');
+            li.className = 'result-item';
+            
+            let html = `
+                <div class="result-title">
+                    <a href="${resource.url}">${this.escapeHtml(resource.title)}</a>
+                </div>
+                <div class="result-meta">
+            `;
+            
+            if (resource.category) {
+                html += `<span class="result-category">${this.escapeHtml(resource.category)}</span>`;
+            }
+            
+            if (resource.institution) {
+                html += `<span class="result-institution">${this.escapeHtml(resource.institution)}</span>`;
+            }
+            
+            html += `</div>`;
+            
+            if (resource.description) {
+                html += `<div class="result-description">${this.escapeHtml(resource.description)}</div>`;
+            }
+            
+            li.innerHTML = html;
+            resultsList.appendChild(li);
+        });
+    }
+    
+    displayActiveFilters() {
+        const container = document.getElementById('activeFilters');
+        container.innerHTML = '';
+        
+        let hasFilters = false;
+        
+        // Category filters
+        this.activeFilters.category.forEach(value => {
+            hasFilters = true;
+            container.appendChild(this.createFilterTag('Category', value, 'category'));
+        });
+        
+        // Institution filters
+        this.activeFilters.institution.forEach(value => {
+            hasFilters = true;
+            container.appendChild(this.createFilterTag('Institution', value, 'institution'));
+        });
+        
+        // Search filter
+        if (this.activeFilters.searchText) {
+            hasFilters = true;
+            const fieldLabel = document.getElementById('searchField').selectedOptions[0].text;
+            container.appendChild(this.createFilterTag(
+                `Search (${fieldLabel})`, 
+                this.activeFilters.searchText, 
+                'search'
+            ));
+        }
+        
+        container.style.display = hasFilters ? 'block' : 'none';
+    }
+    
+    createFilterTag(type, value, filterType) {
+        const tag = document.createElement('span');
+        tag.className = 'filter-tag';
+        tag.innerHTML = `${type}: ${this.escapeHtml(value)} <button>&times;</button>`;
+        
+        tag.querySelector('button').addEventListener('click', () => {
+            if (filterType === 'search') {
+                document.getElementById('searchInput').value = '';
+                this.activeFilters.searchText = '';
+            } else {
+                this.activeFilters[filterType].delete(value);
+                const checkbox = document.querySelector(
+                    `input[type="checkbox"][data-facet="${filterType}"][value="${value}"]`
+                );
+                if (checkbox) checkbox.checked = false;
+            }
+            this.applyFilters();
+        });
+        
+        return tag;
+    }
+    
+    updateResultsCount() {
+        const count = this.filteredResources.length;
+        const total = this.allResources.length;
+        const countEl = document.getElementById('resultsCount');
+        countEl.textContent = `Showing ${count} of ${total} resources`;
+    }
+    
+    clearAllFilters() {
+        this.activeFilters.category.clear();
+        this.activeFilters.institution.clear();
+        this.activeFilters.searchText = '';
+        this.activeFilters.searchField = 'all';
+        
+        document.getElementById('searchInput').value = '';
+        document.getElementById('searchField').value = 'all';
+        
+        document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+            cb.checked = false;
+        });
+        
+        this.applyFilters();
+    }
+    
+    escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+}
+
+// Initialize when data is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    if (typeof resourcesData !== 'undefined') {
+        new FacetedSearch(resourcesData);
+    } else {
+        console.error('Resources data not loaded');
+    }
+});
+</script>
