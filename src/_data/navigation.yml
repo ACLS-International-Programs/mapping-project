@@ -4,14 +4,20 @@ main:
     url: /searchdirectory
   - title: "HOME"
     url: /index
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "DIRECTORY"
+    url: /directorycategory/
+  - title: "ACCESS PARTNERS"
+    url: /accesspartners/
+  - title: "DATABASE WORKFLOWS"
+    url: /databaseworkflows/
+  - title: "NEWS"
+    url: /news/
+  - title: "ABOUT"
+    url: /about/
+  - title: "LUCE/ACLS PROGRAM"
+    url: https://www.acls.org/programs/luce-acls-program-in-china-studies/
 
-  # Custom sidebar navigation
+# Custom sidebar navigation
 main_sidebar:
   - title: "<h5><a href='/directorycategory/'>DIRECTORY</a></h5>"
   - title: "<h5><a href='/accesspartners/'>ACCESS PARTNERS</a></h5>"

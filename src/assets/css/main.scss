@@ -111,24 +111,9 @@ a {
     opacity: 0.8 !important;
   }
   
-  // Mobile responsive styles
+  // Hide sidebar completely on mobile
   @media screen and (max-width: 768px) {
-    margin-top: 0.5rem !important;
-    top: 0 !important;
-    padding: 0.75rem !important;
-    min-height: auto !important;
-    width: 75% !important;
-    position: relative !important;
-    
-    h5 {
-      font-size: 1.1rem !important;
-      line-height: 1.0 !important;
-      padding: 0.3rem !important;
-      
-      &:first-of-type {
-        margin-top: -5px !important;
-      }
-    }
+    display: none !important;
   }
   
   // Navigation-based sidebar styles
@@ -168,6 +153,7 @@ a {
           font-size: inherit !important;
           font-weight: inherit !important;
           text-transform: none !important;
+          visibility: visible !important;
           
           h5 {
             margin: 0 !important;
@@ -175,9 +161,52 @@ a {
             border: none !important;
             font-size: 1.25em !important;
             line-height: 1.2 !important;
+            display: block !important;
+            visibility: visible !important;
           }
         }
       }
+    }
+  }
+}
+
+// ============================================================================
+// 4a. MASTHEAD NAVIGATION (Hamburger Menu)
+// ============================================================================
+
+// Desktop: Hide sidebar navigation items, show only SEARCH and HOME
+.greedy-nav {
+  .visible-links {
+    li:nth-child(n+3) {
+      // Hide items 3+ (DIRECTORY, ACCESS PARTNERS, etc.) on desktop
+      @media screen and (min-width: 769px) {
+        display: none !important;
+      }
+    }
+  }
+  
+  // Mobile: Show hamburger button and all links
+  @media screen and (max-width: 768px) {
+    .visible-links {
+      display: flex !important;
+      
+      li {
+        display: block !important; // Show all items in mobile menu
+      }
+    }
+    
+    .hidden-links {
+      display: block !important;
+    }
+    
+    button {
+      display: block !important; // Force hamburger button to show
+      visibility: visible !important;
+    }
+    
+    .greedy-nav__toggle {
+      display: block !important;
+      visibility: visible !important;
     }
   }
 }
@@ -255,4 +284,27 @@ a {
 
 .masthead {
   border-bottom-color: #3d4144 !important;
+}
+
+// Ensure hamburger menu toggle is visible on mobile
+@media screen and (max-width: 768px) {
+  .greedy-nav__toggle {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+  }
+  
+  .greedy-nav .hidden-links {
+    display: none; // Hidden by default
+    
+    &.hidden {
+      display: none !important;
+    }
+  }
+  
+  // When button is pressed, show hidden links
+  .greedy-nav button[aria-expanded="true"] ~ .hidden-links {
+    display: block !important;
+  }
 }
