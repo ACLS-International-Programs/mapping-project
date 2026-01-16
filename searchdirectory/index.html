@@ -442,6 +442,28 @@
     flex-shrink: 0;
 }
 
+/* Access badge in facets */
+.facet-access-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-right: 0.4rem;
+}
+
+.facet-access-badge.open-access {
+    background-color: #28a745;
+    color: white;
+}
+
+.facet-access-badge.subscription {
+    background-color: #ffc107;
+    color: #333;
+}
+
 /* Results */
 .results-header {
     display: flex;
@@ -456,6 +478,28 @@
     font-size: 1rem;
     font-weight: 600;
     color: #333;
+}
+
+.share-search-btn {
+    background: #2B3AA8;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: background-color 0.2s;
+}
+
+.share-search-btn:hover {
+    background: #1a2570;
+}
+
+.share-search-btn.copied {
+    background: #28a745;
 }
 
 .active-filters {
@@ -515,6 +559,10 @@
     font-size: 0.8rem;
     color: #6c757d;
     margin-bottom: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .result-category {
@@ -522,11 +570,30 @@
     background: #e9ecef;
     padding: 0.2rem 0.5rem;
     border-radius: 3px;
-    margin-right: 0.5rem;
     font-size: 0.75rem;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.3px;
+}
+
+.result-access-badge {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.result-access-badge.open-access {
+    background-color: #28a745;
+    color: white;
+}
+
+.result-access-badge.subscription {
+    background-color: #ffc107;
+    color: #333;
 }
 
 .result-institution {
@@ -534,10 +601,48 @@
     font-size: 0.8rem;
 }
 
+/* Truncated description styles */
 .result-description {
     line-height: 1.5;
-    color: #444;
-    font-size: 0.9rem;
+    color: #555;
+    font-size: 0.8rem;
+}
+
+.result-description.truncated {
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.result-description.expanded {
+    display: block;
+}
+
+.expand-btn {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 0.75rem;
+    padding: 0.15rem 0;
+    margin-top: 0.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    transition: color 0.2s;
+}
+
+.expand-btn:hover {
+    color: #2B3AA8;
+}
+
+.expand-btn .chevron {
+    transition: transform 0.2s;
+}
+
+.expand-btn.expanded .chevron {
+    transform: rotate(180deg);
 }
 
 .no-results {
@@ -565,6 +670,12 @@
     .field-select {
         width: 100%;
     }
+    
+    .results-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
 }
 
 /* Show More/Less for long facet lists */
@@ -585,6 +696,14 @@
 
 .show-more-btn:hover {
     color: #1a2570;
+}
+
+/* Empty state for facets with no items */
+.facet-empty {
+    font-size: 0.8rem;
+    color: #999;
+    font-style: italic;
+    padding: 0.5rem;
 }
 </style>
 
@@ -621,15 +740,28 @@
     <aside class="search-sidebar">
         <div id="categoryFacet" class="facet-group">
             <h3 class="facet-title">Category</h3>
-            <ul class="facet-list" id="categoryList"></ul>
-        </div>
-
-        <div id="institutionFacet" class="facet-group">
-            <h3 class="facet-title">Institution</h3>
-            <ul class="facet-list collapsed" id="institutionList"></ul>
-            <button class="show-more-btn" id="institutionShowMore" style="display: none;">
+            <ul class="facet-list collapsed" id="categoryList"></ul>
+            <button class="show-more-btn" id="categoryShowMore" style="display: none;">
                 Show more
             </button>
+        </div>
+
+        <div id="accessFacet" class="facet-group">
+            <h3 class="facet-title">Access</h3>
+            <ul class="facet-list" id="accessList"></ul>
+        </div>
+
+        <div id="sourceListFacet" class="facet-group">
+            <h3 class="facet-title">Source List</h3>
+            <ul class="facet-list" id="sourceListList"></ul>
+        </div>
+
+        <div id="tagsFacet" class="facet-group">
+            <h3 class="facet-title">Tags</h3>
+            <ul class="facet-list" id="tagsList"></ul>
+            <div id="tagsEmpty" class="facet-empty" style="display: none;">
+                No tags available yet
+            </div>
         </div>
     </aside>
 
@@ -637,6 +769,13 @@
     <main class="search-main">
         <div class="results-header">
             <div class="results-count" id="resultsCount">Loading...</div>
+            <button class="share-search-btn" id="shareSearchBtn" title="Copy link to this search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+                <span>Share Search</span>
+            </button>
         </div>
         
         <div id="activeFilters" class="active-filters"></div>
@@ -654,41 +793,214 @@ class FacetedSearch {
         this.filteredResources = data;
         this.activeFilters = {
             category: new Set(),
-            institution: new Set(),
+            access: new Set(),
+            sourceList: new Set(),
+            tags: new Set(),
             searchText: '',
             searchField: 'all'
         };
+        
+        // Character limit for truncated descriptions
+        this.descriptionLimit = 300;
         
         this.init();
     }
     
     init() {
+        // Load state from URL first
+        this.loadStateFromURL();
+        
+        // Apply filters based on URL state (without updating URL)
+        this.applyFiltersInternal();
+        
         this.buildFacets();
         this.displayResults();
         this.attachEventListeners();
         this.updateResultsCount();
+        this.displayActiveFilters();
+        this.syncUIWithState();
+        
+        // Listen for browser back/forward
+        window.addEventListener('popstate', () => {
+            this.loadStateFromURL();
+            this.syncUIWithState();
+            this.applyFilters(false);
+        });
     }
     
-    buildFacets() {
-        // Build category facets
-        const categories = this.getFacetCounts('category');
-        this.renderFacets('categoryList', categories, 'category');
+    // === URL STATE MANAGEMENT ===
+    
+    loadStateFromURL() {
+        const params = new URLSearchParams(window.location.search);
         
-        // Build institution facets
-        const institutions = this.getFacetCounts('institution');
-        this.renderFacets('institutionList', institutions, 'institution');
+        // Reset filters
+        this.activeFilters.category.clear();
+        this.activeFilters.access.clear();
+        this.activeFilters.sourceList.clear();
+        this.activeFilters.tags.clear();
+        this.activeFilters.searchText = '';
+        this.activeFilters.searchField = 'all';
         
-        // Show "Show more" button if needed for institutions
-        if (institutions.length > 7) {
-            document.getElementById('institutionShowMore').style.display = 'block';
+        // Load categories
+        const categories = params.get('category');
+        if (categories) {
+            categories.split(',').forEach(c => this.activeFilters.category.add(decodeURIComponent(c)));
+        }
+        
+        // Load access
+        const access = params.get('access');
+        if (access) {
+            access.split(',').forEach(a => this.activeFilters.access.add(decodeURIComponent(a)));
+        }
+        
+        // Load source list
+        const sourceList = params.get('source');
+        if (sourceList) {
+            sourceList.split(',').forEach(s => this.activeFilters.sourceList.add(decodeURIComponent(s)));
+        }
+        
+        // Load tags
+        const tags = params.get('tags');
+        if (tags) {
+            tags.split(',').forEach(t => this.activeFilters.tags.add(decodeURIComponent(t)));
+        }
+        
+        // Load search text
+        const searchText = params.get('q');
+        if (searchText) {
+            this.activeFilters.searchText = decodeURIComponent(searchText).toLowerCase();
+        }
+        
+        // Load search field
+        const searchField = params.get('field');
+        if (searchField) {
+            this.activeFilters.searchField = decodeURIComponent(searchField);
         }
     }
     
-    getFacetCounts(field) {
+    updateURL() {
+        const params = new URLSearchParams();
+        
+        // Add categories
+        if (this.activeFilters.category.size > 0) {
+            params.set('category', Array.from(this.activeFilters.category).map(encodeURIComponent).join(','));
+        }
+        
+        // Add access
+        if (this.activeFilters.access.size > 0) {
+            params.set('access', Array.from(this.activeFilters.access).map(encodeURIComponent).join(','));
+        }
+        
+        // Add source list
+        if (this.activeFilters.sourceList.size > 0) {
+            params.set('source', Array.from(this.activeFilters.sourceList).map(encodeURIComponent).join(','));
+        }
+        
+        // Add tags
+        if (this.activeFilters.tags.size > 0) {
+            params.set('tags', Array.from(this.activeFilters.tags).map(encodeURIComponent).join(','));
+        }
+        
+        // Add search text
+        if (this.activeFilters.searchText) {
+            params.set('q', encodeURIComponent(this.activeFilters.searchText));
+        }
+        
+        // Add search field (only if not default)
+        if (this.activeFilters.searchField !== 'all') {
+            params.set('field', encodeURIComponent(this.activeFilters.searchField));
+        }
+        
+        // Update URL without page reload
+        const newURL = params.toString() 
+            ? `${window.location.pathname}?${params.toString()}`
+            : window.location.pathname;
+        
+        window.history.pushState({}, '', newURL);
+    }
+    
+    syncUIWithState() {
+        // Sync search input
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+            searchInput.value = this.activeFilters.searchText;
+        }
+        
+        // Sync search field
+        const searchField = document.getElementById('searchField');
+        if (searchField) {
+            searchField.value = this.activeFilters.searchField;
+        }
+        
+        // Sync checkboxes
+        document.querySelectorAll('input[type="checkbox"][data-facet]').forEach(cb => {
+            const facetType = cb.dataset.facet;
+            const value = cb.value;
+            cb.checked = this.activeFilters[facetType].has(value);
+        });
+    }
+    
+    copySearchURL() {
+        const url = window.location.href;
+        navigator.clipboard.writeText(url).then(() => {
+            const btn = document.getElementById('shareSearchBtn');
+            const originalText = btn.innerHTML;
+            btn.classList.add('copied');
+            btn.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Copied!</span>
+            `;
+            setTimeout(() => {
+                btn.classList.remove('copied');
+                btn.innerHTML = originalText;
+            }, 2000);
+        });
+    }
+    
+    // === FACET BUILDING ===
+    
+    buildFacets() {
+        // Build category facets from ALL resources (not filtered)
+        const categories = this.getFacetCountsFromAll('category');
+        this.renderFacets('categoryList', categories, 'category');
+        
+        // Show "Show more" button if needed for categories
+        if (categories.length > 7) {
+            document.getElementById('categoryShowMore').style.display = 'block';
+        }
+        
+        // Build access facets from ALL resources
+        const access = this.getFacetCountsFromAll('access');
+        this.renderFacets('accessList', access, 'access', true);
+        
+        // Build source list facets from ALL resources
+        const sourceLists = this.getFacetCountsFromAll('sourcelist');
+        this.renderFacets('sourceListList', sourceLists, 'sourceList');
+        
+        // Build tags facets from ALL resources
+        const tags = this.getTagsFacetCountsFromAll();
+        this.renderFacets('tagsList', tags, 'tags');
+        
+        // Show empty state for tags if no tags exist
+        const tagsEmpty = document.getElementById('tagsEmpty');
+        const tagsList = document.getElementById('tagsList');
+        if (tags.length === 0) {
+            tagsEmpty.style.display = 'block';
+            tagsList.style.display = 'none';
+        } else {
+            tagsEmpty.style.display = 'none';
+            tagsList.style.display = 'block';
+        }
+    }
+    
+    // Get facet counts from ALL resources (for independent facet selection)
+    getFacetCountsFromAll(field) {
         const counts = {};
-        this.filteredResources.forEach(resource => {
+        this.allResources.forEach(resource => {
             const value = resource[field];
-            if (value && value.trim()) {
+            if (value && typeof value === 'string' && value.trim()) {
                 counts[value] = (counts[value] || 0) + 1;
             }
         });
@@ -698,8 +1010,48 @@ class FacetedSearch {
             .map(([value, count]) => ({ value, count }));
     }
     
-    renderFacets(listId, facets, facetType) {
+    // Get filtered counts for display (shows how many match current filters)
+    getFilteredFacetCounts(field) {
+        const counts = {};
+        this.filteredResources.forEach(resource => {
+            const value = resource[field];
+            if (value && typeof value === 'string' && value.trim()) {
+                counts[value] = (counts[value] || 0) + 1;
+            }
+        });
+        return counts;
+    }
+    
+    // Special handler for tags from ALL resources
+    getTagsFacetCountsFromAll() {
+        const counts = {};
+        this.allResources.forEach(resource => {
+            const tags = resource.tags;
+            if (tags && Array.isArray(tags)) {
+                tags.forEach(tag => {
+                    if (tag && typeof tag === 'string' && tag.trim()) {
+                        counts[tag] = (counts[tag] || 0) + 1;
+                    }
+                });
+            } else if (tags && typeof tags === 'string' && tags.trim()) {
+                counts[tags] = (counts[tags] || 0) + 1;
+            }
+        });
+        
+        return Object.entries(counts)
+            .sort((a, b) => b[1] - a[1])
+            .map(([value, count]) => ({ value, count }));
+    }
+    
+    renderFacets(listId, facets, facetType, isAccessBadge = false) {
         const list = document.getElementById(listId);
+        if (!list) return;
+        
+        // Get filtered counts to show relevant numbers
+        const filteredCounts = facetType === 'tags' 
+            ? this.getFilteredTagsCounts()
+            : this.getFilteredFacetCounts(facetType === 'sourceList' ? 'sourcelist' : facetType);
+        
         list.innerHTML = '';
         
         facets.forEach(({ value, count }) => {
@@ -717,11 +1069,27 @@ class FacetedSearch {
             
             const labelText = document.createElement('span');
             labelText.className = 'facet-label';
-            labelText.textContent = value;
             
+            // Add badge for access facet
+            if (isAccessBadge) {
+                const badge = document.createElement('span');
+                badge.className = `facet-access-badge ${value.toLowerCase().replace(/\s+/g, '-')}`;
+                badge.textContent = value;
+                labelText.appendChild(badge);
+            } else {
+                labelText.textContent = value;
+            }
+            
+            // Show filtered count if different from total, otherwise show total
+            const filteredCount = filteredCounts[value] || 0;
             const countSpan = document.createElement('span');
             countSpan.className = 'facet-count';
-            countSpan.textContent = `(${count})`;
+            
+            if (this.hasActiveFilters() && filteredCount !== count) {
+                countSpan.textContent = `(${filteredCount}/${count})`;
+            } else {
+                countSpan.textContent = `(${count})`;
+            }
             
             label.appendChild(checkbox);
             label.appendChild(labelText);
@@ -731,23 +1099,65 @@ class FacetedSearch {
         });
     }
     
+    getFilteredTagsCounts() {
+        const counts = {};
+        this.filteredResources.forEach(resource => {
+            const tags = resource.tags;
+            if (tags && Array.isArray(tags)) {
+                tags.forEach(tag => {
+                    if (tag && typeof tag === 'string' && tag.trim()) {
+                        counts[tag] = (counts[tag] || 0) + 1;
+                    }
+                });
+            } else if (tags && typeof tags === 'string' && tags.trim()) {
+                counts[tags] = (counts[tags] || 0) + 1;
+            }
+        });
+        return counts;
+    }
+    
+    hasActiveFilters() {
+        return this.activeFilters.category.size > 0 ||
+               this.activeFilters.access.size > 0 ||
+               this.activeFilters.sourceList.size > 0 ||
+               this.activeFilters.tags.size > 0 ||
+               this.activeFilters.searchText;
+    }
+    
     attachEventListeners() {
         // Search input
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            this.activeFilters.searchText = e.target.value.toLowerCase();
-            this.applyFilters();
-        });
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                this.activeFilters.searchText = e.target.value.toLowerCase();
+                this.applyFilters();
+            });
+        }
         
         // Search field selector
-        document.getElementById('searchField').addEventListener('change', (e) => {
-            this.activeFilters.searchField = e.target.value;
-            this.applyFilters();
-        });
+        const searchField = document.getElementById('searchField');
+        if (searchField) {
+            searchField.addEventListener('change', (e) => {
+                this.activeFilters.searchField = e.target.value;
+                this.applyFilters();
+            });
+        }
         
         // Clear button
-        document.getElementById('clearBtn').addEventListener('click', () => {
-            this.clearAllFilters();
-        });
+        const clearBtn = document.getElementById('clearBtn');
+        if (clearBtn) {
+            clearBtn.addEventListener('click', () => {
+                this.clearAllFilters();
+            });
+        }
+        
+        // Share search button
+        const shareBtn = document.getElementById('shareSearchBtn');
+        if (shareBtn) {
+            shareBtn.addEventListener('click', () => {
+                this.copySearchURL();
+            });
+        }
         
         // Facet checkboxes
         document.addEventListener('change', (e) => {
@@ -765,41 +1175,67 @@ class FacetedSearch {
             }
         });
         
-        // Show more/less for institutions
-        const showMoreBtn = document.getElementById('institutionShowMore');
-        showMoreBtn.addEventListener('click', () => {
-            const list = document.getElementById('institutionList');
-            const isCollapsed = list.classList.contains('collapsed');
-            
-            if (isCollapsed) {
-                list.classList.remove('collapsed');
-                showMoreBtn.textContent = 'Show less';
-            } else {
-                list.classList.add('collapsed');
-                showMoreBtn.textContent = 'Show more';
+        // Show more/less for categories
+        const categoryShowMoreBtn = document.getElementById('categoryShowMore');
+        if (categoryShowMoreBtn) {
+            categoryShowMoreBtn.addEventListener('click', () => {
+                const list = document.getElementById('categoryList');
+                const isCollapsed = list.classList.contains('collapsed');
+                
+                if (isCollapsed) {
+                    list.classList.remove('collapsed');
+                    categoryShowMoreBtn.textContent = 'Show less';
+                } else {
+                    list.classList.add('collapsed');
+                    categoryShowMoreBtn.textContent = 'Show more';
+                }
+            });
+        }
+        
+        // Delegate expand/collapse for descriptions
+        document.addEventListener('click', (e) => {
+            const btn = e.target.closest('.expand-btn');
+            if (btn) {
+                const description = btn.previousElementSibling;
+                if (description.classList.contains('truncated')) {
+                    description.classList.remove('truncated');
+                    description.classList.add('expanded');
+                    btn.classList.add('expanded');
+                } else {
+                    description.classList.remove('expanded');
+                    description.classList.add('truncated');
+                    btn.classList.remove('expanded');
+                }
             }
         });
     }
     
-    applyFilters() {
-        // Start with all resources
+    // Internal filter application (no URL update)
+    applyFiltersInternal() {
         let filtered = this.allResources;
         
-        // Apply category filter
         if (this.activeFilters.category.size > 0) {
-            filtered = filtered.filter(r => 
-                this.activeFilters.category.has(r.category)
-            );
+            filtered = filtered.filter(r => this.activeFilters.category.has(r.category));
         }
         
-        // Apply institution filter
-        if (this.activeFilters.institution.size > 0) {
-            filtered = filtered.filter(r => 
-                r.institution && this.activeFilters.institution.has(r.institution)
-            );
+        if (this.activeFilters.access.size > 0) {
+            filtered = filtered.filter(r => r.access && this.activeFilters.access.has(r.access));
         }
         
-        // Apply text search
+        if (this.activeFilters.sourceList.size > 0) {
+            filtered = filtered.filter(r => r.sourcelist && this.activeFilters.sourceList.has(r.sourcelist));
+        }
+        
+        if (this.activeFilters.tags.size > 0) {
+            filtered = filtered.filter(r => {
+                if (!r.tags) return false;
+                if (Array.isArray(r.tags)) {
+                    return r.tags.some(tag => this.activeFilters.tags.has(tag));
+                }
+                return this.activeFilters.tags.has(r.tags);
+            });
+        }
+        
         if (this.activeFilters.searchText) {
             filtered = filtered.filter(r => {
                 const searchText = this.activeFilters.searchText;
@@ -815,14 +1251,23 @@ class FacetedSearch {
         }
         
         this.filteredResources = filtered;
+    }
+    
+    applyFilters(updateURL = true) {
+        this.applyFiltersInternal();
+        
         this.buildFacets();
         this.displayResults();
         this.displayActiveFilters();
         this.updateResultsCount();
+        
+        if (updateURL) {
+            this.updateURL();
+        }
     }
     
     searchInAllFields(resource, searchText) {
-        const searchableFields = ['title', 'description', 'institution', 'category'];
+        const searchableFields = ['title', 'description', 'institution', 'category', 'access', 'sourcelist'];
         return searchableFields.some(field => {
             const value = (resource[field] || '').toLowerCase();
             return value.includes(searchText);
@@ -831,6 +1276,8 @@ class FacetedSearch {
     
     displayResults() {
         const resultsList = document.getElementById('resultsList');
+        if (!resultsList) return;
+        
         resultsList.innerHTML = '';
         
         if (this.filteredResources.length === 0) {
@@ -844,7 +1291,7 @@ class FacetedSearch {
             
             let html = `
                 <div class="result-title">
-                    <a href="${resource.url}">${this.escapeHtml(resource.title)}</a>
+                    <a href="${resource.url}">${this.escapeHtml(resource.title || '')}</a>
                 </div>
                 <div class="result-meta">
             `;
@@ -853,14 +1300,28 @@ class FacetedSearch {
                 html += `<span class="result-category">${this.escapeHtml(resource.category)}</span>`;
             }
             
+            if (resource.access) {
+                const accessClass = resource.access.toLowerCase().replace(/\s+/g, '-');
+                html += `<span class="result-access-badge ${accessClass}">${this.escapeHtml(resource.access)}</span>`;
+            }
+            
             if (resource.institution) {
                 html += `<span class="result-institution">${this.escapeHtml(resource.institution)}</span>`;
             }
             
             html += `</div>`;
             
+            // Handle description with truncation
             if (resource.description) {
-                html += `<div class="result-description">${this.escapeHtml(resource.description)}</div>`;
+                const desc = this.escapeHtml(resource.description);
+                const needsTruncation = desc.length > this.descriptionLimit;
+                
+                if (needsTruncation) {
+                    html += `<div class="result-description truncated">${desc}</div>`;
+                    html += `<button class="expand-btn" aria-label="Expand description"><svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>`;
+                } else {
+                    html += `<div class="result-description">${desc}</div>`;
+                }
             }
             
             li.innerHTML = html;
@@ -870,6 +1331,8 @@ class FacetedSearch {
     
     displayActiveFilters() {
         const container = document.getElementById('activeFilters');
+        if (!container) return;
+        
         container.innerHTML = '';
         
         let hasFilters = false;
@@ -880,16 +1343,29 @@ class FacetedSearch {
             container.appendChild(this.createFilterTag('Category', value, 'category'));
         });
         
-        // Institution filters
-        this.activeFilters.institution.forEach(value => {
+        // Access filters
+        this.activeFilters.access.forEach(value => {
             hasFilters = true;
-            container.appendChild(this.createFilterTag('Institution', value, 'institution'));
+            container.appendChild(this.createFilterTag('Access', value, 'access'));
+        });
+        
+        // Source List filters
+        this.activeFilters.sourceList.forEach(value => {
+            hasFilters = true;
+            container.appendChild(this.createFilterTag('Source List', value, 'sourceList'));
+        });
+        
+        // Tags filters
+        this.activeFilters.tags.forEach(value => {
+            hasFilters = true;
+            container.appendChild(this.createFilterTag('Tags', value, 'tags'));
         });
         
         // Search filter
         if (this.activeFilters.searchText) {
             hasFilters = true;
-            const fieldLabel = document.getElementById('searchField').selectedOptions[0].text;
+            const fieldSelect = document.getElementById('searchField');
+            const fieldLabel = fieldSelect ? fieldSelect.selectedOptions[0].text : 'All Fields';
             container.appendChild(this.createFilterTag(
                 `Search (${fieldLabel})`, 
                 this.activeFilters.searchText, 
@@ -907,12 +1383,13 @@ class FacetedSearch {
         
         tag.querySelector('button').addEventListener('click', () => {
             if (filterType === 'search') {
-                document.getElementById('searchInput').value = '';
+                const searchInput = document.getElementById('searchInput');
+                if (searchInput) searchInput.value = '';
                 this.activeFilters.searchText = '';
             } else {
                 this.activeFilters[filterType].delete(value);
                 const checkbox = document.querySelector(
-                    `input[type="checkbox"][data-facet="${filterType}"][value="${value}"]`
+                    `input[type="checkbox"][data-facet="${filterType}"][value="${CSS.escape(value)}"]`
                 );
                 if (checkbox) checkbox.checked = false;
             }
@@ -926,17 +1403,24 @@ class FacetedSearch {
         const count = this.filteredResources.length;
         const total = this.allResources.length;
         const countEl = document.getElementById('resultsCount');
-        countEl.textContent = `Showing ${count} of ${total} resources`;
+        if (countEl) {
+            countEl.textContent = `Showing ${count} of ${total} resources`;
+        }
     }
     
     clearAllFilters() {
         this.activeFilters.category.clear();
-        this.activeFilters.institution.clear();
+        this.activeFilters.access.clear();
+        this.activeFilters.sourceList.clear();
+        this.activeFilters.tags.clear();
         this.activeFilters.searchText = '';
         this.activeFilters.searchField = 'all';
         
-        document.getElementById('searchInput').value = '';
-        document.getElementById('searchField').value = 'all';
+        const searchInput = document.getElementById('searchInput');
+        const searchField = document.getElementById('searchField');
+        
+        if (searchInput) searchInput.value = '';
+        if (searchField) searchField.value = 'all';
         
         document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
             cb.checked = false;
@@ -946,18 +1430,24 @@ class FacetedSearch {
     }
     
     escapeHtml(text) {
+        if (!text) return '';
         const div = document.createElement('div');
         div.textContent = text;
         return div.innerHTML;
     }
 }
 
-// Initialize when data is loaded
+// Initialize when DOM is ready and data is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    if (typeof resourcesData !== 'undefined') {
+    if (typeof resourcesData !== 'undefined' && Array.isArray(resourcesData)) {
+        console.log('Initializing FacetedSearch with', resourcesData.length, 'resources');
         new FacetedSearch(resourcesData);
     } else {
-        console.error('Resources data not loaded');
+        console.error('Resources data not loaded or invalid');
+        const resultsCount = document.getElementById('resultsCount');
+        if (resultsCount) {
+            resultsCount.textContent = 'Error loading resources data';
+        }
     }
 });
 </script>
