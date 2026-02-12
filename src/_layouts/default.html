@@ -13,7 +13,7 @@
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
 
-    <div class="initial-content">
+    <div id="main" class="initial-content">
       {{ content }}
       {% include after-content.html %}
     </div>
@@ -23,13 +23,15 @@
         {% include_cached search/search_form.html %}
       </div>
     {% endif %}
-    {% comment %}
-    <div class="page__footer">
+    
+    <div id="footer" class="page__footer">
+      {% comment %}
       <footer>
         {% include footer.html %}
       </footer>
+      {% endcomment %}
     </div>
-    {% endcomment %}
+
     {% include scripts.html %}
   </body>
 </html>
