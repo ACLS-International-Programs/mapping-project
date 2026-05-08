@@ -591,3 +591,169 @@ a {
   background-color: #ffc107;
   color: #333;
 }
+
+// ============================================================================
+// 12. LANDING PAGE
+// ============================================================================
+
+.hero-banner {
+  display: block;
+  width: 100%;
+  margin: 0 0 2.5rem 0;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none !important;
+  transition: opacity 0.2s ease;
+
+  &:hover { opacity: 0.88; }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+}
+
+.lp-heading {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 300;
+  font-size: 1.05rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 0.5rem;
+  margin: 2.5rem 0 1.2rem 0;
+}
+
+.lp-body {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #2e2e2e;
+  max-width: 720px;
+}
+
+// Navigation cards
+.lp-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0 2.5rem 0;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lp-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none !important;
+  background: #FAFAFA;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    border-color: #2B3AA8;
+    box-shadow: 0 2px 12px rgba(43,58,168,0.08);
+  }
+}
+
+// Thumbnail image area — preserves 5:3 natural ratio of the icons
+.lp-card-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  overflow: hidden;
+  background: #FAFAFA;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+// Text body below thumbnail
+.lp-card-body {
+  padding: 1rem 1.2rem 1.1rem 1.2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.lp-card-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #2B3AA8;
+  margin: 0;
+}
+
+.lp-card-desc {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+.lp-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 2rem 0;
+}
+
+.lp-collab {
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: #444;
+  max-width: 720px;
+  margin-bottom: 2rem;
+
+  a {
+    color: inherit !important;
+    text-decoration: underline !important;
+    text-decoration-color: #2B3AA8 !important;
+    text-decoration-thickness: 1.5px !important;
+    text-underline-offset: 3px !important;
+  }
+}
+
+.lp-logos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding: 1.2rem 0 0.5rem 0;
+  border-top: 1px solid #e0e0e0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+
+    &:hover { opacity: 1; }
+  }
+
+  img { height: 36px; width: auto; }
+}
+
+.lp-cc {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  color: #888;
+  letter-spacing: 0.05em;
+  text-decoration: none !important;
+
+  &:hover { color: #444; }
+}
