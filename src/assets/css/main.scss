@@ -804,3 +804,38 @@ a {
     &:hover { color: #444; }
   }
 }
+
+// ============================================================================
+// 13. RESOURCE PAGE
+// ============================================================================
+
+.resource-fields {
+  margin-top: 1rem;
+}
+
+.resource-field {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e0e0e0;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.resource-field-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: #888;
+  margin: 0 0 0.35rem 0;
+  line-height: 1.2;
+}
+
+.resource-field-value {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #2e2e2e;
+}
