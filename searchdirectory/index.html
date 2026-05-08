@@ -270,10 +270,10 @@
 .search-wrapper {
     display: flex;
     align-items: stretch;
-    border: 2px solid #333;
+    border: 2px solid #1a1a1a;
     border-radius: 4px;
     overflow: hidden;
-    background: white;
+    background: #FAFAFA;
     transition: border-color 0.2s;
 }
 
@@ -285,12 +285,12 @@
     padding: 0.75rem 1.25rem;
     padding-right: 2.5rem;
     border: none;
-    border-right: 2px solid #333;
+    border-right: 2px solid #1a1a1a;
     font-size: 0.95rem;
-    background: white;
+    background: #FAFAFA;
     cursor: pointer;
     font-weight: 500;
-    color: #333;
+    color: #1a1a1a;
     appearance: none;
     outline: none;
     line-height: normal;
@@ -328,7 +328,7 @@
     background: transparent;
     color: #666;
     border: none;
-    border-left: 2px solid #333;
+    border-left: 2px solid #1a1a1a;
     cursor: pointer;
     font-size: 1.5rem;
     font-weight: 300;
@@ -341,7 +341,7 @@
 
 .clear-btn:hover {
     background: #f0f0f0;
-    color: #333;
+    color: #1a1a1a;
 }
 
 .search-btn {
@@ -349,7 +349,7 @@
     background: transparent;
     color: #666;
     border: none;
-    border-left: 2px solid #333;
+    border-left: 2px solid #1a1a1a;
     cursor: pointer;
     font-size: 1.1rem;
     display: flex;
@@ -360,7 +360,7 @@
 
 .search-btn:hover {
     background: #f0f0f0;
-    color: #333;
+    color: #1a1a1a;
 }
 
 /* Faceted Search Styles */
@@ -383,9 +383,9 @@
 /* Facet Groups */
 .facet-group {
     margin-bottom: 1.25rem;
-    background: white;
-    border: 1px solid #e9ecef;
-    border-radius: 6px;
+    background: #FAFAFA;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
     padding: 1rem;
 }
 
@@ -395,7 +395,7 @@
     text-transform: uppercase;
     color: #2B3AA8;
     margin: 0 0 0.75rem 0;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.12em;
 }
 
 .facet-list {
@@ -413,12 +413,12 @@
     align-items: flex-start;
     cursor: pointer;
     padding: 0.3rem 0.25rem;
-    border-radius: 3px;
+    border-radius: 4px;
     transition: background-color 0.2s;
 }
 
 .facet-checkbox:hover {
-    background-color: #f8f9fa;
+    background-color: #f0f0f0;
 }
 
 .facet-checkbox input[type="checkbox"] {
@@ -436,7 +436,7 @@
 }
 
 .facet-count {
-    color: #6c757d;
+    color: #888;
     font-size: 0.85rem;
     margin-left: 0.4rem;
     flex-shrink: 0;
@@ -446,11 +446,11 @@
 .facet-access-badge {
     display: inline-block;
     padding: 2px 6px;
-    border-radius: 3px;
+    border-radius: 4px;
     font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.08em;
     margin-right: 0.4rem;
 }
 
@@ -461,7 +461,7 @@
 
 .facet-access-badge.subscription {
     background-color: #ffc107;
-    color: #333;
+    color: #1a1a1a;
 }
 
 /* Results */
@@ -471,13 +471,13 @@
     align-items: center;
     margin-bottom: 1.25rem;
     padding-bottom: 0.75rem;
-    border-bottom: 2px solid #e9ecef;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 .results-count {
     font-size: 1rem;
     font-weight: 600;
-    color: #333;
+    color: #1a1a1a;
 }
 
 .share-search-btn {
@@ -495,7 +495,7 @@
 }
 
 .share-search-btn:hover {
-    background: #1a2570;
+    background: #1e2a7a;
 }
 
 .share-search-btn.copied {
@@ -534,7 +534,7 @@
 .result-item {
     margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid #e9ecef;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .result-item:last-child {
@@ -557,7 +557,7 @@
 
 .result-meta {
     font-size: 0.8rem;
-    color: #6c757d;
+    color: #888;
     margin-bottom: 0.6rem;
     display: flex;
     flex-wrap: wrap;
@@ -567,23 +567,23 @@
 
 .result-category {
     display: inline-block;
-    background: #e9ecef;
+    background: #e0e0e0;
     padding: 0.2rem 0.5rem;
-    border-radius: 3px;
+    border-radius: 4px;
     font-size: 0.75rem;
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.08em;
 }
 
 .result-access-badge {
     display: inline-block;
     padding: 0.2rem 0.5rem;
-    border-radius: 3px;
+    border-radius: 4px;
     font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.08em;
 }
 
 .result-access-badge.open-access {
@@ -593,12 +593,14 @@
 
 .result-access-badge.subscription {
     background-color: #ffc107;
-    color: #333;
+    color: #1a1a1a;
 }
 
 .result-institution {
-    font-style: italic;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 0.4rem;
 }
 
 /* Truncated description styles */
@@ -648,7 +650,7 @@
 .no-results {
     text-align: center;
     padding: 3rem;
-    color: #6c757d;
+    color: #888;
     font-size: 0.95rem;
 }
 
@@ -695,7 +697,7 @@
 }
 
 .show-more-btn:hover {
-    color: #1a2570;
+    color: #1e2a7a;
 }
 
 /* Empty state for facets with no items */
@@ -1299,17 +1301,17 @@ class FacetedSearch {
             if (resource.category) {
                 html += `<span class="result-category">${this.escapeHtml(resource.category)}</span>`;
             }
-            
+
             if (resource.access) {
                 const accessClass = resource.access.toLowerCase().replace(/\s+/g, '-');
                 html += `<span class="result-access-badge ${accessClass}">${this.escapeHtml(resource.access)}</span>`;
             }
-            
-            if (resource.institution) {
-                html += `<span class="result-institution">${this.escapeHtml(resource.institution)}</span>`;
-            }
-            
+
             html += `</div>`;
+
+            if (resource.institution) {
+                html += `<div class="result-institution">${this.escapeHtml(resource.institution)}</div>`;
+            }
             
             // Handle description with truncation
             if (resource.description) {
