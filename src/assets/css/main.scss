@@ -104,9 +104,11 @@ a {
     color: #1a1a1a !important;
   }
 
-  h5 a:hover {
-    color: #2B3AA8 !important;
-    opacity: 1 !important;
+  @media (hover: hover) {
+    h5 a:hover {
+      color: #2B3AA8 !important;
+      opacity: 1 !important;
+    }
   }
 
   // Hide sidebar completely on mobile
@@ -174,39 +176,73 @@ a {
 // 4a. MASTHEAD NAVIGATION (Hamburger Menu)
 // ============================================================================
 
-// Desktop: Hide sidebar navigation items, show only SEARCH and HOME
+// Desktop: only SEARCH (item 1) and HOME (item 2) visible in masthead.
+// Mobile: only HOME visible — DIRECTORY in the hamburger covers search.
+// Items 3+ always hidden from visible-links (they live in sidebar/mobile-nav).
 .greedy-nav {
-  .visible-links {
-    li:nth-child(n+3) {
-      // Hide items 3+ (DIRECTORY, ACCESS PARTNERS, etc.) on desktop
-      @media screen and (min-width: 769px) {
-        display: none !important;
-      }
+  .visible-links li:nth-child(n+3) {
+    display: none !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    .visible-links li:nth-child(1),
+    .visible-links li:nth-child(2) {
+      display: none !important; // Hide SEARCH and HOME; hamburger covers navigation
     }
   }
-  
-  // Mobile: Show hamburger button and all links
+
+  // Mobile: show hamburger, suppress the default hidden-links dropdown
+  // (our #mobile-nav overlay replaces it)
   @media screen and (max-width: 768px) {
-    .visible-links {
-      display: flex !important;
-      
-      li {
-        display: block !important; // Show all items in mobile menu
-      }
-    }
-    
     .hidden-links {
-      display: block !important;
+      display: none !important;
     }
-    
-    button {
-      display: block !important; // Force hamburger button to show
-      visibility: visible !important;
-    }
-    
+
+    button,
     .greedy-nav__toggle {
       display: block !important;
       visibility: visible !important;
+      opacity: 1 !important;
+    }
+  }
+}
+
+// Mobile nav overlay panel
+.mobile-nav {
+  display: none; // hidden on desktop and by default on mobile
+
+  @media screen and (max-width: 768px) {
+    &.is-open {
+      display: block;
+      background: #FAFAFA;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 2rem 1.5rem 1.5rem 1.5rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 0 1.2em 0;
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  a {
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-weight: 300 !important;
+    font-size: 0.9rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    color: #1a1a1a !important;
+    text-decoration: none !important;
+
+    @media (hover: hover) {
+      &:hover { color: #2B3AA8 !important; }
     }
   }
 }
@@ -452,8 +488,10 @@ a {
     text-decoration: none;
     font-weight: inherit;
     
-    &:hover {
-      text-decoration: underline;
+    @media (hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -482,11 +520,16 @@ a {
 
 // Make site title/header text bigger
 .site-title {
-  font-size: 1.2rem !important; // Reduced to 1.2rem
-  
+  font-size: 1.2rem !important;
+  letter-spacing: 0.12em !important;
+
   @media screen and (max-width: 768px) {
     font-size: 1.5rem !important;
   }
+}
+
+.masthead__menu-item {
+  letter-spacing: 0.08em !important;
 }
 
 // Hide subtitle on mobile
@@ -547,8 +590,10 @@ a {
 }
 
 // Optional: Add hover effect
-.access-badge:hover {
-  opacity: 0.9;
+@media (hover: hover) {
+  .access-badge:hover {
+    opacity: 0.9;
+  }
 }
 
 // Last modified styling - make it subtle
@@ -827,15 +872,65 @@ a {
 }
 
 .resource-field-label {
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  color: #888;
-  margin: 0 0 0.35rem 0;
-  line-height: 1.2;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #888 !important;
+  margin: 0 0 0.35rem 0 !important;
+  line-height: 1.2 !important;
 }
 
 .resource-field-value {
   font-size: 16px;
   line-height: 1.75;
   color: #2e2e2e;
+}
+
+// ============================================================================
+// 14. NEWS PAGE
+// ============================================================================
+
+.news-item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e0e0e0;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.news-title {
+  font-size: 1.1rem !important;
+  font-weight: 300 !important;
+  line-height: 1.4 !important;
+  color: #2e2e2e !important;
+  text-decoration: underline !important;
+  text-decoration-color: #2B3AA8 !important;
+  text-decoration-thickness: 1.5px !important;
+  text-underline-offset: 4px !important;
+}
+
+.news-date {
+  font-size: 0.8rem !important;
+  color: #888;
+  margin: 0.25rem 0 0.4rem 0 !important;
+  letter-spacing: 0.05em;
+}
+
+.news-excerpt-link {
+  display: block;
+  font-size: 16px !important;
+  line-height: 1.75 !important;
+  color: #2e2e2e !important;
+  text-decoration: none !important;
+  margin: 0 !important;
+}
+
+.news-error {
+  color: #888;
+  font-size: 16px !important;
 }

@@ -6,23 +6,31 @@ classes: wide
 sidebar:
   nav: "main_sidebar"
 ---
-<br>
-<a href="https://www.acls.org/news/acls-awards-inaugural-luce-acls-collaborative-grant-in-china-studies">ACLS Awards Inaugural Luce/ACLS Collaborative Grant in China Studies</a>
-<p>September 24, 2024</p>
-<p>$150,000 grant will fund the development of resources to promote a broader diversity of China's ethnic and cultural perspectives in China studies curricula at North American colleges and universities</p>
 
-<a href="https://www.acls.org/news/luce-acls-digital-archives-mapping-project-publishes-open-database-resource-guide-for-china-studies">Luce/ACLS Digital Archives Mapping Project Publishes Open Database Resource Guide for China Studies</a>
-<p>September 19, 2024</p>
-<p>ACLS is pleased to share a new resource guide on open databases for China studies highlighting online repositories that offer free access to large primary source sets.</p>
+{% if site.data.acls_news and site.data.acls_news.items.size > 0 %}
 
-<a href="https://www.acls.org/news/luce-acls-program-in-china-studies-report-and-awardees-featured-in-wall-street-journal">Luce/ACLS Program in China Studies Report and Awardees Featured in Wall Street Journal</a>
-<p>September 11, 2024</p>
-<p>The report "China Studies in an Uncertain Age" is featured in a Wall Street Journal article about challenges faced by Western scholars studying China.</p>
+  {% for item in site.data.acls_news.items %}
+  <div class="news-item">
+    <a class="news-title" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+    {% if item.date != "" %}
+    <p class="news-date">{{ item.date }}</p>
+    {% endif %}
+    {% if item.excerpt != "" %}
+    <a class="news-excerpt-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.excerpt }}<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-left:0.3em;flex-shrink:0"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+    {% endif %}
+  </div>
+  {% endfor %}
 
-<a href="https://www.acls.org/news/acls-convenes-china-studies-libraries-working-group-to-build-common-access-plan">ACLS Convenes China Studies Libraries Working Group to Build Common Access Plan</a>
-<p>May 30, 2024</p>
-<p>ACLS convened libraries as part of the Luce/ACLS Digital Archives Mapping Project to expand equitable access to primary materials for China studies research.</p>
+{% elsif site.data.acls_news and site.data.acls_news.error %}
 
-<a href="https://www.acls.org/news/acls-announces-2024-luce-acls-program-in-china-studies-fellows-and-grantees">ACLS Announces 2024 Luce/ACLS Program in China Studies Fellows and Grantees</a>
-<p>April 25, 2024</p>
-<p>Fellowships and grants totaling $475,000 support research, writing, and travel for early-career scholars and graduate students in the field of China studies</p>
+  <p class="news-error">
+    News could not be loaded at build time. Visit the
+    <a href="https://www.acls.org/acls-news/?_news_related_program=25469" target="_blank" rel="noopener noreferrer">ACLS news page</a>
+    directly for the latest announcements.
+  </p>
+
+{% else %}
+
+  <p class="news-error">No news items found.</p>
+
+{% endif %}
