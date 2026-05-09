@@ -164,6 +164,17 @@
   </div>
 </div>
 
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+  <ul class="mobile-nav__list">
+    <li><a href="/searchdirectory/">DIRECTORY</a></li>
+    <li><a href="/accesspartners/">ACCESS PARTNERS</a></li>
+    <li><a href="/databaseworkflows/">DATABASE WORKFLOWS</a></li>
+    <li><a href="/news/">NEWS</a></li>
+    <li><a href="/about/">ABOUT</a></li>
+    <li><a href="https://www.acls.org/programs/luce-acls-program-in-china-studies/" target="_blank" rel="noopener noreferrer">LUCE/ACLS PROGRAM IN CHINA STUDIES</a></li>
+  </ul>
+</nav>
+
 
     <div class="initial-content">
       
@@ -339,10 +350,7 @@
     transition: background-color 0.2s;
 }
 
-.clear-btn:hover {
-    background: #f0f0f0;
-    color: #1a1a1a;
-}
+/* .clear-btn:hover moved to @media (hover: hover) block below */
 
 .search-btn {
     padding: 0 1rem;
@@ -358,10 +366,7 @@
     transition: background-color 0.2s;
 }
 
-.search-btn:hover {
-    background: #f0f0f0;
-    color: #1a1a1a;
-}
+/* .search-btn:hover moved to @media (hover: hover) block below */
 
 /* Faceted Search Styles */
 .faceted-search-container {
@@ -417,9 +422,7 @@
     transition: background-color 0.2s;
 }
 
-.facet-checkbox:hover {
-    background-color: #f0f0f0;
-}
+/* .facet-checkbox:hover moved to @media (hover: hover) block below */
 
 .facet-checkbox input[type="checkbox"] {
     margin-right: 0.5rem;
@@ -433,6 +436,12 @@
     font-size: 0.85rem;
     line-height: 1.3;
     word-wrap: break-word;
+}
+
+#categoryList .facet-label,
+#sourceListList .facet-label {
+    text-transform: uppercase !important;
+    font-size: 0.75rem !important;
 }
 
 .facet-count {
@@ -494,9 +503,7 @@
     transition: background-color 0.2s;
 }
 
-.share-search-btn:hover {
-    background: #1e2a7a;
-}
+/* .share-search-btn:hover moved to @media (hover: hover) block below */
 
 .share-search-btn.copied {
     background: #28a745;
@@ -547,13 +554,12 @@
 }
 
 .result-title a {
-    color: #2B3AA8;
-    text-decoration: none;
+    color: #2B3AA8 !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
 }
 
-.result-title a:hover {
-    text-decoration: underline;
-}
+/* .result-title a:hover moved to @media (hover: hover) block below */
 
 .result-meta {
     font-size: 0.8rem;
@@ -635,9 +641,7 @@
     transition: color 0.2s;
 }
 
-.expand-btn:hover {
-    color: #2B3AA8;
-}
+/* .expand-btn:hover moved to @media (hover: hover) block below */
 
 .expand-btn .chevron {
     transition: transform 0.2s;
@@ -696,8 +700,16 @@
     margin-top: 0.25rem;
 }
 
-.show-more-btn:hover {
-    color: #1e2a7a;
+/* .show-more-btn:hover moved to @media (hover: hover) block below */
+
+@media (hover: hover) {
+    .clear-btn:hover         { background: #f0f0f0; color: #1a1a1a; }
+    .search-btn:hover        { background: #f0f0f0; color: #1a1a1a; }
+    .facet-checkbox:hover    { background-color: #f0f0f0; }
+    .share-search-btn:hover  { background: #1e2a7a; }
+    .result-title a:hover    { text-decoration: underline; }
+    .expand-btn:hover        { color: #2B3AA8; }
+    .show-more-btn:hover     { color: #1e2a7a; }
 }
 
 /* Empty state for facets with no items */
@@ -1508,5 +1520,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+    <script src="/assets/js/sidebar-toggle.js"></script>
   </body>
 </html>
