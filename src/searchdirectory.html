@@ -323,14 +323,15 @@ header:
 }
 
 .result-title {
-    font-size: 1.1rem;
+    margin-top: 0;
     margin-bottom: 0.4rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .result-title a {
     color: #2B3AA8 !important;
     text-decoration: none !important;
-    text-transform: uppercase !important;
 }
 
 /* .result-title a:hover moved to @media (hover: hover) block below */
@@ -378,8 +379,8 @@ header:
 
 .result-institution {
     font-size: 0.85rem;
-    font-weight: 500;
-    color: #1a1a1a;
+    font-weight: 400;
+    color: #555;
     margin-bottom: 0.4rem;
 }
 
@@ -481,7 +482,7 @@ header:
     .search-btn:hover        { background: #f0f0f0; color: #1a1a1a; }
     .facet-checkbox:hover    { background-color: #f0f0f0; }
     .share-search-btn:hover  { background: #1e2a7a; }
-    .result-title a:hover    { text-decoration: underline; }
+    .result-title a:hover    { text-decoration: underline !important; }
     .expand-btn:hover        { color: #2B3AA8; }
     .show-more-btn:hover     { color: #1e2a7a; }
 }
@@ -1078,9 +1079,9 @@ class FacetedSearch {
             li.className = 'result-item';
             
             let html = `
-                <div class="result-title">
+                <h3 class="result-title">
                     <a href="${resource.url}">${this.escapeHtml(resource.title || '')}</a>
-                </div>
+                </h3>
                 <div class="result-meta">
             `;
             
@@ -1106,7 +1107,7 @@ class FacetedSearch {
                 
                 if (needsTruncation) {
                     html += `<div class="result-description truncated">${desc}</div>`;
-                    html += `<button class="expand-btn" aria-label="Expand description"><svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>`;
+                    html += `<button class="expand-btn" aria-label="Expand description"><svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>`;
                 } else {
                     html += `<div class="result-description">${desc}</div>`;
                 }

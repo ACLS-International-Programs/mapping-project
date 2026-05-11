@@ -8,7 +8,7 @@ home:
     description: "Locate a library partner to access walk-in services for non-affiliated researchers."
     image: "/assets/images/partners.png"
     image_alt: "Library Access"
-    url: "/accesspartners/"
+    url: "/libraryaccess/"
   - title: "Database Workflows"
     description: "Coming soon — database workflows and AI tools for researchers and librarians."
     image: "/assets/images/workflows.png"

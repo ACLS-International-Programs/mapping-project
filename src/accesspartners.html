@@ -1,0 +1,295 @@
+---
+title: "ACCESS PARTNERS"
+layout: single
+search: false
+classes: wide
+permalink: /libraryaccess/
+excerpt: "China studies libraries offering walk-in access for non-affiliated researchers"
+header:
+    overlay_color: "#1B4F72"
+---
+
+<style>
+/* Page width overrides */
+.page {
+    width: 100% !important;
+    padding-right: 0 !important;
+}
+
+.page__inner-wrap {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.page__content {
+    width: 100% !important;
+    padding: 0 1rem !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+}
+
+.page__title {
+    border-bottom-color: transparent !important;
+}
+
+@media (min-width: 80em) {
+    .page__content {
+        width: 100% !important;
+        padding: 0 2rem !important;
+    }
+}
+
+/* Layout */
+.partners-container {
+    display: flex;
+    gap: 2.5rem;
+    width: 100%;
+    padding-top: 1rem;
+    align-items: flex-start;
+}
+
+.partners-sidebar {
+    flex: 0 0 240px;
+    min-width: 240px;
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+}
+
+.partners-main {
+    flex: 1;
+    min-width: 0;
+}
+
+/* TOC sidebar */
+.toc-sidebar {
+    background: #FAFAFA;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.toc-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1B4F72;
+    margin: 0 0 0.75rem 0;
+    letter-spacing: 0.12em;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-list li {
+    margin-bottom: 0.1rem;
+}
+
+.toc-list a {
+    display: block;
+    font-size: 0.78rem;
+    color: #444 !important;
+    text-decoration: none !important;
+    padding: 0.25rem 0.35rem;
+    border-radius: 3px;
+    line-height: 1.35;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+/* Results header */
+.results-header {
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* Result items */
+.results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.result-item {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-title {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.03em;
+}
+
+.result-institution {
+    font-size: 0.82rem;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+}
+
+/* Micro-label (stacked above value) */
+.field-label {
+    display: block;
+    font-size: 0.62rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #aaa;
+    margin-bottom: 0.1rem;
+}
+
+/* All fields below institution: uniform style */
+.result-guide-link,
+.result-librarian,
+.result-description,
+.result-access-note {
+    font-size: 0.78rem;
+    color: #555;
+    line-height: 1.55;
+    margin-bottom: 0.6rem;
+    font-style: normal;
+}
+
+.result-guide-link a {
+    color: #2B3AA8 !important;
+    text-decoration: none !important;
+}
+
+.result-description.no-info {
+    color: #bbb;
+    font-style: italic;
+}
+
+.result-travel-grant {
+    display: inline-block;
+    margin-top: 0.55rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background-color: #f0f0f0;
+    color: #555;
+    border: 1px solid #d0d0d0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .partners-container {
+        flex-direction: column-reverse;
+    }
+    .partners-sidebar {
+        flex: 1;
+        min-width: 100%;
+        position: static;
+        max-height: none;
+    }
+}
+
+@media (hover: hover) {
+    .toc-list a:hover          { background-color: #f0f0f0; color: #1B4F72 !important; }
+    .result-guide-link a:hover { text-decoration: underline !important; }
+}
+</style>
+
+{% assign libraries = site.data.library_access | sort: 'institution' %}
+
+<div class="partners-container">
+
+    <!-- TOC Sidebar -->
+    <aside class="partners-sidebar">
+        <nav class="toc-sidebar" aria-label="Libraries">
+            <h3 class="toc-title">Libraries</h3>
+            <ul class="toc-list">
+                {% for lib in libraries %}
+                {% assign base_inst = lib.institution | split: ' (' | first %}
+                {% assign inst_count = 0 %}
+                {% for other in libraries %}
+                    {% assign other_base = other.institution | split: ' (' | first %}
+                    {% if other_base == base_inst %}{% assign inst_count = inst_count | plus: 1 %}{% endif %}
+                {% endfor %}
+                <li>
+                    {% if inst_count > 1 %}
+                    <a href="#library-{{ forloop.index }}">{{ base_inst }} ({{ lib.libname }})</a>
+                    {% else %}
+                    <a href="#library-{{ forloop.index }}">{{ base_inst }}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Results -->
+    <main class="partners-main">
+        <div class="results-header">{{ libraries | size }} libraries</div>
+
+        <ul class="results-list">
+            {% for lib in libraries %}
+            <li class="result-item" id="library-{{ forloop.index }}">
+
+                <h3 class="result-title">{{ lib.libname }}</h3>
+                {% assign display_inst = lib.institution | split: ' (' | first %}
+                <h3 class="result-institution">{{ display_inst }}</h3>
+
+                {% if lib.url != '' %}
+                <div class="result-guide-link">
+                    <span class="field-label">China Studies Guide</span>
+                    <a href="{{ lib.url }}" target="_blank" rel="noopener noreferrer">View &#8594;</a>
+                </div>
+                {% endif %}
+
+                {% if lib.librarian != '' %}
+                <div class="result-librarian">
+                    <span class="field-label">Library Contact</span>
+                    {{ lib.librarian }}{% if lib.libemail != '' %} &mdash; {{ lib.libemail | replace: '@', ' [at] ' }}{% endif %}
+                </div>
+                {% endif %}
+
+                {% if lib.walkin != '' %}
+                <div class="result-description">
+                    <span class="field-label">Walk-in Access</span>
+                    {{ lib.walkin }}
+                </div>
+                {% else %}
+                <div class="result-description no-info">Walk-in access details not on record.</div>
+                {% endif %}
+
+                {% if lib.travelgrant %}
+                <div><span class="result-travel-grant">Offers Travel Grant</span></div>
+                {% endif %}
+
+                {% if lib.note != '' %}
+                <div class="result-access-note">
+                    <span class="field-label">Note</span>
+                    {{ lib.note }}
+                </div>
+                {% endif %}
+
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+
+</div>

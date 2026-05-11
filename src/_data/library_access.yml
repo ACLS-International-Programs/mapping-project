@@ -1,0 +1,217 @@
+---
+- libname: C.V. Starr East Asian Library
+  institution: Columbia University
+  url: https://library.columbia.edu/libraries/eastasian/chinese.html
+  walkin: Access to local stacks; e-resources and database access available at terminal;
+    special collections by advance appointment
+  librarian: Chengzhi Wang
+  libemail: cw2165@columbia.edu
+  travelgrant: false
+  note: ''
+- libname: Duke University Libraries
+  institution: Duke University
+  url: https://guides.library.duke.edu/china
+  walkin: Onsite access to most e-resources including research databases, journal
+    articles, and ebooks; access to local stacks; on-site use of deliveries from Library
+    Service Center; visitors eligible for borrowing with registration
+  librarian: Luo Zhou
+  libemail: luo.zhou@duke.edu
+  travelgrant: false
+  note: ''
+- libname: Harvard-Yenching Library
+  institution: Harvard University
+  url: https://library.harvard.edu/collections/chinese-collection
+  walkin: Full electronic access to collection of digitized Chinese rare books; visitors
+    may register for a library card to access local stacks including special collections;
+    historical photographs, manuscripts, and archival collections by appointment
+  librarian: Sharon Li-shiuan Yang
+  libemail: yang8@fas.harvard.edu
+  travelgrant: true
+  note: ''
+- libname: East Asian Library
+  institution: Princeton University
+  url: https://libguides.princeton.edu/c.php?g=1071063&p=9194766
+  walkin: Local access to stacks including reference collection; electronic access
+    to all databases; use of terminal access without library ID; ReCAP offsite available
+    with advance notice
+  librarian: Joshua Seufert
+  libemail: jseufert@princeton.edu
+  travelgrant: true
+  note: ''
+- libname: Chinese Collection
+  institution: University of Illinois Urbana-Champaign
+  url: https://www.library.illinois.edu/chinese/
+  walkin: Access to shelves and local stacks with free courtesy card (application
+    required); e-resources and subscription-based materials generally available for
+    use at free public terminals in departmental libraries
+  librarian: Bing Wang
+  libemail: bingw@illinois.edu
+  travelgrant: false
+  note: ''
+- libname: Chinese Studies Collection
+  institution: University of Pennsylvania
+  url: https://www.library.upenn.edu/collections/subject/chinese-studies-collection
+  walkin: Access to local stacks; catalogue and access to some e-resources through
+    free computer terminals; special collections and requests available by registration
+    in advance; US and UN depository
+  librarian: Anna-Alexandra Fodde-Reguer
+  libemail: afodd@upenn.edu
+  travelgrant: false
+  note: ''
+- libname: East Asia Library
+  institution: Yale University
+  url: https://guides.library.yale.edu/China
+  walkin: ''
+  librarian: Michael Meng
+  libemail: michael.meng@yale.edu
+  travelgrant: false
+  note: ''
+- libname: C.V. Starr East Asian Library
+  institution: University of California, Berkeley
+  url: https://www.lib.berkeley.edu/visit/east-asian
+  walkin: Open to all researchers and visitors without requirement of identification,
+    registration, or prior arrangements; most collections may be used on site
+  librarian: Susan Xue
+  libemail: sxue@berkeley.edu
+  travelgrant: false
+  note: ''
+- libname: East Asian Collection
+  institution: University of Chicago
+  url: https://www.lib.uchicago.edu/about/directory/departments/eastasia/
+  walkin: Visitor pass available by checking in at Regenstein Library entry desk with
+    current government-issued photo ID; East Asian Collection on Regenstein 5th Floor;
+    faculty and staff from other academic institutions may be granted borrowing privileges
+    with appropriate research need
+  librarian: Hyeonjin Schubert
+  libemail: hschubert@uchicago.edu
+  travelgrant: true
+  note: CEAS Library Travel Grants available for scholars from outside Chicago metro
+    area; contact library for current cycle details
+- libname: Wason Collection on East Asia
+  institution: Cornell University
+  url: https://asia.library.cornell.edu/wason/
+  walkin: Most library materials shelved in open stacks accessible to visitors; some
+    restricted areas for unregistered patrons; special collections by request
+  librarian: Liren Zheng
+  libemail: lz14@cornell.edu
+  travelgrant: false
+  note: ''
+- libname: East Asia Library
+  institution: Stanford University
+  url: https://library.stanford.edu/chinese-studies
+  walkin: Open to general public for on-site use for up to 7 days within a 12-month
+    period at no cost; visitors must complete a Visitors Registration Form and present
+    government ID upon entry; borrowing limited to Stanford and UC Berkeley ID holders;
+    outside scholars should contact staff before visiting for special collections
+  librarian: Zhaohui Xue
+  libemail: zhxue@stanford.edu
+  travelgrant: false
+  note: ''
+- libname: Asia Library
+  institution: University of Michigan
+  url: https://guides.lib.umich.edu/chinesestudies
+  walkin: Any member of the public is welcome to visit in person and use almost all
+    licensed electronic resources from guest workstations; access to open stacks
+  librarian: Liangyu Fu
+  libemail: liangyuf@umich.edu
+  travelgrant: false
+  note: ''
+- libname: Tateuchi East Asia Library
+  institution: University of Washington
+  url: https://guides.lib.uw.edu/research/lucyzli
+  walkin: Open to the public; visitors may apply for borrower's cards at Library Account
+    Services on the first floor of Suzzallo Library
+  librarian: Lucy Li
+  libemail: lucyzli@uw.edu
+  travelgrant: false
+  note: ''
+- libname: Asian Reading Room
+  institution: Library of Congress
+  url: https://www.loc.gov/rr/asian/
+  walkin: Open to anyone 16 and older; free Reader Identification Card required, issued
+    on-site with valid photo ID; located in Room LJ-150, Thomas Jefferson Building,
+    Washington D.C.
+  librarian: Ian Chapman
+  libemail: ichapman@loc.gov
+  travelgrant: false
+  note: ''
+- libname: Asian Library
+  institution: Claremont Colleges
+  url: https://library.claremont.edu/asian-library/
+  walkin: Special Collections and Archives open to everyone at no cost by appointment;
+    Asian Library rare collections available to the wider scholarly community
+  librarian: Xiuying Zou
+  libemail: Xiuying.Zou@claremont.edu
+  travelgrant: false
+  note: ''
+- libname: East Asian Library
+  institution: University of Pittsburgh
+  url: https://library.pitt.edu/east-asian-library
+  walkin: Non-affiliates may purchase a Special Borrower's Card at Hillman Library
+    for $100; East Asian Gateway Service delivers Chinese documents to individual
+    researchers and non-profit organizations who cannot locate needed items in other
+    U.S. libraries
+  librarian: Runxiao Zhu
+  libemail: ruz117@pitt.edu
+  travelgrant: false
+  note: ''
+- libname: East Asian Collection
+  institution: University of Kansas
+  url: https://lib.ku.edu/east-asian-collection
+  walkin: Libraries freely accessible to the public; use of some services restricted
+    to KU affiliates
+  librarian: Cecilia Zhang
+  libemail: ceciliazh@ku.edu
+  travelgrant: true
+  note: CEAS travel grant up to $400 for scholars traveling 100+ miles; covers travel
+    and lodging; faculty and graduate students eligible
+- libname: Cheng Yu Tung East Asian Library
+  institution: University of Toronto
+  url: https://east.library.utoronto.ca/resource/chinese-studies-resources
+  walkin: External researchers must complete an online form to request visitor research
+    access to the Robarts Library building; library no longer open to general public
+    without pre-arranged access
+  librarian: Andrew Ip
+  libemail: andrewch.ip@utoronto.ca
+  travelgrant: false
+  note: ''
+- libname: Hoover Institution Library & Archives
+  institution: Stanford University
+  url: https://www.hoover.org/library-archives
+  walkin: Open to anyone; reading room accessible Monday–Friday 10:30am–4:30pm; registration
+    and advance reservation required via Aeon system; all collections accessible only
+    within the reading room
+  librarian: Amanda S Robb
+  libemail: asrobb@stanford.edu
+  travelgrant: false
+  note: Reserve at hoover.aeon.atlas-sys.com
+- libname: East Asian Library
+  institution: Washington University in St. Louis
+  url: https://libguides.wustl.edu/chinese
+  walkin: Open to general public during library hours; materials free to use within
+    the library; borrowing restricted to WashU ID holders; courtesy borrowing card
+    available via $100/year Century Club donation
+  librarian: Joan Wang
+  libemail: joan.wang@wustl.edu
+  travelgrant: false
+  note: ''
+- libname: East Asian Collections
+  institution: University of Texas at Austin
+  url: https://www.lib.utexas.edu/about/collections/east-asian-collections
+  walkin: Open to the public; all visitors welcome to use collections in person during
+    public hours
+  librarian: Yi Shan
+  libemail: yi.shan@austin.utexas.edu
+  travelgrant: false
+  note: Taiwan Resource Center for Chinese Studies located at Perry-Castañeda Library
+- libname: H.C. Fung Library
+  institution: Harvard University (Fairbank Center for Chinese Studies)
+  url: https://fairbank.fas.harvard.edu/h-c-fung-library/
+  walkin: Open to students, faculty, and researchers from other institutions with
+    current institutional ID, faculty letter, passport, or other official ID; non-Harvard
+    affiliates should inquire about eligibility with the librarian; located at CGIS
+    Knafel Building, 1737 Cambridge Street
+  librarian: ''
+  libemail: ''
+  travelgrant: false
+  note: ''
