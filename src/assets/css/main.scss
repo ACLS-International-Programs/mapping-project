@@ -792,22 +792,6 @@ a {
   margin: 2rem 0;
 }
 
-.lp-collab {
-  font-size: 0.88rem;
-  line-height: 1.75;
-  color: #444;
-  max-width: 720px;
-  margin-bottom: 2rem;
-
-  a {
-    color: inherit !important;
-    text-decoration: underline !important;
-    text-decoration-color: #2B3AA8 !important;
-    text-decoration-thickness: 1px !important;
-    text-underline-offset: 3px !important;
-  }
-}
-
 .lp-logos {
   display: flex;
   align-items: center;
@@ -851,14 +835,12 @@ a {
 }
 
 // ============================================================================
-// 13. RESOURCE PAGE
+// SHARED PATTERN: %content-row
+// Reusable row separator — padding + border-bottom with first/last exceptions.
+// Used by .resource-field (section 13) and .news-item (section 14).
 // ============================================================================
 
-.resource-fields {
-  margin-top: 1rem;
-}
-
-.resource-field {
+%content-row {
   padding: 1.25rem 0;
   border-bottom: 1px solid #e0e0e0;
 
@@ -869,6 +851,18 @@ a {
   &:last-child {
     border-bottom: none;
   }
+}
+
+// ============================================================================
+// 13. RESOURCE PAGE
+// ============================================================================
+
+.resource-fields {
+  margin-top: 1rem;
+}
+
+.resource-field {
+  @extend %content-row;
 }
 
 .resource-field-label {
@@ -890,20 +884,18 @@ a {
 // 14. NEWS PAGE
 // ============================================================================
 
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .news-item {
-  padding: 1.25rem 0;
-  border-bottom: 1px solid #e0e0e0;
-
-  &:first-child {
-    padding-top: 0;
-  }
-
-  &:last-child {
-    border-bottom: none;
-  }
+  @extend %content-row;
 }
 
 .news-title {
+  display: block !important;
   font-size: 1.1rem !important;
   font-weight: 300 !important;
   line-height: 1.4 !important;
@@ -915,10 +907,12 @@ a {
 }
 
 .news-date {
-  font-size: 0.8rem !important;
-  color: #888;
-  margin: 0.25rem 0 0.4rem 0 !important;
-  letter-spacing: 0.05em;
+  font-size: 0.62rem !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  color: #aaa !important;
+  margin: 0 0 0.2rem 0 !important;
 }
 
 .news-excerpt-link {
@@ -930,7 +924,110 @@ a {
   margin: 0 !important;
 }
 
+@media (hover: hover) {
+  .news-excerpt-link:hover {
+    color: #2B3AA8 !important;
+  }
+}
+
 .news-error {
   color: #888;
   font-size: 16px !important;
+}
+
+// ============================================================================
+// 15. ARTICLE PAGE
+// ============================================================================
+
+// Global utility classes — usable on any page, not scoped to article-page
+.workflow-note {
+  background: #FAFAFA;
+  border-left: 4px solid #2B3AA8;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.workflow-warning {
+  background: #FFF8F0;
+  border-left: 4px solid #E65100;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+// Page-scope styles — activated by adding `article-page` to classes: in front matter
+body.article-page {
+
+  // Full-width layout: collapse nav sidebar and reset Minimal Mistakes page offsets
+  #main .sidebar,
+  #main .sidebar.sticky {
+    display: none !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+    overflow: hidden !important;
+  }
+
+  #main article.page,
+  #main .page {
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+
+  #main .page__inner-wrap {
+    float: none !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  // Page title: uppercase (consistent with resource pages)
+  .page__title {
+    text-transform: uppercase !important;
+  }
+
+  // h2: matches .lp-heading values exactly
+  h2 {
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-weight: 300 !important;
+    font-size: 1.05rem !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    color: #1a1a1a !important;
+    border-bottom: 1px solid #d0d0d0 !important;
+    padding-bottom: 0.5rem !important;
+    margin: 2.5rem 0 1.2rem 0 !important;
+  }
+
+  // h3: blue subheading
+  h3 {
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-weight: 400 !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.05em !important;
+    color: #2B3AA8 !important;
+    margin: 2rem 0 1rem 0 !important;
+  }
+
+  // Body text: consistent with .lp-body
+  p, li, td, th {
+    font-size: 0.95rem !important;
+    line-height: 1.75 !important;
+    color: #2e2e2e !important;
+  }
 }
