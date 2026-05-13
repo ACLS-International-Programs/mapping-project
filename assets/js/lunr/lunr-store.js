@@ -2,14 +2,14 @@ var store = [{
         "title": "CrossAsia Integrated Text repository",
         "alternatetitle": null,
         "description": "The CrossAsia Fulltext Search is built from textual resources hosted in the CrossAsia Integrated Textrepository (ITR) and is open to all users. It helps users find texts and sources relevant to their research questions by performing comprehensive fulltext searches across databases. Currently searchable: approximately 523,000 titles (books and issues) with 83.5 million pages archived in the CrossAsia ITR. Offers two Beta versions: a 'guided search' (type A) and an 'explorative search' (type B). Both versions use filters to drill down search results and provide links directly to pages, articles, or books in original databases. The ITR continues to grow with more fulltexts being added continuously.",
-        "institution": null,
+        "institution": "Staatsbibliothek zu Berlin",
         "category": "Subject Guides and Bibliographies",
         "tags": [],
         "url": "/resources/1/"
       },{
         "title": "Chinese Historiography Bibliography",
         "alternatetitle": null,
-        "description": "Research guide for Chinese Historiography compiled by Benjamin A. Elman",
+        "description": "Classical Historiography for Chinese History (中國經典文獻工具書錄) is a research guide compiled by Benjamin A. Elman, Professor of East Asian Studies and History at Princeton University, with contributions from collaborators at Fudan University, Academia Sinica, the University of Houston, and Princeton University. Originally developed from bibliography courses at the University of Pennsylvania (1975–1977), the guide provides annotated references to classical Chinese historiographical sources and sinological reference works. All entries are alphabetized within each section and romanized in Pinyin following Library of Congress guidelines. The entire site is searchable. The guide is hosted in Princeton University Library's LibGuides East Asian Studies Portal and was last revised in October 2022.",
         "institution": "Princeton University",
         "category": "Subject Guides and Bibliographies",
         "tags": [],
@@ -18,13 +18,13 @@ var store = [{
         "title": "Wanfang xueshu qikan",
         "alternatetitle": "万方学术期刊",
         "description": "Wanfang’s Online academic journals or Periodicals database . More than 22 million full-text searchable articles, which are also browsable by topic or journal. Covered years are fewer than the China Academic journals database (most journals do not go back further than 2001), and page numbers are only visible when viewing the article itself, not in the index. Hence, searching CNKI’s China Academic Journals should be your first choice for finding articles; yet, with exclusive online contracts on the rise in China, some journals may be only available in one database and not the other. Again, you can narrow down your results not only by using the topical and chronological facets, but also by typing within the tab-looking grey boxes on top of your results: e.g., by typing 2003 to 2008 in the starting and concluding year boxes. As with all Wanfang databases, once on the Wanfang home page, you can move from database to database via tabs. The “xue shu lun wen” tab combines several databases into one mega-search, and you can also combine searches across databases using the advanced search option.",
-        "institution": null,
+        "institution": "Wanfang Data Co., Ltd.",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/100/"
       },{
         "title": "Wenshi ziliao indexes",
-        "alternatetitle": null,
+        "alternatetitle": "文史资料",
         "description": "Wenshi ziliao are collections on local history that are being published on all administrative levels in form of open-ended series. The collecting and editing of Wenshi ziliao was first suggested in April 1959 by Zhou Enlai to document the experience of modernization 60 years after the reform movement of 1898. Local 文史研究馆所 were set up and supported by the Political Consultative Conference. During the past 60+ years they have often changed from internal to open publications and back. Estimations of the amount of Wenshi ziliao issues are hovering between 80,000 to 100,000 volumes. Here table of contents indexes are available for searching on each administrative level (with some exceptions like Xinjiang), and the underlying PDFs can also be downloaded for local use. Altogether there are about 1,250 documents with about 45,800 pages of article information for about 500,000 articles. So far online access is only available to a small subset of Wenshi ziliao. Lately the 抗日战争与近代中日关系文献数据平台of the CASS 近代史研究所 made some 16,000 volumes of Wenshi ziliao freely accessible .",
         "institution": null,
         "category": "Academic Journals and Articles (Contemporary)",
@@ -32,7 +32,7 @@ var store = [{
         "url": "/resources/101/"
       },{
         "title": "Bianjiang Lishi Dili Shujuku",
-        "alternatetitle": "邊疆歷史地理數據庫 (Historical Geography of (China’s) Borderlands)",
+        "alternatetitle": "邊疆歷史地理數據庫",
         "description": "This database has two parts. The first part called 史地經典文庫 collects full-text historical textual material on the Chinese borderlands dating from the Ming Dynasty to the Republic in the punctuated editions by Zhonghua shuju. The second part 邊疆史料文庫 gives access to Republican monographs, periodicals, government gazettes and other documents on the history of the border regions. The original printed text is displayed side-by-side with a fully searchable digital edition of the text for comparison. Downloading is not possible. Copying (with a maximum of 200 characters at a time (after signing in)) is, but only using the pop-up copy function, not the usual browser function. To use the database you have to sign in with a user account. You have the following two choices: 1) You can use one of four generic Princeton accounts with the following details Username: plsdguji4@163.com plsdguji3@163.com plsd2@163.com plsd1@163.com Password (for all of the 4 accounts above): 123123 2) You can register a personal account To sign in for both options please choose 登录 on the upper left and then switch to 邮箱登录 on the following page (right under the large 登录 button). . Please note: This database does currently not fully support the Firefox Browser!",
         "institution": null,
         "category": "Academic Journals and Articles (Late Qing and Republican)",
@@ -42,15 +42,15 @@ var store = [{
         "title": "CADAL (China Academic Digital Associative Library)",
         "alternatetitle": null,
         "description": "CADAL (China Academic Digital Associative Library) is a government-sponsored cooperative project of some 120+ academic libraries (2020), about half of which are from China, to create electronic resources for the use of their patrons. The venture is led by and housed in Zhejiang University, and most major Chinese academic institutions such as Peking, Qinghua, Fudan and Nanjing universities were participants from the beginning. CADAL originally grew out of a China-American Digital Academic Library venture, but only from the mid-2010s  a select group of overseas libraries have received access. The major resource created by CADAL is a collection of scanned books, both in and out of copyright: 240 thousand ancient texts (including the Xuxiu siku quanshu 续修四库全书), 180 thousand republican works, 155 thousand republican periodical issues, 40 thousand newspaper issues, 800 thousand post-1949 books, 690 thousand works in Western languages, 13 thousand special collection works, 4 thousand videos, 55 thousand audiobooks and 63 thousand images. The collection is constantly increasing. The titles are not full-text searchable; but tables of contents are provided for easy navigation. Lately CADAL has added some special sections for material connected to the Manchuria Railway 满铁 13 thousand titles, modern local gazetteers 17 thousand, material on overseas Chinese 侨批 50 thousand items, and oracle bones from various institutions including from Princeton scanned with Reflectance Transformation Imaging (RTI) technology. (In addition to the e-books database, the navigation bar also gives access to some other resources : calligraphic works ( shufa 书法), a literary timeline ( Zhongguo wenxue biannian shi 中国文学编年史), Chinese medicine ( zhongyiyao 中医药), and Audio ( yinpinku 音频库). Note that the video choice, available only in English, brings one to the main e-books database.) Access to the books is dependent on the copyright status of the book: while some free access is available, especially to the ancient texts, access to in-copyright books is restricted to registered users at participant libraries: one borrows parts of books, which need to be returned in order to have them become available to other users. Hence, one first has to register ( zhuce 注册), and in subsequent visits to log-in ( denglu 登录). For this please select 登录/注册 from the upper right of the CADAL home page. To register then click on 快速注册. Please note that it is not necessary to add a mobile phone number 手机号 in order to the register and it is also not necessary to retrieve a verification code if one does not want to connect the personal account to a Chinese mobile phone number. The registration process can be soley finished via a valid email. After registration, the system will ask for an affiliation at the first login. Please choose IP range and select “Princeton University” as your affiliation ( suozai danwei 所在单位) . The system will connect your account to Princeton for 180 days. For this to work you must be either using the system from a university computer (including within the library), or access the database via the library link at the top of this database description. Activities one performs when logged-in, including borrowing books, note-taking etc., are visible to all users from search pages etc.: hence, make sure to log-out especially on shared public computers. One is not logged out automatically, even not after days. To log-out, go to one’s personal account page ( registeredname’s CADAL in the English, registeredname 的 CADAL in the Chinese interface), and click on tuichu 推 出. This account page is available in the top navigation bar, and is also the page from where one returns  books, see one’s borrowing history, etc.  (One can choose to set the interface to English, but only a limited number of top-level screens have been translated.) Once logged in, and directed to one’s account page, one can perform a simple search in the search box. On the resulting page, one can somewhat refine one’s search by limiting the result to title or author, and by selecting some rough facets of categories (such as ancient books or republican-period books—note that all categories are listed, even if not applicable), tags ( biaoqian 标签 ) or publisher. Under a cover image of each result, one can choose to see more details on the book, or decide to read it by clicking on the book. If choosing to read it, one is brought to a reader interface where one can display the table of contents, navigate forward and backward within a book, and change the display from one page to two pages at a time and vice versa. Printing (by right-clicking, one page at a time) does not work very well—it may be better to take screen shots. Depending on the copyright status of the book, one will receive a request after viewing a couple of pages to check out the remainder of the chapter ( jieyue 借阅). One receives a message that borrowing was successful (if the item was not borrowed by someone else), and can continue to read. To return the chapter to the CADAL library, navigate to the borrowing page ( jieyue in the top navigation bar), where one can see the status of one’s checking in-and-out. Click, if not yet selected, on the weihuan 未还button, and then return chapters by clicking on guihuan 归还 after each chapter one has checked out. And remember to log-out (also possible from this page.) One can look at one’s notes, tags, comments, messages etc.  from the navigation bar, and there may be recommendations listed based upon one’s readings.",
-        "institution": null,
+        "institution": "Zhejiang University",
         "category": "Academic Journals and Articles (Late Qing and Republican)",
         "tags": [],
         "url": "/resources/103/"
       },{
         "title": "Chinese Periodicals of Modern Chinese Film",
-        "alternatetitle": "中国近代期刊电影专题数据库 (Quanguo baokan suoyin",
+        "alternatetitle": "中国近代期刊电影专题数据库",
         "description": "This database is a subsection of the Shanghai Library National Index to Chinese Newspapers & Periodicals. Other than most other parts of the National Index this subsection on film is full-text searchable. It gives access to 30 periodicals from the Republican period including titles such as 电声, 电影新闻, 电影, 电影杂志, 好莱坞, 电影话剧. Most of the content was published between 1930 and 1949.",
-        "institution": null,
+        "institution": "Shanghai Library",
         "category": "Academic Journals and Articles (Late Qing and Republican)",
         "tags": [],
         "url": "/resources/104/"
@@ -66,7 +66,7 @@ var store = [{
         "title": "Early Chinese Periodicals Online (ECPO) (free)",
         "alternatetitle": null,
         "description": "Hosted at the University of Heidelberg, ECPO collects newspapers and other periodicals from the late Qing and Republican era. So far the emphazis has been on Chinese Women’s Magazines in the Late Qing and Early Republican Period and Chinese Entertainment Newspapers ( Xiaobao 小報).",
-        "institution": null,
+        "institution": "University of Heidelberg",
         "category": "Academic Journals and Articles (Late Qing and Republican)",
         "tags": [],
         "url": "/resources/106/"
@@ -74,7 +74,7 @@ var store = [{
         "title": "Minguo wenxian daquan",
         "alternatetitle": "民国文献大全",
         "description": "This database is based on the Republican era collection of CADAL (China Academic Digital Associative Library) . For this database the books, journals and newspapers from CADAL have been processed with OCR (optical character recognition) which allows full-text searching. Most of the search results from books and journals can be directly opened from 民国文献大全. Results from some journals and most of the newspapers however are currently not open to Princeton.",
-        "institution": null,
+        "institution": "China Academic Digital Associative Library (CADAL)",
         "category": "Academic Journals and Articles (Late Qing and Republican)",
         "tags": [],
         "url": "/resources/108/"
@@ -82,7 +82,7 @@ var store = [{
         "title": "Archives Unbound",
         "alternatetitle": null,
         "description": "Also known as the Declassified Documents Reference Service. These Digital collections of historical material on many topics include manuscripts, printed books and periodicals, and government documents. The material comes from the U.S. National Archives, the U.K. National Archives, and many other libraries and archives. East Asian topics include: East Asia China Religion Chinese Maritime Customs Shanghai International Politics Economics Biographic Material Japan Religion International Politics Japanese American Internment Economics Korea",
-        "institution": null,
+        "institution": "Gale",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/109/"
@@ -98,7 +98,7 @@ var store = [{
         "title": "British Colonial Policy and Intelligence Files on Asia, 1880–1950",
         "alternatetitle": null,
         "description": "This series comprises fourteen collections of historical British government documents pertaining to various countries in Asia and the Middle East on which intelligence was gathered. The original documents are part of the Oriental & India Office Collections (OIOC, now part of the Asia, Pacific, and Africa Collections), British Library, London.",
-        "institution": null,
+        "institution": "Adam Matthew Digital",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/110/"
@@ -106,7 +106,7 @@ var store = [{
         "title": "China, America and the Pacific",
         "alternatetitle": null,
         "description": "An extensive range of archival material connected to the trading and cultural relationships that emerged between China, America and the Pacific region between the 18th and early 20th centuries. Manuscript sources, rare printed texts, visual images, objects and maps document this fascinating history. The resource includes a wide range of manuscript, printed and visual primary-source materials as well as other key features to support research and teaching. One can use the fully searchable interactive chronology to discover facts and world events, explore voyages to China using an interactive map, find out about different merchants and the companies they formed in the Merchant Biographies and view online exhibitions to find out about aspects of the collection. A helpful tour of the collection is available.",
-        "institution": null,
+        "institution": "Adam Matthew Digital",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/111/"
@@ -114,7 +114,7 @@ var store = [{
         "title": "China: Trade, Politics and Culture",
         "alternatetitle": null,
         "description": "This database is based mainly, but not exclusively, upon the holdings of the Library of the School for Oriental and African Studies and the British Library. It consists of all kinds of English-language textual and visual sources relating to China and the West, with key documents relating to the Chinese Maritime Customs service, letters, diaries, color paintings, maps, drawings, photographs, and fully searchable missionary periodicals such as the Chinese Recorder. Important subjects treated include the Amherst and Macartney embassies, the Opium, Boxer, Russo-Japanese and Sino-Japanese wars, events such as the Taiping Rebellion, and the Rape of Nanking, and the missionary movements.",
-        "institution": null,
+        "institution": "Adam Matthew Digital",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/112/"
@@ -122,7 +122,7 @@ var store = [{
         "title": "Chinese Big Set Table of Contents database",
         "alternatetitle": "中国大套图书目次库",
         "description": "On the Chinese mainland publishers have over the years preferred to publish large collections of primary and secondary print material. At the East Asian Library, we try to give access to the contents of these sets by adding searchable content note fields and scanning table of contents pages that we add to the catalog record, but for many large sets it is not possible to add all the information in a way that would allow easy searching. The Chinese Big Set Table of Contents database tries to address this problem. It provides searchable indexes for 2,500 large sets of from 130 different publishers from mainland China. The covered book sets were published 1985-present, but the database is most comprehensive for 2015-present. The table of contents (ToC) information can be searched and the ToCs can be downloaded in PDF format.",
-        "institution": null,
+        "institution": "National Library of China",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/113/"
@@ -130,7 +130,7 @@ var store = [{
         "title": "Digital National Security Archive (East Asian Parts)",
         "alternatetitle": null,
         "description": "Below are listed the modules of the ProQuest Digital National Security Archive that are related to East Asia: China Japan Korea",
-        "institution": null,
+        "institution": "Gwu University",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/115/"
@@ -138,7 +138,7 @@ var store = [{
         "title": "Diplomacy and Political Secrets (China and the Modern World 3)",
         "alternatetitle": null,
         "description": "Diplomacy and Political Secrets comprises over 4,000 China-related historical documents selected from the following India Office Records: the Political and Secret Department Records, the Burma Office records, and the Records of the Military Department. These documents consist of manuscripts and monographs in the form of reports, memoranda, correspondence, pamphlets and official publications, intelligence diaries, accounts of political and scientific expeditions, travel diaries, handbooks and maps, reflecting the security concerns of British India regarding the frontier regions of China bordering British India (Xinjiang, Tibet, and Yunnan.) They range from 1869 through the cooperation between China and Britain during WWII.",
-        "institution": null,
+        "institution": "Adam Matthew Digital",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/116/"
@@ -146,7 +146,7 @@ var store = [{
         "title": "Foreign Office Files for China, 1919-1980",
         "alternatetitle": null,
         "description": "The database \"Foreign Office Files for China, 1919-1980\" contains complete digitized images of all British Foreign Office files dealing with China, Hong Kong and Taiwan during published during the period 1919-1980. There are six subsections: 1919-1929: Kuomintang, CCP and the Third International; 1930-1937: The Long March, civil war in China and the Manchurian Crisis; 1938-1948: Open Door, Japanese war and the seeds of Communist victory; 1949-1956: The Communist revolution; 1957-1966: The Great Leap Forward; and 1967-1980: The Cultural Revolution.",
-        "institution": null,
+        "institution": "Adam Matthew Digital",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/117/"
@@ -154,7 +154,7 @@ var store = [{
         "title": "Grand Secretariat Archives",
         "alternatetitle": "内閣大庫檔案",
         "description": "This database contains full text images of hundreds of thousands of government documents from the Ming and Qing dynasties. The database may be searched by responsible official, title, matter and document number.  It is produced by the Institute of History and Philology, Academia Sinica, Taiwan. To login please click “licensed usage” 授權使用 on the entry website of the database. The contents of the previous Ming-Qing dang’an set in print is fully incorporated in this database. For some supporting material, including glossaries and Qing document samples arranged by kind, see https://newarchive.ihp.sinica.edu.tw/ .",
-        "institution": null,
+        "institution": "Academia Sinica, Institute of History and Philology",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/118/"
@@ -162,7 +162,7 @@ var store = [{
         "title": "History of Contemporary Chinese Political Movements",
         "alternatetitle": "当代中国运动历史数据库",
         "description": "Primary sources only, three contemporary Chinese political movements; first the Chinese Cultural Revolution, second the Chinese Anti-Rightists Campaign, third the Great Leap Forward and the Great Famine. There is a fully functional search-engine in both Chinese and English, with data retrievable by author, subject, title, date, keywords, and (new!) locality (the documents themselves are in Chinese, naturally.) New features further include keyword highlight and toggle between Chinese and English. The Cultural Revolution database includes primary sources mostly written during the Cultural Revolution; memoirs and interviews are not included. Sections included are CCP documents, directives, and bulletins; speeches, directives, and writings concerning the Cultural Revolution by Mao Zedong, Lin Biao, and other CCP leaders; important newspaper and magazine editorials and articles; important documents of the Red Guards and the Mass Movement; and material regarding “heterodox thoughts.” Materials are indexed in both English and Chinese, but the text is in Chinese. There is a introduction by Yu Yingshi. The Anti-Rightist database includes more than 10,000 documents (directives, bulletins, speeches, editorials, published views and their denunciations, original archives) including the so-called “rightist” articles themselves. Included are also materials related to contemporaneous campaigns, including the prior Campaign against the Hu Feng Counterrevolutionary Clique, Campaign for Eliminating Counterrevolutionaries, and Socialist Transformation of Industry and Commerce, and the subsequent Debate over Red and Expert, Double-Anti Campaign, Movement for Opening One’s Heart to the Party, and Campaign to Pull Out White Flags and Plant Red Flags. The Great Leap and the Great Famine database includes more than 7,000 documents (directives, bulletins, internal reports, officials’ speeches, and major media commentaries with detailed citations.) Of the material 50% is from internal archives at various levels, including 3,000 highly classified records and investigative reports filed during the Great Famine. Included are documents on the context of these topics, as on such policies and campaigns as the state monopoly on grain purchase and marketing, the Collectivization of Agriculture, the Campaign to Eliminate Counterrevolutionaries, the Great Debate on “Red and Expert,” the “Dual-Antis” Campaign, the Campaign to “Open One’s Heart to the Party,” and the Campaign to “Pull Out White Flags and Erect Red Flags”.",
-        "institution": null,
+        "institution": "Chinese University of Hong Kong",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/119/"
@@ -178,7 +178,7 @@ var store = [{
         "title": "History Vault (East Asian parts)",
         "alternatetitle": null,
         "description": "Below are listed the modules of the ProQuest History Vault database that are related to East Asia: CIA Cold War Research Reports and Records on Communism in China and Eastern Europe, 1917-1976 This module consists of two major series of records: CIA Research Reports from 1946–1976 and records collected by Raymond Murphy on Communism in China and Eastern Europe from 1917–1958. Beginning in 1946 with reports of the CIA's predecessor, the Central Intelligence Group; The module includes reports on security, international questions, and biographical reports (including profiles of relatively unknown leaders). The Murphy Collection provides information on war recovery efforts, international aid, and the formation of countries and substantial information on the Chinese Communist Party. Confidential U.S. State Department and Diplomatic Post Special Files, Asia, 1945–1966 Contains documents State Department officials considered too sensitive or important to forward to the general Central Files. The set of State Department and Diplomatic Post records covers the U.S. occupation of Japan following World War II, development of postwar Japan, the San Francisco Peace Conference of 1951, and economic conditions in Japan; the Korean War, peace negotiations, U.S.-Korea relations, and the rebuilding of South Korea after the end of fighting in the Korean War; military and economic relations between Japan, Korea, and the U.S. in the 1950s. Confidential U.S. State Department Central Files, Asia, 1960–1969 These modules collects exclusively those U.S. State Department Central Files that have not been microfilmed by the National Archives: special reports on political and military affairs; studies and statistics on socioeconomic matters; interviews and minutes of meetings with foreign government officials; court proceedings and other legal documents; cables sent and received by U.S. diplomatic personnel; reports and translations from foreign journals and newspapers; and countless translations of high-level foreign government documents. The countries covered in this module are: China, Far East (general), Hong Kong, Indonesia, Japan, Laos, Philippine Republic, and Vietnam. Immigration: Records of the INS, 1880–1930 The files cover Asian immigration, especially Japanese and Chinese migration, to California, Hawaii, and other states. Japanese American Incarceration: Records of the War Relocation Authority, 1942–1946 The Records of the War Relocation Authority document the day-to-day running of the relocation camps from 1942–1946. The collection is organized by relocation center.",
-        "institution": null,
+        "institution": "Gale",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/120/"
@@ -186,7 +186,7 @@ var store = [{
         "title": "Hong Kong, Britain and China 1841–1951 (China and the Modern World 4)",
         "alternatetitle": null,
         "description": "A collection of documents from the British Colonial Office on colonial Hong Kong, providing detailed information on the political, military, social, economic, and external development of Hong Kong in the context of modern China, the British Empire in Asia, and the international politics of East Asia. Textual Analysis Tools allow for the identification and visualization of patterns, trends, and relationships, while the applied HTR (Handwritten Text Recognition) allows handwritten documents to be full-text searchable.",
-        "institution": null,
+        "institution": "Adam Matthew Digital",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/121/"
@@ -194,7 +194,7 @@ var store = [{
         "title": "Hong Kong, Britain and China 1965–1993 (China and the Modern World 5).",
         "alternatetitle": null,
         "description": "Digitized primarily from the records of British Foreign and Commonwealth Office (FCO 40 and FCO 21), this collection continues where Hong Kong, Britain and China Part I, 1841–1951 left off, and documents the process of Hong Kong maneuvering, surviving, thriving, and transforming into a modern international metropolis and financial center in the wider context of the Cold War. Textual Analysis Tools allow for the identification and visualization of patterns, trends, and relationships, while the applied HTR (Handwritten Text Recognition) allows handwritten documents to be full-text searchable.",
-        "institution": null,
+        "institution": "Adam Matthew Digital",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/122/"
@@ -202,7 +202,7 @@ var store = [{
         "title": "Imperial China and the West (1815-1881, part I & II)",
         "alternatetitle": null,
         "description": "Digitized in two parts from the FO 17 series of British Foreign Office Files held at the UK National Archives, Part 1 of Imperial China and the West provides General Correspondence relating to China from 1815–1905. The FO 17 series provides a vast and significant resource for researching every aspect of Anglo-Chinese relations during the nineteenth century, ranging from diplomacy and war, to trade, piracy, riots and rebellions within China, international law, treaty ports and informal empire, transnational emigration, and translation. The files provide archival sources which cover the Canton System, the Opium Wars of 1839–1842 and 1856–1860, and the presence of Britain and other foreign powers in China in the 19th century. The hand-written documents of FO 17 have been processed with Handwritten Text Recognition (HTR) technology, as well as item-level information drawn from the Foreign Office Indexes in series FO 605. A detailed review of this database and its content is available from the Journal of East Asian Libraries https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=2809&context=jeal .",
-        "institution": null,
+        "institution": "Adam Matthew Digital",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/123/"
@@ -210,7 +210,7 @@ var store = [{
         "title": "My China Roots",
         "alternatetitle": "中華家脉",
         "description": "A resource for researching Chinese genealogy. Usable in English. Includes Chinese exclusion records, immigration case files, Identity certificates, zupus 族谱 and jiapu 家谱 (family tree books), alien case files, passenger lists, naturalization records, burial records, death records, association records and directories, financial records, military records, indices, and newspapers: Sai Gai Yat Po = Shijie Ribao = The Chinese World Newspaper 世界日報 (1909-1923) and Chinese Digest (1935-1936). The database has a focus on émigrés from Guangdong and Fujian province. Good resource for finding anglicized names.",
-        "institution": null,
+        "institution": "My China Roots",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/124/"
@@ -218,7 +218,7 @@ var store = [{
         "title": "Nineteenth Century Collections Online",
         "alternatetitle": null,
         "description": "Also known as the Declassified Documents Reference Service. These Digital collections of historical material on many topics include manuscripts, printed books and periodicals, and government documents. The material comes from the U.S. National Archives, the U.K. National Archives, and many other libraries and archives. East Asian topics include: East Asia China Japan  Korea ",
-        "institution": null,
+        "institution": "Gale",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/125/"
@@ -226,7 +226,7 @@ var store = [{
         "title": "Princeton Chinese Archival Handbook Collection",
         "alternatetitle": "中国档案馆指南",
         "description": "Geographic interface to the collection of Chinese archival handbooks 档案馆指南 at the East Asian Library of Princeton University.",
-        "institution": null,
+        "institution": "Princeton University",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/126/"
@@ -234,7 +234,7 @@ var store = [{
         "title": "Records of the Maritime Customs Service of China  (China and the Modern World 2)",
         "alternatetitle": null,
         "description": "The Maritime Customs Service of China was a predominantly British-staffed bureaucracy under the control of successive Chinese central governments from 1854 until 1950. At the heart of Chinese trade, communications and international affairs, it was the only bureaucracy in modern China which functioned uninterruptedly between 1854 and the founding of the People's Republic of China in 1949. The records in this collection - official correspondence, despatches, reports, memoranda, and private and confidential letters - constitute often unique evidence of Chinese life, economy and politics through the Taiping Rebellion, the Boxer Rebellion, the Revolution of 1911, the May 30 Movement, the two Sino-Japanese Wars, and the Chinese Civil War. The records are arranged into five sections: 1. Inspector General's Circulars; 2. London Office Files; 3. The Policing of Trade; 4. Semi-Official Correspondence from Selected Ports; and 5. The Sino-Japanese War and its Aftermath, 1931-1949. They are in manuscript format, and were scanned from the microfilms Princeton also possesses.",
-        "institution": null,
+        "institution": "Adam Matthew Digital",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/127/"
@@ -250,7 +250,7 @@ var store = [{
         "title": "U.S. Intelligence on Asia, 1945-1991",
         "alternatetitle": null,
         "description": "Declassified documentary records of the U.S. intelligence community in the Far East during the Cold War (1945-1991). With focus on People's Republic of China, North Korea and North Vietnam. Also covered are Japan, Taiwan, Indonesia, Thailand, the Philippines, Malaysia, Singapore, and Australia.",
-        "institution": null,
+        "institution": "Gale",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/129/"
@@ -266,23 +266,23 @@ var store = [{
         "title": "Zhongguo difang lishi wenxian shujuku",
         "alternatetitle": "中国地方历史文献数据库",
         "description": "The documents in this database were brought together by the Center of Local Archives at Shanghai Jiaotong University. The archives (mostly in manuscript form) originate mainly from private collections in the provinces of Jiangsu, Anhui, Fujian, and Jiangxi. Major parts of the collections come from Shicang 石仓 (Zhejiang) and from Huizhou 徽州. Included are contracts, private and company ledgers, examination documents, medical prescriptions, local theater and opera material, court records, letters, family records, and various other types of material. The majority of the documents date from the Qing and Republican period, but there are also some Ming and PRC documents included. Currently, this database is the only one of its type in China. The texts have been arranged according to regions, with archives from families in the same region put together, by village.  Various (full-text and multidimensional) searches and functions are available through searches in simplified and traditional characters. ACCESS NOTE: Please confirm IP authentication when opening the database.",
-        "institution": null,
+        "institution": "National Library of China",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/130/"
       },{
         "title": "Zhongguo shanghui dangan - Baoding juan",
-        "alternatetitle": "中国商会档案数据库·保定卷 (Archives of Chinese Chambers of Commerce. Baoding Part)",
+        "alternatetitle": "中国商会档案数据库·保定卷",
         "description": "The China Chamber of Commerce Archives Database (Baoding Volume) includes archival records from 1908 to 1956. The archive documents the social and economic history of Baoding and North China over this period. The database is full-text searchable. It includes 50,000 pages of documents.",
-        "institution": null,
+        "institution": "Second Historical Archives of China",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/131/"
       },{
         "title": "Zhongguo sifa dangan -Jiangjin juan",
-        "alternatetitle": "中国司法档案数据库·江津卷 (Chinese Judicial Archvies Database. Jiangjin I+II)",
+        "alternatetitle": "中国司法档案数据库·江津卷",
         "description": "This database collects legal archives of actual lawsuits during the Repuclican Era (1911-1949) from the archives of the Jiangjin District in the city of Chongqing with a strong focus on materials from the 1920s. The first and second part of \"China Judicial Archives Database (Jiangjin Volume)\" to which Princeton users currently have access, consist of 12 categories with a total of 4330 volumes and about 270,000 pages of documents. The first part mainly includes six categories: debt disputes, tenancy disputes, marriage disputes, tax law, property, and sales disputes. The second part mainly adds theft, fraud, family disputes, smoking and drug abuse, and also supplements the six categories of the first part.",
-        "institution": null,
+        "institution": "Chinese Historical Archives",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/132/"
@@ -290,7 +290,7 @@ var store = [{
         "title": "Ancient and Early Medieval Chinese Literature Online: A Research Guide",
         "alternatetitle": null,
         "description": "Reference guide on Chinese literature from ca. 700 B.C.E. to the early seventh century C.E. Alphabetically organized, it contains entries on major and minor writers, literary forms and Chinese literary terms. Includes detailed bibliographic and source information.",
-        "institution": null,
+        "institution": "Virginia University",
         "category": "Biographical Data",
         "tags": [],
         "url": "/resources/133/"
@@ -298,7 +298,7 @@ var store = [{
         "title": "Biographical Dictionary of Later Han to the Three Kingdoms (23 – 220 AD) Online",
         "alternatetitle": null,
         "description": "Biographical reference work for early China this biographical dictionary complements Michael Loewe's acclaimed Biographical Dictionary of the Qin, Former Han and Xin Periods (2000). Compiled by Rafe de Crespigny, the dictionary includes more than 8,500 biographical entries based on historical records and surviving inscriptions. The entries, including surnames, personal names, styles and dates, are accompanied by maps, genealogical tables and indexes.",
-        "institution": null,
+        "institution": "Brill",
         "category": "Biographical Data",
         "tags": [],
         "url": "/resources/134/"
@@ -306,7 +306,7 @@ var store = [{
         "title": "Biographical Dictionary of the Qin, Former Han and Xin Periods (221 BC - AD 24) Online",
         "alternatetitle": null,
         "description": "Biographical reference work for early China with almost 6,500 entries compiled by Michael Loewe. The work draws on primary historical sources as interpreted by Chinese, Japanese and Western scholars and is supplemented by archaeological finds and inscriptions.",
-        "institution": null,
+        "institution": "Brill",
         "category": "Biographical Data",
         "tags": [],
         "url": "/resources/135/"
@@ -322,7 +322,7 @@ var store = [{
         "title": "Jinshi Examination Database",
         "alternatetitle": "历代进士登科数据库",
         "description": "The database is constructed by Zhonghua Shuju and compiled by Professor Gong Yanming from Zhejiang University. It is the first section of the larger Biographical Examination Database 历代科举任务数据库. It aims to record information on all Jinshi degree holders throughout Chinese history and to provide information about their regional and ancestral origin. Currently the database includes information on 102,000 Jinshi degree holders. It provides different search possibilities such as search by regional origin, dynasty, year of degree, last name, etc. Accurate and fuzzy searches are possible. Each entry aims to list historical sources for the recorded information. A number of options for statistical analysis are also provided (for details please see the database help page ). To access the database, you have to click on 登录 and choose IP登录 in case you are not automatically recognized as a Princeton user. For simple reading and searching, no individual registration is needed, but if you wish to copy text, make notes, submit corrections, save searches, etc. you have the following two choices: 1) You can use one of four generic Princeton accounts with the following details Username: plsdguji4@163.com plsdguji3@163.com plsd2@163.com plsd1@163.com Password (for all of the 4 accounts above): 123123 2) You can register a personal account To sign in for both options, please choose 登录 on the upper left and then switch to 邮箱登录 on the following page (right under the large 登录 button). Downloading is not possible. Copying (with a maximum of 200 characters at a time (after signing in)) is, but only using the pop-up copy function, not the usual browser function.",
-        "institution": null,
+        "institution": "Zhonghua Shuju, Zhejiang University",
         "category": "Biographical Data",
         "tags": [],
         "url": "/resources/137/"
@@ -330,7 +330,7 @@ var store = [{
         "title": "Zhongguo dabaike quanshu",
         "alternatetitle": "中国大百科全书",
         "description": null,
-        "institution": null,
+        "institution": "Encyclopedia of China Publishing House",
         "category": "Biographical Data",
         "tags": [],
         "url": "/resources/138/"
@@ -338,7 +338,7 @@ var store = [{
         "title": "Academia Sinica Hanji wenxian ziliaoku",
         "alternatetitle": "漢籍電子文獻資料庫",
         "description": "The Academia Sinica Scripta Sinica database with titles digitized by the Institute of History and Philology of the Academia Sinica, Taipei, has greatly improved its interface. Read the help screens for more information on its new features. Since the database is now UTF-8, there is no longer a need for downloading any additional font. For a listing of titles included, click on 書目瀏覽, and then search by title with nothing in the search box.",
-        "institution": null,
+        "institution": "Academia Sinica, Institute of History and Philology",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/139/"
@@ -346,7 +346,7 @@ var store = [{
         "title": "Ming Qing Women's Writings",
         "alternatetitle": null,
         "description": "The Ming Qing Women's Writings digital archive and database project is dedicated to the digitization of collections of writings by women in late imperial China (1368-1911), launched in 2005. Close to 5,000 collections of poetry and writings by individual women are recorded for the Ming and Qing periods, though less than a quarter have survived.  The website consists of a virtual library augmented by the online scholarly apparatus designed and implemented by the McGill Library Digital Initiatives team. Each writer entry links to the China Biographical Database hosted at Harvard University. Digital assets have been provided by participating libraries including: Harvard-Yenching Library, Peking University Library, Sun Yat-sen University Library, National Library of China, East China Normal University Library, Chinese University of Hong Kong Library, and Hong Kong Baptist University Library.",
-        "institution": "McGill University, Academia Sinica",
+        "institution": "McGill University",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/14/"
@@ -354,7 +354,7 @@ var store = [{
         "title": "CHANT (Chinese Ancient Texts)",
         "alternatetitle": "漢達文庫",
         "description": "The CHANT (CHinese ANcient Texts) databases, compiled under the Institute of Chinese Studies (ICS) of the Chinese University of Hong Kong since 1988, give full-text access (single words, phrases and sentence patterns) to all traditional texts from the Pre-Han (pre 220AD) period up to the Six Dynasties (581 AD) (over 30 million characters.) These texts are divided into two databases: Pre-Han & Han (Xian Qin Liang Han), and Six Dynasties (Wei Jin Nanbeichao). During compilation, different versions of the same texts were carefully compared, and modern punctuation was added. Comparisons with other versions, parallel passages, as well as citations found in Leishu are shown in footnotes. CHANT also includes databases of excavated wood/bamboo and silk scripts (the Zhu-jian-bo shu database), oracular inscriptions (the Jiaguwen database, and bronze inscriptions (Jinwen). includes now a database of extant Chinese encyclopedias (Leishu), which includes the titles listed on the spreadsheet below: To enter, click first on \"dengru wenku\", and then on \"jigou yonghu dengru\" (\"For IP user only\"; no password is necessary as a Princeton user). Initial navigation until entering each database itself is slow, searching the databases themselves is faster. Then choose your database, and navigate using the buttons and menus provided; each database works differently. Note that not all books are categorized properly (a Six Dynasties work might be found in the Han database, and vice versa), and that one has to search within subcategories the content of which is not always self-explanatory. One cannot usually search all works within a database at one go. To use the databases fully, download and install the specialized fonts available from the download page after logging in.  NOTE: The CHANT Database will not be accesible from 6:00pm HKT 14 February to 9:00am HKT 17 February, 2025",
-        "institution": null,
+        "institution": "Institute of Chinese Studies, The Chinese University of Hong Kong",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/140/"
@@ -370,7 +370,7 @@ var store = [{
         "title": "Digital Library of Chinese Rare Books",
         "alternatetitle": "古漢籍善本數位化資料庫",
         "description": "A collaborative digitization project, sponsored by Chiang Ching-kuo Foundation for International Scholarly Exchange Program, which includes Chinese rare books digitized from the collections of four participating libraries: the Asian Division of the Library of Congress, the East Asian Library and the Gest Collection of Princeton University, the Harvard-Yenching Library of Harvard University, and the Fu Ssu-Nien Library of the Institute of History and Philology of the Academia Sinica in Taiwan. Each library provided some 100,000 images, covering between 171 and 295 titles each.  They have now been made available free of charge to the world. A description of the project is available.",
-        "institution": null,
+        "institution": "National Central Library (Taiwan)",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/144/"
@@ -378,7 +378,7 @@ var store = [{
         "title": "Dunhuang wenxian ku",
         "alternatetitle": "敦煌文獻庫",
         "description": "When finished, this database will give access to 30,000 titles and documents. Currently, some 3,000 texts are available, both in searchable and original format. The database is unique in how it also makes available interlinear notes, corrections, overlapping and upside-down characters etc., as well as images. A list of texts available in the first release is available.",
-        "institution": null,
+        "institution": "The Palace Museum",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/145/"
@@ -400,9 +400,9 @@ var store = [{
         "url": "/resources/147/"
       },{
         "title": "Lidai shiwenji zongku",
-        "alternatetitle": "歷代詩文集總庫: 明前, 明, 清上, 清下, 總集編",
+        "alternatetitle": "歷代詩文集總庫",
         "description": "There are six databases available to Princeton users from the Chinese company Erudition (Airusheng); note that the other databases listed on the Erudition overview page, hatched out, are not available currently. To arrive at the overview page, please select Ancient Classics on the left and then choose login. Once on the specific database's home page, click on jinru (enter). We have only one concurrent user for each database, and often demand is high; so please logout of the database when finished, in order to open that slot for the next person as soon as possible. The Lidai shiwenji zongku 歷代詩文集總庫 (previously known as Lidai bieji ku 歷代別集庫) consists of the collected poetry writings of individuals. Currently Princeton users have access to 9,000 titles of the full range of pre-Ming, Ming, and Qing authors as well as the multi-author anthologies. As all Airusheng/Erudition databases, the texts have been carefully digitized and checked for optimal full-text searching. Please select “ancient classics” from the first landing page, then choose 歷代詩文集總庫 you will see «Ming qian», «Ming 1», «Qing 1», «Qing 2», and «zongji bian» highlighted.",
-        "institution": null,
+        "institution": "Erudition (Airusheng)",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/148/"
@@ -410,23 +410,23 @@ var store = [{
         "title": "Lidai jiao wai she fo wenxian shujuku",
         "alternatetitle": "歷代教外涉佛文獻數據庫",
         "description": "This is a database of Buddhist related documents from non-Buddhist sources published by Zhonghua shuju. It collects a wide variety of documents like edicts, monastery records, stele inscriptions, rock carvings from Buddhist sites, philosophical texts, poems, and  images. These documents have been drawn together from a range of sources including 四庫全書,  續修四庫全書, 四庫存目叢書, various inscription collections,  全宋文，全遼文，北京圖書館藏中國歷代石刻拓本滙編, 明清实录, local gazetteers, and many other sources. The collection was assembled and punctuated by Prof Li Shen 李申 from Shanghai Normal University. The collection is divided into 金石佛踨, 史部佛跡, 子部佛影, and 集部佛論. Each section can be browsed individually or also searched through simultaneously. To access the database you have to click on 登录 and choose IP登录 in case you are not automatically recognized as a Princeton user. For simple reading and searching, no individual registration is needed, but if you wish to copy text, make notes, submit corrections, save searches, etc. you have the following two choices: 1) You can use one of four generic Princeton accounts with the following details Username: plsdguji4@163.com plsdguji3@163.com plsd2@163.com plsd1@163.com Password (for all of the 4 accounts above): 123123 2) You can register a personal account To sign in for both options please choose 登录 on the upper left and then switch to 邮箱登录 on the following page (right under the large 登录 button).",
-        "institution": null,
+        "institution": "Zhonghua Book Company",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/149/"
       },{
         "title": "Modern Chinese Literature and Culture (MCLC) Resource Center",
         "alternatetitle": null,
-        "description": "The MCLC Resource Center is the online face of the print journal Modern Chinese Literature and Culture. It publishes online articles, book reviews, and the MCLC Web Publication series. The Resource Center houses bibliographies of mostly English-language materials on modern and contemporary Chinese literature, film/media, visual arts, music, education, and culture. Back issues of the print journal (with a 1-year lag) are available through JSTOR.",
+        "description": "The MCLC Resource Center is the online face of the print journal Modern Chinese Literature and Culture. It publishes online articles, book reviews, and the MCLC Web Publication series. The Resource Center houses bibliographies of mostly English-language materials on modern and contemporary Chinese literature, film/media, visual arts, music, education, and culture. The site also includes a directory of online resources and a blog covering contemporary Chinese literature and culture. Back issues of the print journal (with a 1-year lag) are available through JSTOR.",
         "institution": "The Ohio State University",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/15/"
       },{
         "title": "National Library of China e-resources - 中国国家图书馆数字资源",
-        "alternatetitle": null,
+        "alternatetitle": "中国国家图书馆数字资源",
         "description": "The National Library of China (NLC) has opened 31 databases on its 中国古籍保护网 to the public. Additionally several databases on Republican materials and materials on national minorities have been added recently. Included are the following database covering only the collection of NLC (if not otherwise noted): 数字古籍 Digital Rare books 数字方志 Digital Gazetteers (Some of the items are offered with side-by side reading of the transcribed text. The text however is not full text searchable. Most of the gazetteers included here are already available at Princeton in a full-text searchable database China Comprehensive Gazetteers ). 中华寻根网 China genealogical database (The database offers a sophisticated search system. It includes bibliographic information on almost 30,000 家谱, and gives reading access to more than 2,000 (probably mostly from the collections of Shanghai Library). It also provides an overview of family lineages for each family name and has biographical entries for 14,000 individuals. Over 6,000 gazetteers are also linked into this system which makes it quite a powerful tool for genealogical research). 赵城金藏 Zhaocheng Jin Tripitaka (This Buddhist canon was printed between about the ninth year of the Huangtong era of Xizong of the Jin dynasty and is therefore referred to as Jin Tripitaka. The Jin Tripitaka was based on the tenth-century Kaibao Tripitaka. It has great documentary value because many of the sutras in this edition of the canon are missing from other editions. The database only gives access to the scans. Princeton has access to a full-text searchable version of both the Qisha Song Tripitaka and the Zhaocheng Jin Tripitaka via the Fojiao Jingdian ku ). 年画撷英 Chinese New Year prints 碑帖精华 Rubbings database (Particularly strong for the Tang and the Qing. Where available the date of the making of the rubbing is included in the database. The database allows full-text searching of the transcribed text!) 宋人文集 Collected works of the Song (focuses on first editions). 甲骨世界 Oracle Bones (Two sub-databases containing images of original oracle bones and rubbings of oracle bones). 西夏文献 Tangut texts (Mostly of Buddhist nature. The texts are cataloged by Chinese titles). 西夏论著 Tangut Studies Bibliography 前尘旧影 Historic photographs 年画撷英 New year prints 名家手稿 Manuscripts of famous authors currently featuring notebooks by 阮章竞 Ruan Zhangjing (1914-2000) 徽州善本家谱 Collection of Huizhou Jiapu 中华医药典籍资源库 Classical works of Chinese Medicine 法藏敦煌遗书 Dunhuang collections of the Bibliothèque Nationale de France (BNF) 云南图书馆古籍 Yunnan Library Rare Books 天津图书馆古籍 Tianjin Library Rare Books 扬州市图书馆古籍 Yangzhou Library Rare Books 上海图书馆家谱 Shanghai Library Jiapu Collection 东文研汉籍影像库 Rare Books from the Toyo Bunko 哈佛大学善本特藏 Shan ben from Harvard Yenching Library 山东大学图书馆古籍 Shangdong University Library Rare Books 澳门大学图书馆古籍 Xiamen University Library Rare Books 日本永青文库捐赠汉籍 2018 Eisei Bunko Donation of Rare Books 民国时期文献 About 100,000 titles of Republican e-books 民国法律 Republican laws and regulations 民国期刊 Scanned image database for some 8,000 Republican journal titles 民国报纸 Scanned image database for the newspapers 益世报 (1917-1930), 华北日报 (1929),  新华日报 (1938-1945), and 大刚报 (1945-1951) 电子图书 Modern E-books (about 70,000 titles will full-text access) 博士论文 Index database (no full-text) for doctoral theses including abstracts and table of contents information 民族文字古籍特藏库 Rare books and manuscripts in the scripts and languages of the national minorities 广西民族文字古籍特藏库 Collection of national minorities documents from Guangxi 云南民族文字古籍特藏库 Collection of national minorities documents from Yunnan 西藏民族文字古籍特藏 Collection of national minorities documents from Tibet 日本细菌战资源库 Database on Japanese Bacteriological Warfare 东京审判资源库 Database on the Tokyo Trials (please note that this database is different than the one that Princeton users have access to that was developed by Shanghai Jiaotong University) 中华古籍善本联合书目 Chinese Shanben Catalog (图录 of 3,481 editions of 善本 in Chinese and international collections. In most cases only the first page of the first juan is available for viewing. The information provided about the holding institutions is rather cryptic.) Regrettably, NLC does not currently provide a central search index to all of the databases above. Most of the collections however are actually listed in the Zhongguo Yanjiu Faxian system. An empty search in this system will bring up a complete list of purely bibliographic entries and entries for scanned rare books from many libraries from China and beyond. Selecting the 开源 option allows browsing the free online collections of all libraries by subject (an extended 四库 classification). This function might in many cases provide better discovery options for the material in the free NLC collections that the actual databases above, but many of the links in Zhongguo Yanjiu Faxian have not yet been update to the free version of the NLC databases.",
-        "institution": null,
+        "institution": "National Library of China",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/150/"
@@ -434,7 +434,7 @@ var store = [{
         "title": "Zhongguo yanjiu faxian",
         "alternatetitle": "中国研究发现",
         "description": "Previously known as Guji faxian 古籍发现 and Quanwen faxian 全文发现 this database started as a discovery service for Chinese rare books and collects information about digitized Chinese rare books from libraries in China, the US and Europe. The individual entries link back to the original scans hosted by the various institutions. Clicking on “检索” without a search term allows browsing the entire database via a simplified 四库 classification adding maps, gazetteers and congshu as browsing categories. Currently the portal lists about 100,000 editions. More recently the database integrated material from the previous Zhongguo yanjiu wangluo ziyuan daohang 中国研究网络资源导航 and provides an easy-to-navigate overview of many databases in Chinese Studies available on the Internet. Most are free; some need free individual registration. In many cases Princeton patrons will already have full access to those resources. For resources Princeton users do not have access, the library can attempt individual document delivery. Please contact the Chinese Studies Librarian for individual requests.",
-        "institution": null,
+        "institution": "National Library of China",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/151/"
@@ -442,7 +442,7 @@ var store = [{
         "title": "Sibu congkan",
         "alternatetitle": "四部叢刊",
         "description": "This electronic database is available on all public computers at the East Asian Library. Fully searchable collection of 504 original and historical works (3134 volumes) published by the Commercial Press in 1919-1936. Original collection used photolithography, which resulted in better editions than the then available typeset editions. Authoritative editions. Alternatively, Sibu congkan is also available via the Diaolong database collection.",
-        "institution": null,
+        "institution": "East Asian Library",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/152/"
@@ -450,7 +450,7 @@ var store = [{
         "title": "Siku quanshu",
         "alternatetitle": "四庫全書",
         "description": "This electronic database, published by the Chinese University of Hong Kong and Digital Heritage Publishing Ltd., contains on at least 183 CD-ROMs the complete contents, in full text and image, of the 3460+ titles of the Wenyuange edition of the Si ku quan shu (1782) plus a few other useful tools. The total content is a staggering 800 million characters, and is arranged under almost 2 million piece titles. Some of the titles contained in the Si ku quan shu are themselves large compilations, such as the Quan Tang shi, Zi zhi tong jian , Xu Zi zhi tong jian chang bian , Wen xuan , Pei wen yun fu , Tai ping yu lan , the 25 Histories . One should realize, however, that the Siku quanshu editions are not always the best ones available, nor are they always complete: as is well known, its compilation involved censorship. The Electronic Si ku quan shu (\"e-SKQS\") is useful not only for searching, but also for studying: it has linked dictionaries, and the possibility of saving notebooks. Princeton University's license is valid for 3 simultaneous users, and the electronic Siku Quanshu is available from all public computers located in the East Asian Library. The functionality of the database is well thought-out, but its interface is not very intuitive: in addition to consulting a guide, users are advised to ask for explanatory session with the Chinese Bibliographer. Alternatively, Siku quanshu is also available via the Diaolong database collection.",
-        "institution": null,
+        "institution": "The Chinese University of Hong Kong, Digital Heritage Publishing Ltd.",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/153/"
@@ -458,7 +458,7 @@ var store = [{
         "title": "Taiwan Academic Classics",
         "alternatetitle": null,
         "description": "This database collection offers access to a number of different databases from United Digital Publications (Taiwan) including the Scripta Sinica database of Journals by the Academia Sinica and the punctuated full-text edition of the Gujin tushu jicheng.",
-        "institution": null,
+        "institution": "Yuan Ze University",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/154/"
@@ -474,7 +474,7 @@ var store = [{
         "title": "Zhongguo jiben guji ku",
         "alternatetitle": "中國基本古籍庫",
         "description": "There are six databases available to Princeton users from the Chinese company Erudition (Airusheng); note that the other databases listed on the Erudition overview page, hatched out, are not available currently. To arrive at the overview page, please select Ancient Classics on the left and then choose login. Once on the specific database's home page, click on jinru (enter). We have only one concurrent user for each database, and often demand is high; so please logout of the database when finished, in order to open that slot for the next person as soon as possible. This is a database of 10,000 traditional titles (+4,500 additional editions of the same titles) on a wide variety of subjects, and from many different periods of time. It is full text searchable, while, less conveniently but sometimes usefully, images of the texts can be flipped through as well. Many ways of searching and the setting of limits are provided. It has become the database of choice in the PRC; but note that there certainly are mistakes in the way characters have been converted: it may be necessary to read the image-based texts. A complete list of contents is available below.",
-        "institution": null,
+        "institution": "Erudition (Airusheng)",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/156/"
@@ -482,7 +482,7 @@ var store = [{
         "title": "Zhongguo suwen ku",
         "alternatetitle": "中國俗文庫",
         "description": "There are six databases available to Princeton users from the Chinese company Erudition (Airusheng); note that the other databases listed on the Erudition overview page, hatched out, are not available currently. To arrive at the overview page, please select Ancient Classics on the left and then choose login. Once on the specific database's home page, click on jinru (enter). We have only one concurrent user for each database, and often demand is high; so please logout of the database when finished, in order to open that slot for the next person as soon as possible. This database, when finished, will include more than 10,000 pieces of various kinds of literature, such as bianwen , baojuan , shanshu , huaben , zhanghui xiaoshuo , zaju , chuanqi , zhugongdiao , guci etc., all in full-text format next to the original page (which may be, e.g., manuscript scraps from Dunhuang). You can search the various genres separately.",
-        "institution": null,
+        "institution": "Erudition (Airusheng)",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/157/"
@@ -490,7 +490,7 @@ var store = [{
         "title": "Zhonghua jingdian guji ku",
         "alternatetitle": "中華經典古籍庫",
         "description": "The Zhonghua Classics Database contains the standard punctuated versions of many important Chinese classical texts in the fields of philosophy, history and literature (such as biji ) as published by Zhonghua Shuju and other major publishers of punctuated editions. The database also includes the 360 volume Quan Song Wen 《全宋文》set as e-books. Quan Song Wen is a collection of Chinese prose dating from the Song dynasty that was first published in 2006 by 上海辭書出版社. In addition to browsing whole titles, this digitized version has been optimized to search simultaneously variant forms of characters (defaults can be changed in the advanced search), and includes especially useful ways to search variants of biographical data, place names, etc. Dictionaries, chronology converters are included. These functions also pop up whenever you select a character in the main text. To access the database, you have to click on 登录 and choose IP登录 in case you are not automatically recognized as a Princeton user. For simple reading and searching, no individual registration is needed, but if you wish to copy text, make notes, submit corrections, save searches, etc. you have the following two choices: 1) You can use one of four generic Princeton accounts with the following details Username: plsdguji4@163.com plsdguji3@163.com plsd2@163.com plsd1@163.com Password (for all of the 4 accounts above): 123123 2) You can register a personal account To sign in for both options, please choose 登录 on the upper left and then switch to 邮箱登录 on the following page (right under the large 登录 button). Advanced searches can be made using the “specialized search” function. Downloading is not possible. Copying (with a maximum of 200 characters at a time (after signing in)) is, but only using the pop-up copy function, not the usual browser function. The original printed text is available for comparison; please click on the orange page numbers that are displayed in the running text. One oddity is the lack of an obvious home/(re)starting page: click on the database title for that function. Please note: Zhonghua shuju has just issued a new version of the database. The new version seems to have some problems with Firefox (display of scanned book pages), but works well with Chrome.",
-        "institution": null,
+        "institution": "Zhonghua Shuju",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/158/"
@@ -498,7 +498,7 @@ var store = [{
         "title": "Chinese-English Dictionary Online",
         "alternatetitle": null,
         "description": "This is the on-line version of Brill's A student's dictionary of Classical and Medieval Chinese, which since its appearance has quickly established itself as the major dictionary for pre-1000 Classical Chinese in the English-speaking world. The Dictionary was compiled by Paul W. Kroll, Professor of Chinese at the University of Colorado, assisted by a small team of scholars including William Baxter, William G. Boltz, David R. Knechtges, Y. Edmund Lien, Antje Richter, Matthias L. Richter, and Ding Xiang Warner. 8,330 individual characters are included, with an abundance of alliterative and echoic binomes (lianmianci 連綿詞), assorted technical terms in various fields, and the identification of hundreds of plants and animals. The dictionary is meant to cover only the period from approx. 500 BCE to 1000 CE, not later usage; the various appendices, including one with reign eras and exact accession dates of emperors given according to both Chinese and Western calendars, are therefore restricted to the same period.",
-        "institution": null,
+        "institution": "MDBG",
         "category": "Dictionaries",
         "tags": [],
         "url": "/resources/159/"
@@ -506,7 +506,7 @@ var store = [{
         "title": "PRC History Group Resource List",
         "alternatetitle": null,
         "description": "The PRC History Group is a network of scholars with interests in the history of the People's Republic of China, defining history broadly to encompass various disciplinary approaches and including decades prior to 1949. The Group manages H-PRC (an H-Net channel) that hosts scholarly discussions and distributes news and announcements of interest to PRC historians. The site publishes the PRC History Review, which contains research articles, roundtable discussions, and reviews on recent scholarship in PRC history. Other resources include Chinese-language journals focusing on topics like the Cultural Revolution (e.g., Remembrance 记忆, Yesterday 昨天, Past Events 往事) and links to freely available resources on PRC History. The Group welcomes scholars, students, researchers, and others with serious interest in PRC History.",
-        "institution": null,
+        "institution": "PRC History Group",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/16/"
@@ -514,7 +514,7 @@ var store = [{
         "title": "Chinese Dictionary Compendium",
         "alternatetitle": "漢語辭典總匯",
         "description": "The Chinese Dictionary Compendium at Hanyucidian.org gives access to 50 Chinese language dictionaries published by 上海辞书出版社 including the extended first edition of the Hanyu dacidian 漢語大詞典 (第一版+訂補) as well as other important dictionaries like the Kangxi zidian 康熙字典, the Foxue dacidain 佛學大辭典, and the Unicode UniHan database. The website was programmed by a Chinese Studies PhD student with the needs of students and researchers in mind and it is optimized for mobile usage. Princeton users can create a free personal user profile to access the database without their Princeton netID. Please note: If you register a personal account, you will receive a confirmation email from support@rolait.de. Please make sure to check your spam folder.",
-        "institution": null,
+        "institution": "ZDIC Online Dictionary",
         "category": "Dictionaries",
         "tags": [],
         "url": "/resources/160/"
@@ -522,7 +522,7 @@ var store = [{
         "title": "Chinese Reference (Apabi/CNKI)",
         "alternatetitle": "工具书",
         "description": "We have acquired 99 titles (122 vols.) in the CNKI reference collection and have additional subscription-based access to 15,000 vols. Additional access to older reference works is available voa the Apabi Reference DB collection (choose \"gongju tushu\"). We have acquired 169 titles (371 vols.) in the Apabi reference collection. Included in these reference works are dictionaries, encyclopedias, bibliographies, biographical dictionaries, indexes, even compilations, etc. The two databases differ in their detailed search options, but in both cases you can check all their reference books at one go. In the CNKI set are included such titles as 本草名著集成, 传统语言学辞典, 古代名人字号辞典, 汉语方言大词典, 简明古籍整理辞典, 钦定理藩部则例, 历代名人室名别号辞典, 新汉英中医学词典, 中国电影电视艺术家辞典, 中国官制大辞典, 中国古代建筑辞典, 中国历代科技人物录, 中国历史地名大辞典, 中国现代文学词典, 中医妇科名著集成, 中医文献学辞典. For a complete listing, see the spreadsheet below: In the Apabi set are included such titles as 汉语大词典, 辞海, 中国大百科全书,著者别号书录考, 佛教大辞典, 京剧剧目概览, 难僻字字典, 道藏书目提要, 外国文学研究论文资料索引(1978-1985), 唐代长安词典, 宋元明清百部小说语词大辞典, 历代避讳字汇典, 中国古代科技史论文索引, 中国丛书目录及子目索引汇编, 中国宝卷总目, 中国历代思想家传记汇诠, 中国年谱辞典, 太平天国大辞典, 明人室名别称字号索引, 现代汉语大词典. For a complete listing, see the spreadsheet below:",
-        "institution": null,
+        "institution": "CNKI (China National Knowledge Infrastructure)",
         "category": "Dictionaries",
         "tags": [],
         "url": "/resources/161/"
@@ -530,15 +530,15 @@ var store = [{
         "title": "Digital Dictionary of Buddhism",
         "alternatetitle": null,
         "description": "Charles Muller's Digital Dictionary of Buddhism includes in addition to Chinese, Japanese and Korean information, also Indian, Tibetan and other references. The link goes to the wider Resources for East Asian Language and Thought Web page; the restricted digital dictionary is available from that page.",
-        "institution": null,
+        "institution": "University of California, Berkeley",
         "category": "Dictionaries",
         "tags": [],
         "url": "/resources/162/"
       },{
         "title": "Grand Ricci Online",
-        "alternatetitle": null,
+        "alternatetitle": "Le Grand Ricci",
         "description": "Le Grand Ricci is to all purposes the most comprehensive bilingual dictionary of Chinese (into French) in the Western world. It covers three millennia of the Chinese language, from the Classics to the modern age, and is encyclopedic in its scope. The compilers were able to draw on the full range of French sinological expertise in completing the project, and has paid especially attention to specialized terms in a wide variety of fields (religion, medicine etc.) It contains 13,392 main entries (single characters) and 280,000 expressions (or Chinese words composed of a set of characters). Entries can be looked up by Chinese character, by romanization (pinyin), by radical and strokes, and by the total number of strokes.",
-        "institution": null,
+        "institution": "Ricci Institute",
         "category": "Dictionaries",
         "tags": [],
         "url": "/resources/163/"
@@ -546,7 +546,7 @@ var store = [{
         "title": "Multimedia Dictionary of Chinese Characters",
         "alternatetitle": null,
         "description": "This is a Chinese Character dictionary that offers several different lookup methods (pinyin, radical, stroke count) and also contains some introductory tutorials on the history and structure of Chinese characters.It may be viewed from the main computer cluster in the EAL.",
-        "institution": null,
+        "institution": "Zhongwen.com",
         "category": "Dictionaries",
         "tags": [],
         "url": "/resources/164/"
@@ -554,7 +554,7 @@ var store = [{
         "title": "Ricci Dictionary of Chinese Law",
         "alternatetitle": null,
         "description": "Trilingual (Chinese, English, French) dictionary on Chinese law with approximately 24,000 legal terms. Includes ancient law. Part of BrillOnline Chinese reference library. Has separate versions in Traditional and Simplified Chinese characters.",
-        "institution": null,
+        "institution": "Brill",
         "category": "Dictionaries",
         "tags": [],
         "url": "/resources/165/"
@@ -562,7 +562,7 @@ var store = [{
         "title": "Thesaurus Linguae Sericae (TLS)",
         "alternatetitle": "漢學文典",
         "description": "The Thesaurus Linguae Sericae (TLS) is an Historical and Comparative Encyclopaedia of Chinese Conceptual Schemes and is designed as a collaborative forum for discussion on the close reading of Chinese texts for a cross-cultural study of conceptual history. It provides a corpus of classical Chinese texts wherever possible with interlinear translations. TLS links the texts incorporated with an analytic dictionary of the Chinese language. The Thesaurus was founded by Christoph Harbsmeier (University of Oslo) and is developed by Center for Informatics in East-Asian Studies (Kyoto University). It is hosted by Princeton University, Department of East Asian Studies, in cooperation with Ruhr University Bochum, Forschungszentrum für traditionelle chinesische Kulturen.",
-        "institution": null,
+        "institution": "Heidelberg University",
         "category": "Dictionaries",
         "tags": [],
         "url": "/resources/166/"
@@ -570,7 +570,7 @@ var store = [{
         "title": "Chinese Doctor and Master Dissertations / CNKI",
         "alternatetitle": "博硕士学位论 / 中国知网",
         "description": "Selected dissertations and theses from the PRC in all subject areas. Due to Chinese government intervention access is currently limited to Humanities subjects only.",
-        "institution": null,
+        "institution": "CNKI (China National Knowledge Infrastructure)",
         "category": "Dissertations and Theses",
         "tags": [],
         "url": "/resources/167/"
@@ -578,7 +578,7 @@ var store = [{
         "title": "Chinese Electronic Theses and Dissertations (airiti library)",
         "alternatetitle": null,
         "description": "Selected dissertations and theses from various universities in Taiwan, as well as Hong Kong University are available in this database. Starting date varies; HKU starts in 1990, others in the 2000s. The database has moved into the general Taiwanese AiritiLibrary, which includes also Taiwanese periodical literature. To actually retrieve theses, searches have to be limited to \"CETD\". It. includes many more dissertations than available for free on the NCL website which is available for free: National Digital Library of Theses and Dissertations in Taiwan",
-        "institution": null,
+        "institution": "Airiti Inc.",
         "category": "Dissertations and Theses",
         "tags": [],
         "url": "/resources/168/"
@@ -586,7 +586,7 @@ var store = [{
         "title": "Dissertation Abstracts (ProQuest Dissertations & Theses: Full Text)",
         "alternatetitle": null,
         "description": "Access to citations and abstracts for every title in the Dissertation Abstracts database, including those on East Asia. Dissertations written from 1997 forward are available full text; many earlier ones as well. The database includes citations to dissertations from 1861 to those accepted last semester. Citations for dissertations and master’s theses published from 1980 forward have abstracts.",
-        "institution": null,
+        "institution": "ProQuest",
         "category": "Dissertations and Theses",
         "tags": [],
         "url": "/resources/169/"
@@ -594,7 +594,7 @@ var store = [{
         "title": "Zhongguo gaige kaifang shujuku",
         "alternatetitle": "中国改革开放数据库",
         "description": "A Comprehensive Record of China's Reform and Opening Up (中国改革开放全纪录) covering 1978-2018, documenting the history of reform, telling reform stories, and building consensus on reform. Adopting a chronological format, the database consists of four major parts: annual highlights, chronology of major events, oral history of reform, and material evidence/artifacts. Events are listed with links to full-text of speeches, images, articles, and oral history recordings. Full use of the website (including downloading of articles and images) requires setting up a personal account.",
-        "institution": null,
+        "institution": "China Reform Database",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/17/"
@@ -602,7 +602,7 @@ var store = [{
         "title": "Wanfang xuewei lunwen",
         "alternatetitle": "万方学位论文",
         "description": "Wanfang’s Dissertations and theses database. This database includes more than 2 million dissertations and theses, and hence is much larger than the history and literature (doctoral) dissertations and (master) theses parts of the CNKI equivalent previously available. Note that you can narrow down your results not only by using the topical and chronological facets, but also by typing within the tab-looking grey boxes on top of your results: e.g., by typing 北京大学 in the 学校 box. As with all Wanfang databases, once on the Wanfang home page, you can move from database to database via tabs. The “xue shu lun wen” tab combines several databases into one mega-search, and you can also combine searches across databases using the advanced search option.",
-        "institution": null,
+        "institution": "Wanfang Data Co., Ltd.",
         "category": "Dissertations and Theses",
         "tags": [],
         "url": "/resources/170/"
@@ -610,7 +610,7 @@ var store = [{
         "title": "Apabi China Digital Library",
         "alternatetitle": "中华数字书苑",
         "description": "Apabi Digital Library is a collection Chinese e-Books. Records for individual books are in the main catalog, but you may also browse Princeton's collection using the link above and choose \"dianji tushu\". Books are viewed in a special reader application with many useful features for browsing, organizing, and marking up text. The reader may be installed from the link below (It is preinstalled on the public computers in the East Asian Library.) Please see our user guide for detailed instructions: Please note: The producer of this database has seized support of the database. Currently access is only available to pre-2017 issues.",
-        "institution": null,
+        "institution": "Apabi (Founder Group)",
         "category": "E-books (Contemporary)",
         "tags": [],
         "url": "/resources/171/"
@@ -618,7 +618,7 @@ var store = [{
         "title": "Cambridge Histories Online",
         "alternatetitle": null,
         "description": "This database contains full-text searching of all Cambridge Histories, usually with up to a year delay after the print publication. You can search in all or specific titles, and download individual chapters as needed. The Cambridge history of China, The Cambridge history of Japan, and The Cambridge history of ancient China are included.",
-        "institution": null,
+        "institution": "Cambridge University Press",
         "category": "E-books (Contemporary)",
         "tags": [],
         "url": "/resources/172/"
@@ -626,15 +626,15 @@ var store = [{
         "title": "iRead eBooks",
         "alternatetitle": "華藝中文電子書",
         "description": null,
-        "institution": null,
+        "institution": "Airiti Inc.",
         "category": "E-books (Contemporary)",
         "tags": [],
         "url": "/resources/173/"
       },{
         "title": "Open Books Hong Kong",
-        "alternatetitle": "Kai du 開讀",
+        "alternatetitle": "開讀",
         "description": null,
-        "institution": null,
+        "institution": "Open Books Hong Kong",
         "category": "E-books (Contemporary)",
         "tags": [],
         "url": "/resources/174/"
@@ -642,7 +642,7 @@ var store = [{
         "title": "Books of Modern China (1840-1949)",
         "alternatetitle": "中国近代图书库 (1840-1949)",
         "description": "Collection of 120,000 late Qing and Republican e-books from Shanghai Library including many rare titles. Books are full-text searchable. Database includes author biographies, and cross-references to other Shanghai Library databases (especially for late Qing and Republican journals and newspapers). Especially interesting for literature and cross-cultural studies. Download of single pages is possible. Database clusters similar titles which is especially useful for research on the history of translation of Western literature or scientific knowledge. The database is part of Shanghai Library’s Quanguo baokan suoyin 全国报刊索引.",
-        "institution": null,
+        "institution": "Books of Modern China Database",
         "category": "Local Gazetteers (Historical)",
         "tags": [],
         "url": "/resources/175/"
@@ -650,7 +650,7 @@ var store = [{
         "title": "China: Culture and Society",
         "alternatetitle": null,
         "description": "China: Culture and Society is a full-text searchable database of the often colorful pamphlets held in the Wason Collection of Cornell University, written mostly in English and published between c. 1750 and 1929. Types of material in the collection include addresses and speeches, annual reports, catalogues, examinations, guides, lecture notes, letters, magazine articles, minutes, etc. Some possible themes to be explored are: the arts, the Chinese diaspora, education, the foreign presence in China, foreign relations and diplomacy, governance, international conflict, language and literature, leisure, missionaries, opium, rebellion and revolution, science and medicine, trade, and travel and exploration.",
-        "institution": null,
+        "institution": "Adam Matthew Digital",
         "category": "E-books (Republican)",
         "tags": [],
         "url": "/resources/176/"
@@ -658,7 +658,7 @@ var store = [{
         "title": "Fudan University Humanities Data Platform",
         "alternatetitle": "复旦大学人文数据平台",
         "description": "Princeton users can create a personal login for this website selecting Princeton University as their home institution. The website gives access to 170,000+ Republican eBooks and 10,000+ historical local gazetteers. Alternatively,  Princeton users can use their personal CADAL login to access the website.",
-        "institution": null,
+        "institution": "Fudan University",
         "category": "E-books (Republican)",
         "tags": [],
         "url": "/resources/177/"
@@ -666,7 +666,7 @@ var store = [{
         "title": "Series of Geography, History and Customs of Manchuria-Mongolia DB",
         "alternatetitle": null,
         "description": "A collection of 200 volumes on geography, history and customs of Manchuria and Mongolia between late Chosen and 1945 published by Governor-General of Korea. Includes original text images in Japanese (searchable).",
-        "institution": null,
+        "institution": "Manchuria-Mongolia Database Project",
         "category": "E-books (Republican)",
         "tags": [],
         "url": "/resources/178/"
@@ -674,7 +674,7 @@ var store = [{
         "title": "Brill's Encyclopedia of China",
         "alternatetitle": null,
         "description": "A basic introductory encyclopedia to (largely, but not exclusively, modern) China, primarily for undergraduates. A paper version is also available. This work is the English adapted version of an original German-language encyclopedia, and most entries are written by well-known scholars (e.g., the Qing entry is written by Pierre-Etienne Will.)",
-        "institution": null,
+        "institution": "Brill",
         "category": "Encyclopedias",
         "tags": [],
         "url": "/resources/179/"
@@ -690,7 +690,7 @@ var store = [{
         "title": "Encyclopedia of Buddhism",
         "alternatetitle": null,
         "description": "This encyclopedia describes the Buddhist world view, basic teachings and practices of Buddhism, as well as its different schools and sects. It also contains entries on Buddhist scriptures, art, architecture, divinities, monastic orders, festivals, rites and ceremonies, and the history of Buddhism.",
-        "institution": null,
+        "institution": "Encyclopedia of Buddhism",
         "category": "Encyclopedias",
         "tags": [],
         "url": "/resources/180/"
@@ -698,7 +698,7 @@ var store = [{
         "title": "Encyclopedia of Chinese Language and Linguistics",
         "alternatetitle": null,
         "description": "The Encyclopedia of Chinese Language and Linguistics offers a systematic and comprehensive overview of the languages of China and the different ways in which they are and have been studied. It provides authoritative treatment of all important aspects of the languages spoken in China, today and in the past, from many different angles, as well as the different linguistic traditions they have been investigated in.",
-        "institution": null,
+        "institution": "Brill",
         "category": "Encyclopedias",
         "tags": [],
         "url": "/resources/181/"
@@ -706,7 +706,7 @@ var store = [{
         "title": "Encyclopedia of Taiwan Studies Online",
         "alternatetitle": null,
         "description": "A new online work in the Brill Chinese Reference Works series. Currently (Dec 23) only partly available, will gradually be expanded, and by the end of 2024 is expected to contain 600 entries of various length (1000-5000 words) written by 400 scholars, covering all major fields of the humanities and social sciences.",
-        "institution": null,
+        "institution": "Council for Cultural Affairs, Republic of China (Taiwan)",
         "category": "Encyclopedias",
         "tags": [],
         "url": "/resources/182/"
@@ -714,7 +714,7 @@ var store = [{
         "title": "Handbook of Formosan Languages Online: The Indigenous Languages of Taiwan",
         "alternatetitle": null,
         "description": "The Handbook of Formosan Languages provides a systematic coverage of the aboriginal languages of Taiwan and of the many ways in which they have been studied. It contains reference articles as well as grammar sketches of a wide-range of Formosan languages, including a few extinct languages. The handbook includes bibliographical references and indices and is illustrated with tables and maps.",
-        "institution": null,
+        "institution": "Brill",
         "category": "Encyclopedias",
         "tags": [],
         "url": "/resources/183/"
@@ -722,7 +722,7 @@ var store = [{
         "title": "Apabi Image Database (Tupianku)",
         "alternatetitle": "图片库 (中华数字书苑)",
         "description": "Choose the tupianku 图片库 tab to use. This collection is highly organized; the top-level categories (called “museums”) are Chinese art, calligraphy, folk art, red (i.e. socialist) art, unearthed objects, old photographs, ancient design, modern graphic design, historical costumes, rare book illustrations, classical painting manuals, typography, and pattern design. Each museum has “rooms.” The database contains over 200,000 images; the largest categories are old photographs (75,000), Chinese art (35,000), rare book illustrations (30,000), folk art (13,000) and calligraphy (12,000). Short descriptions of images, as well as the usual image functions including scrolling through an image, are provided. “High resolution” is up to 300 dpi. Images can be downloaded after individual registration. Suggestions for related images are provided. While the China Digital Library, of which this is a part, has an English interface, very little of this particular database is available in romanization or English; thus, knowledge of Chinese is required. One can search all divisions at once, or separately; main search criteria are by image title, artist, period, place of origin of the work, and current location. In addition, each museum can be browsed using criteria appropriate to that museum: Please note: The producer of this database has seized support of the database. Currently access is only available to pre-2017 content.",
-        "institution": null,
+        "institution": "Apabi (Founder Group)",
         "category": "Images",
         "tags": [],
         "url": "/resources/184/"
@@ -730,7 +730,7 @@ var store = [{
         "title": "China Art Digital Library",
         "alternatetitle": null,
         "description": "China Art Digital Library includes over 780,000 art images from more than 400 albums, museum and exhibition catalogs",
-        "institution": null,
+        "institution": "China National Art Museum",
         "category": "Images",
         "tags": [],
         "url": "/resources/185/"
@@ -738,7 +738,7 @@ var store = [{
         "title": "National Palace Museum Open Data",
         "alternatetitle": null,
         "description": "This database gives free access to high-resolution images and related description articles of art pieces (painting, documents, calligraphy, ceramics, jades, curios, rare books and bronzes) in the (Taiwan) NPM collections. Descriptions can be viewed in Traditional  Chinese and English. One can search by category, dynasty, gallery and multimedia (video or 3D Digital).",
-        "institution": null,
+        "institution": "National Palace Museum (Taiwan)",
         "category": "Images",
         "tags": [],
         "url": "/resources/186/"
@@ -746,7 +746,7 @@ var store = [{
         "title": "National Palace Museum Collections",
         "alternatetitle": "國立故宮博物院. 典藏資源",
         "description": "This websites collects links to a range of free databases offered by the National Palace Museum, including databases with collection information for bronzes, paintings, rare books, decorative motifs, genealogical documents, rare books, Qing dynasty documents.",
-        "institution": null,
+        "institution": "National Palace Museum (Taiwan)",
         "category": "Images",
         "tags": [],
         "url": "/resources/187/"
@@ -754,7 +754,7 @@ var store = [{
         "title": "Picture Gallery of Chinese Modern Literature (1833-1949)",
         "alternatetitle": null,
         "description": "Collection of more than 1 Mio. images extracted from late Qing and Republican books, newspapers and journals and organized in sixteen categories including: Photography, Painting, Calligraphy, Woodcut, Manuscripts, Comics, Maps, Sculptures, Musical Scores, and Epigraphy.",
-        "institution": null,
+        "institution": "Chinese Literature Database",
         "category": "Images",
         "tags": [],
         "url": "/resources/188/"
@@ -762,7 +762,7 @@ var store = [{
         "title": "Princeton Chinese Shadow Figures Collection",
         "alternatetitle": null,
         "description": null,
-        "institution": null,
+        "institution": "Princeton University",
         "category": "Images",
         "tags": [],
         "url": "/resources/189/"
@@ -770,7 +770,7 @@ var store = [{
         "title": "Late Qing and Republican-Era Chinese Newspapers",
         "alternatetitle": null,
         "description": "The Late Qing and Republican-Era Chinese Newspapers collection, part of East View's Global Press Archive (GPA) program, contains over 290 titles and over 450,000 pages of content, representing the historical newspapers of more than twenty cities in mainland China. The newspapers are full-text searchable, and unlike most databases, the OCRed text is visible and can be copied. The collection provides comprehensive perspective on Chinese life, culture, and politics throughout the collapse of the Qing Dynasty, years of provisional government and civil war, and birth of the PRC. Coverage includes: 東南日報(Shanghai), 華北新報(Beijing), 華光日報(Nanchang), 立報(Shanghai), 南京晚報(Nanjing), 羣力報(Jiaodong/Shandong), 時事新報 (Shanghai), 實報 (Beijing), 蘇州明報 (Suzhou), 鐵報(Shanghai), 武漢日報(Hankou), 西南日報(Chongqing), 新華日報 (Hankou), 新申報(Shanghai), 中山日報(Guangzhou), 中央日報 (Shanghai), and others.",
-        "institution": null,
+        "institution": "East View Information Services",
         "category": "Newspapers",
         "tags": [],
         "url": "/resources/19/"
@@ -778,7 +778,7 @@ var store = [{
         "title": "Foreign Law Guide",
         "alternatetitle": null,
         "description": "Bibliography of sources of foreign law organized by country. Each entry contains a brief description of the country's legal system with citations to primary sources of law both in print and electronic versions when available. At the end of each entry is a list of subject headings with citations to the relevant laws or statutes.",
-        "institution": null,
+        "institution": "Columbia University Law Library",
         "category": "Legal sources",
         "tags": [],
         "url": "/resources/190/"
@@ -786,7 +786,7 @@ var store = [{
         "title": "Lawinfochina/Chinalawinfo/Chinese Case Studies",
         "alternatetitle": "北大法寳",
         "description": "There are two sister legal retrieval systems for the PRC, Lawinfochina and Chinalawinfo; the former contains English, the latter Chinese material. Included are all laws adopted by the National People’s Congress and its Standing Committee from 1949; all administrative regulations promulgated by the State Council from 1949; many other rules or orders issued by other agencies; important judicial interpretations and other regulations impacting foreign-related activities; judicial cases from the Gazette of the Supreme People’s Court (also in English); Sino-foreign tax treaties; and other legal news and matter. The link provided is for the English version. Once in the English site, click any of the Chinese links to access the Chinese site (and vice versa). Access is only for one concurrent user. In addition, Princeton users have access to the Chinese case studies contained as a separate database within Chinalawinfo.",
-        "institution": null,
+        "institution": "Peking University Center for Legal Information",
         "category": "Legal sources",
         "tags": [],
         "url": "/resources/191/"
@@ -794,7 +794,7 @@ var store = [{
         "title": "China Yearbooks (CYFD CNKI)",
         "alternatetitle": "中国年鉴网络出版总库",
         "description": "Access to national, provincial, regional, and local yearbooks from China. Also covers yearbooks for different industries and cultural fields.",
-        "institution": null,
+        "institution": "CNKI (China National Knowledge Infrastructure)",
         "category": "Local Gazetteers (Contemporary)",
         "tags": [],
         "url": "/resources/192/"
@@ -802,7 +802,7 @@ var store = [{
         "title": "Wanfang xin fangzhi",
         "alternatetitle": "万方新方志",
         "description": "Wanfang’s New Local Gazetteers database. This database searches full-text versions of new (i.e., post-1949) local gazetteers, which are also browsable by region or topic. Pages are readable and downloadable in pdf form in some 6 million small parts by navigating through the Table of Contents ( mulu ), by clicking on “ chakan yuanwen ” (read original excerpt) or “ xiazai yuanwen ” (download original excerpt). You can also read through the complete gazetteers on line, by clicking on “ zhengben yuedu ”  (reading full volume). More advanced searching (Boolean searching, fuzzy searching) is available, and you can narrow down results by using facets or adding refinements to your search (and clicking “search within results.”) As with all Wanfang databases, once on the Wanfang home page, you can move from database to database via tabs.  The tab for the New Local Gazetteers, is somewhat hidden though; it is listed only on the very upper menu, under the “More…” ( geng duo ) category.",
-        "institution": null,
+        "institution": "Wanfang Data",
         "category": "Local Gazetteers (Contemporary)",
         "tags": [],
         "url": "/resources/193/"
@@ -810,7 +810,7 @@ var store = [{
         "title": "China Comprehensive Gazetteers",
         "alternatetitle": "中國綜合方志庫",
         "description": "This China Comprehensive Gazetteers database has been produced in conjunction with the National Library of China. It includes 7,000  Chinese local gazetteers spanning eight centuries 1229-1949. Chinese gazetteers are a very rich resource available for researching China in multiple aspects, including its political history, literature, and religion, as well as the biographies of famous personages, its culture, economic development and, of course, its geography and natural history.  Because of its varied content, organized to principles also varying from title to title, full-text search capabilities change the way they can be used. The titles included in this particular database (approximately 7,000 titles, 100,000 volumes) have for a large part been compiled using Optical Character Recognition. Because of this automated process, which occasionally produces errors, the 4,000 titles which overlap with the Zhongguo fang zhi ku database, are probably best used in the latter (with much stricter authority control.) However, the China Comprehensive Gazetteers database includes at least 2,000 additional full-text searchable titles.",
-        "institution": null,
+        "institution": "National Fangzhi Database",
         "category": "Local Gazetteers (Historical)",
         "tags": [],
         "url": "/resources/194/"
@@ -818,7 +818,7 @@ var store = [{
         "title": "Zhongguo fangzhi ku",
         "alternatetitle": "中國方志庫",
         "description": "There are six databases available to Princeton users from the Chinese company Erudition (Airusheng); note that the other databases listed on the Erudition overview page, hatched out, are not available currently. To arrive at the overview page, please select Ancient Classics on the left and then choose login. Once on the specific database's home page, click on jinru (enter). We have only one concurrent user for each database, and often demand is high; so please logout of the database when finished, in order to open that slot for the next person as soon as possible. This database, when finished, will include more than 10,000 pre-modern local gazetteers in the broad sense of the word, thus not only gazetteers of jurisdictions, but also gazetteers of temples, mountains etc. There are many ways of searching this full-text database, including by region, title or period, but at the same time, the form of the original, including maps or tables, is preserved, and shown side-by side. Downloading and printing is possible; individual note-taking in this version is disabled. As of 2021, three sets of 2,000 each of the planned five parts are available.",
-        "institution": null,
+        "institution": "National Fangzhi Database",
         "category": "Local Gazetteers (Historical)",
         "tags": [],
         "url": "/resources/195/"
@@ -826,7 +826,7 @@ var store = [{
         "title": "China Multilingual Journals",
         "alternatetitle": null,
         "description": "The CMJ (China Multilingual Journals) database includes journals published in China for foreign consumption: Qiushi (2009-, English), China Pictorial/ Ren min hua bao (1999-2006, English and Chinese), Jinmin Chūgoku (Japanese, 1953-2007), Beijing Review ( Peking Review ; English, German, French, Spanish, Chinese, 1958-), and China Today (English, German, French, Spanish, Chinese , 1952-2007). Images and news items can be searched for separate from articles.",
-        "institution": null,
+        "institution": "China Multilingual Journals",
         "category": "Magazines",
         "tags": [],
         "url": "/resources/196/"
@@ -834,7 +834,7 @@ var store = [{
         "title": "Longyuan qikan wang (Dragonsource)",
         "alternatetitle": "龙源期刊网",
         "description": "Searchable database of current non-academic Chinese periodicals in literature, general culture, news and politics, popular science, economics and law, education, health and lifestyle, history and finance management. The database gives access to more than 3,000 titles, including Caixin-China Economics & Finance, VOGUE, Caijing, Sanlian Zhoukan, Zhongguo Zhoukan, Liaowang Dongfang Zhoukan, Wenwu Tiandi, ZhizuGQ .",
-        "institution": null,
+        "institution": "Longyuan Digital Publishing",
         "category": "Magazines",
         "tags": [],
         "url": "/resources/197/"
@@ -842,7 +842,7 @@ var store = [{
         "title": "Mingbao Yuekan",
         "alternatetitle": "明報月刊",
         "description": "The Mingbao Yuekan (Ming Pao Monthly) is a Hong Kong-based periodical covering Chinese culture, society, and current events. We hold an electronic archive of the magazine from 1966-2000. It may be viewed from the main computer cluster in the EAL.",
-        "institution": null,
+        "institution": "Ming Pao Monthly",
         "category": "Magazines",
         "tags": [],
         "url": "/resources/198/"
@@ -850,7 +850,7 @@ var store = [{
         "title": "Mobilizing East Asia",
         "alternatetitle": null,
         "description": "A tightly organized series of pivotal English-language newspapers, books and magazines reporting and commenting on developments in East and South-East Asia from the turn of the century to the early 1950s, showing the route from the first defeat of a major European power by an Asian nation to the calamitous defeat of that nation, Japan, systemic change in China and the onset of seismic upheaval in Asia. Materials, sourced from hard-to-find and in some cases unique originals, include Contemporary Japan , the Japan Advertiser Annual Review , the Japan News-Week , and the Shanghai-based Israel's Messenger . More material on Manchuria, including the Manchuria Daily News (1912-1940), is being added.There are gaps for many titles, some of which had only short runs, and therefore are difficult to find anywhere.",
-        "institution": null,
+        "institution": "Mobilizing East Asia",
         "category": "Magazines",
         "tags": [],
         "url": "/resources/199/"
@@ -858,7 +858,7 @@ var store = [{
         "title": "Chinese big sets in IVY-Plus Libraries",
         "alternatetitle": null,
         "description": "In recent years publishers in mainland China have printed large collections of primary and secondary print material. This spreadsheet, maintained by Joshua Seufert of Princeton Libraries, provides information on bibliographic and Ivy Plus holding information for large sets of primary source materials published in mainland China. The list is current through July 2024 and contains 2947 titles currently held by Ivy Plus Libraries. The OCLC library codes are :RBN Brown, CGU Chicago, ZCU Columbia, COO Cornell, DRB Dartmouth, NDD Duke, HUL Harvard (Main Library and Yenching), HFL Harvard Fine Arts, HVL Harvard Law, JHE Johns Hopkins, PUL Princeton, PAU Upenn, STF Stanford, YUS Yale, and CRL Center for Research Libraries.",
-        "institution": "Princeton University Library",
+        "institution": "Princeton University",
         "category": "Subject Guides and Bibliographies",
         "tags": [],
         "url": "/resources/2/"
@@ -866,7 +866,7 @@ var store = [{
         "title": "Bilingual Database and Annotated Bibliography of Cantonese Popular Periodicals of the Early Twentieth Century",
         "alternatetitle": "二十世紀初省港澳通俗刊物雙語資料庫",
         "description": "The Bilingual Database and Annotated Bibliography of Cantonese Popular Periodicals of the Early Twentieth Century (二十世紀初省港澳通俗刊物雙語資料庫) documents popular periodicals from the Cantonese cultural region spanning Guangzhou, Hong Kong, and Macau from approximately 1907 to the 1950s. The project reflects the nexus of authors, cross-border advertisements, overlapping distribution networks, and common cultural icons that existed historically among cities in the region. Building on works of previous researchers and librarians, the project collects popular periodicals from various databases, libraries in Hong Kong, Macau, and the United Kingdom, as well as material from private collections. The database contains 80 entries offering a rich expression of a 'Cantonese cultural region.' The bibliography is organized by both category and location including children's publications, film, current events, literature and arts, women and family, martial arts and sports, dance halls, hometown magazines, comics, and publications by location (Guangzhou, Hong Kong, Macau, Shantou).",
-        "institution": null,
+        "institution": "Cantonese Popular Periodicals Project",
         "category": "Newspapers",
         "tags": [],
         "url": "/resources/20/"
@@ -874,7 +874,7 @@ var store = [{
         "title": "WiseSearch",
         "alternatetitle": "慧科新闻",
         "description": "Note: If you anticipate to need a large number of documents for a bigger research project from this database please contact the Chinese Studies Librarian before starting to download articles in large numbers. The Wise news archive, also called WiseNews, is updated every day with items from over 1,500 content providers, including all 19 Chinese and English newspapers of Hong Kong, and a large number of other top-tier newspapers, magazines, newswires, TV and radio broadcasts of Greater China. The database currently has more than 88 million articles from since 1998, offering unrivalled breadth and depth of Greater China news reports and feature articles. Included are national PRC titles such as the 21 shiji jingji baodao , Renmin ribao , Jingji ribao etc.; regional and provincial newspapers such as the Nanfang ribao , Yangcheng wanbao , Zhengquan ribao , Shanghai ribao , Wenhuibao , Beijing ribao , Beijing wanbao ; Taiwan newspapers such as the Taiwan pingguo ribao , China Post , Ziyou ribao ; Macao newspapers such as the Aomen ribao ; Hong Kong newspapers such as the Mingbao , South China Morning Post , Standard ; and other Asian newspapers such as the Daily Yomiuri , Xingzhou ribao , Bangkok Post , Strait Times and the Times of India . Popular magazines such as Taiwan yizhoukan or Diannao jiating etc. are also included. There are two interfaces available: WiseSearch and, through a tab within the database, WiseEnterprise. (If necessary, click on “IP Access” to enter.) In WiseSearch you can search by full-text, and limit by region or title. You can also search information by company. In WiseEnterprise you can browse and search by 15 special topic folders, by day, media or region/title. You can easily move between the two functions from the top navigation bars. The customized folders are: Finance and banking, Economic news, Science and technology, Education, Trade and investment, Public health, International politics, International economy, International relations, Hong Kong news, China economy, China politics, China court cases, Taiwan news, Mainland-Taiwan relations. Results are full-text; we have not subscribed to the image versions of newspapers. Both interfaces can be set to English or Traditional Chinese. The latter will give more easily identifiable results regarding the source. A Chinese-language Powerpoint guide (with a slightly different interface) is available here:",
-        "institution": null,
+        "institution": "Wisers Information Limited",
         "category": "Magazines",
         "tags": [],
         "url": "/resources/200/"
@@ -882,7 +882,7 @@ var store = [{
         "title": "China Geo-Explorer I",
         "alternatetitle": null,
         "description": "Integrates different data sources from government statistics, population census and economics census of China at different levels (province, city, county, township and ZIP code) into a spatial system with comparable variables.",
-        "institution": null,
+        "institution": "China Geo-Explorer",
         "category": "Maps and GIS",
         "tags": [],
         "url": "/resources/201/"
@@ -890,7 +890,7 @@ var store = [{
         "title": "Chinese Civilization in Time and Space",
         "alternatetitle": "中國與台灣歷史文化地圖",
         "description": "A Web-based GIS system with historical maps, integrated with full-text databases from the Academia Sinica. Includes place name search. Can be used without registration, but personal registration (free to Princeton users) is recommended for saving and printing. The basic historical maps come from Tan Qixiang's Zhongguo lishi dituji, and the Shenbao atlas from the 1920s. There are search functions for current and historical place names, gazetteers etc. Some specialized thematic information is available, such as maps of Han archaeological tombs. Enter the GIS system by clicking on \"Framework\" from the Home page, and then by clicking on \"Enter CCTS System.\" Before first use, one needs to download two special plug-ins available there. The Web-based GIS system follows standard ArcView procedures. There is also a Taiwan History and Culture in Time and Space available:",
-        "institution": null,
+        "institution": "Academia Sinica",
         "category": "Maps and GIS",
         "tags": [],
         "url": "/resources/202/"
@@ -898,7 +898,7 @@ var store = [{
         "title": "Princeton Digital Maps & Geospatial Data",
         "alternatetitle": null,
         "description": "The Digital Maps & Geospatial Data provides a geographical interface to digital maps and geographic data available to Princeton users. It includes scanned historic, geoscientific, and topographic maps and charts and geospatial data such as aerial photographs, census data, land-use maps, and elevation.",
-        "institution": null,
+        "institution": "Princeton University",
         "category": "Maps and GIS",
         "tags": [],
         "url": "/resources/203/"
@@ -906,7 +906,7 @@ var store = [{
         "title": "Overview",
         "alternatetitle": null,
         "description": "The library has a central research guide for current and historical newspapers in English language. This guide describes and gives access to Chinese and English language newspaper resources relating to China in print and electronic format that are available at  Princeton as well as some major resources that are freely accessible on the web.",
-        "institution": null,
+        "institution": "Newspapers.com (Ancestry)",
         "category": "Newspapers",
         "tags": [],
         "url": "/resources/204/"
@@ -914,7 +914,7 @@ var store = [{
         "title": "China Government Gazettes",
         "alternatetitle": "中国政报公报期刊文献总库",
         "description": "A collection of political newspapers, bulletins, announcements, regulations, proclamations, government reports, white papers, and leader speeches from Chinese central and local government publications. Subjects covered include politics, law, military and national defense, rural management and agriculture, industry, transportation, finance, education, science and technology, and tourism. In Chinese, 1979-present",
-        "institution": null,
+        "institution": "CNKI (China National Knowledge Infrastructure)",
         "category": "Political Documents (Contemporary)",
         "tags": [],
         "url": "/resources/205/"
@@ -922,7 +922,7 @@ var store = [{
         "title": "National People's Congress Database (PRC)",
         "alternatetitle": "全国人大资料信息库",
         "description": "The National People's Congress (NPC) database of the People's Republic of China is a comprehensive collection of archives and documents of the National People’s Congress, from the 1st Session of 1st NPC to present. The collection includes: Deputy Lists, Agendas, Conference Updates, Documents and Reports, Resolutions and Statements, Leaders’ Activities, Selected Proposals, Suggestions of the Deputies, News Reports, Pictures, Press Conferences, Important Commentaries, Video Reports, etc. With complete, full-spectrum contents, it’s an authoritative database of NPC agendas, topics, resolutions and related reports. Coverage is from the 1st NPC onward; it includes text, photos and videos, and is updated regularly. The database works best with the Chrome browser.",
-        "institution": null,
+        "institution": "National People's Congress, People's Republic of China",
         "category": "Political Documents (Contemporary)",
         "tags": [],
         "url": "/resources/206/"
@@ -930,7 +930,7 @@ var store = [{
         "title": "Party and Government Documents in English (PR of China)",
         "alternatetitle": null,
         "description": "The Party and Government Documents in English (PGDiE) is a unique collection of official documents in English, covering various levels of Chinese government, Communist Party of China (CPC) and National People's Congress (NPC) from authoritative sources from 1921 onwards. Featured contents include documents on the Great Proletarian Cultural Revolution; the Taiwan Question, the National Congress of the CPC, Five-year plans, The First session of the First National People's Congress, reports on the Work of the Government, government communiqués, government White Papers, and Policies and Activities of the Foreign Ministry. The White Papers include also documents in other languages than English (Chinese, French, Spanish, Italian, and Portuguese.) Some of the English material is machine-translated.",
-        "institution": null,
+        "institution": "People's Daily Online",
         "category": "Political Documents (Contemporary)",
         "tags": [],
         "url": "/resources/207/"
@@ -938,7 +938,7 @@ var store = [{
         "title": "PRC Ministry of Foreign Affairs - Speeches archive (Chinese)",
         "alternatetitle": null,
         "description": null,
-        "institution": null,
+        "institution": "Ministry of Foreign Affairs, People's Republic of China",
         "category": "Political Documents (Contemporary)",
         "tags": [],
         "url": "/resources/208/"
@@ -946,7 +946,7 @@ var store = [{
         "title": "PRC State Council Archive (English)",
         "alternatetitle": null,
         "description": null,
-        "institution": null,
+        "institution": "State Council, People's Republic of China",
         "category": "Political Documents (Contemporary)",
         "tags": [],
         "url": "/resources/209/"
@@ -959,18 +959,10 @@ var store = [{
         "tags": [],
         "url": "/resources/21/"
       },{
-        "title": "Party History Ebook Archive",
-        "alternatetitle": "中共中央党史和文献研究院成果总库",
-        "description": null,
-        "institution": null,
-        "category": "Political Documents (Contemporary)",
-        "tags": [],
-        "url": "/resources/210/"
-      },{
         "title": "China Business Reference (China BRef)",
         "alternatetitle": null,
         "description": "This database contains hundreds of thousands of Chinese laws and legal commentaries, in both Chinese and English. It can be searched by keyword or browsed by category.",
-        "institution": null,
+        "institution": "China Business Reference",
         "category": "Statistics and Data",
         "tags": [],
         "url": "/resources/211/"
@@ -978,7 +970,7 @@ var store = [{
         "title": "China Economic and Social Data Platform",
         "alternatetitle": "中国经济社会大数据研究平台",
         "description": "This database allows cross yearbook indicator searches and online map generation based on the statistical data originating from the officially published Chinese Statistical Yearbooks.",
-        "institution": null,
+        "institution": "CNKI (China National Knowledge Infrastructure)",
         "category": "Statistics and Data",
         "tags": [],
         "url": "/resources/212/"
@@ -986,7 +978,7 @@ var store = [{
         "title": "China Premium Database (CEIC)",
         "alternatetitle": null,
         "description": "Provides macroeconomic and financial time series data for many countries. Contains a wide range of data on topics including national accounts, government and public finance, demographic and labor markets, inflation, foreign trade, foreign direct investment, financial markets, and data on a variety of industry sectors. Includes subnational data for Brazil, China, India, Indonesia, and Russia. Please logoff the database.  We have 5 concurrent users.  Additional help information can be found on their site .",
-        "institution": null,
+        "institution": "CEIC Data (ISI Emerging Markets)",
         "category": "Statistics and Data",
         "tags": [],
         "url": "/resources/213/"
@@ -994,7 +986,7 @@ var store = [{
         "title": "China Statistical Bureau",
         "alternatetitle": null,
         "description": "Select geo-coded data is contained in the China Geo-Explorer I . More statistical data from China is available via the CNKI China Economic and Social Data Platform , EPS and CEIC . The latest annual statistics for China can also be found in the Sage Data (previously Data Planet) under the source \"China Data Institute\"",
-        "institution": null,
+        "institution": "National Bureau of Statistics, People's Republic of China",
         "category": "Statistics and Data",
         "tags": [],
         "url": "/resources/214/"
@@ -1002,7 +994,7 @@ var store = [{
         "title": "EPS China Statistics",
         "alternatetitle": null,
         "description": "Consists of 77 statistical datasets covering China’s population census, macro economy, financial markets, industry, trade, resources and social statistics. The database has a particularly strong focus on city and county statistics. The database allows creation of charts and maps as well as formatting and simple analysis. Data can be individually selected and downloaded in various formats: Statistics (Excel), charts (JPEG), maps (Excel, PDF, JPEG). Consists of 77 statistical datasets covering China’s population census, macro economy, financial markets, industry, trade, resources and social statistics. The database has a particularly strong focus on city and county statistics. The database allows creation of charts and maps as well as formatting and simple analysis. Data can be individually selected and downloaded in various formats: Statistics (Excel), charts (JPEG), maps (Excel, PDF, JPEG).",
-        "institution": null,
+        "institution": "EPS China Data",
         "category": "Statistics and Data",
         "tags": [],
         "url": "/resources/215/"
@@ -1010,7 +1002,7 @@ var store = [{
         "title": "Princeton Data and Statistical Services",
         "alternatetitle": null,
         "description": "Data and Statistical Services (DSS) provides a catalog of data (longitudinal studies, panel data, etc.) and statistical sources available in Princeton and available freely on the web. The catalog has seperate entries for China, Hong Kong, and Taiwan. Many of the data from China's statistical yearbooks are available via this service.",
-        "institution": null,
+        "institution": "Princeton University",
         "category": "Statistics and Data",
         "tags": [],
         "url": "/resources/216/"
@@ -1018,7 +1010,7 @@ var store = [{
         "title": "Japanese-occupied China Collection - Stanford University Library and Hoover Institution",
         "alternatetitle": null,
         "description": null,
-        "institution": null,
+        "institution": "Stanford University",
         "category": "Subject Guides and Bibliographies",
         "tags": [],
         "url": "/resources/218/"
@@ -1026,14 +1018,14 @@ var store = [{
         "title": "Oxford Bibliographies Online: Buddhism",
         "alternatetitle": null,
         "description": "Detailed annotated bibliographical guide to many aspects of Buddhism, by major scholars signing their individual articles. Links to find citations in other databases are provided. New articles are added regularly.",
-        "institution": null,
+        "institution": "Oxford University Press",
         "category": "Subject Guides and Bibliographies",
         "tags": [],
         "url": "/resources/219/"
       },{
         "title": "East Asian Newspapers and Periodicals 1850-1950",
         "alternatetitle": null,
-        "description": "From the Internet Archive, the East Asian Newspapers and Periodicals 1850-1950 collection includes a range of East Asian (plus Singapore) newspapers, journals, and magazines published in Chinese, Korean, and Japanese languages from 1850-1950. The collection provides access to historically significant publications including major newspapers like the Shenbao (申報, founded 1872 in Shanghai), the North-China Herald (published 1850-1941 in Shanghai), the Chosun-ilbo (朝鮮日報, founded 1920 in Korea), the Manzhoubao (滿洲報, Manchuria News, published 1922-1937 in Dalian), and many others. These digitized materials document critical periods of East Asian history including colonial periods, wars, social transformations, and political changes across China, Japan, Korea, and Singapore.",
+        "description": "From the Internet Archive, the East Asian Newspapers and Periodicals 1850-1950 collection includes 266 East Asian (plus Singapore) newspapers, journals, and magazines published in Chinese, Korean, and Japanese languages from 1850-1950. The collection provides access to historically significant publications including major newspapers like the Shenbao (申報, founded 1872 in Shanghai), the North-China Herald (published 1850-1941 in Shanghai), the Chosun-ilbo (朝鮮日報, founded 1920 in Korea), the Manzhoubao (滿洲報, Manchuria News, published 1922-1937 in Dalian), and many others. These digitized materials document critical periods of East Asian history including colonial periods, wars, social transformations, and political changes across China, Japan, Korea, and Singapore.",
         "institution": "Internet Archive",
         "category": "Newspapers",
         "tags": [],
@@ -1042,7 +1034,7 @@ var store = [{
         "title": "Oxford Bibliographies: Chinese Studies",
         "alternatetitle": null,
         "description": "Authoritative bibliographies on a wide variety of Chinese topics.",
-        "institution": null,
+        "institution": "Oxford University Press",
         "category": "Subject Guides and Bibliographies",
         "tags": [],
         "url": "/resources/220/"
@@ -1050,7 +1042,7 @@ var store = [{
         "title": "Traditional Chinese Medicine Database (CNKI TCMD)",
         "alternatetitle": "中医药系列知识服务平台",
         "description": "TCMD provides access to basic theories, clinical research, common diseases, diagnostics, treatment, rehabilitation, and the integration of TCM and western medicine. The database covers Chinese Herbal Medicine, Disease Diagnosis, and Treatment Knowledge and TCM Prescription. It includes access to TCM  eBooks and videos and references to TCM resources in other CNKI databases (journal, conference proceedings, etc.). The database will open with English menus, but can be switched to Chinese. It includes Chinese and English content.",
-        "institution": null,
+        "institution": "CNKI (China National Knowledge Infrastructure)",
         "category": "Subject Guides and Bibliographies",
         "tags": [],
         "url": "/resources/221/"
@@ -1058,7 +1050,7 @@ var store = [{
         "title": "Chinese Film and Newsreel Scripts from the Cultural Revolution Online",
         "alternatetitle": null,
         "description": "Online access to transcripts of documentary films and newsreels from China, 1946(?)-1985. The bulk of the items are from the Cultural Revolution, 1966-1976; all documents are in Chinese. The 1750 items were created by the Zhong yang xin wen ji lu dian ying zhi pian chang (Central Newsreel and Documentary Film Studio), a cinema company office in Henan province, China, which had nation-wide responsibilities.  This online version is directly based upon a previously published microfilm set entitled The Chinese Filmscript and Advertisement Collection , and the text images are of intermediate quality and not full-text searchable. The collection is arranged into the four series Advertisements and Film Description Series, 1953-1966; Documentary and Newsreel Scripts, 1946 (?)-1985; Feature Filmscripts, undated; and Newspaper Clipping Scrapbook, 1950-1959. For more information, see the home page of the database.  The original items are held at Duke University.",
-        "institution": null,
+        "institution": "Chinese Film and Newsreel Scripts Database",
         "category": "Videos and Films",
         "tags": [],
         "url": "/resources/222/"
@@ -1066,7 +1058,7 @@ var store = [{
         "title": "Socialism on Film: The Cold War and International Propoganda",
         "alternatetitle": null,
         "description": null,
-        "institution": null,
+        "institution": "Alexander Street / ProQuest",
         "category": "Videos and Films",
         "tags": [],
         "url": "/resources/223/"
@@ -1074,10 +1066,26 @@ var store = [{
         "title": "World Newsreels Online",
         "alternatetitle": null,
         "description": "Streaming video of international newsreels produced between 1929 and 1966. All are accompanied by transcripts, with those in foreign languages translated into English. E.g., one of the subjects is the Second Sino-Japanese War, 1937-1945.",
-        "institution": null,
+        "institution": "Alexander Street / ProQuest",
         "category": "Videos and Films",
         "tags": [],
         "url": "/resources/224/"
+      },{
+        "title": "NewspaperSG",
+        "alternatetitle": null,
+        "description": "NewspaperSG is a digital newspaper archive maintained by the National Library Board of Singapore (NLB). The Newspaper Catalogue lists all newspaper titles held by NLB, including those available for free online access and those available only on microfilm. Titles span Singapore and the surrounding region (Peninsular Malaysia, Sabah and Sarawak, Brunei, and China) and are published in Chinese, English, Malay, Tamil, and Japanese. The online collection includes nearly 100 titles with full-text search, covering dates from the mid-nineteenth century through the present. Recent issues (typically the most recent year) are available as preview only; older digitized content is freely accessible without registration. The archive is particularly strong for Singapore English-language newspapers such as The Straits Times (from 1845) and Chinese-language titles.",
+        "institution": "National Library Board Singapore",
+        "category": "Newspapers",
+        "tags": [],
+        "url": "/resources/225/"
+      },{
+        "title": "ChinaComx Translations: Chinese Comics in Translation",
+        "alternatetitle": null,
+        "description": "ChinaComx Translations is an open-access digital project hosted by the Centre for Asian and Transcultural Studies (CATS) at Heidelberg University. The project publishes English and German translations of exemplary lianhuanhua (Chinese picture-story books) from the Mao and early post-Mao years (primarily 1970s–1980s), with one contemporary title from 2024. As of March 2026, fourteen translations are available, organized into five thematic categories: works adapted from classics of Chinese literature, tales of youth and socialist-patriotic ideals, science popularization lianhuanhua, transcultural texts and storylines, and contemporary lianhuanhua. Each translation includes high-resolution scanned images, transcribed original Chinese text, and the translation presented side by side, along with a scholarly introduction by the translator(s). Translations draw on the CATS-Seifert Collection of Chinese Comics at Heidelberg.",
+        "institution": "Heidelberg University",
+        "category": "Magazines",
+        "tags": [],
+        "url": "/resources/226/"
       },{
         "title": "Archives of the Institute of Modern History/ Academia Sinica",
         "alternatetitle": null,
@@ -1097,7 +1105,7 @@ var store = [{
       },{
         "title": "Modern History Databases (MHDB)",
         "alternatetitle": "近代史數位資料庫",
-        "description": "Maintained by the Institute of Modern History, Academia Sinica, offers cross-database search and retrieval across 18 databases of historical and literary documents and publications from the Qing to Republican periods. Cross-database search is free with registration, but results (and retrieval) are often improved by searching within constituent databases.",
+        "description": "The Modern History Databases (近代史數位資料庫, MHDB), maintained by the Institute of Modern History at Academia Sinica, is an integrated platform for digital scholarly resources covering Chinese history from the Qing dynasty through the Republican period. Established in 2014, MHDB consolidates resources from the Institute’s library, archives, Hu Shih Memorial Hall, and database research group, as well as interlibrary cooperation projects. The platform provides cross-database search across 18 constituent databases, including: the Archive Collection Recall System, the Hu Shih Archives Search System, the Qing Dynasty Memorial Archives, the Qing Dynasty Grain Price Database, the Ladies’ Journal, the Modern Women Journals Database, Firms in Modern China, the Modern Urban Tabloid Database, the Modern Historical Book Compilation Full-text Database, the Databases of Chinese Maritime Customs, the Modern Annals TIS System, the Integrated Information System on Modern and Contemporary Characters, Modern History Geographical Information Services, the English-Chinese Dictionary, and the Qing Dynasty Official Position Searching System. Cross-database search is free with registration. Note that results are often improved by searching within individual constituent databases rather than relying solely on the cross-database search.",
         "institution": "Academia Sinica",
         "category": "Archival Material",
         "tags": [],
@@ -1106,7 +1114,7 @@ var store = [{
         "title": "Maoist Legacy",
         "alternatetitle": null,
         "description": "The Maoist Legacy Collection at the University of Freiburg holds several thousand original documents, handbooks, and personal dossiers from the 1950s until the 1980s. It ranks among the most comprehensive collections worldwide on the question of how a communist dictatorship has attempted to address injustices and atrocities committed in its own name. The main focus of the collection is devoted to the immediate post-Maoist period in the late 1970s and early 1980s, when dozens of millions of \"unjust cases\" were revised in the People's Republic of China under the new leadership around Hua Guofeng, Deng Xiaoping and Hu Yaobang. Today, over 5,000 documents of the collection have been annotated and digitized for further research Due to privacy laws, currently the vast majority of individual case files cannot be made available in digitized format.",
-        "institution": "University of Freiburg",
+        "institution": "Maoist Legacy Project",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/26/"
@@ -1121,7 +1129,7 @@ var store = [{
       },{
         "title": "Unofficial Poetry Journals from China",
         "alternatetitle": null,
-        "description": "Unofficial Poetry Journals from China (UNPO collection) is an internationally unique collection of underground poetry publications from the People's Republic of China, held and digitized by Leiden University Libraries. Built by professor Maghiel van Crevel during regular fieldwork trips since 1991, the collection contains early specimens from the late 1970s through the early 21st century. Materials range from the legendary Today (今天) to Them (他们), Wings (翼), and The Lower Body (下半身), among others. The digitization project provides free open access to thousands of pages of unofficial poetry, literary criticism, and polemics. These materials, comparable to Soviet-Russian samizdat publications, are hugely influential but difficult to access, being published privately outside China's official literary infrastructure. The collection shows how unofficial poetry accommodates marginalized groups including avant-garde poets, precarious workers, and members of the queer community.",
+        "description": "Unofficial Poetry Journals from China (UNPO collection) is an internationally unique collection of underground poetry publications from the People’s Republic of China, held and digitized by Leiden University Libraries. Built by professor Maghiel van Crevel during regular fieldwork trips since 1991, the collection contains early specimens from the late 1970s through the early 21st century, and also includes some early unofficial publications from the high-socialist period (predating the Cultural Revolution). Materials range from the legendary Today (今天) to Them (他们), Wings (翼), and The Lower Body (下半身), among others. The digitization project provides free open access to thousands of pages of unofficial poetry, literary criticism, and polemics. These materials, comparable to Soviet-Russian samizdat publications, are hugely influential but difficult to access, being published privately outside China’s official literary infrastructure. The collection shows how unofficial poetry accommodates marginalized groups including avant-garde poets, precarious workers, and members of the queer community.",
         "institution": "Leiden University",
         "category": "Archival Material",
         "tags": [],
@@ -1137,8 +1145,8 @@ var store = [{
       },{
         "title": "ReCAP Chinese Journals public list",
         "alternatetitle": null,
-        "description": "This spreadsheet provides holding information on 1350 Chinese periodicals that are archived by libraries of the ReCAP consortium. ReCAP includes Columbia University, Princeton University, Harvard University, and The New York Public Library.",
-        "institution": "Columbia University, Princeton University, Harvard University",
+        "description": "This spreadsheet provides holding information on 1,350 Chinese periodicals archived by member libraries of the ReCAP (Research Collections and Preservation Consortium). ReCAP is a 501(c)3 not-for-profit corporation incorporated in 2000 that preserves collections and enables resource sharing among its member libraries: Columbia University, Harvard University, The New York Public Library, Princeton University, and Yale University. The spreadsheet lists journal titles, ISSN numbers, coverage dates, and holding information by institution, and is intended to help researchers identify which ReCAP member library holds a given Chinese periodical.",
+        "institution": "Columbia University, Princeton University, Harvard University, The New York Public Library",
         "category": "Subject Guides and Bibliographies",
         "tags": [],
         "url": "/resources/3/"
@@ -1154,7 +1162,7 @@ var store = [{
         "title": "Taiwan eBook",
         "alternatetitle": "臺灣華文電子書庫",
         "description": "Taiwan eBook (臺灣華文電子書庫) is a digital preservation and access initiative created and maintained by the National Central Library (NCL) of Taiwan. The database digitizes Chinese language books published between 1911-1949 (the Republican period) held by libraries, research organizations, and government institutions throughout Taiwan. These works document various aspects of Republican-era history, culture, literati, geography, art, literature, society, politics, and economy.",
-        "institution": "National Central Library, Taiwan",
+        "institution": "National Central Library (Taiwan)",
         "category": "E-books (Republican)",
         "tags": [],
         "url": "/resources/31/"
@@ -1176,8 +1184,8 @@ var store = [{
         "url": "/resources/33/"
       },{
         "title": "The Memory Project",
-        "alternatetitle": null,
-        "description": "The Memory Project (民间记忆计划) is a landmark oral history collection comprising approximately 740 digital video interviews (as of September 2024) documenting mid-20th century rural Chinese life, launched in 2010 by pioneering Chinese independent filmmaker Wu Wenguang through his Work Station documentary studio in Caochangdi, Beijing. More than 150 young filmmakers have visited 246 villages across 20 provinces between 2010-2016 to interview over 1,100 elderly villagers, primarily about the Great Famine (1958-1961), which caused 20-43 million deaths and is officially known in China as the \"Three Years of Natural Disasters.\" The project also covers the Land Reform and Collectivization (1949-1953), the Great Leap Forward (1958-1960), the Four Cleanups Movement (1964), and the Cultural Revolution (1966-1976). Many filmmakers returned to their families' rural hometowns, creating new intergenerational relationships while documenting memories excluded from official state history. Duke University exclusively houses the project archives, providing raw footage and transcripts (many in regional dialects) to students, researchers, and the public. An accompanying website features an interactive map, timeline, and featured interviews.",
+        "alternatetitle": "民间记忆计划",
+        "description": "The Memory Project (民间记忆计划) is a landmark oral history collection comprising approximately 740 digital video interviews (as of September 2024) documenting mid-20th century rural Chinese life, launched in 2010 by pioneering Chinese independent filmmaker Wu Wenguang through his Work Station documentary studio in Caochangdi, Beijing. More than 150 young filmmakers have visited 246 villages across 20 provinces between 2010-2016 to interview over 1,100 elderly villagers, primarily about the Great Famine (1958-1961), which caused 20-43 million deaths and is officially known in China as the “Three Years of Natural Disasters.” The project also covers the Land Reform and Collectivization (1949-1953), the Great Leap Forward (1958-1960), the Four Cleanups Movement (1964), and the Cultural Revolution (1966-1976). Many filmmakers returned to their families’ rural hometowns, creating new intergenerational relationships while documenting memories excluded from official state history. Duke University houses the project archives, providing raw footage and transcripts (many in regional dialects) to students, researchers, and the public. An accompanying website features an interactive map, timeline, and featured interviews.",
         "institution": "Duke University",
         "category": "Archival Material",
         "tags": [],
@@ -1218,14 +1226,14 @@ var store = [{
         "title": "LoGaRT: Local Gazetteers Research Tools",
         "alternatetitle": null,
         "description": "LoGaRT (Local Gazetteers Research Tools) is innovative software developed by the Max Planck Institute for the History of Science in collaboration with Harvard-Yenching Library for searching, analyzing, and collecting data from digitized Chinese local gazetteers (difangzhi 地方志). Rather than requiring scholars to browse individual gazetteers, LoGaRT treats all available digitized gazetteers as a unified conceptual database, providing a bird's-eye view across the entire corpus. This approach enables historians to ask large-scale comparative questions transcending geographical regions, time periods, and individual research projects. The platform currently provides access to two high-quality collections: Rare Local Gazetteers at Harvard-Yenching Library and Erudition's Zhongguo fangzhi ku (中国方志库). LoGaRT's analytical capabilities allow researchers to identify patterns, track changes over time, compare regional variations, and extract structured data from these rich historical sources. The tool represents a significant advance in making local gazetteer research more systematic, scalable, and collaborative, opening new possibilities for quantitative and comparative studies of Chinese local history, society, economy, and culture.",
-        "institution": "Max Planck Institute, Harvard-Yenching Library",
+        "institution": "Max Planck Institute for the History of Science, Harvard-Yenching Library",
         "category": "Local Gazetteers (Historical)",
         "tags": [],
         "url": "/resources/39/"
       },{
         "title": "East Asian Gateway Service",
         "alternatetitle": null,
-        "description": "The East Asian Gateway Service (EAGS) is a pioneer in developing transcontinental interlibrary partnerships, focusing on free delivery of full-text Chinese and Korean language academic publications to researchers. The service delivers Chinese documents to any individual researchers for research and teaching purposes or non-profit organizations who cannot find the needed item in any U.S. libraries. The service is reciprocal, as ULS provides document delivery service of English language materials to Chinese and Korean partner libraries. The EAGS has partnerships with libraries in mainland China, Hong Kong, Macau, Taiwan, and Korea, covering 40 states in America and serving more than 130 colleges and universities.",
+        "description": "The East Asian Gateway Service (EAGS) is a pioneer in developing transcontinental interlibrary partnerships, focusing on free delivery of full-text Chinese and Korean language academic publications. Chinese documents are available to any individual researcher or non-profit organization for research and teaching purposes who cannot find the needed item in any U.S. library. Korean language materials are available to University of Pittsburgh faculty and students only. The service is reciprocal, as ULS provides document delivery service of English language materials to Chinese and Korean partner libraries. The EAGS has partnerships with libraries in mainland China, Hong Kong, Macau, Taiwan, and Korea, covering 40 states in America and serving more than 130 colleges and universities.",
         "institution": "University of Pittsburgh Library System",
         "category": "Subject Guides and Bibliographies",
         "tags": [],
@@ -1242,7 +1250,7 @@ var store = [{
         "title": "China.AidData.org",
         "alternatetitle": null,
         "description": "China.AidData.org provides rigorous evidence and uniquely comprehensive data about China's overseas development program through systematic tracking and analysis by AidData, a research lab at William & Mary. The platform documents the changing nature, scale, and scope of China's international development finance and foreign aid, offering the most detailed publicly available information on Chinese development projects worldwide. The database covers thousands of projects across Africa, Asia, Latin America, and other regions, including loans, grants, technical assistance, and other forms of development cooperation. AidData's research reveals the global impact of Chinese development activities and examines how these programs are perceived in recipient countries across the Global South. The platform features interactive visualizations, downloadable datasets, and analytical reports that enable researchers, policymakers, and journalists to understand patterns in Chinese development finance, compare Chinese aid with Western donors, and assess the effectiveness and impact of these programs. This resource has become essential for studies of contemporary international development, China's global influence, and South-South cooperation.",
-        "institution": null,
+        "institution": "AidData, William & Mary",
         "category": "Statistics and Data",
         "tags": [],
         "url": "/resources/41/"
@@ -1250,22 +1258,22 @@ var store = [{
         "title": "World Historical Gazetteer",
         "alternatetitle": null,
         "description": "World Historical Gazetteer (WHG) is an open-source, open-content platform for linked historical place data, based at the University of Pittsburgh's World History Center. The platform indexes over 3.4 million place names spanning human history from the Bronze Age to the 21st century, drawn from 70+ published datasets and collections. WHG enables users to discover places through web interface and API, build gazetteers using the Gazetteer Workbench with reconciliation tools (Getty TGN, Wikidata, GeoNames), and teach with historical geography lesson plans. The platform uses Linked Places Format (LPF), adding temporal extensions to GeoJSON. The reconciliation index contains 13+ million records from GeoNames and Wikidata, and users can create Dataset Collections and Place Collections for publication.",
-        "institution": null,
+        "institution": "University of Pittsburgh World History Center",
         "category": "Maps and GIS",
         "tags": [],
         "url": "/resources/42/"
       },{
         "title": "Chinese Iconography Thesaurus",
-        "alternatetitle": null,
+        "alternatetitle": "CIT / 中國圖像誌索引典",
         "description": "The Chinese Iconography Thesaurus (CIT / 中國圖像誌索引典) is designed as both an indexing standard and image archive for Chinese iconography. Currently, it contains over 11,000 concepts extracted primarily from pre-1900 sources (including historical catalogue records like Shiqu baoji 石渠寶笈 and Midian zhulin 秘殿珠林) and approximately 6,000 images from five major collections: V&A Museum, Metropolitan Museum of Art, National Palace Museum (Taipei), Cleveland Museum of Art, and Harvard-Yenching Library. The CIT addresses the long-standing problem of cataloguing Chinese art using Eurocentric classifications by providing controlled vocabulary rooted in Chinese cultural specificity.",
-        "institution": null,
+        "institution": "Chinese University of Hong Kong",
         "category": "Images",
         "tags": [],
         "url": "/resources/43/"
       },{
         "title": "Sidney Gamble photographs, 1906-2007",
         "alternatetitle": null,
-        "description": "Sidney D. Gamble Photographs Collection (1906-2007) at Duke University contains over 5,500 photographs and moving images documenting China from 1908 to 1932, housed in the David M. Rubenstein Rare Book & Manuscript Library as part of the Archive of Documentary Arts. Sidney D. Gamble (1890-1968), a trained sociologist and amateur photographer, made four trips to China (1908, 1917-1919, 1924-1927, 1931-1932) to conduct socioeconomic surveys while working as secretary for the Beijing YMCA. The collection includes contact sheets, hand-colored glass slides, 35mm duplicate slides, contact prints, negatives, and moving images (filmed 1926-1933) depicting urban and rural life, economic conditions, public events, agriculture, religious statuary, architecture, and the countryside. Also included are artifacts, scrapbooks, personal papers, and records of the Sidney D. Gamble Foundation for China Studies documenting exhibitions in the US and China (1980s-2000s). Additional images from Japan, Korea, and the western United States (circa 1906) are also included. As of 2019, many works entered public domain.",
+        "description": "Sidney D. Gamble Photographs Collection (1906-2007) at Duke University contains over 5,500 photographs, over 20 films, and other moving images documenting China from 1908 to 1932, housed in the David M. Rubenstein Rare Book & Manuscript Library as part of the Archive of Documentary Arts. Sidney D. Gamble (1890-1968), a trained sociologist and amateur photographer, made four trips to China (1908, 1917-1919, 1924-1927, 1931-1932) — totaling approximately nine years in China — to conduct socioeconomic surveys while working as secretary for the Beijing YMCA. The collection includes contact sheets, hand-colored glass slides, 35mm duplicate slides, contact prints, negatives, and moving images (filmed 1926-1933) depicting urban and rural life, economic conditions, public events, agriculture, religious statuary, architecture, and the countryside. Also included are artifacts, scrapbooks, personal papers, and records of the Sidney D. Gamble Foundation for China Studies documenting exhibitions in the US and China (1980s-2000s). Additional images from Japan, Korea, and the western United States (circa 1906) are also included. As of 2019, many works entered public domain.",
         "institution": "Duke University",
         "category": "Images",
         "tags": [],
@@ -1306,23 +1314,23 @@ var store = [{
         "title": "Modern China Biographical Database",
         "alternatetitle": null,
         "description": "Modern China Biographical Database (MCBD) is a freely accessible relational database recording historical actors active in China during the Late Qing and Republican periods (1830-1949), regardless of origin, nationality, or duration of presence. MCBD currently holds data on over 75,000 individuals, 20,000 positions, 6,000 curricula/degrees, 10,000 institutions, and 14,000 companies. A distinctive feature is presenting individuals under all forms their names took, including Chinese characters and various Western-language transliterations, addressing the complex challenge of name standardization across linguistic boundaries. The database captures the diverse actors who shaped modern China's transformation—Chinese and foreign officials, educators, missionaries, businesspeople, journalists, intellectuals, and revolutionaries. The database is built on the Heurist platform (huma-num.fr) and designed for both individual queries and large-scale prosopographical analysis of institutional development, elite networks, educational systems, commercial enterprises, and transnational connections.",
-        "institution": null,
+        "institution": "Heurist Digital Knowledge Management Platform, Huma-Num",
         "category": "Biographical Data",
         "tags": [],
         "url": "/resources/49/"
       },{
         "title": "National Center for Philosophy & Social Science Documentation",
         "alternatetitle": "国家哲学社会科学文献中心(中国社科院)",
-        "description": "Administered by the Chinese Academy of Social Sciences, the National Center for Philosophy and Social Science Documentation (NCPSSD) is a free open-access platform providing over 2,600 Chinese academic journals and collected works, with over 27 million data entries covering philosophy, social sciences, and humanities. It includes approximately 20,000 Chinese rare books in high-resolution scans (with watermarks). Institutions can request IP-based access. The database interface is in Chinese only.",
+        "description": "Administered by the Chinese Academy of Social Sciences, the National Center for Philosophy and Social Science Documentation (NCPSSD) is a free open-access platform providing over 2,400 Chinese academic journals and collected works (期刊、集刊、辑刊), with over 27 million data entries covering philosophy, social sciences, and humanities. It includes approximately 20,000 Chinese rare books in high-resolution scans (with watermarks). Institutions can request IP-based access. The database interface is in Chinese only.",
         "institution": "Chinese Academy of Social Sciences",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/5/"
       },{
         "title": "Biographical Dictionary of Occupied China",
-        "alternatetitle": "Dictionnaire Biographique de la Chine Occupée",
+        "alternatetitle": "Dictionnaire biographique de la Chine occupée",
         "description": "Biographical Dictionary of Occupied China (BDOC / Dictionnaire Biographique de la Chine Occupée) addresses a significant gap in scholarship on the Japanese occupation of China (1937-1945). Remarkably, no dedicated biographical dictionary on this subject exists in Chinese, Japanese, or Western languages. BDOC elucidates the structure of the Japanese occupation state through biographical pathways of key figures including Japanese officials, Chinese collaborators, resistance leaders, and other historical actors. Each entry provides internal cross-references and hyperlinks to external resources including the Biographical Dictionary of the International Labor Movement (\"Maitron\"), Biographical Dictionary of Republican China (\"Boorman\"), and Historical Dictionary of Japan. The bilingual (French/English) database examines the complex web of actors involved in occupation governance, collaboration, resistance, and wartime society.",
-        "institution": null,
+        "institution": "European Network on Japan China Relations",
         "category": "Biographical Data",
         "tags": [],
         "url": "/resources/50/"
@@ -1330,7 +1338,7 @@ var store = [{
         "title": "Treasury of Lives",
         "alternatetitle": null,
         "description": "Treasury of Lives is a comprehensive biographical encyclopedia of Tibet, Inner Asia, and the Himalayan region, in continuous development since 2007. The open-access platform provides accessible, well-researched biographies of notable deceased individuals native to the region, including religious teachers, political leaders, scholars, artists, and other significant figures primarily from Tibetan Buddhist traditions. Most biographical essays are peer-reviewed, ensuring scholarly rigor. Content is enhanced by a dynamic interactive map showing geographic connections and movements of historical figures, genealogical information, and links between individuals. The database covers figures from ancient times to the modern era, with particular strength in documenting the religious and intellectual history of Tibetan Buddhism across the Tibetan plateau, Mongolia, Bhutan, Nepal, and other Himalayan regions.",
-        "institution": null,
+        "institution": "The Shelley & Donald Rubin Foundation",
         "category": "Biographical Data",
         "tags": [],
         "url": "/resources/51/"
@@ -1338,7 +1346,7 @@ var store = [{
         "title": "Xinjiang Documentation Project",
         "alternatetitle": null,
         "description": "The Xinjiang Documentation Project is a multi-disciplinary research project based at the Institute for Asian Research in the School of Public Policy and Global Affairs at the University of British Columbia and the Gender, Sexuality, and Women's Studies Department at Simon Fraser University. The Project collects, preserves, assesses, and makes available documentary information on the extrajudicial detention of Uyghurs, Kazakhs, and other ethnic groups in Xinjiang Uyghur Autonomous Region, Northwestern China. Our scope and priorities are: making key documents available, assessing their reliability, presenting the material for the general public, and giving a platform to share the lived experiences, providing regular updates on the ongoing situation in the region, and organizing periodic speaker series.",
-        "institution": "University of British Columbia, Simon Fraser University",
+        "institution": "University of British Columbia",
         "category": "Political Documents (Contemporary)",
         "tags": [],
         "url": "/resources/52/"
@@ -1346,7 +1354,7 @@ var store = [{
         "title": "PRC State Council Archive (EN)",
         "alternatetitle": null,
         "description": "PRC State Council Archive (EN) is the English-language portal of the Chinese government's official document archive, providing free access to White Papers, policy documents, and ministry statements in English translation. Materials represent the government's official narrative and policy framework, providing insight into how China presents its governance, development achievements, and policy priorities to international audiences. The archive is regularly updated with new documents as they are released.",
-        "institution": null,
+        "institution": "State Council, People's Republic of China",
         "category": "Political Documents (Contemporary)",
         "tags": [],
         "url": "/resources/53/"
@@ -1354,14 +1362,22 @@ var store = [{
         "title": "Xi Jinping Speeches Database",
         "alternatetitle": "习近平系列重要讲话数据库",
         "description": "Xi Jinping Speeches Database (习近平系列重要讲话数据库) is a comprehensive free resource provided by People's Daily (人民日报), the state-owned official newspaper of the Communist Party of China. The database systematically collects and organizes Xi Jinping's speeches, writings, books, articles, policy documents, news reports, and related white papers. Materials are available in both Chinese and English. The database covers Xi's major speeches on topics including China's development path (\"Chinese Dream\"), economic reform, anti-corruption campaigns, environmental protection (\"ecological civilization\"), foreign policy (\"Belt and Road Initiative\", \"community of shared future for mankind\"), military modernization, Party governance, ideological work, and national rejuvenation. Content spans Xi's tenure from becoming General Secretary in 2012 through the present, documenting the evolution of \"Xi Jinping Thought on Socialism with Chinese Characteristics for a New Era\" (formally enshrined in Party Constitution in 2017).",
-        "institution": null,
+        "institution": "People's Daily",
         "category": "Political Documents (Contemporary)",
         "tags": [],
         "url": "/resources/54/"
       },{
+        "title": "Party History Ebook Archive",
+        "alternatetitle": null,
+        "description": "Provided by the Chinese Research Institute for Chinese Communist Party History, this database gives access to the collected works and speeches of Party leaders and document collections such as the 建党以来重要文献 and 建国以来重要文献 series.",
+        "institution": null,
+        "category": "Political Documents (Contemporary)",
+        "tags": [],
+        "url": "/resources/55/"
+      },{
         "title": "National Library of China e-resources",
         "alternatetitle": "中国国家图书馆数字资源",
-        "description": "National Library of China e-resources (中国国家图书馆数字资源) provides free public access to over 21 specialized databases through the China Ancient Books Protection Network (中国古籍保护网). Major collections include: Digital Rare Books (数字古籍) with works dating to Song-Yuan-Ming-Qing dynasties, Digital Gazetteers (数字方志) covering local histories nationwide, China Genealogical Database (中华寻根网) for family history research, Zhaocheng Jin Tripitaka (赵城金藏) - rare Buddhist canon, Chinese New Year Prints (年画撷英) for folk art, Rubbings Database (碑帖精华) of stone inscriptions, Collected Works of Song Dynasty Authors (宋人文集), Oracle Bones Database (甲骨世界) for earliest Chinese writing, Tangut Texts (西夏文献) and Tangut Studies Bibliography (西夏论著) for extinct scripts, Historic Photographs (前尘旧影), Huizhou Genealogies (徽州善本家谱), Classical Chinese Medicine Works (中华医药典籍资源库), and Dunhuang Manuscripts from Bibliothèque Nationale de France (法藏敦煌遗书).",
+        "description": "National Library of China e-resources (中国国家图书馆数字资源) provides free public access to 21 specialized databases through the China Ancient Books Protection Network (中国古籍保护网). Databases include: Digital Rare Books (数字古籍) with works dating to Song-Yuan-Ming-Qing dynasties; Digital Gazetteers (数字方志) covering local histories nationwide; China Genealogical Database (中华寻根网) with bibliographic information on nearly 30,000 family histories (家谱) and reading access to more than 2,000, plus over 6,000 gazetteers linked into the system; Zhaocheng Jin Tripitaka (赵城金藏) — rare Buddhist canon; Chinese New Year Prints (年画汀英); Rubbings Database (碑帖精华) supporting full-text searching of transcribed rubbings, with particular depth for the Tang and Qing periods; Collected Works of Song Dynasty Authors (宋人文集, focusing on first editions); Oracle Bones Database (甲骨世界); Tangut Texts (西夏文献) and Tangut Studies Bibliography (西夏论著); Historic Photographs (前尘旧影); Huizhou Genealogies (徽州善本家谱); Classical Chinese Medicine Works (中华医药典籍资源库); Dunhuang Manuscripts from Bibliothèque Nationale de France (法藏敦煌遗书); Yunnan Library Rare Books (云南图书馆古籍); Tianjin Library Rare Books (天津图书馆古籍); Shanghai Library Family Histories (上海图书馆家谱); Toyo Bunko Rare Chinese Books (东文研汉籍影像库); Harvard Yenching Library Rare Books (哈佛大学善本特藏); and the Union Catalog of Chinese Rare Books (中华古籍善本联合书目) — a catalog of 3,481 editions of rare books in Chinese and international collections.",
         "institution": "National Library of China",
         "category": "Classical Texts",
         "tags": [],
@@ -1377,7 +1393,7 @@ var store = [{
       },{
         "title": "Harvard Yenching Chinese Rare Books",
         "alternatetitle": null,
-        "description": "Harvard-Yenching Library's Chinese Rare Books collection (13th-19th centuries)  includes Chinese books from the 13th to 19th centuries covering classics & history, philosophy, collectanea, and unique manuscripts. The collection comprises: 1,500 Song, Yuan, and Ming block-print books (with 188 titles not found in any major libraries in China, Taiwan, Hong Kong, or Japan - representing unique surviving editions), approximately 1,500 manuscripts including holographs (original manuscripts in authors' own handwriting), Song, Yuan, and Ming encyclopedias (leishu 類書), nearly 2,600 gazetteers (including 720 rare editions from Ming through Qianlong period), banned books (禁書 / jinshu) censored during imperial periods, and women's writing - a rare category systematically excluded from traditional canons. Materials are accessible through digital catalog.",
+        "description": "Harvard-Yenching Library’s Chinese Rare Books collection (13th–19th centuries) includes Chinese books from the 13th to 19th centuries covering classics & history, philosophy, collectanea, and unique manuscripts. The collection comprises: 1,500 Song, Yuan, and Ming block-print books (with 188 titles not found in any major libraries in China, Taiwan, Hong Kong, or Japan — representing unique surviving editions), approximately 1,500 manuscripts including holographs (original manuscripts in authors’ own handwriting), Song, Yuan, and Ming encyclopedias (leishu 類書) including Sancai tuhui 三才圖會, Shantang sikao 山堂肆考, and Tang leihan 唐類凵, nearly 2,600 gazetteers (including 720 rare editions from Ming through Qianlong period), banned books (禁書 / jinshu) censored during imperial periods, and women’s writing — a rare category systematically excluded from traditional canons. Materials are accessible through digital catalog.",
         "institution": "Harvard University",
         "category": "Classical Texts",
         "tags": [],
@@ -1386,7 +1402,7 @@ var store = [{
         "title": "Chinese Text Project",
         "alternatetitle": null,
         "description": "Chinese Text Project (CTP / ctext.org) is a comprehensive open-access digital library of pre-modern Chinese texts, with particular focus on pre-Qin (before 221 BCE) and Han dynasty (206 BCE-220 CE) materials. Founded by Donald Sturgeon, the platform now contains tens of thousands of texts spanning from ancient classics to late imperial works, organized by traditional categories including Classics (經 jing), History (史 shi), Masters/Philosophy (子 zi), and Collected Works (集 ji). The site provides accurate transcriptions with parallel translations where available, powerful full-text search across the entire corpus, concordance tools, statistical analysis, and cross-referencing between editions. Advanced features include automated textual analysis, markup tools for collaborative annotation, API access for computational research, and integration with other digital repositories.",
-        "institution": null,
+        "institution": "Chinese Text Project",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/59/"
@@ -1410,7 +1426,7 @@ var store = [{
         "title": "Zhongguo xieben wenxian shuzi ziyuan ku",
         "alternatetitle": "中國寫本文獻數字資源庫",
         "description": "Zhongguo xieben wenxian shuzi ziyuan ku (中國寫本文獻數字資源庫/ Digital Repository of Chinese Manuscript Literature) is operated by the China Academic Digital Associative Library (CADAL) at Zhejiang University. The database provides free access to digitized Chinese manuscript materials, with primary focus on Dunhuang manuscripts from Cave 17 (Library Cave) and other Silk Road sites. Images currently derive mostly from collections in China and the UK (British Library, which holds approximately 14,000 Dunhuang items), with plans to expand coverage to include holdings from France, Russia, Japan, and other international collections. Beyond Dunhuang materials, the database includes collections of local manuscript documents, particularly land contracts, property deeds, and legal documents from various Chinese regions spanning multiple dynasties. These non-canonical manuscripts provide crucial evidence for social history, economic relations, and daily life in pre-modern China. The platform offers high-resolution images with OCR capabilities where applicable, searchable metadata, and cross-references to related materials. Browser compatibility note: image viewer works best with Edge and Chrome browsers.",
-        "institution": "Zhejiang University",
+        "institution": "China Academic Digital Associative Library (CADAL), Zhejiang University",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/61/"
@@ -1426,7 +1442,7 @@ var store = [{
         "title": "Land Survey Maps of China, 1895-1944",
         "alternatetitle": null,
         "description": "Land Survey Maps of China (CHMap) provides access to 4,088 historical land survey maps from 1895-1944 (at 1:50,000 scale), produced by Chinese central and provincial governments and the Japanese Army's land survey department. Through a trilateral collaboration between Max Planck Institute for the History of Science, Shanghai Jiao Tong University, and Academia Sinica, the project provides access to large-scale maps with geographic coverage, with detail of terrain, settlements, infrastructure, and land use during the late Qing and Republican periods.  CHMap's interface allows users to search by location, browse by region, compare historical maps with modern satellite imagery, and download high-resolution images.",
-        "institution": "Max Planck Institute, Shanghai Jiao Tong University, Academia Sinica",
+        "institution": "Max Planck Institute for the History of Science, Shanghai Jiao Tong University, Academia Sinica",
         "category": "Maps and GIS",
         "tags": [],
         "url": "/resources/63/"
@@ -1434,7 +1450,7 @@ var store = [{
         "title": "Modern China Geospatial Database",
         "alternatetitle": null,
         "description": "Modern China Geospatial Database (MCGD) addresses the critical challenge of place name standardization in modern Chinese history by identifying and collecting all name variants under which locations were designated in historical sources. The database is particularly valuable for handling the bewildering variety of Western transliteration systems used to render Chinese place names (e.g., Shanghai variants: Shang-hae, Changhaï, Schanghai, Szang-hai, etc.), as well as historical Chinese names that changed over time. The MCGD search interface allows researchers to input place names individually or batch upload CSV files of multiple names. The search engine retrieves matches regardless of language or transliteration system, providing geo-coordinates, current Chinese names and pinyin, and all known historical designations.",
-        "institution": null,
+        "institution": "Humanités numériques",
         "category": "Maps and GIS",
         "tags": [],
         "url": "/resources/64/"
@@ -1450,7 +1466,7 @@ var store = [{
         "title": "Mapping Global China",
         "alternatetitle": null,
         "description": "The Mapping Global China project is designed to offer a distinctive view of China's global economic endeavors through data-driven analysis and research. Our project includes maps, datasets, and studies on China's international engagement, such as the Belt and Road Initiative (BRI). Our resources compile information from a variety of credible sources, which range from the Reconnecting Asia Project Database to the Hong Kong Institute for the Humanities and Social Sciences at the University of Hong Kong, AIDDATA GeoQuery, the Boston University Global China Dataset, the Australian Strategic Policy/International Cyber Policy Center, and projects compiled by NYU Shanghai. Each project is connected to satellite imagery that allows users to examine the transformation of areas before and after project development. Data includes project locations, financing amounts, implementation status, Chinese companies involved, and completion timelines.",
-        "institution": "University of Hong Kong, NYU Shanghai",
+        "institution": "University of Hong Kong, New York University Shanghai",
         "category": "Maps and GIS",
         "tags": [],
         "url": "/resources/66/"
@@ -1474,7 +1490,7 @@ var store = [{
         "title": "Chinese Periodicals Index",
         "alternatetitle": "臺灣期刊文獻資訊網",
         "description": "The PerioPath: Index to Taiwan Periodical Literature System (NCL Taiwan Periodical Literature / 臺灣期刊文獻資訊網), developed by Taiwan's National Central Library, was originally launched as the Index to Chinese Periodicals in January 1970. The database indexes Chinese and Western language periodicals primarily published in Taiwan since 1970, with some journals from Hong Kong, Macau, and Singapore also included. The database contains approximately 4,800 journal titles with more than 2.22 million article citations. Some academic journals published before 1970 are also available. Many titles provide full-text access, while others are index-only. The system provides comprehensive indexing for post-WWII periodical literature from Taiwan.",
-        "institution": null,
+        "institution": "National Central Library (Taiwan)",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/7/"
@@ -1498,7 +1514,7 @@ var store = [{
         "title": "Dharmamitra",
         "alternatetitle": null,
         "description": "Dharmamitra is an integrated ecosystem developed at UC Berkeley for studying Buddhist texts across Pāli, Sanskrit, Tibetan, and Buddhist Chinese languages. The platform provides powerful, accessible tools addressing real-world needs of translators, researchers, and scholars: MITRATranslate offers machine translation from classical Buddhist languages (Pāli, Sanskrit, Tibetan, Buddhist Chinese) into modern languages, trained on Buddhist corpus-specific terminology and concepts; MITRASearch provides multilingual semantic search finding conceptually related passages across the entire Buddhist canon regardless of source language, enabling identification of parallel texts, doctrinal development, and intertextual relationships; MITRA-OCR utilizes Gemini-based AI for document-level OCR of Buddhist texts up to 100MB, handling classical scripts and layouts; DharmaNexus explores intertextuality within Buddhist literature based on the open-source BuddhaNexus initiative, mapping textual reuse and transmission patterns.",
-        "institution": "University of California Berkeley",
+        "institution": "University of California, Berkeley",
         "category": "Classical Texts",
         "tags": [],
         "url": "/resources/72/"
@@ -1522,7 +1538,7 @@ var store = [{
         "title": "Folk History Archive",
         "alternatetitle": "民間歷史檔案庫",
         "description": "This collection is hosted by the Universities Service Centre for China Studies (USC) Collection, at the Chinese University of Hong Kong Library. It includes approximately 500 original contributions, including 70 novellas and over 400 articles, providing a rich and diverse collection of narratives and provides downloadable metadata for over 9,000 records, encompassing selections from magazines, newspapers, and books, enhancing research opportunities. The website also lists resources related to Chinese folk history, incorporating book series, websites, and Social-Media platforms.",
-        "institution": "Chinese University of Hong Kong Library",
+        "institution": "Chinese University of Hong Kong",
         "category": "Archival Material",
         "tags": [],
         "url": "/resources/75/"
@@ -1546,14 +1562,14 @@ var store = [{
         "title": "Bibliography of Asian Studies",
         "alternatetitle": null,
         "description": "The on-line version of the Bibliography of Asian Studies contains more than 700,000 records on all subjects (especially humanities and social sciences) pertaining to East, Southeast, and South Asia published worldwide from 1971 to the present. Through the 1991 printed version, the BAS included citations to western-language periodical articles, individually authored monographs, chapters in edited volumes, conference proceedings, anthologies, and Festschriften, etc. Since 1992, newly published individual monographs are no longer being added to the database, and users seeking monographs are urged to consult other general resources and databases. The online BAS contains the full data of all printed editions of the BAS issued from 1971 up to the 1991 edition (published 1997), as well as thousands of entries compiled since. To quickly bridge the gap in coverage from 1991 to the present, the BAS staff have identified the most important 100+ periodicals in Asian Studies, and have given these high priority for indexing to make their coverage as up-to-date as possible. For any particular journal, full information on years of coverage should be provided through the Journal Title Browse function, although this part seems often out of sync with the rest of the database. You can search by phrase in specified field, can combine searches, and can specify your desired display, with or without diacritics; a downloadable font is provided. You can limit your searches to specific countries. Subject searching is also provided, but subject ranges are broad and have changed over the years. If you need assistance, consult the Western bibliographer (contact info found in the right column of this page). Print back to 1946 at Firestone Reference (DR) & East Asian Library: (GEST) Z3001 .B49. Prior title covering 1936-40 at Gest Z3001.xB8; Cumulative bibliographies covering 1941-65 at GEST Z3001.C94 & Z3001.C93.",
-        "institution": null,
+        "institution": "Association for Asian Studies",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/78/"
       },{
         "title": "PubScholar (Chinese)",
         "alternatetitle": null,
-        "description": "Published by the Chinese Academy of Sciences, PubScholar is a free database for academic journal articles, pre-prints, patents and scholarly datasets. Content is mostly focused on the sciences and engineering.",
+        "description": "PubScholar is a free public welfare academic platform launched in November 2023 by the Chinese Academy of Sciences (CAS). The platform provides access to approximately 170 million academic resources, including over 87 million journal articles, preprints, patents, dissertations, and scholarly datasets. Content is primarily focused on the natural sciences, engineering, and technology, though social sciences are also represented. PubScholar offers AI-powered search, intelligent literature summarization, and document-level OCR tools. The platform aims to provide high-quality public academic resources for China's science and technology community and the broader public, and supports the Directory of Open Access Journals (DOAJ). The interface is primarily in Chinese.",
         "institution": "Chinese Academy of Sciences",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
@@ -1562,15 +1578,15 @@ var store = [{
         "title": "China Academic Journals / CNKI",
         "alternatetitle": "中国学术期刊 / 中国知网",
         "description": "Princeton's access to the Literature/ History/ Philosophy, Economics/ Politics/ Law, Education/ Social Sciences, and the Electronic and Information Series components of the CNKI includes access to the full-text China Academic Journals database (includes full text and/or full image articles from 8,000+ journals from first issue to date). No usernames or passwords are necessary: the link above opens the database with the English interface; after logging in, you can switch to a Simplified Chinese interface if you prefer. Use the PDF format for downloading articles.",
-        "institution": null,
+        "institution": "CNKI (China National Knowledge Infrastructure)",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/80/"
       },{
         "title": "China Economy, Public Policy, and Security (皮书 pishu) Database",
-        "alternatetitle": null,
+        "alternatetitle": "皮书, pishu",
         "description": "A database comprised of the volumes called pishu (皮书) from the Chinese Academy of Social Sciences (CASS), published (often yearly) by the Social Science Academic Press (SSAP). This database should be especially useful for researchers in the economic, political and social sciences of China. The archive covers all pishu published by SSAP from 1991 onward, and new pishu are uploaded on a monthly basis, between 15-20 new volumes each month. You can see the updated title list here: http://www.eastview.com/Files/UDB-Pishu.xlsx . You can search within all titles, or by series and/or thematic keyword (click on those headings). The seven series are China Society and Culture (国社会与文化), China Economic Development (中国的经济发展), China Regional Analysis - Provincial  (中国地区分析 - 省级), China Regional Analysis - Municipal  (中国地区分析 - 市政的), China Regional Analysis - Hong Kong/Macau/Taiwan (中国地区分析 - 香港/澳门/台湾), China Industrial Sectors (中国的工业部门),  and Global Economy, Politics, Security  (世界经济，政治，安全). Thematic keywords include advertising, ethnology, etc. The database also includes such titles as the Annual Report on Research on Japan (日本研究报告). An explanatory brochure about the database is available from: http://www.eastview.com/Files/EVPishu.pdf . We have only a selection of these works in paper, and ranges may be spotty. Note that almost all titles are Chinese-only, although they do have English alternative titles.",
-        "institution": null,
+        "institution": "Chinese Academy of Social Sciences, Social Science Academic Press",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/81/"
@@ -1578,7 +1594,7 @@ var store = [{
         "title": "China Monographic Series / CNKI",
         "alternatetitle": "中国学术辑刊 / 中国知网",
         "description": " China Monographic Series gives access to journals that are infrequently published in monographic form rather than as continuously published journals. This happens mostly in the Humanities, but to a lesser extent also in the Social Sciences. These journals are not searchable in the main China Academic Journals database and have to be retrieved from a separate interface. The link to the database is available in the lower part of the CNKI welcome page. No usernames or passwords are necessary: the link above opens the English interface; after logging in, you can switch to a Simplified Chinese interface if you prefer. Use the PDF format for downloading articles.",
-        "institution": null,
+        "institution": "CNKI (China National Knowledge Infrastructure)",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/82/"
@@ -1586,7 +1602,7 @@ var store = [{
         "title": "China Research Gateway",
         "alternatetitle": null,
         "description": "Academic database collection (scholarly journals, reference works, statistical publications, government documents, newspapers, dissertations, conference proceedings, standards, images, and videos) including STEM, the Social Science, and the Humanities.",
-        "institution": null,
+        "institution": "University of London",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/83/"
@@ -1594,7 +1610,7 @@ var store = [{
         "title": "Chugoku kankei ronsetsu shiryō sakuin",
         "alternatetitle": "中国関係論説資料索引",
         "description": "Searchable index to the printed collection, which includes reduced copies of articles on China in less common Japanese academic journals. This collection may be viewed from the main computer cluster in the EAL.",
-        "institution": null,
+        "institution": "Nichigai Associates",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/84/"
@@ -1602,7 +1618,7 @@ var store = [{
         "title": "CNKI Journal Translation Project",
         "alternatetitle": null,
         "description": "The CNKI Journal Translation Project provides English translations from the most important articles from a carefully selected group of Chinese academic journals. A wide variety of fields is covered, from humanities and social sciences to exact sciences including medicine, with international studies featured: archaeology and cultural relics, biology, chemistry and materials, ecology, agronomy, economics, finance, education, physical culture, engineering technology, ethnology, religion, geoscience, management, mathematics, physics, medical science, politics, law, military, psychology, sociology and demography. The original Chinese is also included. Selection and translation is done by specialists in the field from all over the world. Each article has an abstracts and press release. Articles on current hot topics can also be accessed through special folders.",
-        "institution": null,
+        "institution": "CNKI (China National Knowledge Infrastructure)",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/85/"
@@ -1610,7 +1626,7 @@ var store = [{
         "title": "Duxiu",
         "alternatetitle": "读秀",
         "description": "Basically, Duxiu looks like an enormous combined Google Scholar and Google Books for Chinese material. But Duxiu has its own characteristics; there is no real English equivalent. Duxiu is a huge content-based database composed of 600,000,000 full text pages, with very flexible searches (full-text, books, articles, theses, web pages, newspapers). Please see our user guide for details:  At the moment the Duxiu works well with Firefox and Internet Explorer, but there are still problems with requesting PDFs using Chrome.",
-        "institution": null,
+        "institution": "Duxiu Corporation",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/86/"
@@ -1618,7 +1634,7 @@ var store = [{
         "title": "Hong Kong Periodical Database",
         "alternatetitle": "香港中文期刊論文縮印",
         "description": null,
-        "institution": null,
+        "institution": "Chinese University of Hong Kong",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/87/"
@@ -1626,7 +1642,7 @@ var store = [{
         "title": "Kao gu",
         "alternatetitle": "考古",
         "description": "Kao gu is a monthly, peer-reviewed journal of Chinese archaeology. Many of the articles have English abstracts. We hold an electronic archive of this journal from 1997-2003, including diagrams and photographs. It may be viewed from the main computer cluster in the EAL.",
-        "institution": null,
+        "institution": "Chinese Academy of Social Sciences",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/88/"
@@ -1634,15 +1650,15 @@ var store = [{
         "title": "National Palace Museum eJournals (Airiti)",
         "alternatetitle": null,
         "description": "Provides access to the periodicals published by the National Palace Museum in Taibei, Taiwan: the 3 Chinese periodicals Gugong wenwu yuekan (National Palace Museum Monthly of Chinese Art), Gugong jikan (National Palace Museum Quarterly), and Gugong xueshu jikan (National Palace Museum Research Quarterly) as well as the National Palace Museum Bulletin (published in English). All three Chinese periodicals are full-text searchable.",
-        "institution": null,
+        "institution": "Airiti Inc.",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/89/"
       },{
         "title": "Biblioteca Virtual de Macau",
         "alternatetitle": "澳門虛擬圖書館",
-        "description": "Free digital library for publications from Macao. Includes many journals of local academic institutions and e-books issued by government and educational institutions.",
-        "institution": null,
+        "description": "The Biblioteca Virtual de Macau (澳門虛擬圖書館) is a free online reading platform established in 1999 by the Macao Foundation (澳門基金會), which has published nearly a thousand books and journals dedicated to Macau studies. The platform provides open access to books, academic journals, and dissertations published in or about Macao, including publications from local government agencies, universities, and cultural organizations. A major redesign in 2022 expanded the platform's features to include full-text search, scholar profiles, institutional directories, and thematic online exhibitions. The platform also integrates academic news and book reviews, and accepts submissions of Macao publications from organizations and individuals. Content is available in Chinese and Portuguese.",
+        "institution": "Macao Foundation / Macao Government",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/9/"
@@ -1658,7 +1674,7 @@ var store = [{
         "title": "Quanguo baokan suoyin",
         "alternatetitle": "全国报刊索引",
         "description": "The Quan guo bao kan suo yin 全国报刊索引 (National Index to Chinese Newspapers & Periodicals) compiled by Shanghai Library is a collection of databases giving access to a diverse array of sources. The platform has a strong focus on the period from the late Qing Dynasty to the Republic. It also indexes articles published in Chinese periodicals from 1833 to current. Some of the resources are categorized index-only (in Chinese, pian ming shu ju ku 篇名数据库), some have the full-images of the indexed articles; the content itself is not text searchable (confusingly, and wrongly, this database is called quan wen shu ju ku , 全文数据库 in Chinese) and other parts of the resources on the platform are actually full-text searchable (全文搜索版). Most of the journal and newspaper publications from the  late Qing and Republican periods are full-images of the indexed articles; lately the platform also has added Republican e-books which are full-text searchable. Post 1949 the database includes indexes only, and in most cases it would be better to search the China Academic Journals database instead. The three kinds of databases are integrated on one and the same platform . Downloadable articles show a pdf icon. For most flexible search, click on the \"search center\" icon (进入检索中心.) You can then specify which database(s) to search, etc. The full-image databases include the Late Qing and part of the Republican Periodical databases ( Wan Qing qi kan quan wen shu ju ku 晚清期刊全文数据库,1833-1911, and Minguo shi qi qi kan quan wen shu ju ku 民国时期期刊全文数据库, 1911-1949). The Late Qing databases includes 625 journals. The Republican full-image database currently includes some 22,000 journals. A guide on how to best use the integrated platform is included here; you can ignore the section on “log-on”, which on the Princeton campus is IP-based and automatic.For most of the Late Qing and the Republican journals full-text searching is not possible. The database also includes a large number of Chinese and English language newspapers that are mostly indexed on the article title level. A small selection of newspapers is full-text searchable. One important feature of the database is that it indexes images (mostly news photography) and advertisements . Princeton users have access to several Republican newspaper and a large Republican eBooks package on this website. Some of these sources are full-text searchable. The additional modules are listed individually on this research guide.",
-        "institution": null,
+        "institution": "Shanghai Library",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/95/"
@@ -1666,7 +1682,7 @@ var store = [{
         "title": "Renda funü yanjiu",
         "alternatetitle": "人大妇女研究",
         "description": "This is a compilation of articles in women's studies published between 1995 and 2001. It may be viewed from the main computer cluster in the EAL.",
-        "institution": null,
+        "institution": "Chinese Academy of Social Sciences",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/96/"
@@ -1674,7 +1690,7 @@ var store = [{
         "title": "Sinica SinoWeb",
         "alternatetitle": "經典人文學刊庫",
         "description": "This database gives access to past and (if applicable) current issues to the following Sinological periodicals published in Taiwan (mostly from the Academia Sinica): 中央研究院歷史語言研究所集刊, 中央研究院中國文哲研究集刊, 中央研究院近代史研究所集刊, 中央研究院近代中國婦女史研究, 中央研究院口述歷史期刊, 中央研究院近代中國史研究通訊, 中央研究院臺灣人類學刊, 中央研究院臺灣史研究, 漢學研究, 思与言, 鵝湖學誌, 鵝湖月刊, 食貨月刊, 民俗曲藝 The home page is in English; you may want to change to Traditional Chinese for better results. This database was previously offered as a stand-alone database and is now hosted as part of the Taiwan Academic Classics database. Please note that there may be other database titles listed in left column of the interface to which Princeton currently does not subscribe.",
-        "institution": null,
+        "institution": "Academia Sinica",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/97/"
@@ -1682,7 +1698,7 @@ var store = [{
         "title": "Taiwan Electronic Periodicals Service",
         "alternatetitle": "台彎電子期刊 (airiti library)",
         "description": "The TEPS (Taiwan Electronic Periodicals Service) database now included in the Airiti Digital Library offers an archive of several hundred Taiwanese periodicals in various subjects, including natural and applied sciences, medicine, the humanities, and social sciences. Full texts can be downloaded in PDF format. One can browse by title. The TEPS collection is part of the Chinese Electronic Periodical Service (CEPS) database. The majority of the journals included in the database are covered in electronic form from 2000 on-wards, but there are many journals with digital back issues going back to the mid-20th century. The database even includes some 1930s journals.",
-        "institution": null,
+        "institution": "Airiti Inc.",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/98/"
@@ -1690,7 +1706,7 @@ var store = [{
         "title": "Wanfang xueshu huiyi",
         "alternatetitle": "万方学术会议",
         "description": "Wanfang’s Academic conference papers database. Searches more than 2 million conference papers. Also browsable by topic and then year. Although an extra function “full text only” is available, differences between “all” and “full-text only” seem to be minimal. As with all Wanfang databases, once on the Wanfang home page, you can move from database to database via tabs. The “xue shu lun wen” tab combines several databases into one mega-search, and you can also combine searches across databases using the advanced search option.",
-        "institution": null,
+        "institution": "Wanfang Data Co., Ltd.",
         "category": "Academic Journals and Articles (Contemporary)",
         "tags": [],
         "url": "/resources/99/"
