@@ -216,7 +216,7 @@ a {
       display: block;
       background: #FAFAFA;
       border-bottom: 1px solid #e0e0e0;
-      padding: 2rem 1.5rem 1.5rem 1.5rem;
+      padding: 1.5rem 1.5rem 1rem 1.5rem;
     }
   }
 
@@ -227,19 +227,22 @@ a {
   }
 
   li {
-    margin: 0 0 1.2em 0;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
 
-    &:last-child { margin-bottom: 0; }
+    &:last-child { border-bottom: none; }
   }
 
   a {
+    display: block;
     font-family: 'IBM Plex Mono', monospace !important;
     font-weight: 300 !important;
-    font-size: 0.9rem !important;
+    font-size: 1.1rem !important;
     text-transform: uppercase !important;
     letter-spacing: 0.08em !important;
     color: #1a1a1a !important;
     text-decoration: none !important;
+    padding: 0.9rem 0 !important;
 
     @media (hover: hover) {
       &:hover { color: #2B3AA8 !important; }
@@ -548,18 +551,20 @@ a {
     opacity: 1 !important;
     position: relative !important;
   }
-  
+
   .greedy-nav .hidden-links {
     display: none; // Hidden by default
-    
+
     &.hidden {
       display: none !important;
     }
   }
-  
-  // When button is pressed, show hidden links
-  .greedy-nav button[aria-expanded="true"] ~ .hidden-links {
-    display: block !important;
+
+  // Suppress the theme's full-screen overlay that fires when greedy-nav adds
+  // the 'close' class to the toggle button — it covers the #mobile-nav panel.
+  .greedy-nav__toggle.close::before {
+    opacity: 0 !important;
+    pointer-events: none !important;
   }
 }
 
