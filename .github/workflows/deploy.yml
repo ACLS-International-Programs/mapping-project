@@ -16,7 +16,7 @@ jobs:
       - name: install
         run: bundle
       - name: pregenerate pages
-        run: bundle exec jekyll pagemaster resources --force
+        run: ruby src/_scripts/generate_resources.rb
       - name: prod build
         run: bundle exec rake reset && bundle exec rake build
       - name: deploy
