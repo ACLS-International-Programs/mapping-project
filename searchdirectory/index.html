@@ -207,9 +207,9 @@
       
         <p>
         
-          <a href="/directorylist" class="btn btn--light-outline btn--large">View as List</a>
+          <a href="/directorylist" class="btn btn--light-outline btn--large">BROWSE RESOURCES</a>
         
-          <a href="/assets/files/mapping-project.csv" class="btn btn--light-outline btn--large">Download as .csv</a>
+          <a href="/assets/files/mapping-project.csv" class="btn btn--light-outline btn--large">DOWNLOAD AS .CSV</a>
         
         </p>
       
@@ -270,6 +270,43 @@
         padding: 0 2rem !important;
     }
 }
+
+/* ── Directory view tabs ───────────────────────────────────────────── */
+.dir-view-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem 0 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+.dir-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.4rem 0.25rem 0.65rem;
+    color: #888;
+    text-decoration: none !important;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.15s, border-color 0.15s;
+}
+.dir-tab.active {
+    color: #1a1a1a;
+    border-bottom-color: #1a1a1a;
+}
+@media (hover: hover) {
+    .dir-tab:not(.active):hover {
+        color: #1a1a1a;
+        border-bottom-color: #1a1a1a;
+    }
+}
+.dir-tab svg { width: 20px; height: 20px; }
 
 /* Search Box - Full Width at Top */
 .search-box-container {
@@ -439,9 +476,11 @@
 }
 
 #categoryList .facet-label,
-#sourceListList .facet-label {
+#sourceListList .facet-label,
+#tagsList .facet-label {
     text-transform: uppercase !important;
     font-size: 0.75rem !important;
+    letter-spacing: 0.04em !important;
 }
 
 .facet-count {
@@ -484,9 +523,9 @@
 }
 
 .results-count {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #1a1a1a;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #888;
 }
 
 .share-search-btn {
@@ -652,6 +691,37 @@
     transform: rotate(180deg);
 }
 
+/* Tag badges on result cards */
+.result-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.6rem;
+}
+
+.result-tag {
+    display: inline-block;
+    background: #e8eaf6;
+    color: #2B3AA8;
+    border: 1px solid #c5cae9;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: none !important;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+@media (hover: hover) {
+    .result-tag:hover {
+        background: #2B3AA8;
+        color: #fff !important;
+        border-color: #2B3AA8;
+    }
+}
+
 .no-results {
     text-align: center;
     padding: 3rem;
@@ -686,7 +756,11 @@
 }
 
 /* Show More/Less for long facet lists */
-.facet-list.collapsed .facet-item:nth-child(n+8) {
+#categoryList.collapsed .facet-item:nth-child(n+8) {
+    display: none;
+}
+
+#tagsList.collapsed .facet-item:nth-child(n+26) {
     display: none;
 }
 
@@ -721,6 +795,29 @@
     padding: 0.5rem;
 }
 </style>
+
+<div class="dir-view-tabs">
+    <span class="dir-tab active">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <span>Search</span>
+    </span>
+    <a href="/directorylist/" class="dir-tab">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line>
+            <circle cx="3" cy="6" r="0.5" fill="currentColor"></circle><circle cx="3" cy="12" r="0.5" fill="currentColor"></circle><circle cx="3" cy="18" r="0.5" fill="currentColor"></circle>
+        </svg>
+        <span>List</span>
+    </a>
+    <a href="/directorygrid/" class="dir-tab">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect>
+        </svg>
+        <span>Grid</span>
+    </a>
+</div>
 
 <!-- Search Box - Full Width at Top -->
 <div class="search-box-container">
@@ -773,10 +870,13 @@
 
         <div id="tagsFacet" class="facet-group">
             <h3 class="facet-title">Tags</h3>
-            <ul class="facet-list" id="tagsList"></ul>
+            <ul class="facet-list collapsed" id="tagsList"></ul>
             <div id="tagsEmpty" class="facet-empty" style="display: none;">
                 No tags available yet
             </div>
+            <button class="show-more-btn" id="tagsShowMore" style="display: none;">
+                Show more
+            </button>
         </div>
     </aside>
 
@@ -985,6 +1085,7 @@ class FacetedSearch {
         if (categories.length > 7) {
             document.getElementById('categoryShowMore').style.display = 'block';
         }
+
         
         // Build access facets from ALL resources
         const access = this.getFacetCountsFromAll('access');
@@ -1007,6 +1108,11 @@ class FacetedSearch {
         } else {
             tagsEmpty.style.display = 'none';
             tagsList.style.display = 'block';
+        }
+
+        // Show "Show more" button if needed for tags
+        if (tags.length > 25) {
+            document.getElementById('tagsShowMore').style.display = 'block';
         }
     }
     
@@ -1196,13 +1302,30 @@ class FacetedSearch {
             categoryShowMoreBtn.addEventListener('click', () => {
                 const list = document.getElementById('categoryList');
                 const isCollapsed = list.classList.contains('collapsed');
-                
+
                 if (isCollapsed) {
                     list.classList.remove('collapsed');
                     categoryShowMoreBtn.textContent = 'Show less';
                 } else {
                     list.classList.add('collapsed');
                     categoryShowMoreBtn.textContent = 'Show more';
+                }
+            });
+        }
+
+        // Show more/less for tags
+        const tagsShowMoreBtn = document.getElementById('tagsShowMore');
+        if (tagsShowMoreBtn) {
+            tagsShowMoreBtn.addEventListener('click', () => {
+                const list = document.getElementById('tagsList');
+                const isCollapsed = list.classList.contains('collapsed');
+
+                if (isCollapsed) {
+                    list.classList.remove('collapsed');
+                    tagsShowMoreBtn.textContent = 'Show less';
+                } else {
+                    list.classList.add('collapsed');
+                    tagsShowMoreBtn.textContent = 'Show more';
                 }
             });
         }
@@ -1283,10 +1406,16 @@ class FacetedSearch {
     
     searchInAllFields(resource, searchText) {
         const searchableFields = ['title', 'description', 'institution', 'category', 'access', 'sourcelist'];
-        return searchableFields.some(field => {
+        const fieldMatch = searchableFields.some(field => {
             const value = (resource[field] || '').toLowerCase();
             return value.includes(searchText);
         });
+        if (fieldMatch) return true;
+        // Also search within tags
+        if (resource.tags && Array.isArray(resource.tags)) {
+            return resource.tags.some(tag => tag.toLowerCase().includes(searchText));
+        }
+        return false;
     }
     
     displayResults() {
@@ -1330,7 +1459,7 @@ class FacetedSearch {
             if (resource.description) {
                 const desc = this.escapeHtml(resource.description);
                 const needsTruncation = desc.length > this.descriptionLimit;
-                
+
                 if (needsTruncation) {
                     html += `<div class="result-description truncated">${desc}</div>`;
                     html += `<button class="expand-btn" aria-label="Expand description"><svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></button>`;
@@ -1338,7 +1467,17 @@ class FacetedSearch {
                     html += `<div class="result-description">${desc}</div>`;
                 }
             }
-            
+
+            // Tag badges
+            if (resource.tags && Array.isArray(resource.tags) && resource.tags.length > 0) {
+                html += `<div class="result-tags">`;
+                resource.tags.forEach(tag => {
+                    const encodedTag = encodeURIComponent(tag);
+                    html += `<a href="/searchdirectory/?tags=${encodedTag}" class="result-tag">${this.escapeHtml(tag)}</a>`;
+                });
+                html += `</div>`;
+            }
+
             li.innerHTML = html;
             resultsList.appendChild(li);
         });
