@@ -1,5 +1,5 @@
 ---
-title: "DIRECTORY"
+title: "BROWSE DIRECTORY"
 layout: single
 search: false
 classes: wide
@@ -7,29 +7,420 @@ excerpt: "Open databases and primary source repositories for China studies"
 header:
     overlay_color: "#2B3AA8"
     actions:
-    -   label: "Search Directory"
+    -   label: "SEARCH DIRECTORY"
         url: "/searchdirectory/"
-    -   label: "Download as .csv"
+    -   label: "DOWNLOAD AS .CSV"
         url: "/assets/files/mapping-project.csv"
 ---
-<div style="text-align: center;">
-    VIEW AS: <a href="/directorygrid/">GRID</a> | LIST
+
+<style>
+/* ── Page layout overrides ─────────────────────────────────────────── */
+.page {
+    width: 100% !important;
+    padding-right: 0 !important;
+}
+.page__inner-wrap {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.page__content {
+    width: 100% !important;
+    padding: 0 1rem !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+}
+.page__title {
+    border-bottom-color: transparent !important;
+}
+@media (min-width: 80em) {
+    .page__content { padding: 0 2rem !important; }
+}
+
+/* ── Directory view tabs ───────────────────────────────────────────── */
+.dir-view-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem 0 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+.dir-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.4rem 0.25rem 0.65rem;
+    color: #888;
+    text-decoration: none !important;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.15s, border-color 0.15s;
+}
+.dir-tab.active {
+    color: #1a1a1a;
+    border-bottom-color: #1a1a1a;
+}
+@media (hover: hover) {
+    .dir-tab:not(.active):hover {
+        color: #1a1a1a;
+        border-bottom-color: #1a1a1a;
+    }
+}
+.dir-tab svg { width: 20px; height: 20px; }
+
+/* ── Two-column directory layout ───────────────────────────────────── */
+.directory-layout {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+}
+
+/* ── Sticky sidebar ────────────────────────────────────────────────── */
+.category-sidebar {
+    flex: 0 0 210px;
+    min-width: 210px;
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+.category-sidebar::-webkit-scrollbar { width: 4px; }
+.category-sidebar::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
+
+.category-nav-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #2B3AA8;
+    margin: 0 0 0.6rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+.category-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.category-nav-list li { margin-bottom: 0.05rem; }
+
+.category-nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: #444;
+    text-decoration: none !important;
+    line-height: 1.35;
+    transition: background-color 0.15s, color 0.15s;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+@media (hover: hover) {
+    .category-nav-link:hover { background: #f0f0f0; color: #2B3AA8; }
+}
+.category-nav-link.active {
+    background: #e8eaf6;
+    color: #2B3AA8;
+    font-weight: 600;
+}
+.category-nav-count {
+    font-size: 0.7rem;
+    color: #bbb;
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+/* ── Main content ──────────────────────────────────────────────────── */
+.directory-main { flex: 1; min-width: 0; }
+
+/* ── Category sections ─────────────────────────────────────────────── */
+.category-section {
+    margin-bottom: 3rem;
+    scroll-margin-top: 1.5rem;
+}
+.category-heading {
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #2B3AA8;
+    margin: 0 0 0.75rem 0;
+    padding-bottom: 0.6rem;
+    border-bottom: 3px solid #2B3AA8;
+}
+
+/* ── Resource items ────────────────────────────────────────────────── */
+.resource-list { list-style: none; padding: 0; margin: 0; }
+
+.resource-item {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.resource-item:last-child { border-bottom: none; }
+
+.resource-title {
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin: 0 0 0.35rem 0;
+}
+.resource-title a {
+    color: #2B3AA8 !important;
+    text-decoration: none !important;
+}
+@media (hover: hover) {
+    .resource-title a:hover { text-decoration: underline !important; }
+}
+
+.resource-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.35rem;
+}
+.resource-institution { font-size: 0.82rem; color: #555; }
+
+/* Access badges */
+.result-access-badge {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+.result-access-badge.open-access  { background: #28a745; color: white; }
+.result-access-badge.subscription { background: #ffc107; color: #1a1a1a; }
+
+/* Description */
+.resource-description {
+    font-size: 0.82rem;
+    line-height: 1.55;
+    color: #555;
+    margin: 0 0 0.3rem 0;
+}
+.resource-description.truncated {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Expand button */
+.expand-btn {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 0.75rem;
+    padding: 0.1rem 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    transition: color 0.2s;
+}
+@media (hover: hover) { .expand-btn:hover { color: #2B3AA8; } }
+.expand-btn .chevron          { transition: transform 0.2s; }
+.expand-btn.expanded .chevron { transform: rotate(180deg); }
+
+/* Tag badges */
+.resource-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.45rem;
+}
+.result-tag {
+    display: inline-block;
+    background: #e8eaf6;
+    color: #2B3AA8;
+    border: 1px solid #c5cae9;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: none !important;
+    transition: background-color 0.15s, color 0.15s;
+}
+@media (hover: hover) {
+    .result-tag:hover {
+        background: #2B3AA8;
+        color: #fff !important;
+        border-color: #2B3AA8;
+    }
+}
+
+/* ── Responsive ────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .directory-layout { flex-direction: column; }
+    .category-sidebar {
+        flex: 1;
+        min-width: 100%;
+        position: static;
+        max-height: none;
+        overflow-y: visible;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
+</style>
+
+<div class="dir-view-tabs">
+    <a href="/searchdirectory/" class="dir-tab">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <span>Search</span>
+    </a>
+    <span class="dir-tab active">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line>
+            <circle cx="3" cy="6" r="0.5" fill="currentColor"></circle><circle cx="3" cy="12" r="0.5" fill="currentColor"></circle><circle cx="3" cy="18" r="0.5" fill="currentColor"></circle>
+        </svg>
+        <span>List</span>
+    </span>
+    <a href="/directorygrid/" class="dir-tab">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect>
+        </svg>
+        <span>Grid</span>
+    </a>
 </div>
-<br>
-<br>
 
 {% assign categories = site.resources | map: "category" | uniq | sort %}
 
-{% for category in categories %}
-  <h2 style="text-transform: uppercase;">{{ category }}</h2>
-  <ul>
-    {% assign category_resources = site.resources | where: "category", category | sort: "title" %}
-    {% for resource in category_resources %}
-      <li>
-        <a href="{{ resource.url }}">{{ resource.title }}</a>
-        <p style="margin-left: 2em; margin-top: 0.5em; font-size: 0.9em;">{{ resource.description }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-  <br>
-{% endfor %}
+<div class="directory-layout">
+
+    <!-- ── Sidebar: category navigation ──────────────────────────── -->
+    <aside class="category-sidebar">
+        <p class="category-nav-title">Categories</p>
+        <ul class="category-nav-list">
+            {% for category in categories %}
+            {% assign cat_count = site.resources | where: "category", category | size %}
+            <li>
+                <a href="#{{ category | slugify }}"
+                   class="category-nav-link"
+                   data-section="{{ category | slugify }}">
+                    <span>{{ category }}</span>
+                    <span class="category-nav-count">{{ cat_count }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </aside>
+
+    <!-- ── Main: resources grouped by category ───────────────────── -->
+    <main class="directory-main">
+        {% for category in categories %}
+        {% assign category_resources = site.resources | where: "category", category | sort: "title" %}
+        <section id="{{ category | slugify }}" class="category-section">
+
+            <h2 class="category-heading">{{ category }}</h2>
+
+            <ul class="resource-list">
+                {% for resource in category_resources %}
+                <li class="resource-item">
+
+                    <h3 class="resource-title">
+                        <a href="{{ resource.url }}">{{ resource.title }}</a>
+                    </h3>
+
+                    <div class="resource-meta">
+                        {% if resource.access %}
+                        {% assign access_class = resource.access | slugify %}
+                        <span class="result-access-badge {{ access_class }}">{{ resource.access }}</span>
+                        {% endif %}
+                        {% if resource.institution %}
+                        <span class="resource-institution">{{ resource.institution }}</span>
+                        {% endif %}
+                    </div>
+
+                    {% if resource.description %}
+                    <p class="resource-description truncated">{{ resource.description }}</p>
+                    <button class="expand-btn" aria-label="Expand description">
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    {% endif %}
+
+                    {% if resource.tags and resource.tags != empty %}
+                    <div class="resource-tag-list">
+                        {% for tag in resource.tags %}
+                        <a href="/searchdirectory/?tags={{ tag | uri_escape }}" class="result-tag">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                </li>
+                {% endfor %}
+            </ul>
+
+        </section>
+        {% endfor %}
+    </main>
+
+</div>
+
+<script>
+// ── Description expand / collapse ──────────────────────────────────────
+document.addEventListener('click', e => {
+    const btn = e.target.closest('.expand-btn');
+    if (!btn) return;
+    const desc = btn.previousElementSibling;
+    const nowTruncated = desc.classList.toggle('truncated');
+    btn.classList.toggle('expanded', !nowTruncated);
+});
+
+// ── Smooth scroll for sidebar links ────────────────────────────────────
+document.querySelectorAll('.category-nav-link').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.getElementById(link.dataset.section);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+});
+
+// ── Active sidebar state via IntersectionObserver ──────────────────────
+const sections  = document.querySelectorAll('.category-section');
+const navLinks  = document.querySelectorAll('.category-nav-link');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(
+            `.category-nav-link[data-section="${entry.target.id}"]`
+        );
+        if (active) {
+            active.classList.add('active');
+            active.scrollIntoView({ block: 'nearest' });
+        }
+    });
+}, { rootMargin: '-10% 0px -80% 0px' });
+
+sections.forEach(s => observer.observe(s));
+</script>

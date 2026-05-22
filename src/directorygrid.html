@@ -1,23 +1,460 @@
 ---
-layout: collection
-classes: wide
-title: "DIRECTORY"
+title: "BROWSE DIRECTORY"
+layout: single
 search: false
-collection: resources
-entries_layout: grid
-sort_by: title
+classes: wide
 excerpt: "Open databases and primary source repositories for China studies"
 header:
     overlay_color: "#2B3AA8"
     actions:
-    -   label: "Search Directory"
+    -   label: "SEARCH DIRECTORY"
         url: "/searchdirectory/"
-    -   label: "Download as .csv"
+    -   label: "DOWNLOAD AS .CSV"
         url: "/assets/files/mapping-project.csv"
 ---
-<div style="text-align: center;">
-    VIEW AS: GRID | <a href="/directorylist/">LIST</a>
-  </div>
-<br>
-<br>
-<br>
+
+<style>
+/* ── Page layout overrides ─────────────────────────────────────────── */
+.page {
+    width: 100% !important;
+    padding-right: 0 !important;
+}
+.page__inner-wrap {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.page__content {
+    width: 100% !important;
+    padding: 0 1rem !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+}
+.page__title { border-bottom-color: transparent !important; }
+@media (min-width: 80em) {
+    .page__content { padding: 0 2rem !important; }
+}
+
+/* ── Directory view tabs ───────────────────────────────────────────── */
+.dir-view-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem 0 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+.dir-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.4rem 0.25rem 0.65rem;
+    color: #888;
+    text-decoration: none !important;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.15s, border-color 0.15s;
+}
+.dir-tab.active {
+    color: #1a1a1a;
+    border-bottom-color: #1a1a1a;
+}
+@media (hover: hover) {
+    .dir-tab:not(.active):hover {
+        color: #1a1a1a;
+        border-bottom-color: #1a1a1a;
+    }
+}
+.dir-tab svg { width: 20px; height: 20px; }
+
+/* ── Two-column layout ─────────────────────────────────────────────── */
+.directory-layout {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+}
+
+/* ── Sticky sidebar ────────────────────────────────────────────────── */
+.category-sidebar {
+    flex: 0 0 210px;
+    min-width: 210px;
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+.category-sidebar::-webkit-scrollbar { width: 4px; }
+.category-sidebar::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
+
+.category-nav-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #2B3AA8;
+    margin: 0 0 0.6rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+.category-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.category-nav-list li { margin-bottom: 0.05rem; }
+
+/* Collapse: hide tags after 26th item (1 "All" + 25 tags) */
+#tagFilterList.collapsed li:nth-child(n+27) { display: none; }
+
+/* Tag filter buttons */
+.tag-filter-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-family: inherit;
+    color: #444;
+    text-align: left;
+    line-height: 1.35;
+    transition: background-color 0.15s, color 0.15s;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+@media (hover: hover) {
+    .tag-filter-btn:hover { background: #f0f0f0; color: #2B3AA8; }
+}
+.tag-filter-btn.active {
+    background: #e8eaf6;
+    color: #2B3AA8;
+    font-weight: 700;
+}
+.tag-filter-count-badge {
+    font-size: 0.7rem;
+    color: #bbb;
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    color: #2B3AA8;
+    cursor: pointer;
+    padding: 0.4rem 0.5rem;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    font-family: inherit;
+    margin-top: 0.2rem;
+}
+@media (hover: hover) {
+    .show-more-btn:hover { color: #1e2a7a; }
+}
+
+/* ── Main content ──────────────────────────────────────────────────── */
+.directory-main { flex: 1; min-width: 0; }
+
+.grid-results-header {
+    font-size: 0.82rem;
+    color: #888;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* ── Resource grid ─────────────────────────────────────────────────── */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    gap: 1rem;
+}
+
+/* ── Grid cards ────────────────────────────────────────────────────── */
+.grid-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    text-decoration: none !important;
+    color: inherit;
+    transition: box-shadow 0.2s, transform 0.15s;
+}
+@media (hover: hover) {
+    .grid-card:hover {
+        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        transform: translateY(-2px);
+    }
+}
+
+.card-image {
+    width: 100%;
+    padding-top: 45%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-shrink: 0;
+}
+.access-badge-overlay {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+.access-badge-overlay.open-access  { background: #28a745; color: white; }
+.access-badge-overlay.subscription { background: #ffc107; color: #1a1a1a; }
+
+.card-body {
+    padding: 0.55rem 0.7rem 0.55rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card-title {
+    font-size: 0.62rem !important;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #1a1a1a !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.3 !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.card-institution {
+    font-size: 0.6rem !important;
+    color: #888 !important;
+    margin-top: auto !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-top: 0.4rem !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    line-height: 1.3 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.no-results-msg {
+    display: none;
+    padding: 3rem;
+    text-align: center;
+    color: #888;
+    font-size: 0.95rem;
+}
+
+/* ── Responsive ────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .directory-layout { flex-direction: column; }
+    .category-sidebar {
+        flex: 1;
+        min-width: 100%;
+        position: static;
+        max-height: none;
+        overflow-y: visible;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .resources-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+}
+</style>
+
+<div class="dir-view-tabs">
+    <a href="/searchdirectory/" class="dir-tab">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <span>Search</span>
+    </a>
+    <a href="/directorylist/" class="dir-tab">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line>
+            <circle cx="3" cy="6" r="0.5" fill="currentColor"></circle><circle cx="3" cy="12" r="0.5" fill="currentColor"></circle><circle cx="3" cy="18" r="0.5" fill="currentColor"></circle>
+        </svg>
+        <span>List</span>
+    </a>
+    <span class="dir-tab active">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect>
+        </svg>
+        <span>Grid</span>
+    </span>
+</div>
+
+{% assign all_resources = site.resources | sort: "title" %}
+
+{% comment %} Build unique sorted tag list from all resources {% endcomment %}
+{% assign tag_list = "" | split: "" %}
+{% for resource in all_resources %}
+  {% for tag in resource.tags %}
+    {% unless tag_list contains tag %}
+      {% assign tag_list = tag_list | push: tag %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% assign sorted_tags = tag_list | sort %}
+
+<div class="directory-layout">
+
+    <!-- ── Sidebar: tag filter ───────────────────────────────────── -->
+    <aside class="category-sidebar">
+        <p class="category-nav-title">Filter by Tag</p>
+        <ul class="category-nav-list" id="tagFilterList">
+            <li>
+                <button class="tag-filter-btn active" data-tag="">
+                    <span>All</span>
+                    <span class="tag-filter-count-badge">{{ all_resources | size }}</span>
+                </button>
+            </li>
+            {% for tag in sorted_tags %}
+            {% assign tag_count = 0 %}
+            {% for resource in all_resources %}
+              {% if resource.tags contains tag %}
+                {% assign tag_count = tag_count | plus: 1 %}
+              {% endif %}
+            {% endfor %}
+            <li>
+                <button class="tag-filter-btn" data-tag="{{ tag }}">
+                    <span>{{ tag }}</span>
+                    <span class="tag-filter-count-badge">{{ tag_count }}</span>
+                </button>
+            </li>
+            {% endfor %}
+        </ul>
+        <button class="show-more-btn" id="tagsShowMore" style="display: none;">
+            Show more
+        </button>
+    </aside>
+
+    <!-- ── Main: alphabetical resource grid ──────────────────────── -->
+    <main class="directory-main">
+        <div class="grid-results-header" id="gridCount">
+            Showing all {{ all_resources | size }} resources
+        </div>
+
+        <div class="resources-grid" id="resourcesGrid">
+            {% for resource in all_resources %}
+            {% assign tags_json = resource.tags | jsonify %}
+            <a href="{{ resource.url }}"
+               class="grid-card"
+               data-tags='{{ tags_json }}'>
+
+                {% assign teaser = site.data.category_images[resource.category] %}
+                {% if teaser %}
+                <div class="card-image" style="background-image: url('{{ teaser }}');">
+                    {% if resource.access %}
+                    <span class="access-badge-overlay access-{{ resource.access | slugify }}">
+                        {{ resource.access }}
+                    </span>
+                    {% endif %}
+                </div>
+                {% endif %}
+
+                <div class="card-body">
+                    <h3 class="card-title">{{ resource.title }}</h3>
+                    {% if resource.institution and resource.institution != "" %}
+                    <p class="card-institution">{{ resource.institution }}</p>
+                    {% endif %}
+                </div>
+
+            </a>
+            {% endfor %}
+        </div>
+
+        <p class="no-results-msg" id="gridNoResults">
+            No resources found for this tag.
+        </p>
+    </main>
+
+</div>
+
+<script>
+const cards      = Array.from(document.querySelectorAll('.grid-card'));
+const filterBtns = document.querySelectorAll('.tag-filter-btn');
+const gridCount  = document.getElementById('gridCount');
+const noResults  = document.getElementById('gridNoResults');
+const grid       = document.getElementById('resourcesGrid');
+const total      = cards.length;
+
+// ── Tag filtering ──────────────────────────────────────────────────────
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const tag     = btn.dataset.tag;
+        const tagName = btn.querySelector('span').textContent.trim();
+
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        let visible = 0;
+        cards.forEach(card => {
+            const cardTags = JSON.parse(card.dataset.tags || '[]');
+            const show = !tag || cardTags.includes(tag);
+            card.style.display = show ? '' : 'none';
+            if (show) visible++;
+        });
+
+        gridCount.textContent = tag
+            ? `Showing ${visible} of ${total} resources — ${tagName}`
+            : `Showing all ${total} resources`;
+
+        noResults.style.display = visible === 0 ? 'block' : 'none';
+        grid.style.display      = visible === 0 ? 'none'  : '';
+    });
+});
+
+// ── Sort tags by count descending ─────────────────────────────────────
+const tagFilterList = document.getElementById('tagFilterList');
+const allTagItems   = Array.from(tagFilterList.querySelectorAll('li'));
+const allItem       = allTagItems.shift(); // remove "All" from sort pool
+allTagItems.sort((a, b) => {
+    const countA = parseInt(a.querySelector('.tag-filter-count-badge').textContent, 10) || 0;
+    const countB = parseInt(b.querySelector('.tag-filter-count-badge').textContent, 10) || 0;
+    return countB - countA;
+});
+allTagItems.forEach(item => tagFilterList.appendChild(item));
+
+// ── Show more / less for tag list ──────────────────────────────────────
+const showMoreBtn   = document.getElementById('tagsShowMore');
+const tagItems      = tagFilterList.querySelectorAll('li');
+
+if (tagItems.length > 26) {
+    showMoreBtn.style.display = 'block';
+    tagFilterList.classList.add('collapsed');
+}
+
+showMoreBtn.addEventListener('click', () => {
+    const isCollapsed = tagFilterList.classList.contains('collapsed');
+    tagFilterList.classList.toggle('collapsed', !isCollapsed);
+    showMoreBtn.textContent = isCollapsed ? 'Show less' : 'Show more';
+});
+</script>

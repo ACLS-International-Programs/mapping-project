@@ -4,7 +4,44 @@ classes: wide
 search support: true
 ---
 
-<style>.page__title { text-transform: uppercase; }</style>
+<style>
+.page__title { text-transform: uppercase; }
+
+.resource-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.resource-tag {
+  display: inline-block;
+  background: #e8eaf6;
+  color: #2B3AA8;
+  border: 1px solid #c5cae9;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  letter-spacing: 0.02em;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.resource-tag:hover {
+  background: #2B3AA8;
+  color: #fff !important;
+  border-color: #2B3AA8;
+}
+
+/* Hide the Minimal Mistakes taxonomy footer — tags, categories, and
+   updated date are already displayed in the resource fields above */
+.page__taxonomy,
+.page__meta {
+  display: none !important;
+}
+</style>
 
 <div class="resource-fields">
 
@@ -57,10 +94,16 @@ search support: true
   </div>
   {% endif %}
 
-  {% if page.tags %}
+  {% if page.tags and page.tags != empty %}
   <div class="resource-field">
     <h6 class="resource-field-label">Tags</h6>
-    <div class="resource-field-value">{{ page.tags }}</div>
+    <div class="resource-field-value">
+      <div class="resource-tag-list">
+        {% for tag in page.tags %}
+          <a href="/searchdirectory/?tags={{ tag | uri_escape }}" class="resource-tag">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </div>
   </div>
   {% endif %}
 

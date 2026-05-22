@@ -21,6 +21,7 @@ collections:
     layout: resource
     permalink: /:collection/:path/
     category_key: category
+    sort_by: objectid
 
 # Site Settings
 locale: "en-US"
