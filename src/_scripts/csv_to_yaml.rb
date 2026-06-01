@@ -39,6 +39,8 @@ records = rows.map do |row|
   h.transform_values! { |v| v.nil? ? '' : v.strip }
   # Normalise travel grant: Airtable exports checkboxes as 'checked' or ''
   h['travelgrant'] = (h['travelgrant'].downcase == 'checked')
+  # Strip leading apostrophe Airtable adds to multi-line fields starting with '-'
+  ['collections', 'ag'].each { |f| h[f] = h[f].sub(/\A'/, '') if h[f] }
   h
 end
 

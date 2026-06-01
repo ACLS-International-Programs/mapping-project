@@ -2,15 +2,89 @@
 - libname: C.V. Starr East Asian Library
   institution: Columbia University
   url: https://library.columbia.edu/libraries/eastasian/chinese.html
+  collections: |-
+    - Gu jin tu shu ji cheng 欽定古今圖書集成. A 5,044-volume Ming/Qing imperial encyclopedia donated by the Qing Court in 1902; the founding gift of the Chinese Library at Columbia.
+    - Oracle Bones Collection, circa 1300–1050 B.C. Approximately 126 Shang dynasty bone fragments engraved with some of the earliest surviving Chinese script; digitized in 2016 with Zhejiang University Library via CADAL.
+    - Jade Book 玉冊. A rare set of Qing imperial jade books in Manchu and Chinese; texts digitized.
+    - Chinese Genealogical Records (jiapu 家譜). The largest collection of Chinese genealogical records in North America.
+    - Chinese Local Gazetteers (difangzhi 地方誌). One of the top-tier collections of Chinese local gazetteers in North America.
+    - Ling Long Women’s Magazine 玲瓰 (physical holdings of a Republican-era women’s pictorial magazine; select issues digitized).
+    - Chinese Paper Gods 門神紙馬 (traditional printed deity images; physical collection, digitized).
+    - Chin-Tang Lo Papers (papers of the scholar of modern Chinese literature; recent acquisition).
+    - American Bureau for Medical Aid to China Records, 1937–1979. 美國醫藥助華會檔案. Organizational records of American medical relief to China during and after WWII.
+    - Autobiographies and Related Papers, 1958–1978 (Chinese Oral History Project). 口述傳記與相關檔案. Oral history transcripts from prominent Chinese political and military figures.
+    - C. Martin Wilbur Papers, 1950–1992. 韋慕庭檔案 (Columbia sinologist and historian of the Chinese Nationalist movement).
+    - China Continuation Committee Records, 1912–1922. 中華續行委辦會檔案 (records of the main Protestant interdenominational body in early Republican China).
+    - Eugene E. Barnett Papers, 1905–1970. 餓乃德檔案 (YMCA leader in China).
+    - Flying Tigers Project: Oral History, 1962. 飛虎隊口述史 (oral histories of American Volunteer Group pilots).
+    - Higher Education Institutions in China, 1905–1957. 在華美國教會高等學校 (records relating to American missionary colleges in China).
+    - Hsiung Shih-hui Papers, 1907–1974. 熊式輝檔案 (ROC military governor of Jiangxi and Guangdong).
+    - Hung-Hsun Ling Papers, 1920–1974. 凌鸻勳檔案 (ROC railway and engineering official).
+    - Indusco, Inc. Records, 1938–1985. 中國工合美國促進會檔案 (American support organization for the Chinese Industrial Cooperatives movement).
+    - Institute of Pacific Relations Records, 1927–1962. 太平洋國際學會檔案. Major international research organization on Pacific affairs; a primary source for mid-20th-century Asia policy.
+    - International Institute of Rural Reconstruction Records, 1914–1999. 國際鄉村改造學院檔案 (records of Y.C. James Yen’s rural development organization).
+    - L. Carrington Goodrich Papers, 1890–1991. 傅路德檔案 (Columbia sinologist; editor of the Dictionary of Ming Biography).
+    - Matilda Calder Thurston Papers, 1902–1956. 德本康夫人檔案 (president of Ginling College for Women, Nanjing).
+    - National Christian Council of China Records, 1919–1950. 中華全國基督教協進會檔案 (records of the main Protestant ecumenical body in China).
+    - Papers of China Institute in America, 1926–2012 (records of the oldest U.S. organization promoting Chinese culture and education).
+    - Paul Monroe Papers, 1873–1970. 孟禄檔案 (American educator who advised the Chinese Republic on education reform).
+    - Pearl S. Buck Collection, 1932–1956. 賽珍珠檔案 (papers of the Nobel Prize-winning author of The Good Earth).
+    - Peter H. L. and Edith Chang Papers, 1930s–2001. 張學良、趙一荷檔案 (papers of the “Young Marshal” Zhang Xueliang and his companion Zhao Yidi).
+    - Timothy Tingfang Lew Papers, 1907–1961. 劉庭芳檔案 (Chinese Christian leader and hymn-writer).
+    - Tsuyee Pei Papers, 1929–1951 (papers of the Chinese architect and father of I.M. Pei).
+    - Wellington Koo Papers, 1906–1976. 顧維髧檔案. Papers of the prominent ROC diplomat and ICJ judge; one of the most significant 20th-century Chinese diplomatic archives in North America.
+    - Wen-Chung Chou Papers (papers of the Chinese-American composer and conductor).
+    - Weng Wan-go Film Reel Collection (film reels by the Chinese-American art collector; partially converted to DVD).
+    - Weng Wan-go Papers (papers of Weng Wan-go, collector of Chinese art and calligraphy).
+    - William Henry Donald Papers, 1924–1946. 端納檔案 (Australian journalist and advisor to Chinese Nationalist leaders).
+    - Center for US-China Arts Exchange Records, 1956–2019, bulk 1977–2003.
+    - Unprocessed collections: Yin Pu Huang Collection; Kiachi and Patricia Koo Tsien Collection; Myron L. Cohen Meilong Collection (Formosa/Taiwan Field Data).
+  ag: |-
+    - Chinese Diaries Collection, 1930s–1980s.
+    - Collection on Pandemic Response and Public Health of China, 1911–2000s.
+    - Ephemera Collection on Chinese Science, Technology, Law, and Society, circa 1906–2010.
+    - Lhasa Neighborhood Committee Number Three Records, 1953–1974, bulk 1959–1972 (resident registries and property confiscation records under Chinese Communist administration).
+    - Nancy Jervis Chinese Film Script and Flier Collection, 1960–1980.
+    - The Makino Mamoru Collection on the History of East Asian Film, 1863–2015 (primarily Japanese film history; includes a dedicated series on China, Taiwan, and Manchuria).
+    - The Tharchin Collection, 1901–1975, bulk 1923–1963 (Tibet Mirror newspaper and correspondence; primary source on Tibet under Chinese Communist rule).
+  description: Founded in 1902 with a 5,044-volume encyclopedia donated by the Qing
+    imperial court, the C.V. Starr East Asian Library holds over half a million Chinese-language
+    titles and is particularly strong in rare books and special collections — including
+    Shang dynasty oracle bones, imperial jade books, the largest Chinese genealogical
+    collection in North America, and extensive local gazetteers. Its archival holdings
+    span diplomatic, political, literary, and religious history of 20th-century China
+    and include world-renowned collections such as the Wellington Koo Papers, the
+    Pearl S. Buck Collection, and the Chinese Oral History Project.
   walkin: Access to local stacks; e-resources and database access available at terminal;
     special collections by advance appointment
   librarian: Chengzhi Wang
   libemail: cw2165@columbia.edu
   travelgrant: false
-  note: ''
+  note: 'See also: Burke Library at Union Theological Seminary (physically housed
+    at Columbia; separate institution)'
+  displayname: C.V. Starr East Asian Library | Columbia University
 - libname: Duke University Libraries
   institution: Duke University
   url: https://guides.library.duke.edu/china
+  collections: |-
+    - Sidney Gamble Photographs, 1906–2007 (photographs of Chinese society and daily life by the sociologist and philanthropist Sidney Gamble).
+    - Friedrich Carl Peetz Photographs, 1900 (photographs documenting German naval involvement in the Boxer Rebellion).
+    - William Hillman Shockley Photographs, 1897–1922 (photographs of China).
+    - The Lucy Monroe Calhoun Family Photographs and Papers (photographs and papers of an American family in China).
+    - Edward James Parrish Papers, 1888–1926 (papers of an American businessman in China).
+    - Carl Mydans Photographs, 1935–1968 (photographs of China by the Life magazine photojournalist).
+    - Chinese Filmscript and Advertisement, 1966–1976 (film scripts and advertising materials from Cultural Revolution-era China).
+    - Robert White Collection of Chinese Cultural Revolution Materials, 1920s–1993 (printed and ephemeral materials documenting the Cultural Revolution).
+    - Isaac Jones Young Films, 1930s (film recordings of China in the 1930s).
+  ag: |-
+    - Jeff Kosokoff Travel Slides of China, Japan, and Inner Mongolia, 1983 (95 color slides of mainland China, Hong Kong, Inner Mongolia, and Taiwan).
+    - George Thomas Staunton Papers, 1743–1885. Correspondence and diaries of a British East India Company official in Canton, 1798–1817; includes documentation of Lord Amherst's 1816 diplomatic mission to China.
+    - Roundell Tristram Toke Diaries and Photographs from Military Service in China and Japan, 1900, 1905–1907. Four diaries and 146 photographs; the first diary documents the Boxer Rebellion (Tianjin and Beijing, 1900) with direct China relevance. Later diaries cover the Russo-Japanese War (Japan theater).
+  description: The Rubenstein Rare Book & Manuscript Library holds several notable
+    China-related photograph and visual collections, led by the Sidney Gamble Photographs
+    (5,500+ images of Chinese society, 1906–1932) and the Carl Mydans photographs.
+    The library’s China collections are strongest in 20th-century documentary photography
+    and materials related to the Cultural Revolution.
   walkin: Onsite access to most e-resources including research databases, journal
     articles, and ebooks; access to local stacks; on-site use of deliveries from Library
     Service Center; visitors eligible for borrowing with registration
@@ -18,19 +92,79 @@
   libemail: luo.zhou@duke.edu
   travelgrant: false
   note: ''
+  displayname: Duke University Libraries | Duke University
 - libname: Harvard-Yenching Library
   institution: Harvard University
   url: https://library.harvard.edu/collections/chinese-collection
+  collections: |-
+    - Hedda Morrison Photographs Collection of China (photographs of China taken by the German photojournalist Hedda Morrison, primarily 1933–1946).
+    - Chinese Rubbings Collection (ink rubbings of inscriptions on stone and bronze).
+    - Personal Collection of Professor Patrick Hanan (papers and books of the Harvard scholar of Chinese literature and vernacular fiction).
+    - Carter D. Holton Photos Collection 海映光牧师中国甘青地区少数民族信仰文化老照片 (photographs of minority religious cultures in Gansu and Qinghai provinces).
+    - Chinese Maritime Customs Collection 中國舊海關資料 (statistical returns, reports, and publications of the Imperial Maritime Customs Service).
+    - Chinese Old Local Gazetteers 中國舊方志 (physical holdings of traditional Chinese local gazetteers).
+    - Chinese Rare Books 中文善本特藏 (pre-modern Chinese rare books).
+    - Chinese Republican Period Collection 民國時期文獻 (printed materials from the Republican era, 1912–1949).
+    - Christianity Collection 基督教傳教士文獻 (missionary publications and records related to Christianity in China).
+    - Dazibao and Woodcuts from 1960s China 大字报 (Cultural Revolution-era big-character posters and woodcut prints).
+    - Edwards Bangs Drew Chinese Maritime Customs Services Photographs 爱德华兹班德鲁中国旧海关服务时期老照片 (photographs from Drew's tenure with the Maritime Customs Service).
+    - Er Qi Collection 二齊藏书 (齊耀琳, 齊耀珊) (collection from two members of the Qi family).
+    - Hart Collection 哈特教授藏書 (books from a Harvard professor's personal library).
+    - Harvard-Yenching Library Chinese Ancient and Rare Books 中文古籍 (pre-modern Chinese rare books held in the library's core collection).
+    - John K. Fairbank and Edwin O. Reischauer "Rice Paddies" Lantern Slide Collection (lantern slides used by the founding Harvard China and Japan scholars).
+    - Joseph F. Rock Collection 约瑟夫.洛克中国老照片 (photographs by the Austrian-American botanist and explorer in Yunnan and Sichuan).
+    - Manchukuo Collection — Maps 湿洲國收藏-地圖類 (maps produced under the Japanese-administered state of Manchukuo, 1932–1945).
+    - Manchukuo Collection — Postcards 湿洲國收藏-明信片 (postcards produced under Manchukuo).
+    - Manchu Rare Books 湿文古籍 (rare books in the Manchu language).
+    - Ming-Qing Women's Writings 明清婦女著作 (writings by women authors from the Ming and Qing dynasties).
+    - Mongolian Rare Books 蒙文古籍 (rare books in the Mongolian language).
+    - Naxi Manuscripts 納西東巴經 (religious manuscripts of the Naxi people of Yunnan in the Dongba script).
+    - Qi Rushan Collection 齊如山藏書 (collection of the Peking Opera theorist and playwright Qi Rushan).
+    - Rev. Claude L. Pickens, Jr. Collection on Muslims in China 畢敬士中國穆斯林基督传教士老照片 (photographs and materials on Muslim communities in China gathered by an American missionary).
+    - Souvenir de Chine Photos 中日二次戰爭照片集 (photographs of China, likely from the Second Sino-Japanese War period).
+    - Archives of the Harvard Chinese Students' Club, 1908–1928. Organizational records of one of the earliest Chinese student associations in the United States.
+    - Diaoyutai Materials 齣魚台事件資料集, 1971– (materials related to the Diaoyu/Senkaku Islands sovereignty movement among overseas Chinese).
+    - Naxi Manuscripts Collection, 1826–1910 and undated (see also Naxi Manuscripts above).
+    - Papers of American Branch of The Science Society of China 中國科學社美洲分社檔案, 1928–1936. Records of the American branch of China's first modern scientific society.
+    - Papers of Dr. Tingfu Tsiang 蔣廷鮳資料集 (papers of the Chinese historian and ROC diplomat).
+    - Bertsch Papers, 1910–1976 (papers related to China missions and education).
+    - Papers of George A. Fitch and Geraldine T. Fitch 費吴生夫婦檔案, bulk 1909–1950 (American YMCA official in China; eyewitness to the Nanjing Massacre).
+    - Diary of Hyung Nai Song (Song Hyŏng-nae, 宋亨來), 1949–1971 (diary of a Korean-Chinese individual spanning the early PRC period).
+  ag: |-
+    - John McPolan Collection (photographs of China).
+    - Records of the Trustees of Lingnan University, 1820–1952, bulk 1884–1951.
+    - William Morgan Palmer Collection (photographs).
+  description: One of the world’s preeminent East Asian research libraries, with over
+    1 million volumes and exceptional rare book, photograph, and archival collections.
+    Particular strengths include Chinese rare books, local gazetteers, the Manchukuo
+    Collection, Naxi manuscripts, and comprehensive holdings in Manchu and Mongolian;
+    notable named collections include the Qi Rushan Collection, the Hedda Morrison
+    Photographs, and the papers of the Science Society of China.
   walkin: Full electronic access to collection of digitized Chinese rare books; visitors
     may register for a library card to access local stacks including special collections;
     historical photographs, manuscripts, and archival collections by appointment
   librarian: Sharon Li-shiuan Yang
   libemail: yang8@fas.harvard.edu
   travelgrant: true
-  note: ''
+  note: 'See also: Houghton Library and H.C. Fung Library | Harvard University'
+  displayname: Harvard-Yenching Library | Harvard University
 - libname: East Asian Library
   institution: Princeton University
   url: https://libguides.princeton.edu/c.php?g=1071063&p=9194766
+  collections: |-
+    - Princeton Oracle Bone Collection. 119 inscribed Shang dynasty bone fragments assembled by missionary and collector Frank Herring Chalfant, c. 1300–1050 BCE; RTI imaging completed; partially digitized.
+    - Princeton Dunhuang and Turfan Manuscripts. 158 manuscripts in Chinese, Tangut, and Old Turkic, plus fragmentary paintings and drawings; digitized and available through the International Dunhuang Programme (IDP partner since 2007).
+    - Gest Collection. A foundational collection of Chinese rare books assembled from the 1910s by Guion Moore Gest and naval attaché I.V. Gillis; grew to approximately 100,000 fascicles by the 1930s, with particular strength in classics, collected works, mathematics, and astronomy.
+    - Block Prints of the Chinese Revolution (woodblock prints and political graphics from the Republican and early PRC periods).
+    - Chinese Shadow Figures (traditional puppetry figures; part of the Gest Collection).
+    - Records of the Maritime Customs Service of China (physical holdings).
+  ag: ''
+  description: Home to the Gest Collection, one of the foundational East Asian library
+    collections in North America, the Princeton East Asian Library holds approximately
+    100,000 fascicles of Chinese rare books alongside 119 Shang dynasty oracle bone
+    fragments and 158 fully digitized Dunhuang and Turfan manuscripts. The oracle
+    bones were assembled by Frank Herring Chalfant and the manuscripts have been made
+    publicly available through the International Dunhuang Programme.
   walkin: Local access to stacks including reference collection; electronic access
     to all databases; use of terminal access without library ID; ReCAP offsite available
     with advance notice
@@ -38,9 +172,23 @@
   libemail: jseufert@princeton.edu
   travelgrant: true
   note: ''
+  displayname: East Asian Library | Princeton University
 - libname: Chinese Collection
   institution: University of Illinois Urbana-Champaign
   url: https://www.library.illinois.edu/chinese/
+  collections: |-
+    - 清代四川南部縣衍門檔案 (Qing Dynasty Southern Sichuan County Yamen Archives), Vol. 1–308. A major collection of Qing-era local government records from Nanchong County, Sichuan; 308 volumes.
+    - Si bu cong kan 四部叢刊 (physical set). The complete 2,112-volume set was donated by the Chinese Alumni Association of the University of Illinois in 1934; classic compilation of pre-modern Chinese canonical texts.
+    - Chu-lin Chai Collection. Private library of Kung-an Liao; strong in Chinese art, classics, philology, and philosophy; one of the three founding private libraries of the Chinese collection.
+    - Reifler Collection. Private library of Professor Erwin Reifler of the University of Washington; strong in Chinese language, literature, and philology.
+    - Tsu-yu Li Collection (private library of Dr. Tsu-yu Li of Hong Kong; strong in modern Chinese history and literature).
+  ag: ''
+  description: One of the leading Chinese studies collections in the United States,
+    with over 100,000 Chinese-language volumes. The collection was built from three
+    founding private libraries strong in classical Chinese studies, and includes a
+    complete physical set of the Si bu cong kan and an extensive run of Qing dynasty
+    county yamen archives. Chinese rare books are separately housed in the university’s
+    Rare Book and Special Collections Library.
   walkin: Access to shelves and local stacks with free courtesy card (application
     required); e-resources and subscription-based materials generally available for
     use at free public terminals in departmental libraries
@@ -48,36 +196,131 @@
   libemail: bingw@illinois.edu
   travelgrant: false
   note: ''
+  displayname: Chinese Collection | University of Illinois Urbana-Champaign
 - libname: Chinese Studies Collection
   institution: University of Pennsylvania
   url: https://www.library.upenn.edu/collections/subject/chinese-studies-collection
+  collections: |-
+    - Dunhuang Cave Art and Manuscript Collections. A dedicated research collection of large sets of facsimile primary source materials and secondary literature related to the Mogao Cave manuscripts (4th–11th centuries); materials in Chinese, Sanskrit, Tibetan, and Uyghur; distributed across Van Pelt-Dietrich Library Center, Fisher Fine Arts Library, LIBRA Research Annex, and Penn Museum Library.
+    - Impressions in Japan, Korea, and China, 1909. Typescript travel diary by Jessie Randall Barrett documenting six months of travel across Asia, February–August 1909; held at the Kislak Center for Special Collections, Rare Books and Manuscripts.
+    - Abraham Moshe Trompoler Papers, 1941–1949. Legal and immigration papers of a Jewish Holocaust survivor who traveled through Japan and China to escape the war; held at the Kislak Center.
+  ag: ''
+  description: Penn Libraries maintains a dedicated Dunhuang Cave Art and Manuscript
+    Collections — large sets of facsimile primary source materials and secondary literature
+    in Chinese, Sanskrit, Tibetan, and Uyghur related to the Silk Road manuscripts
+    of the Mogao Caves. The Kislak Center additionally holds China-related personal
+    papers from the 19th and 20th centuries.
   walkin: Access to local stacks; catalogue and access to some e-resources through
     free computer terminals; special collections and requests available by registration
     in advance; US and UN depository
   librarian: Anna-Alexandra Fodde-Reguer
   libemail: afodd@upenn.edu
   travelgrant: false
-  note: ''
+  note: 'For additional Kislak Center holdings search: findingaids.library.upenn.edu'
+  displayname: Chinese Studies Collection | University of Pennsylvania
 - libname: East Asia Library
   institution: Yale University
   url: https://guides.library.yale.edu/China
-  walkin: ''
+  collections: |-
+    - 五經體註 (Five Classics with Selected Comments).
+    - 大方廣佛華嚴經 卷第二十一 — Northern Song manuscript, 960–1127.
+    - 宗鏡錄 卷第九十六 — Northern Song woodblock, 960–1127.
+    - 法苑珠林 卷第四十七 — Northern Song woodblock, Fuzhou Kaiyuan Temple, 1124.
+    - 紅樓夢一百二十回 — Qing Qianlong 57th year [1792] Beijing movable type edition.
+    - 大義覚迷錄 — Qing Yongzheng 8th year [1730] imperial edition.
+    - 三才圖會 — Ming Wanli 37th year [1609] woodblock edition.
+    - 大明通行寶鈕 壹貫 — Ming Hongwu copper-plate printed banknote.
+    - Eugene Clarence Gardner Papers, 1870–1929 (American missionary in China).
+    - Yung Wing Papers, 1848–2001. Papers of the first Chinese student to graduate from an American university; organizer of the Chinese Educational Mission to the U.S.
+    - Arthur William Galston Papers, 1938–1985 (Yale botanist who helped facilitate early U.S.-China scientific exchanges after 1972).
+    - Samuel Wells Williams Family Papers, 1824–1936. American missionary, diplomat, and sinologist; author of The Middle Kingdom.
+    - Yale-China Association Records, 1900–. Records of the Yale-China Association, which ran Yali School and Yale-in-China programs.
+    - Yale-China Association Papers and Memorabilia, 1877–1997 (photographs, scrapbooks, and printed materials documenting Yale-China Association activities).
+    - Arthur Frederick and Mary Clabaugh Wright Papers, 1932–1977 (papers of the Yale sinologist and historian of the Tang dynasty).
+    - George Alexander Kennedy Papers, 1931–1957 (Yale scholar of classical Chinese).
+    - Carlo Tommaso Maillard de Tournon Collection, 1705–1984 (materials related to the 18th-century papal legate to China and the Chinese Rites controversy).
+    - Edward H. and Lotta C. Hume Papers, 1897–1990 (American missionary physician in Hunan; founder of Yale-in-China’s hospital).
+    - Phillips F. and Ruth A. Greene Papers, 1923–1977 (missionary and medical work in China).
+    - William Winston Pettus Papers, 1928–1945 (Yale-in-China administrator).
+    - Warren Bartlett Seabury Papers, 1901–1936 (missionary in China).
+    - John Lawrence Thurston Papers, 1894–1956 (Yale-in-China missionary).
+    - Yung Kwai Papers, 1874–1939 (papers of a member of the Chinese Educational Mission).
+    - John Hall Paxton Papers, 1920–1961 (U.S. diplomat in China).
+    - Barbara Wertheim Tuchman Papers, 1920–1982 (Pulitzer Prize-winning historian; author of Stilwell and the American Experience in China).
+    - David Ernest Apter Papers, 1951–2002 (Yale political scientist; China research).
+    - Henry Killam Murphy Papers, 1904–1939 (American architect who designed major Republican-era Chinese university campuses).
+    - Frederick Townsend Ward Papers, 1862 (American mercenary commander of the Ever-Victorious Army during the Taiping Rebellion).
+    - Historical Picture Collection, 1840–1980 (photographs and illustrations of China).
+    - Korean War Collection, 1951–1953 (military materials; includes China theater).
+    - Chengting Thomas Wang Papers, 1950–1983 (papers of the Chinese Christian statesman).
+    - Sophia Tierong Zhu Papers, 1947–2003 (missionary network papers).
+    - T’ang Wu Papers, 1932–1975 (papers of a Chinese Christian educator).
+    - Stanley Wilson Papers, 1913–1918 (missionary papers).
+  ag: ''
+  description: Yale began collecting Chinese-language books in 1849, making it the
+    first academic library in the United States to do so. The East Asia Library holds
+    439 catalogued rare books and manuscripts (primarily pre-1796) in its Chinese
+    Rare Books database, alongside a substantial archive covering missionaries, diplomats,
+    educators, and scholars connected to China. The Yale-China Association Records,
+    the Yung Wing Papers, and the Barbara Tuchman Papers are among the most significant
+    archival holdings.
+  walkin: Stack access restricted to Yale affiliates; visiting researchers may register
+    for a free Yale Library account for limited access, or purchase a borrowing pass;
+    special collections accessible to non-affiliates via advance registration in Aeon
+    system; East Asian Library reading room in Sterling Memorial Library, SML 219.
   librarian: Michael Meng
   libemail: michael.meng@yale.edu
   travelgrant: false
-  note: ''
+  note: 'See also: Yale Divinity Library | Yale University'
+  displayname: East Asia Library | Yale University
 - libname: C.V. Starr East Asian Library
   institution: University of California, Berkeley
   url: https://www.lib.berkeley.edu/visit/east-asian
-  walkin: Open to all researchers and visitors without requirement of identification,
-    registration, or prior arrangements; most collections may be used on site
-  librarian: Susan Xue
-  libemail: sxue@berkeley.edu
+  collections: |-
+    - Ann Tompkins (Tang Fandi) and Lincoln Cushing Collection of Chinese Posters. Approximately 500 posters, 1962–1988, majority from 1965–1981; described as possibly the largest collection of Chinese political posters from this period in the United States.
+    - Chinese Rubbings Collection. Over 2,700 rubbings of textual and pictorial engravings; half from the Teihōkaku collection of Mitsui Takakata acquired in 1950; one of the largest and richest collections of Chinese rubbings outside East Asia.
+    - Wen shi zi liao 文史资料. Close to 6,000 titles; first-person accounts of social, economic, and political changes from the late Qing dynasty through the early People's Republic.
+    - Paul Kendel Fonoroff Collection for Chinese Film Studies. The largest Chinese film studies collection in North America; acquired 2017.
+    - Fong Yun Wah Rare Book Room. Approximately 40,000 items including Chinese, Japanese, and Korean manuscripts and imprints; includes the John Fryer Library, the Ho-Chiang Collection of early Buddhist scriptures, Mongolian texts, and Manchu texts.
+    - James Soong Archive (papers of the Taiwanese politician and founder of the People First Party).
+    - Provincial and Local Gazetteers Collection (approximately 6,000 volumes of Chinese local gazetteers).
+  ag: ''
+  description: One of the two largest East Asian library collections in the United
+    States outside of the Library of Congress, with over 900,000 volumes. The Fong
+    Yun Wah Rare Book Room holds approximately 40,000 rare items. Particularly strong
+    in Chinese political posters, rubbings, local gazetteers, and first-person historical
+    accounts. The Fonoroff Collection is the largest Chinese film studies collection
+    in North America. Rare materials may be paged Monday–Friday, 9:00 a.m.–4:30 p.m.;
+    contact the rare book room curator in advance to confirm availability.
+  walkin: Open to all researchers and visitors; no identification, registration, or
+    prior arrangements required for general use; rare and special collections available
+    by appointment with language bibliographers or rare book room curator (drudolph@berkeley.edu).
+  librarian: Jianye He
+  libemail: hjy@berkeley.edu
   travelgrant: false
   note: ''
+  displayname: C.V. Starr East Asian Library | University of California, Berkeley
 - libname: East Asian Collection
   institution: University of Chicago
   url: https://www.lib.uchicago.edu/about/directory/departments/eastasia/
+  collections: |-
+    - Chinese Maritime Customs Service Publications Archive, 1850–1940. Statistical returns, trade reports, and administrative records of the foreign-managed Imperial Maritime Customs Service.
+    - Archives from the Ming and Qing Dynasties (Qing shilu 清實錄 and Qing huidian 清會典). Official dynastic records and administrative codes; physical set holdings.
+    - Chinese Literary Classics and Exegeses in Manchu and Chinese (rare physical holdings).
+    - Pre-1949 Chinese Newspaper Collection (physical holdings).
+    - Rare Book Collection ("T-Room"). Restricted holdings of Chinese, Japanese, Korean, Tibetan, Mongolian, and Manchu rare books; includes items that are sole surviving copies anywhere in the world.
+    - Papers of Sir Ernest Mason Satow. British diplomat and sinologist who served at key posts in China and Japan in the late 19th century; held in Regenstein Library Special Collections.
+  ag: |-
+    - Edward A. Kracke, Jr. Papers, 1927–1976 (Sinologist, Song dynasty specialist).
+    - T’ung-li Yuan (Yuan Tongli) Papers, 1940–1964 (Chinese bibliographer and Library of Congress China specialist).
+    - Langdon Gilkey Papers, 1921–2004 (theologian interned at Weihsien Civil Assembly Center, China, during WWII).
+    - Robert Redfield Ford Foundation Cultural Studies Program Records, 1951–1961 (includes China-related anthropological research).
+  description: One of the leading East Asian collections in the United States, tracing
+    its history to 1936 and growing to distinction under Dr. Tsuen-Hsuin Tsien. The
+    restricted rare book holdings ("Treasure Room") include sole surviving copies
+    of some items, alongside institutional strengths in Chinese Maritime Customs materials
+    and pre-1949 newspapers. CEAS Library Travel Grants are available for scholars
+    from outside the Chicago metro area; contact the library for current cycle details.
   walkin: Visitor pass available by checking in at Regenstein Library entry desk with
     current government-issued photo ID; East Asian Collection on Regenstein 5th Floor;
     faculty and staff from other academic institutions may be granted borrowing privileges
@@ -85,49 +328,162 @@
   librarian: Hyeonjin Schubert
   libemail: hschubert@uchicago.edu
   travelgrant: true
-  note: CEAS Library Travel Grants available for scholars from outside Chicago metro
-    area; contact library for current cycle details
+  note: ''
+  displayname: East Asian Collection | University of Chicago
 - libname: Wason Collection on East Asia
   institution: Cornell University
   url: https://asia.library.cornell.edu/wason/
+  collections: |-
+    - Willard D. Straight Papers and Photographs. American diplomat and financier; key figure in early 20th-century US-China financial negotiations.
+    - F. R. Newman Papers and Photographs.
+    - Leslie Severinghaus Papers and Photographs.
+    - Papers of Cornell University President Jacob Gould Schurman (diplomat, served as U.S. minister to China 1921–1925).
+    - Papers of James M. McHugh (U.S. naval attaché in China, 1930s–1940s).
+    - Papers of Gerow D. Brill.
+    - Papers of Harry Houser Love.
+    - Oral Histories of Cornell Faculty Members in China (Leonard Maynard, John Lossing Buck, Glenn W. Hedlund, John H. Reisser, Stanley Warren, Evelyn Claassen).
+    - Five Original Manuscript Volumes of the Yongle Dadian 永樂大典. Among the rarest surviving fragments of the 15th-century Ming imperial encyclopedia.
+    - Manuscripts Relating to Lord Macartney’s 1792 Embassy to China. Documentary record of the first British diplomatic mission to the Qing court.
+    - Jade Book of the Second Manchu Emperor (ceremonial imperial jade document, early Qing).
+  ag: |-
+    - Cornell University Wason Collection Records, 1918–1988 (administrative records of the collection itself).
+    - Harold Shadick Papers, 1915–1992 (Cornell China specialist and linguist).
+    - Wason Collection of Chinese Export Watercolors (physical artwork collection).
+    - Tianjin Collection (photographs of Tianjin, ca. 1860; U.S. Army 15th Infantry photographs, 1912).
+    - Journeys round Tengyueh, 1877–1908. Manuscripts, typescripts, and 7 manuscript maps documenting British consular surveys of Yunnan province, particularly the Tengchong area.
+  description: The Wason Collection is one of the largest and most comprehensive East
+    Asian library collections in North America, with approximately 740,000 volumes
+    on China, Japan, and Korea. The Rare Materials Archive holds over 4,000 primary
+    items including the only five original manuscript volumes of the Yongle Dadian
+    in North America, alongside photographs, manuscripts, and the papers of key figures
+    in early American engagement with China.
   walkin: Most library materials shelved in open stacks accessible to visitors; some
     restricted areas for unregistered patrons; special collections by request
   librarian: Liren Zheng
   libemail: lz14@cornell.edu
   travelgrant: false
   note: ''
+  displayname: Wason Collection on East Asia | Cornell University
 - libname: East Asia Library
   institution: Stanford University
   url: https://library.stanford.edu/chinese-studies
+  collections: |-
+    - Wang Jingwei and Lin Baisheng Photograph Collection (photographs related to the wartime ROC politician Wang Jingwei and his collaborationist government).
+    - Collection of Chinese Working Unit Documents and Personal Files, 1949–1985. Personnel files and unit records from PRC work units; a rare source for the social history of early Communist China.
+    - Anderson Photograph Collection of YWCA in China, 1920s–1940s (photographs of YWCA activities in China).
+    - China One-Child Policy Ephemera Collection, 1974–2007. Posters, pamphlets, and ephemera documenting the implementation of China’s one-child policy.
+    - Chiang Yee Papers. Papers of the Chinese-British artist, calligrapher, and writer known for the “Silent Traveller” travel memoir series.
+    - Chinese Propaganda Posters Collection (political posters, primarily from the PRC period).
+    - Collection of Chinese Land Deeds, 1618–1994. Historical contracts recording land transactions from the Ming dynasty through the late 20th century.
+    - Collection of Contractual Documents, Deeds and Other Judicial Documentation in the Late Qing and Republic Era 中国晚清民国民间合约, 财产证书, 借据等特藏 (private legal and financial documents).
+    - Collection of Private Records of Legal Cases in the Late Qing and Republic 晚清民国诈学范本，私家诉讼记录 (private litigation records and model legal case compilations).
+    - Frank Hawke Collection of Cultural Revolution Memorabilia (objects and ephemera from the Cultural Revolution).
+    - Huang-Bernhardt Collection of Chinese Legal Documents, 1736–1989. Contracts, deeds, and legal records spanning the Qing dynasty through the PRC period.
+    - Lo Hsieh Collection of Overseas Chinese Student Publications and Documentation of Defending the Diaoyu Islands Movement, 1970s. Publications from the overseas Chinese student movement protesting Japanese claims to the Diaoyu/Senkaku Islands.
+    - Missionary Postcards of East and Southeast Asia (photographic postcards produced by or for Protestant missionaries).
+    - Red Guards and Other Organizations’ Publications during the Cultural Revolution 文化大革命红卫兵及群众组织资料 (Red Guard tabloids and organizational publications).
+    - Sam Chung Hsieh Papers.
+    - Tao Baichuan Papers (papers of the Taiwanese politician and academic).
+    - Thomas S. Mullaney East Asian Information Technology History Collection. Materials documenting the history of East Asian language computing and typewriter technology.
+    - Underground Publications of the Democracy Movement in China, 1978–1979 (samizdat publications from the Democracy Wall movement).
+    - Reprint Series of Important Historical Documents of the Communist Party of China 中共重要历史文献资料汇编 (physical set of reprinted CCP historical documents).
+    - Chinese Comic Books Collection (lianhuanhua 连环画). Traditional Chinese sequential picture story books.
+    - East Asia Collection, 1877–1923 (Stanford Manuscripts Division; early Stanford archival materials related to East Asia).
+    - Chinese Railroad Workers in North America Project at Stanford Research Files, 2011–2019. Research materials gathered for the Stanford project on Chinese railroad workers in 19th-century North America.
+  ag: ''
+  description: The Stanford East Asia Library holds robust special collections with
+    notable named collections including the Huang-Bernhardt Collection of Chinese
+    Legal Documents (2,500+ items, 1736–1989), the Thomas S. Mullaney East Asian Information
+    Technology History Collection, and extensive holdings in Cultural Revolution ephemera,
+    Chinese propaganda posters, and legal records. Materials must be requested through
+    Aeon at least three business days in advance.
   walkin: Open to general public for on-site use for up to 7 days within a 12-month
     period at no cost; visitors must complete a Visitors Registration Form and present
     government ID upon entry; borrowing limited to Stanford and UC Berkeley ID holders;
     outside scholars should contact staff before visiting for special collections
   librarian: Zhaohui Xue
   libemail: zhxue@stanford.edu
-  travelgrant: false
-  note: ''
+  travelgrant: true
+  note: 'See also: Hoover Institution Library & Archives | Stanford University. Stanford
+    CEAS travel grants available up to $1,000; priority for scholars at institutions
+    with limited East Asian language resources.'
+  displayname: East Asia Library | Stanford University
 - libname: Asia Library
   institution: University of Michigan
   url: https://guides.lib.umich.edu/chinesestudies
+  collections: |-
+    - Grand Secretariat Archives 内閣大庫檔案. Original imperial administrative records of the Qing Grand Secretariat, comprising over 4,000 Ming documents and approximately 300,000 volumes of Qing material; a primary source for Chinese institutional and political history.
+    - Chinese Dance Collection. The largest collection of Chinese dance materials outside mainland China; includes rare books, periodicals, photo albums, performance programs, postcards, mimeographs, and manuscripts. Actively developed since 2015.
+  ag: "- Philippines, Japan, and China Travel Album (held at University of Michigan
+    Libraries)."
+  description: One of the top four academic East Asian library collections in North
+    America, with over one million volumes. The Chinese Dance Collection is the largest
+    of its kind outside mainland China and spans rare books, photo albums, manuscripts,
+    and performance ephemera; the Grand Secretariat Archives comprise over 300,000
+    volumes of original Qing imperial administrative records. Physical special collections
+    are available by appointment through the Asia Library.
   walkin: Any member of the public is welcome to visit in person and use almost all
     licensed electronic resources from guest workstations; access to open stacks
   librarian: Liangyu Fu
   libemail: liangyuf@umich.edu
-  travelgrant: false
-  note: ''
+  travelgrant: true
+  note: 'Asia Library Travel Grants: up to $1,000 for faculty and advanced graduate
+    students at other institutions; apply via Lieberthal-Rogel Center for Chinese
+    Studies or Center for Japanese Studies'
+  displayname: Asia Library | University of Michigan
 - libname: Tateuchi East Asia Library
   institution: University of Washington
   url: https://guides.lib.uw.edu/research/lucyzli
+  collections: |-
+    - Chinese Rare Books. Over 3,200 pre-1912 Chinese rare books from the Ming and Qing dynasties.
+    - Wu Xianzi Papers 伍憑子, 1881–1959. Chinese republican politician and constitutional scholar; includes posthumous writings and collected documents.
+    - Joseph Rock Collection (photographs and materials by the Austrian-American botanist and explorer in Yunnan).
+    - Hellmut Wilhelm Collection 衛德明, 1905–1990 (papers of the University of Washington sinologist and scholar of the I Ching).
+    - Chandless (Robert Henry) Photographs of China, 1898–1908 (photographs).
+    - University of Washington China Program Records, 1964–1985 (institutional records of UW’s China studies program).
+  ag: ''
+  description: One of the largest East Asian library collections in North America,
+    with nearly 800,000 volumes; the library completed a major renovation and grand
+    reopening in February 2024. The China special collection includes Ming dynasty
+    rare books and other valuable materials available to UW community members, visiting
+    scholars, and the general public by appointment. Some special collections materials
+    are additionally housed in the Suzzallo/Allen Library Special Collections.
   walkin: Open to the public; visitors may apply for borrower's cards at Library Account
     Services on the first floor of Suzzallo Library
   librarian: Lucy Li
   libemail: lucyzli@uw.edu
   travelgrant: false
   note: ''
+  displayname: Tateuchi East Asia Library | University of Washington
 - libname: Asian Reading Room
   institution: Library of Congress
   url: https://www.loc.gov/rr/asian/
+  collections: |-
+    - Chinese Rare Books Collection. Approximately 5,300 titles, with the earliest dating to the 11th–12th centuries; some are sole extant copies in the world. Strengths in Ming (1368–1644) and early Qing (1644–1795); includes printed books, manuscripts, Buddhist sutras, works with hand-painted illustrations, local gazetteers, and ancient maps.
+    - Dunhuang Manuscripts. Twelve Buddhist sutras from the Dunhuang cave deposits, dating to the Northern Wei (386–535) and Tang (618–907) dynasties.
+    - Pre-1958 Chinese Collection. Over 42,000 items in print, manuscript, microform, and digital formats; fully searchable in the LOC Online Catalog in both Chinese characters and romanized script.
+    - Yongle Dadian 永樂大典. Surviving fragments of the great 15th-century Ming imperial encyclopedia; among the rarest surviving manuscripts in the world.
+    - Naxi Manuscript Collection 納西族東巴古籍 (religious manuscripts of the Naxi people of Yunnan in the Dongba script).
+    - South Manchuria Railway Company Publications Collection (administrative and research publications of the Japanese-managed railway enterprise in Manchuria).
+    - Hongyi He Chinese Papercuts Collection, 1989–2007 (folk art papercuts).
+    - Chang Yu-Chen Chinese Opera Video Collection (video recordings of Chinese opera performances).
+    - Four Masters of Chinese Storytelling Video Collection (video recordings of traditional Chinese storytelling performances).
+    - Chinese Rod Puppetry Performance and Interview Collection (video recordings).
+  ag: |-
+    - Owen Lattimore Papers, 1907–1997, bulk 1950–1989. China and Mongolia specialist; political scientist and Asia policy advisor; held at the Library of Congress Manuscripts Division.
+    - Francis R. Valeo Papers, 1916–1987, bulk 1946–1985 (U.S. Senate aide with extensive China policy files).
+    - Warren M. Tsuneishi Papers, 1930–2007, bulk 1961–1999 (Library of Congress East Asian specialist).
+    - Charles William Le Gendre Papers, 1866–1893, bulk 1866–1875 and 1891–1892 (U.S. diplomat in China and Taiwan).
+    - Ray S. Cline Papers, 1945–1994, bulk 1970–1994 (CIA analyst with extensive Taiwan/China files).
+    - Sara L. M. Davis Collection on Tai Lüe Culture, 1997–2005 (Yunnan minority culture).
+    - World War II Military Intelligence Map Collection: Declassified Maps and Reports, 1931–1945 (includes China theater maps and reports).
+  description: The Asian Division of the Library of Congress holds one of the world’s
+    great collections of Chinese-language materials, with over 4 million physical
+    items including 5,300 rare books dating as far back as the 11th century and 12
+    Dunhuang manuscripts from the Northern Wei and Tang dynasties — some of which
+    are sole extant copies. Archival holdings encompass the papers of major Asia policy
+    figures; the library also holds the Yongle Dadian fragments, Naxi manuscripts,
+    and multimedia collections on Chinese performing arts.
   walkin: Open to anyone 16 and older; free Reader Identification Card required, issued
     on-site with valid photo ID; located in Room LJ-150, Thomas Jefferson Building,
     Washington D.C.
@@ -135,18 +491,57 @@
   libemail: ichapman@loc.gov
   travelgrant: false
   note: ''
+  displayname: Asian Reading Room | Library of Congress
 - libname: Asian Library
-  institution: Claremont Colleges
-  url: https://library.claremont.edu/asian-library/
-  walkin: Special Collections and Archives open to everyone at no cost by appointment;
-    Asian Library rare collections available to the wider scholarly community
-  librarian: Xiuying Zou
-  libemail: Xiuying.Zou@claremont.edu
+  institution: University of British Columbia
+  url: https://asian.library.ubc.ca/
+  collections: |-
+    - Puban Collection 蒲崂藏書. A collection of rare Chinese books originally from the Nanzhou Shu Lou, a private library owned by Xu Shaoqi; focuses on census and historical records and literature of Guangdong province, with unique original copies. Enlarged by Mr. Yao Junshi.
+    - Pang Jingtang Collection 龐鏡塗藏書. Acquired in 2000; 94 titles and 841 volumes produced prior to 1796, including many Ming editions and some unique manuscripts.
+    - Seto Collection 司徒旄藏書. Donated in 1967; over 2,200 items of Chinese books, journals, pamphlets, photos, and archival materials.
+    - The Paper Trail Collection. Documents the historical racism experienced by Chinese people in Canada and their exclusion from Canadian society.
+    - Jing Yi Zhai Collection 景钔齋藏書.
+    - Song Xuepeng Collection 宋學鵯藏書.
+    - Wei Tingsheng Collection 衛挺生藏書.
+    - Dr. Kok-Yuen Leung Collection 梁覺珄醫生藏書.
+    - Lok-Tin Lee Collection 李樂天藏書.
+    - Swann Collection.
+  ag: "- Swann Collection (~1,000 unique titles including rare reproductions of Chinese
+    and Japanese paintings; acquired 1997)."
+  description: The UBC Asian Library’s rare book collection ranks first in North America
+    with approximately 4,000 titles in 60,000 volumes; the collection includes unique
+    and rare materials, some of which are sole existing copies. The Puban Collection,
+    assembled from the private library of Guangdong bibliophile Xu Shaoqi, is its
+    cornerstone, supplemented by the Pang Jingtang Collection (94 titles, 841 volumes,
+    pre-1796) and numerous other named private library donations.
+  walkin: Open to UBC community and external researchers; community borrower cards
+    available; rare and special collections accessible by appointment; contact asian.library@ubc.ca
+    or call (604) 822-2427
+  librarian: Jing Liu
+  libemail: jing.liu@ubc.ca
   travelgrant: false
   note: ''
+  displayname: Asian Library | University of British Columbia
 - libname: East Asian Library
   institution: University of Pittsburgh
   url: https://library.pitt.edu/east-asian-library
+  collections: |-
+    - Mu Collection 慕氏藏書. A major collection acquired from China in the 1930s; 227 titles and 2,097 volumes of Chinese rare books from Song, Ming, and Qing dynasty editions.
+    - The Collection of Important Documents & Materials in CCP History 中共重要历史文献资料汇编 (physical volumes reprinting primary sources on the history of the Chinese Communist Party).
+    - Chinese Land Records Collection. Approximately 6,000 land deed records from the Ming dynasty (earliest: 1584) through the Cultural Revolution era; acquired 2011.
+    - Chinese Student Organization Newsletters from North American Universities, 1960s–1970s. The largest collection of its kind; newsletters from Chinese student organizations at universities across North America.
+  ag: "- Chinese Marriage Documents, 1909–1997. Marriage certificates, wedding and
+    engagement invitations, child bride agreements, uxorilocal marriage documents,
+    remarriage agreements, and divorce certificates spanning the Qing dynasty through
+    the PRC period; earliest record from 1909. Primary sources for the history of
+    marriage in China across the imperial, Republican, and Communist periods."
+  description: One of the top-ranked Chinese studies collections in North America
+    (13th among Chinese collections), with over 303,000 volumes and particular strengths
+    in classics, literature, Ming-Qing and modern history, art history, and Chinese
+    politics. Distinctive physical holdings include the Mu Collection of Song-Ming-Qing
+    dynasty rare books, a unique set of Chinese land records spanning from 1584 through
+    the Cultural Revolution, and the largest known collection of Chinese student organization
+    newsletters from North American universities.
   walkin: Non-affiliates may purchase a Special Borrower's Card at Hillman Library
     for $100; East Asian Gateway Service delivers Chinese documents to individual
     researchers and non-profit organizations who cannot locate needed items in other
@@ -155,39 +550,114 @@
   libemail: ruz117@pitt.edu
   travelgrant: false
   note: ''
-- libname: East Asian Collection
-  institution: University of Kansas
-  url: https://lib.ku.edu/east-asian-collection
-  walkin: Libraries freely accessible to the public; use of some services restricted
-    to KU affiliates
-  librarian: Cecilia Zhang
-  libemail: ceciliazh@ku.edu
-  travelgrant: true
-  note: CEAS travel grant up to $400 for scholars traveling 100+ miles; covers travel
-    and lodging; faculty and graduate students eligible
+  displayname: East Asian Library | University of Pittsburgh
 - libname: Cheng Yu Tung East Asian Library
   institution: University of Toronto
   url: https://east.library.utoronto.ca/resource/chinese-studies-resources
+  collections: "- Mu Collection 慕氏藏書. The library’s foundational rare book holding;
+    acquired from China in the 1930s; 227 titles and 2,097 volumes of Chinese rare
+    books from the Song, Ming, and Qing dynasties."
+  ag: ''
+  description: One of the largest East Asian research collections in Canada, with
+    over 660,000 volumes and particular strengths in Chinese philosophy, Buddhism,
+    dynastic history, and local histories. The Mu Collection — 227 titles and 2,097
+    volumes of Song, Ming, and Qing dynasty rare books — forms the library’s foundational
+    rare book holding. The library also administers a Resources Access Grant Program
+    for external researchers.
   walkin: External researchers must complete an online form to request visitor research
     access to the Robarts Library building; library no longer open to general public
     without pre-arranged access
   librarian: Andrew Ip
   libemail: andrewch.ip@utoronto.ca
-  travelgrant: false
-  note: ''
+  travelgrant: true
+  note: 'See also: Richard Charles Lee Chinese Canadian Archives | University of Toronto'
+  displayname: Cheng Yu Tung East Asian Library | University of Toronto
 - libname: Hoover Institution Library & Archives
   institution: Stanford University
   url: https://www.hoover.org/library-archives
+  collections: |-
+    - Chiang Kai-shek Diaries 蔣介石日記. Personal diaries of the Republic of China president spanning several decades of 20th-century Chinese political history.
+    - T. V. Soong Papers 宋子文 (ROC finance minister; brother-in-law of Chiang Kai-shek; new increment acquired 2024).
+    - H. H. Kung Papers 孔祥熙 (ROC finance minister and premier; now fully digitized and available online).
+    - Chang Kia-ngau Papers 张嘉璈 (ROC banking official and railway minister).
+    - Chen Cheng Collection 陳誠 (ROC military general and vice president of Taiwan; includes materials on Communist activity in the Jiangxi Soviet Republic, 1931–37).
+    - Yen Hui Ch’ing Typescript: An Autobiography 顏惠慶 (ROC diplomat and premier).
+    - Nym Wales (Helen Foster Snow) Papers (American journalist who reported from Yan’an during the 1930s; co-founder of the Chinese Industrial Cooperative movement).
+    - Claire Lee Chennault Papers (American military commander, Flying Tigers).
+    - Joseph Warren Stilwell Papers (U.S. general, China-Burma-India theater, WWII).
+    - Albert C. Wedemeyer Papers (U.S. general who succeeded Stilwell as commander in China).
+    - Iris Chang Papers (author, The Rape of Nanking).
+    - Lin Zhao Papers 林昭. Materials related to the anti-rightist campaign martyr and dissident poet executed in 1968.
+    - Chinese Cultural Revolution Collection, 1966–1976 (newspaper issues, pamphlets, broadsides, and flyers issued by Red Guards).
+    - Joshua B. Powers Collection (materials regarding Homer Lea, military adviser to Sun Yat-sen and the revolutionary movement in China).
+    - Francis E. Stafford Photographs (photographs by a U.S. missionary in China, 1909–15 and 1932–33).
+    - Communist Chinese Political Movement Collection, 1951–1980. Biographies, investigation records, confessions, and testimonies documenting PRC political campaigns.
+    - Personal Papers of J. Kenneth Olenik (on KMT left-wing radicalism and Deng Yanda).
+    - Personal Papers of Xu Wenli (Chinese pro-democracy dissident and political prisoner; acquired 2024).
+    - Sha Fei Papers. Photographs documenting Communist Chinese military activities in North China during WWII; acquired 2023.
+    - Kuo Pin Manuscript. Personal manuscript by an insider of the Nationalist Chinese secret service; acquired 2024.
+    - Wang Guoxiang Papers. Oral histories, photographs, and writings documenting 100 years of Chinese history; acquired 2024.
+    - Chinese and Russian Financial Bonds and Bank Notes Collection. Historical Chinese, Japanese, and Russian financial documents donated to the archives; acquired 2023.
+  ag: |-
+    - China Defense Supplies Records, 1940–1947.
+    - Aid Refugee Chinese Intellectuals Records, 1952–1970.
+    - Chinese National Relief and Rehabilitation Administration Photograph Negatives, 1946–1947.
+    - United Nations Relief and Rehabilitation Administration, China Office Records, 1943–1948.
+    - Chinese Pictorial Collection, 1868–1991.
+    - Chinese Subject Collection, 1900–2003.
+    - Chinese Agriculture Collection, 1953–1975.
+    - China Newspaper Collection, 1850–1993.
+    - China-Burma-India Hump Pilots Association Newsletters, 1978–1986.
+    - Stanley Kuhl Hornbeck Papers, 1900–1966 (U.S. diplomat, China policy).
+    - Paul Myron Anthony Linebarger Papers, 1922–1967 (China specialist and psychological warfare expert).
+    - Arthur N. Young Papers, 1918–1982 (American financial adviser to China).
+    - David Nelson Rowe Papers, 1861–1982 (China scholar and policy analyst).
+    - Payson J. Treat Papers, 1855–1973 (historian of U.S.-China relations).
+    - C. F. Remer Papers, 1915–1967 (economist specializing in Chinese foreign investment).
+    - Robert Allen Griffin Papers, 1942–1971 (U.S. economic aid to Asia).
+    - Bettis Alston Garside Papers, 1897–1980 (YMCA China secretary).
+    - Ernest Batson Price Papers, 1914–1960 (missionary in China).
+    - Sheldon H. Harris Papers, 1942–2002 (historian of Unit 731 biological warfare program).
+    - Barbara E. Ward Papers, 1949–1982 (anthropologist in Hong Kong and China).
+    - Michel Oksenberg Papers, 1976–2000 (China policy specialist).
+    - Pardee Lowe Papers, 1911–2007 (Chinese-American author and community leader).
+    - Fu-Yun Chang Typescript: The Reformation of the Chinese Customs.
+    - Francis Fulton Liu Typescript: History of the Chinese Muslims, 1977.
+    - Chen Lifu Typescript: The Storm Clouds Clear over China, 1911–2004.
+    - Poland, Ambasada (China) Miscellaneous Records, 1942–1945.
+    - Joint Chinese and British Commission in China Photographs, undated.
+    - Ray Lyman Wilbur Papers, 1906–1964 (Stanford president and Hoover cabinet member; China connections).
+    - George H. Kerr Papers, 1943–1951 (U.S. diplomat in Taiwan).
+    - Marshall Green Papers, 1960–1999 (U.S. diplomat, China policy).
+    - Alex Inkeles Papers, 1941–2003 (sociologist; China research).
+    - I. I. Serebrennikov Papers, 1906–1969 (Russian émigré in China).
+  description: One of the most significant archives in the world for 20th-century
+    Chinese political history, with particular strengths in Republican-era Nationalist
+    government documents, Communist Party materials, and civil war records. The Chiang
+    Kai-shek Diaries are among the most heavily researched collections in the world;
+    other flagship holdings include the T.V. Soong and H.H. Kung Papers (the latter
+    now fully digitized). New acquisitions are made regularly; researchers are advised
+    to check the Hoover website for recent additions.
   walkin: Open to anyone; reading room accessible Monday–Friday 10:30am–4:30pm; registration
     and advance reservation required via Aeon system; all collections accessible only
     within the reading room
   librarian: Amanda S Robb
   libemail: asrobb@stanford.edu
   travelgrant: false
-  note: Reserve at hoover.aeon.atlas-sys.com
+  note: 'See also: East Asia Library | Stanford University'
+  displayname: Hoover Institution Library & Archives | Stanford University
 - libname: East Asian Library
   institution: Washington University in St. Louis
   url: https://libguides.wustl.edu/chinese
+  collections: |-
+    - Rubbings of Taizong Horses. A complete set of six ink rubbings of Tang Emperor Taizong’s six war horses, originally carved in stone; among the most celebrated examples of Tang commemorative stone art.
+    - Chinese Special Collection: Chinese Printed Works, 1569–1911. Approximately 280 titles (485 volumes): about 60 titles (120 volumes) produced between 1569 and 1795, and about 220 titles (365 volumes) produced between 1796 and 1911; held in the Julian Edison Department of Special Collections.
+  ag: ''
+  description: The East Asian Library holds approximately 280 titles (485 volumes)
+    of Chinese rare and special books ranging from the 16th to the early 20th century,
+    alongside a complete set of rubbings of Tang Emperor Taizong’s six war horses.
+    Over 172,000 total volumes with particular strengths in Chinese and Japanese literature,
+    history, philosophy, religion, and art history.
   walkin: Open to general public during library hours; materials free to use within
     the library; borrowing restricted to WashU ID holders; courtesy borrowing card
     available via $100/year Century Club donation
@@ -195,23 +665,442 @@
   libemail: joan.wang@wustl.edu
   travelgrant: false
   note: ''
+  displayname: East Asian Library | Washington University in St. Louis
 - libname: East Asian Collections
   institution: University of Texas at Austin
   url: https://www.lib.utexas.edu/about/collections/east-asian-collections
+  collections: |-
+    - China Political Reports, 1911–1960 (microfilm).
+    - Taiwan Political and Economic Reports, 1861–1960 (microfilm).
+    - Bernhard Arp Sindberg Papers and Photography Collection. Sindberg was a Danish businessman who sheltered Chinese civilians at the Jiangnan Cement Plant during the 1937 Nanjing Massacre; held at the Harry Ransom Center.
+  ag: |-
+    - Bernhard Arp Sindberg Papers and Photography Collection, 1937–1985. 394 photographs, most taken during the Nanjing Massacre; supplemented by correspondence, an autobiographical typescript, and newspaper articles; held at the Harry Ransom Center.
+    - Pearl S. Buck Collection, 1930–1945. Manuscripts of four works by Buck and six letters; held at the Harry Ransom Center.
+  description: The East Asian Collections at the University of Texas at Austin hold
+    limited China-specific materials. The Bernhard Arp Sindberg Papers and Photography
+    Collection at the Harry Ransom Center is the most significant individual holding,
+    documenting a Danish businessman who sheltered Chinese civilians during the 1937
+    Nanjing Massacre. Microfilm holdings in China and Taiwan political reports are
+    the primary research resources.
   walkin: Open to the public; all visitors welcome to use collections in person during
     public hours
   librarian: Yi Shan
   libemail: yi.shan@austin.utexas.edu
   travelgrant: false
   note: Taiwan Resource Center for Chinese Studies located at Perry-Castañeda Library
+  displayname: East Asian Collections | University of Texas at Austin
 - libname: H.C. Fung Library
   institution: Harvard University (Fairbank Center for Chinese Studies)
   url: https://fairbank.fas.harvard.edu/h-c-fung-library/
+  collections: "- Fairbank Center for Chinese Studies Collection. A specialized research
+    collection of approximately 30,000 volumes focused on contemporary China, Hong
+    Kong, and Taiwan; emphasizes difficult-to-find Chinese-language publications,
+    statistical sources, grey literature, and unpublished documents. Annual acquisitions
+    obtained primarily during collecting trips to Beijing."
+  ag: ''
+  description: A specialized research library of approximately 30,000 volumes dedicated
+    to contemporary China, Hong Kong, and Taiwan, with an emphasis on Chinese-language
+    materials, statistical sources, and grey literature not available elsewhere. Annual
+    acquisitions are patron-driven and obtained primarily through collecting trips
+    to Beijing by the librarian. Researchers should contact the Fairbank Center directly
+    to confirm current access hours.
   walkin: Open to students, faculty, and researchers from other institutions with
     current institutional ID, faculty letter, passport, or other official ID; non-Harvard
     affiliates should inquire about eligibility with the librarian; located at CGIS
     Knafel Building, 1737 Cambridge Street
-  librarian: ''
-  libemail: ''
+  librarian: Nancy Hearst
+  libemail: fung_library@fas.harvard.edu
+  travelgrant: false
+  note: 'See also: Harvard-Yenching Library and Houghton Library | Harvard University'
+  displayname: H.C. Fung Library | Harvard University (Fairbank Center for Chinese
+    Studies)
+- libname: East Asian Library
+  institution: University of Southern California
+  url: https://libraries.usc.edu/locations/east-asian-library
+  collections: |-
+    - Ailing Zhang (Eileen Chang) Papers 張愛玲檔案. Papers of the acclaimed Chinese author, including correspondence with literary critic C.T. Hsia, manuscripts, photographs, essays, and a newly discovered 2023 addition documenting her later years in Los Angeles.
+    - Bill Einreinhofer China Archive (photographs and documents related to China).
+    - Prim Image Collection, 1900–1924 (photographs of the Upper Yangzi and Fuzhou areas of China in the early 20th century).
+    - East Asian Pamphlets and Maps. Maps, guides, and tourism pamphlets for cities including Beijing, Hong Kong, Taiwan, and Manchukuo, primarily 20th century.
+    - James and Sarah Daily Papers, 1940–1994. Travel diaries and correspondence from an American hydraulic engineering professor’s visits to China in 1974 and 1979; also covers teaching English in Nanjing.
+    - Theodore Hsi-en Chen Papers (scholar of Chinese education and Communist China studies).
+    - Theodore Chen Collection, 1900–1924 (photographs and materials related to early 20th-century China).
+    - China Society of Southern California Records, 1935–2015. Records of the oldest Sino-American cultural organization of its kind in the United States.
+    - Chinese Historical Society of Southern California Collection, ca. 1880–1933. Documents Chinese immigrant community history in Southern California; includes excavated artifacts from a Chinese laundry (ca. 1885–1905) and Old Chinatown (1880–1933).
+    - Collection of Chinese Posters (propaganda and commercial posters, primarily Republican and PRC periods).
+    - Chinese Cinema Posters (USC login required for digital access).
+    - Collection on Democracy Wall. Materials related to the 1978–1979 Democracy Wall movement in Beijing.
+    - Collection on Mei Lanfang. Materials documenting the celebrated Peking Opera performer.
+    - Taiwanese American Archives. Records of Taiwanese American community organizations and individuals in Southern California.
+    - Katherine Sui Fun Cheung Scrapbook and Videos. Materials related to the first Chinese American licensed pilot.
+    - Los Angeles Times Beijing Bureau Records (journalistic records from the LA Times Beijing bureau, primarily 1980s–1990s).
+    - Mao Zedong Writings Project Records.
+    - Maps of China Collection (maps of China, 1965–1995, including Shanghai, Haikou, and Hainan).
+    - Chinese Posters on COVID-19, 2020 (32 Chinese government-issued public health posters from the early pandemic period).
+    - Collection of Chinese Hanging Scrolls (traditional Chinese hanging scroll paintings).
+    - Saidee Pettus Hoose Collection.
+    - Pedro Loureiro Collection.
+    - Mark L. Moody Collection.
+    - Unprocessed: Clayton Dube Slides of China, 1984; Chinese Prints and Calendars, 1971–1973; Tung-Sheng Liu Collection (Chinese opera, music, and historical dramas on DVD, VHS, and vinyl); Taiwan Election Collection; White Horse Literary Society; Ying Ong Papers and Tapes.
+  ag: ''
+  description: The USC East Asian Library holds one of the most extensive archives
+    of Chinese-language audiovisual, photographic, and organizational collections
+    in the United States, with particular strength in Chinese American history, the
+    Chinese diaspora in Southern California, and 20th-century China. The Eileen Chang
+    Papers are a highlight of the literary holdings. Archival materials require advance
+    appointment (typically 1–4 weeks) to consult in the USC Special Collections Reading
+    Room.
+  walkin: Open to USC community and general public; entry to Doheny Memorial Library
+    requires USC ID or government-issued photo ID; archival collections available
+    by appointment only, at least 1–4 weeks in advance; contact eal@usc.edu or (213)
+    740-8025 to arrange.
+  librarian: Tang Li
+  libemail: tangl@usc.edu
   travelgrant: false
   note: ''
+  displayname: East Asian Library | University of Southern California
+- libname: Yale Divinity Library
+  institution: Yale University
+  url: https://web.library.yale.edu/divinity/information-for-researchers
+  collections: |-
+    - Miner Searle Bates Papers, 1927–1984. American missionary and historian at Ginling College; an eyewitness to and expert witness on the Nanjing Massacre.
+    - Kenneth Scott Latourette Papers, 1905–1970 (Yale historian of Christianity in China; author of A History of Christian Missions in China).
+    - Henry Winters Luce Family Papers, 1877–1951 (missionary family; father of Time magazine founder Henry R. Luce).
+    - Trustees of Lingnan University Records, 1885–1982. Records of the American-founded Christian university in Guangzhou.
+    - Lingnan Foundation Records, 1951–2017 (successor organization to Lingnan University).
+    - Chinese Students’ Christian Association in North America Records, 1909–1952 (records of a major Chinese student organization in North America).
+    - Gleysteen Family Papers, 1842–1973 (missionary family in China).
+    - Ingram Family Papers, 1887–1986 (missionary family in China).
+    - Hartwell Family Papers, 1846–1975 (missionary family in China).
+    - Lawrence and Eleanor Mead Papers, 1886–1994 (missionary papers).
+    - Dean and Fanny Wickes Papers, 1908–1943 (missionary papers).
+    - Josiah C. McCracken Papers, 1901–1961 (American physician-missionary in China).
+    - Donald MacInnis Papers, 1899–2005 (missionary and scholar of religion in China).
+    - Eunice Johnson Collection on Timothy Richard, 1867–2002 (materials on the influential Welsh Baptist missionary in China).
+  ag: |-
+    - Miner Searle Bates Papers, 1927–1984 (Nanjing Massacre witness).
+    - Lawrence and Eleanor Mead Papers, 1886–1994 (missionary papers).
+    - William Richard Johnson Papers, 1836–1966 (missionary papers).
+    - Gleysteen Family Papers, 1842–1973 (missionary papers).
+    - Henry Hale Bucher, Sr. and Louise Scott Bucher Papers, 1920–2012 (missionary papers).
+    - Ingram Family Papers, 1887–1986 (missionary papers).
+    - Hartwell Family Papers, 1846–1975 (missionary papers).
+    - Chinese Students’ Christian Association in North America Records, 1909–1952.
+    - Trustees of Lingnan University Records, 1885–1982.
+    - Lingnan Foundation Records, 1951–2017.
+    - United States Catholic China Bureau Records, 1976–2011.
+    - Dean and Fanny Wickes Papers, 1908–1943 (missionary papers).
+    - Eva Asher Papers, 1917–1983 (missionary papers).
+    - Lewis and Lois Gilbert Papers, 1925–1980 (missionary papers).
+    - George and Grace Snyder Papers, 1917–1982 (missionary papers).
+    - Robert E. and Gladys Wilson Bundy Papers, 1890–1983 (missionary papers).
+    - Josiah C. McCracken Papers, 1901–1961 (missionary papers).
+    - Leonard and Marjorie Caldwell Papers, 1921–1983 (missionary papers).
+    - Esther Tappert Mortensen Papers, 1903–1972 (missionary papers).
+    - Lacy Family Papers, 1905–2002 (missionary papers).
+    - Kenneth Scott Latourette Papers, 1905–1970 (Yale historian of Christianity in China).
+    - Walter and Ruth Marie Taylor Papers, 1923–1954 (missionary papers).
+    - Eunice Johnson Collection on Timothy Richard, 1867–2002.
+    - Donald MacInnis Papers, 1899–2005.
+    - Beach Family Papers, 1858–1961 (missionary papers).
+    - Bright Family Papers, 1911–1989 (missionary papers).
+    - Elsie Clark Krug Papers, 1909–1985 (missionary papers).
+    - Sidney R. Anderson Papers, 1914–2005 (missionary papers).
+    - McCandliss-Judson Family Papers, 1879–1952 (missionary papers).
+    - Anna and Stanley Wilson Papers, 1892–1951 (missionary papers).
+    - Mills Family Papers, 1907–2020 (missionary papers).
+    - Henry Winters Luce Family Papers, 1877–1951.
+    - Whitener Family Papers, 1945–2000 (missionary papers).
+    - Rugh Family Papers, 1921–2000 (missionary papers).
+    - Ernest and Olivia Ikenberry Papers, 1921–2005 (missionary papers).
+    - Randolph C. Sailer Papers, 1932–1982 (missionary papers).
+    - Merrill and Lucile Ady Papers, 1921–1971 (missionary papers).
+    - John David Hayes Papers, 1921–1969 (missionary papers).
+    - Morse Family Papers: William Reginald and Anne Crosse Morse, 1909–1940 (missionary papers).
+    - Young Family Papers, 1906–1970 (missionary papers).
+    - Lennig Sweet Papers, 1915–1974 (missionary papers).
+    - Dwight W. Edwards Papers, 1905–1982 (missionary papers).
+    - Smith Family Papers, 1894–1972 (missionary papers).
+  description: The Yale Divinity Library holds one of the largest collections of China
+    missionary papers in the United States, with the Miner Searle Bates Papers, Kenneth
+    Scott Latourette Papers, and Trustees of Lingnan University Records among its
+    most significant holdings. With over 40 named collections in the ag field, it
+    is an essential archive for the history of Protestant missionary activity in China
+    across the 19th and 20th centuries.
+  walkin: Open to all researchers; advance registration via Aeon system required before
+    visiting (guides.library.yale.edu/specialcollections/non-yale_researchers); located
+    at Yale Divinity School, 409 Prospect Street, New Haven.
+  librarian: Divinity Library Staff
+  libemail: divinity.library@yale.edu
+  travelgrant: false
+  note: 'See also: East Asia Library | Yale University'
+  displayname: Yale Divinity Library | Yale University
+- libname: Kautz Family YMCA Archives
+  institution: University of Minnesota
+  url: https://www.lib.umn.edu/collections/special/ymca
+  collections: |-
+    - Records of YMCA International Work in China. Organizational records documenting YMCA activities, programs, and staff in China across the early 20th century.
+    - D. Willard Lyon Papers (YMCA China secretary; a key figure in YMCA international work in China).
+    - Photographs and Photograph Albums of YMCA Work in China (photographs).
+    - Oversized Maps and Blueprints of YMCA Buildings in China (architectural drawings and maps).
+    - Records of YMCA Work in Taiwan and Hong Kong (organizational records).
+    - Records of the Committee on Friendly Relations Among Students (China-related files within broader international student organization records).
+  ag: |-
+    - Records of YMCA International Work in China, 1890–1991 (bulk 1896–1949). Comprehensive records of YMCA activities in China; significant portions now digitized and available online.
+    - D. Willard Lyon Papers, 1895–1935 (YMCA foreign secretary in China; founder of the first student YMCA in China).
+    - YMCA Lantern Slide Collection, 1910s–1920s. Includes sets for public health campaigns in China and lectures on YMCA youth work in China.
+    - Kirby Page China-related papers, 1916, 1922. A dissertation on YMCA history in China (1916) and a detailed report on the YMCA movement in China prepared for John R. Mott (1922).
+    - Eugene Turner China-related correspondence, undated and 1935. Correspondence with Madame Chiang Kai-shek and YMCA colleagues on political conditions in China.
+    - Clifford Petitt Papers, 1922–1983 (twenty years of YMCA work in China).
+    - Eugene Barnett Papers, 1920–1975. Correspondence with YMCA secretaries in China documenting the Japanese occupation and the Communist takeover.
+    - Harry Brunger Papers, 1949–2010 (YMCA work in Canton and Hong Kong; multiple visits to China in the 1980s–1990s).
+    - Richard D. Cooper China Diary, 1947–1949. Diary documenting the family’s arrival in Shanghai and 18 months of YMCA work during the final period before the Communist Revolution.
+  description: The Kautz Family YMCA Archives holds the most significant collection
+    of YMCA records related to China in North America, including the Records of YMCA
+    International Work in China (significant portions now digitized and freely available
+    online). The collection documents YMCA activities in China from the early 20th
+    century and is one of the most heavily used China-related collections in the University
+    of Minnesota Libraries.
+  walkin: Open to all responsible researchers regardless of affiliation; appointment
+    required — contact kautz@umn.edu; materials accessible in reading room at Elmer
+    L. Andersen Library, West Bank Campus, University of Minnesota Minneapolis.
+  librarian: YMCA Archives Staff
+  libemail: kautz@umn.edu
+  travelgrant: false
+  note: ''
+  displayname: Kautz Family YMCA Archives | University of Minnesota
+- libname: Houghton Library
+  institution: Harvard University
+  url: https://library.harvard.edu/libraries/houghton
+  collections: ''
+  ag: |-
+    - Roger Sherman Greene Papers, 1896–1947 (Rockefeller Foundation and China Medical Board administrator).
+    - Lester Knox Little Papers, 1932–1964 (Inspector General of Chinese Maritime Customs).
+    - Wulsin Family Papers, 1869–1933, bulk 1905–1933 (exploration and travel in China).
+    - Frederick Roelker Wulsin Papers, 1914–1932 (China exploration).
+    - John Gordon Garrard China After Mao Collection, 1972–1978 (materials on post-Mao China).
+    - Harley Farnsworth MacNair and Florence Wheelock Ayscough Diaries, 1903–1945 (sinologist and poet-translator couple).
+    - Arthur Greenwood Robinson Papers on the Yung Wing Mission and YMCA Work in North China, circa 1910–1962.
+    - Zhongguo fu li hui (China Defence League) Records, 1927–1949 (records of Soong Ching-ling's wartime relief organization).
+    - Hugh L. Robinson and Olga Olsen Robinson Missionary Papers, 1925–1944.
+    - Thomas Handforth Papers, circa 1930–1950 (American illustrator who worked in China; illustrated Mei Li).
+    - Carl Tilden Keller Collection Concerning Sir Aurel Stein, 1922–1945 (materials on the explorer of Dunhuang and the Silk Road).
+    - Presbyterian Church in the U.S.A. Board of Foreign Missions Records, circa 1833–1911.
+    - Hosea Ballou Morse Letters to Robert Hart, 1886–1907 (correspondence between two key figures in the Imperial Maritime Customs Service).
+    - I. A. Richards Papers, circa 1930s–1970s (linguist at Peking National University; pioneer of Basic English in China).
+    - Carolyn Titcomb Sewall Photographs and Letter, circa 1913–1941 (China missionary photographs).
+    - Clippings and Ephemera Dealing with the Far East, ca. 1854–1914.
+  description: Harvard’s principal rare books and manuscripts library, distinct from
+    the Harvard-Yenching Library. China-related archival collections include the papers
+    of key figures in the Rockefeller China Medical Board, the Chinese Maritime Customs
+    Service, missionary networks, and early U.S.-China cultural and scientific exchange.
+    Advance appointment required; contact the reading room at least one week in advance.
+  walkin: Open to all researchers regardless of Harvard affiliation; valid photo ID
+    required; materials requested in advance via HOLLIS catalog; no prior appointment
+    required but encouraged for rare materials; contact houghton@harvard.edu.
+  librarian: Reading Room Staff
+  libemail: houghton@harvard.edu
+  travelgrant: false
+  note: 'See also: Harvard-Yenching Library and H.C. Fung Library | Harvard University'
+  displayname: Houghton Library | Harvard University
+- libname: Richard Charles Lee Chinese Canadian Archives
+  institution: University of Toronto
+  url: https://discoverarchives.library.utoronto.ca/index.php/richard-charles-lee-canada-hong-kong-library
+  collections: |-
+    - Chan Kiu Archives 陳橋檔案 (records documenting Chinese Canadian history).
+    - Anti-W5 Research Collection. Documents the 1979 W5 television controversy that wrongly portrayed Chinese Canadian students as displacing domestic students; a landmark moment in Chinese Canadian civil rights advocacy.
+    - Asianadian Resource Workshop Fonds (records of a Chinese Canadian community organization).
+    - Beatrice and Raymond Jai Cantonese Opera Collection (photographs, recordings, and ephemera documenting Cantonese opera in Canada).
+    - Chinese Canadian National Council Toronto Chapter Fonds. Records of the major Chinese Canadian civil rights organization; a key source for post-1970s Chinese Canadian political history.
+    - David Lai Fonds (papers of a prominent Chinese Canadian geographer and community leader).
+    - Scent of Thunderbolts Photograph Collection (photographs documenting Chinese Canadian community life).
+    - Vivienne Poy Fonds (papers of a Chinese Canadian senator and fashion designer).
+  ag: ''
+  description: The Richard Charles Lee Chinese Canadian Archives is the premier repository
+    for Chinese Canadian history in Canada, with particular strength in civil rights
+    advocacy, community organizational records, and diasporic cultural history. Highlights
+    include the Anti-W5 Research Collection documenting a landmark 1979 civil rights
+    controversy, the Chinese Canadian National Council Toronto Chapter Fonds, and
+    the Vivienne Poy Fonds.
+  walkin: Open to all scholars and researchers regardless of U of T affiliation; on-site
+    registration required; appointment required, Monday–Friday 12pm–5pm; some materials
+    have access restrictions per donor wishes; contact to arrange a visit before arriving.
+  librarian: Archives Staff
+  libemail: chk.library@utoronto.ca
+  travelgrant: false
+  note: 'See also: Cheng Yu Tung East Asian Library | University of Toronto'
+  displayname: Richard Charles Lee Chinese Canadian Archives | University of Toronto
+- libname: Knight Library Special Collections and University Archives
+  institution: University of Oregon
+  url: https://library.uoregon.edu/special-collections
+  collections: |-
+    - Gertrude Bass Warner Papers, 1879–1954. Papers, business records, photographs, and an unpublished manuscript documenting Warner’s collecting of Asian art and culture; includes materials on China, Japan, Korea, and Cambodia. Digitized selections available via Oregon Digital.
+    - Gertrude Bass Warner Lantern Slides, 1904–1929. Approximately 5,500 hand-tinted lantern slides documenting art and culture in China, Japan, Korea, and Cambodia; separate finding aid available via Archives West.
+    - Chinese Rare Books. Approximately 50 volumes, with the earliest dating to the Yongle reign (early 15th century); most derive from the Gertrude Bass Warner Collection.
+    - Leonebel Jacobs Papers. Correspondence, photographs, and a manuscript by the artist who painted Chinese Emperor Puyi.
+    - Henry B. Miller Papers, 1898–1908 (U.S. consul; correspondence, consular letters, and reports regarding China and Russia).
+    - Asian Studies Program Records, 1966–1982 (institutional records of the University of Oregon’s Asian Studies program).
+  ag: ''
+  description: The Knight Library Special Collections and University Archives holds
+    the Gertrude Bass Warner Collection, comprising approximately 5,500 hand-tinted
+    lantern slides of Asian art and culture (1904–1929), personal papers, and approximately
+    50 Chinese rare books dating as early as the 15th century. Warner was a pioneering
+    collector of Asian art in the Pacific Northwest whose gifts substantially shaped
+    the University of Oregon’s Asian collections.
+  walkin: Open to any adult researcher; registration required for each visit; materials
+    must be requested at least 5 business days in advance; Paulson Reading Room, Knight
+    Library 2nd floor North; open Monday–Friday 10am–4pm.
+  librarian: Kevin McDowell
+  libemail: kmcdowel@uoregon.edu
+  travelgrant: false
+  note: ''
+  displayname: Knight Library Special Collections and University Archives | University
+    of Oregon
+- libname: UCSD Library East Asia Collection
+  institution: University of California San Diego
+  url: https://library.ucsd.edu/research-and-collections/special-collections-and-archives/services/index.html
+  collections: |-
+    - Chinese Cultural Revolution Posters Collection. Propaganda posters created by various Chinese agencies, 1968–1989.
+    - Committee of Concerned Asian Scholars (CCAS) Friendship Delegations Digital Archive. Photographs and documents contributed by CCAS delegates who traveled to China in 1971 and 1972; documents early U.S.-China scholarly exchange during the period of détente.
+    - East Asia Underground Films/Independent Films (films from underground and independent cinema movements in East Asia).
+    - Norman Spencer Photographs Collection. Photographs of Chinese independent film and art scenes, 1999–2019.
+    - Posters of the Chinese Independent Film Festivals. Ephemera from the Li Xianting Film Fund Archive and REEL China Film Festival, 2004–2016.
+  ag: ''
+  description: The UCSD East Asia Collection is particularly strong in Chinese independent
+    and underground cinema, with unique holdings of Cultural Revolution posters, Chinese
+    Independent Film Festival materials, and the Norman Spencer photographic archive
+    of China’s independent film world. The recently acquired CCAS Friendship Delegations
+    Digital Archive documents early U.S.-China scholarly exchanges in 1971–1972, a
+    historically significant period of diplomatic opening.
+  walkin: Special Collections and Archives open to general public Monday–Friday 9am–5pm;
+    online registration required at spcoll-request.ucsd.edu; many materials stored
+    offsite and should be paged before your visit; no appointment required for on-site
+    use.
+  librarian: Xi Chen
+  libemail: xi.chen@ucsd.edu
+  travelgrant: false
+  note: ''
+  displayname: UCSD Library East Asia Collection | University of California San Diego
+- libname: Ohio State University Libraries
+  institution: Ohio State University
+  url: https://library.osu.edu/rbml
+  collections: |-
+    - Philip K. Dumaresq Diary Kept While Employed by the Pacific Mail Steamship Company in China and Japan. Diary of an American special agent primarily stationed in Shanghai in the late 19th century; held in the Rare Books and Manuscripts Library.
+    - Hong Shen Papers. Photographs, correspondence, and promotional materials related to the playwright and film director Hong Shen; held in the Jerome Lawrence and Robert E. Lee Theatre Research Institute.
+  ag: ''
+  description: 'The Ohio State University Libraries’ Special Collections holds two
+    named China-related collections: the Philip K. Dumaresq Diary (a late 19th-century
+    American agent’s account of Shanghai) and the Hong Shen Papers (playwright and
+    film director in Republican-era China). Holdings are limited to these two collections.'
+  walkin: Open to all researchers; appointment required — email thospcol@osu.edu;
+    research registration form required on first visit of each academic year; materials
+    non-circulating, available in Jack and Jan Creighton Special Collections Reading
+    Room, Thompson Library 105, Monday–Friday 9am–4:30pm.
+  librarian: RBML Staff
+  libemail: thospcol@osu.edu
+  travelgrant: false
+  note: ''
+  displayname: Ohio State University Libraries | Ohio State University
+- libname: Albert and Shirley Small Special Collections Library
+  institution: University of Virginia
+  url: https://library.virginia.edu/special-collections
+  collections: "- Guanhailou Collection. Comprises more than 500 items, primarily
+    Chinese rare books, ink rubbings, scrolls, wood blocks, and calligraphic materials;
+    a recently acquired physical collection."
+  ag: ''
+  description: The Albert and Shirley Small Special Collections Library recently acquired
+    the Guanhailou Collection, a rare assemblage of over 500 Chinese items including
+    rare books, ink rubbings, scrolls, woodblocks, and calligraphic materials. China-related
+    holdings are limited to this collection, a portion of which is also housed at
+    Rare Book School for teaching purposes.
+  walkin: Open to all researchers regardless of UVA affiliation; brief registration
+    form and valid government-issued photo ID required; materials requested in advance
+    via Aeon system at virginia.aeon.atlas-sys.com.
+  librarian: Small Special Collections Staff
+  libemail: small@virginia.edu
+  travelgrant: false
+  note: ''
+  displayname: Albert and Shirley Small Special Collections Library | University of
+    Virginia
+- libname: Asian Library
+  institution: Claremont Colleges
+  url: https://library.claremont.edu/asian-library-special-collections/
+  collections: |-
+    - Ch'en Shou-yi Collection 陳受頤藏書: Papers of Professor Ch'en Shou-yi, the first professor of Asian culture at The Claremont Colleges. Includes correspondence, photos, private library collections, work notes, and manuscripts. Finding aid available via Online Archive of California.
+    - East Asian Rare Book Collection: Over 11,200 volumes, double folios bound in traditional thread-stitch style, in 1,700+ oriental cases; especially strong in Confucian classics, local history, Qing dynasty history, early Chinese translations of western science and technology books, Bibles, and Christian education literature.
+    - California College in China: Books — approximately 500 titles of works in history, literature, and local gazetteers; original editions of the Ming and Qing dynasties and early 19th century, including 50 Chinese serial titles.
+    - California College in China: William B. Pettus Papers — documents covering institutional activities from 1929 through the 1960s; correspondence, newsletters, minutes, financial statements, photographs, pamphlets, textbooks, and examination materials.
+    - American Missionaries and Educators in China — correspondence, diaries, writings, photographs, reports, and article clippings documenting experiences of American missionaries and educators in China. Finding aid via Online Archive of California.
+    - China Missionaries Oral History Project — 44 interviews conducted 1970–1971 by the Claremont Graduate School of Oral History Program; recorded and transcribed experiences of missionaries from several denominations and geographic locations in China.
+  ag: ''
+  description: The Asian Library of The Claremont Colleges holds over 11,200 volumes
+    of East Asian rare books in traditional thread-stitch binding alongside the Ch’en
+    Shou-yi Collection — papers of the first professor of Asian culture at Claremont,
+    with documented connections to Hu Shih and Lin Yutang. Archival collections include
+    significant materials on American missionaries and educators in China and the
+    California College in China.
+  walkin: Visitor access available; 800 N Dartmouth Ave, Claremont, CA 91711; (909)
+    621-8150; Special Collections materials available by appointment
+  librarian: Xiuying Zou
+  libemail: library@claremont.edu
+  travelgrant: false
+  note: ''
+  displayname: Asian Library | Claremont Colleges
+- libname: Burke Library at Union Theological Seminary
+  institution: Columbia University
+  url: https://library.columbia.edu/libraries/burke.html
+  collections: |-
+    - James Whitford Bashford Diaries, 1905–1918 (Methodist bishop in China).
+    - Miner Searle Bates Papers, 1927–1984. American missionary at Ginling College; Nanjing Massacre witness and expert witness at the Tokyo War Crimes Tribunal.
+    - Margaret H. Brown Papers, c. 1940–1969 (missionary papers).
+    - Mark W. Brown Papers, 1908–1965 (missionary papers).
+    - Catholic University of Beiping Art Department Papers, 1937.
+    - China Information Committee Records, 1937–1939 (wartime Chinese government propaganda records).
+    - China Planning Committee Records, 1944–1945.
+    - Christian Evangelistic and Religious Educational Posters and Christian Scrolls and Bible Verses, [1930?–1949?] (printed religious ephemera).
+    - Hunter Corbett and Harold F. Smith Papers, 1862–1948 (Presbyterian missionaries in Shandong).
+    - Earl Herbert Cressy Papers, 1918–1960 (missionary and educator in China).
+    - John Horton and Helen Daniels Papers, 1919–1956 (missionary papers).
+    - Samuel Dodd and Samuel T. C. Dodd Papers, c. 1925–2014 (missionary papers).
+    - Douglas Newton Forman Papers, 1930–1949 (missionary papers).
+    - Alice Browne Frame Papers, 1905–1971 (missionary papers).
+    - Paul Goodman Hayes Papers, [circa 1940–1960] (missionary papers).
+    - Isaac Taylor Headland Papers, [1900?]–1939 (missionary and educator at Yenching University).
+    - Edward Hicks Hume Papers, 1914–1959 (American physician-missionary; founder of Yale-in-China’s hospital in Changsha).
+    - Edwin Carlyle Lobenstine Album, 1935 (missionary photograph album).
+    - Harold Shepard Matthew Papers, 1967 (missionary papers).
+    - Missionary Research Library Copy of Nestorian Tablet, [c. 1937] (rubbing of the 781 CE Tang dynasty Nestorian stele in Xi’an).
+    - George Merriam Newell Papers, 1905–1960 (missionary papers).
+    - Loren E. Noren Papers, 1962 (missionary papers).
+    - David Washington Cincinnatus Olyphant Papers, 1827–1851 (American merchant and early Protestant mission supporter in China).
+    - Frank Joseph Rawlinson Papers, 1924–1937 (editor of the Chinese Recorder; missionary in China).
+    - Nathan Sites Papers, 1861–1912 (Methodist missionary in Fujian).
+    - William Edward Smith Papers, 1897–1936 (missionary papers).
+    - Elwood G. and Donald G. Tewksbury Papers, 1872–1959 (missionary papers).
+    - United China Relief Records, 1941–1949 (records of the major American wartime relief organization for China).
+    - Abbe Livingston Warnshuis Papers, 1877–1963 (missionary and ecumenical leader).
+    - Joseph Whiteside Diaries, 1899–1929 (missionary papers).
+    - Matthew Tyson Yates Papers, 1878 (Southern Baptist missionary in Shanghai).
+    - Missionary Research Library Collection on Higher Education Institutions in China, 1857–1957 (printed materials on Christian higher education in China).
+    - Missionary Research Library Collection on Mission Work in China, 1893–1950 (printed materials on Protestant missions in China).
+    - Missionary Research Library Collection of Lantern Slides, circa 1920–1929 (lantern slides documenting missionary work in China).
+    - United Board for Christian Colleges in China (UBCCC) Records, 1931–1959 (records of the board overseeing American-founded Christian colleges in China).
+  ag: "- Burke Library Collection on Protestant Women’s Missionary Societies, 1849–1933
+    (minute books and a diary from early Protestant missionary societies in the United
+    States; China-related content)."
+  description: Physically housed at Columbia University, the Burke Library at Union
+    Theological Seminary holds one of the most extensive collections of Protestant
+    missionary archives in North America, with particular depth in China. The holdings
+    include 35 named archival collections spanning from the early 19th century through
+    the 1990s. Researchers should contact Columbia Libraries to confirm access; the
+    Burke Library is a distinct institution from the C.V. Starr East Asian Library.
+  walkin: Open to all researchers; appointment required with at least 5 business days’
+    notice, available Monday–Thursday 12–4pm; government-issued photo ID required
+    for entry to Union Theological Seminary building; all materials non-circulating
+    and accessible only in the reading room; contact burkespecial@library.columbia.edu.
+  librarian: Burke Library Special Collections
+  libemail: burkespecial@library.columbia.edu
+  travelgrant: false
+  note: 'See also: C.V. Starr East Asian Library | Columbia University (separate library
+    at same location)'
+  displayname: Burke Library at Union Theological Seminary | Columbia University

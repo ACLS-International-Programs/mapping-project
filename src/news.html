@@ -5,7 +5,30 @@ permalink: /news/
 classes: wide
 sidebar:
   nav: "main_sidebar"
+header:
+    image: /assets/images/mp_hero_grid_pattern.webp
 ---
+<style>
+.page__hero {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    max-width: none !important;
+    height: 200px !important;
+    background-image: url('/assets/images/mp_hero_grid_pattern.webp') !important;
+    background-repeat: repeat !important;
+    background-size: 600px !important;
+    background-position: top left !important;
+}
+.page__hero img {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .page__hero {
+        display: none !important;
+    }
+}
+</style>
 
 {% if site.data.acls_news and site.data.acls_news.items.size > 0 %}
 

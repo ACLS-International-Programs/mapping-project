@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "ACCESS PARTNERS"
+title: "LIBRARY ACCESS"
 permalink: /accesspartners/
 search: false
 toc: true

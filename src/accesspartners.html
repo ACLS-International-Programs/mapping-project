@@ -1,12 +1,12 @@
 ---
-title: "ACCESS PARTNERS"
+title: "LIBRARY ACCESS"
 layout: single
 search: false
 classes: wide
 permalink: /libraryaccess/
 excerpt: "China studies libraries offering walk-in access for non-affiliated researchers"
 header:
-    overlay_color: "#1B4F72"
+    overlay_image: /assets/images/mp_hero_grid_simple_slate.png
 ---
 
 <style>
@@ -50,36 +50,34 @@ header:
 }
 
 .partners-sidebar {
-    flex: 0 0 240px;
-    min-width: 240px;
+    flex: 0 0 220px;
+    min-width: 220px;
     position: sticky;
     top: 2rem;
     max-height: calc(100vh - 4rem);
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
 }
+
+.partners-sidebar::-webkit-scrollbar { width: 4px; }
+.partners-sidebar::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
 
 .partners-main {
     flex: 1;
     min-width: 0;
 }
 
-/* TOC sidebar */
-.toc-sidebar {
-    background: #FAFAFA;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    padding: 1rem;
-}
-
+/* TOC sidebar — matches directorygrid category sidebar style */
 .toc-title {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #1B4F72;
-    margin: 0 0 0.75rem 0;
+    color: #2B3AA8;
+    margin: 0 0 0.6rem 0;
     letter-spacing: 0.12em;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 .toc-list {
@@ -89,17 +87,21 @@ header:
 }
 
 .toc-list li {
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.05rem;
 }
 
 .toc-list a {
     display: block;
-    font-size: 0.78rem;
+    font-size: 0.75rem !important;
+    font-family: inherit !important;
+    font-weight: 300 !important;
     color: #444 !important;
     text-decoration: none !important;
-    padding: 0.25rem 0.35rem;
-    border-radius: 3px;
-    line-height: 1.35;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    line-height: 1.35 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
     transition: background-color 0.15s, color 0.15s;
 }
 
@@ -139,7 +141,7 @@ header:
 
 .result-institution {
     font-size: 0.82rem;
-    font-weight: 400 !important;
+    font-weight: 300 !important;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #555;
@@ -194,6 +196,114 @@ header:
     border: 1px solid #d0d0d0;
 }
 
+/* Special Collections section */
+.result-special-collections {
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+    border-top: 1px dashed #e0e0e0;
+}
+
+.result-special-collections .field-label {
+    font-size: 0.65rem;
+    color: #1B4F72;
+    margin-bottom: 0.5rem;
+}
+
+.result-sc-description {
+    font-size: 0.78rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+}
+
+.result-sc-collections,
+.result-sc-ag {
+    font-size: 0.75rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.result-sc-collections ul,
+.result-sc-ag ul {
+    margin: 0 0 0.5rem 0;
+    padding-left: 1.2em;
+}
+
+.result-sc-collections li,
+.result-sc-ag li {
+    margin-bottom: 0.3rem;
+}
+
+.result-sc-expand {
+    margin-top: 0.5rem;
+}
+
+.result-sc-expand summary {
+    font-size: 0.72rem;
+    color: #2B3AA8;
+    cursor: pointer;
+    user-select: none;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.15rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+}
+
+.result-sc-expand summary::-webkit-details-marker { display: none; }
+
+.result-sc-expand summary::before {
+    content: '▸';
+    font-size: 0.65rem;
+    transition: transform 0.15s;
+    display: inline-block;
+}
+
+.result-sc-expand[open] summary::before {
+    transform: rotate(90deg);
+}
+
+@media (hover: hover) {
+    .result-sc-expand summary:hover { color: #1e2a7a; }
+}
+
+/* Multi-library institution label (non-linked parent) */
+.toc-parent-label {
+    display: block;
+    font-size: 0.75rem !important;
+    font-family: inherit !important;
+    font-weight: 300 !important;
+    color: #444 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    line-height: 1.35 !important;
+    padding: 0.3rem 0.5rem;
+}
+
+/* Child library links */
+.toc-child-list {
+    list-style: none;
+    padding: 0 0 0 0.75rem;
+    margin: 0.05rem 0 0.2rem 0;
+    border-left: 2px solid #e8eaf6;
+}
+
+.toc-child-list li { margin-bottom: 0.05rem; }
+
+.toc-child-list a {
+    font-size: 0.75rem !important;
+    font-family: inherit !important;
+    font-weight: 300 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    line-height: 1.35 !important;
+    color: #444 !important;
+    font-style: normal !important;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .partners-container {
@@ -208,32 +318,34 @@ header:
 }
 
 @media (hover: hover) {
-    .toc-list a:hover          { background-color: #f0f0f0; color: #1B4F72 !important; }
+    .toc-list a:hover          { background: #f0f0f0; color: #2B3AA8 !important; }
     .result-guide-link a:hover { text-decoration: underline !important; }
 }
 </style>
 
 {% assign libraries = site.data.library_access | sort: 'institution' %}
+{% assign grouped = libraries | group_by: 'institution' %}
+{% assign grouped_sorted = grouped | sort: 'name' %}
 
 <div class="partners-container">
 
     <!-- TOC Sidebar -->
     <aside class="partners-sidebar">
-        <nav class="toc-sidebar" aria-label="Libraries">
+        <nav aria-label="Libraries">
             <h3 class="toc-title">Libraries</h3>
             <ul class="toc-list">
-                {% for lib in libraries %}
-                {% assign base_inst = lib.institution | split: ' (' | first %}
-                {% assign inst_count = 0 %}
-                {% for other in libraries %}
-                    {% assign other_base = other.institution | split: ' (' | first %}
-                    {% if other_base == base_inst %}{% assign inst_count = inst_count | plus: 1 %}{% endif %}
-                {% endfor %}
+                {% for group in grouped_sorted %}
+                {% assign inst_name = group.name | split: ' (' | first %}
                 <li>
-                    {% if inst_count > 1 %}
-                    <a href="#library-{{ forloop.index }}">{{ base_inst }} ({{ lib.libname }})</a>
+                    {% if group.items.size == 1 %}
+                    <a href="#lib-{{ group.items[0].libname | slugify }}">{{ inst_name }}</a>
                     {% else %}
-                    <a href="#library-{{ forloop.index }}">{{ base_inst }}</a>
+                    <span class="toc-parent-label">{{ inst_name }}</span>
+                    <ul class="toc-child-list">
+                        {% for child in group.items %}
+                        <li><a href="#lib-{{ child.libname | slugify }}">{{ child.libname }}</a></li>
+                        {% endfor %}
+                    </ul>
                     {% endif %}
                 </li>
                 {% endfor %}
@@ -247,7 +359,7 @@ header:
 
         <ul class="results-list">
             {% for lib in libraries %}
-            <li class="result-item" id="library-{{ forloop.index }}">
+            <li class="result-item" id="lib-{{ lib.libname | slugify }}">
 
                 <h3 class="result-title">{{ lib.libname }}</h3>
                 {% assign display_inst = lib.institution | split: ' (' | first %}
@@ -255,8 +367,8 @@ header:
 
                 {% if lib.url != '' %}
                 <div class="result-guide-link">
-                    <span class="field-label">China Studies Guide</span>
-                    <a href="{{ lib.url }}" target="_blank" rel="noopener noreferrer">View &#8594;</a>
+                    <span class="field-label">Website</span>
+                    <a href="{{ lib.url }}" target="_blank" rel="noopener noreferrer">China Studies Research Guide &#8594;</a>
                 </div>
                 {% endif %}
 
@@ -269,21 +381,41 @@ header:
 
                 {% if lib.walkin != '' %}
                 <div class="result-description">
-                    <span class="field-label">Walk-in Access</span>
+                    <span class="field-label">Non-affiliate Access</span>
                     {{ lib.walkin }}
                 </div>
                 {% else %}
-                <div class="result-description no-info">Walk-in access details not on record.</div>
-                {% endif %}
-
-                {% if lib.travelgrant %}
-                <div><span class="result-travel-grant">Offers Travel Grant</span></div>
+                <div class="result-description no-info">Non-affiliate access details not on record.</div>
                 {% endif %}
 
                 {% if lib.note != '' %}
                 <div class="result-access-note">
                     <span class="field-label">Note</span>
                     {{ lib.note }}
+                </div>
+                {% endif %}
+
+                {% if lib.travelgrant %}
+                <div><span class="result-travel-grant">Offers Travel Grant</span></div>
+                {% endif %}
+
+                {% if lib.description != '' or lib.collections != '' or lib.ag != '' %}
+                <div class="result-special-collections">
+                    <span class="field-label">Special Collections and Archives</span>
+                    {% if lib.description != '' %}
+                    <div class="result-sc-description">{{ lib.description }}</div>
+                    {% endif %}
+                    {% if lib.collections != '' or lib.ag != '' %}
+                    <details class="result-sc-expand">
+                        <summary>View collections</summary>
+                        {% if lib.collections != '' %}
+                        <div class="result-sc-collections">{{ lib.collections | markdownify }}</div>
+                        {% endif %}
+                        {% if lib.ag != '' %}
+                        <div class="result-sc-ag">{{ lib.ag | markdownify }}</div>
+                        {% endif %}
+                    </details>
+                    {% endif %}
                 </div>
                 {% endif %}
 
