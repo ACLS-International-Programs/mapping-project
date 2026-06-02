@@ -63,6 +63,8 @@
   note: 'See also: Burke Library at Union Theological Seminary (physically housed
     at Columbia; separate institution)'
   displayname: C.V. Starr East Asian Library | Columbia University
+  lat: '40.8075'
+  lng: "-73.9626"
 - libname: Duke University Libraries
   institution: Duke University
   url: https://guides.library.duke.edu/china
@@ -93,6 +95,8 @@
   travelgrant: false
   note: ''
   displayname: Duke University Libraries | Duke University
+  lat: '35.994'
+  lng: "-78.8986"
 - libname: Harvard-Yenching Library
   institution: Harvard University
   url: https://library.harvard.edu/collections/chinese-collection
@@ -148,6 +152,8 @@
   travelgrant: true
   note: 'See also: Houghton Library and H.C. Fung Library | Harvard University'
   displayname: Harvard-Yenching Library | Harvard University
+  lat: '42.377'
+  lng: "-71.1167"
 - libname: East Asian Library
   institution: Princeton University
   url: https://libguides.princeton.edu/c.php?g=1071063&p=9194766
@@ -173,6 +179,8 @@
   travelgrant: true
   note: ''
   displayname: East Asian Library | Princeton University
+  lat: '40.3431'
+  lng: "-74.6551"
 - libname: Chinese Collection
   institution: University of Illinois Urbana-Champaign
   url: https://www.library.illinois.edu/chinese/
@@ -197,6 +205,8 @@
   travelgrant: false
   note: ''
   displayname: Chinese Collection | University of Illinois Urbana-Champaign
+  lat: '40.102'
+  lng: "-88.2272"
 - libname: Chinese Studies Collection
   institution: University of Pennsylvania
   url: https://www.library.upenn.edu/collections/subject/chinese-studies-collection
@@ -218,6 +228,8 @@
   travelgrant: false
   note: 'For additional Kislak Center holdings search: findingaids.library.upenn.edu'
   displayname: Chinese Studies Collection | University of Pennsylvania
+  lat: '39.9522'
+  lng: "-75.1932"
 - libname: East Asia Library
   institution: Yale University
   url: https://guides.library.yale.edu/China
@@ -273,6 +285,8 @@
   travelgrant: false
   note: 'See also: Yale Divinity Library | Yale University'
   displayname: East Asia Library | Yale University
+  lat: '41.3163'
+  lng: "-72.9223"
 - libname: C.V. Starr East Asian Library
   institution: University of California, Berkeley
   url: https://www.lib.berkeley.edu/visit/east-asian
@@ -300,6 +314,8 @@
   travelgrant: false
   note: ''
   displayname: C.V. Starr East Asian Library | University of California, Berkeley
+  lat: '37.8724'
+  lng: "-122.2595"
 - libname: East Asian Collection
   institution: University of Chicago
   url: https://www.lib.uchicago.edu/about/directory/departments/eastasia/
@@ -330,6 +346,8 @@
   travelgrant: true
   note: ''
   displayname: East Asian Collection | University of Chicago
+  lat: '41.7886'
+  lng: "-87.5987"
 - libname: Wason Collection on East Asia
   institution: Cornell University
   url: https://asia.library.cornell.edu/wason/
@@ -364,6 +382,8 @@
   travelgrant: false
   note: ''
   displayname: Wason Collection on East Asia | Cornell University
+  lat: '42.4534'
+  lng: "-76.4735"
 - libname: East Asia Library
   institution: Stanford University
   url: https://library.stanford.edu/chinese-studies
@@ -408,6 +428,8 @@
     CEAS travel grants available up to $1,000; priority for scholars at institutions
     with limited East Asian language resources.'
   displayname: East Asia Library | Stanford University
+  lat: '37.4275'
+  lng: "-122.1697"
 - libname: Asia Library
   institution: University of Michigan
   url: https://guides.lib.umich.edu/chinesestudies
@@ -431,6 +453,8 @@
     students at other institutions; apply via Lieberthal-Rogel Center for Chinese
     Studies or Center for Japanese Studies'
   displayname: Asia Library | University of Michigan
+  lat: '42.278'
+  lng: "-83.7382"
 - libname: Tateuchi East Asia Library
   institution: University of Washington
   url: https://guides.lib.uw.edu/research/lucyzli
@@ -455,6 +479,8 @@
   travelgrant: false
   note: ''
   displayname: Tateuchi East Asia Library | University of Washington
+  lat: '47.6553'
+  lng: "-122.3035"
 - libname: Asian Reading Room
   institution: Library of Congress
   url: https://www.loc.gov/rr/asian/
@@ -492,6 +518,8 @@
   travelgrant: false
   note: ''
   displayname: Asian Reading Room | Library of Congress
+  lat: '38.8887'
+  lng: "-77.0047"
 - libname: Asian Library
   institution: University of British Columbia
   url: https://asian.library.ubc.ca/
@@ -522,6 +550,8 @@
   travelgrant: false
   note: ''
   displayname: Asian Library | University of British Columbia
+  lat: '49.2606'
+  lng: "-123.246"
 - libname: East Asian Library
   institution: University of Pittsburgh
   url: https://library.pitt.edu/east-asian-library
@@ -551,6 +581,8 @@
   travelgrant: false
   note: ''
   displayname: East Asian Library | University of Pittsburgh
+  lat: '40.4444'
+  lng: "-79.9606"
 - libname: Cheng Yu Tung East Asian Library
   institution: University of Toronto
   url: https://east.library.utoronto.ca/resource/chinese-studies-resources
@@ -572,6 +604,8 @@
   travelgrant: true
   note: 'See also: Richard Charles Lee Chinese Canadian Archives | University of Toronto'
   displayname: Cheng Yu Tung East Asian Library | University of Toronto
+  lat: '43.6629'
+  lng: "-79.3957"
 - libname: Hoover Institution Library & Archives
   institution: Stanford University
   url: https://www.hoover.org/library-archives
@@ -646,6 +680,8 @@
   travelgrant: false
   note: 'See also: East Asia Library | Stanford University'
   displayname: Hoover Institution Library & Archives | Stanford University
+  lat: '37.4268'
+  lng: "-122.1671"
 - libname: East Asian Library
   institution: Washington University in St. Louis
   url: https://libguides.wustl.edu/chinese
@@ -666,6 +702,8 @@
   travelgrant: false
   note: ''
   displayname: East Asian Library | Washington University in St. Louis
+  lat: '38.6488'
+  lng: "-90.3108"
 - libname: East Asian Collections
   institution: University of Texas at Austin
   url: https://www.lib.utexas.edu/about/collections/east-asian-collections
@@ -689,6 +727,8 @@
   travelgrant: false
   note: Taiwan Resource Center for Chinese Studies located at Perry-Castañeda Library
   displayname: East Asian Collections | University of Texas at Austin
+  lat: '30.2862'
+  lng: "-97.7394"
 - libname: H.C. Fung Library
   institution: Harvard University (Fairbank Center for Chinese Studies)
   url: https://fairbank.fas.harvard.edu/h-c-fung-library/
@@ -714,6 +754,8 @@
   note: 'See also: Harvard-Yenching Library and Houghton Library | Harvard University'
   displayname: H.C. Fung Library | Harvard University (Fairbank Center for Chinese
     Studies)
+  lat: '42.3745'
+  lng: "-71.118"
 - libname: East Asian Library
   institution: University of Southern California
   url: https://libraries.usc.edu/locations/east-asian-library
@@ -759,6 +801,8 @@
   travelgrant: false
   note: ''
   displayname: East Asian Library | University of Southern California
+  lat: '34.0224'
+  lng: "-118.2851"
 - libname: Yale Divinity Library
   institution: Yale University
   url: https://web.library.yale.edu/divinity/information-for-researchers
@@ -835,6 +879,8 @@
   travelgrant: false
   note: 'See also: East Asia Library | Yale University'
   displayname: Yale Divinity Library | Yale University
+  lat: '41.3203'
+  lng: "-72.9248"
 - libname: Kautz Family YMCA Archives
   institution: University of Minnesota
   url: https://www.lib.umn.edu/collections/special/ymca
@@ -869,6 +915,8 @@
   travelgrant: false
   note: ''
   displayname: Kautz Family YMCA Archives | University of Minnesota
+  lat: '44.9749'
+  lng: "-93.2352"
 - libname: Houghton Library
   institution: Harvard University
   url: https://library.harvard.edu/libraries/houghton
@@ -903,6 +951,8 @@
   travelgrant: false
   note: 'See also: Harvard-Yenching Library and H.C. Fung Library | Harvard University'
   displayname: Houghton Library | Harvard University
+  lat: '42.3753'
+  lng: "-71.1152"
 - libname: Richard Charles Lee Chinese Canadian Archives
   institution: University of Toronto
   url: https://discoverarchives.library.utoronto.ca/index.php/richard-charles-lee-canada-hong-kong-library
@@ -930,6 +980,8 @@
   travelgrant: false
   note: 'See also: Cheng Yu Tung East Asian Library | University of Toronto'
   displayname: Richard Charles Lee Chinese Canadian Archives | University of Toronto
+  lat: '43.665'
+  lng: "-79.394"
 - libname: Knight Library Special Collections and University Archives
   institution: University of Oregon
   url: https://library.uoregon.edu/special-collections
@@ -956,6 +1008,8 @@
   note: ''
   displayname: Knight Library Special Collections and University Archives | University
     of Oregon
+  lat: '44.0459'
+  lng: "-123.0719"
 - libname: UCSD Library East Asia Collection
   institution: University of California San Diego
   url: https://library.ucsd.edu/research-and-collections/special-collections-and-archives/services/index.html
@@ -981,6 +1035,8 @@
   travelgrant: false
   note: ''
   displayname: UCSD Library East Asia Collection | University of California San Diego
+  lat: '32.8801'
+  lng: "-117.234"
 - libname: Ohio State University Libraries
   institution: Ohio State University
   url: https://library.osu.edu/rbml
@@ -1001,6 +1057,8 @@
   travelgrant: false
   note: ''
   displayname: Ohio State University Libraries | Ohio State University
+  lat: '40.0076'
+  lng: "-83.03"
 - libname: Albert and Shirley Small Special Collections Library
   institution: University of Virginia
   url: https://library.virginia.edu/special-collections
@@ -1022,6 +1080,8 @@
   note: ''
   displayname: Albert and Shirley Small Special Collections Library | University of
     Virginia
+  lat: '38.0336'
+  lng: "-78.508"
 - libname: Asian Library
   institution: Claremont Colleges
   url: https://library.claremont.edu/asian-library-special-collections/
@@ -1046,6 +1106,8 @@
   travelgrant: false
   note: ''
   displayname: Asian Library | Claremont Colleges
+  lat: '34.0967'
+  lng: "-117.7198"
 - libname: Burke Library at Union Theological Seminary
   institution: Columbia University
   url: https://library.columbia.edu/libraries/burke.html
@@ -1104,3 +1166,5 @@
   note: 'See also: C.V. Starr East Asian Library | Columbia University (separate library
     at same location)'
   displayname: Burke Library at Union Theological Seminary | Columbia University
+  lat: '40.81'
+  lng: "-73.961"
