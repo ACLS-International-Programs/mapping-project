@@ -543,7 +543,63 @@
     .toc-list a:hover          { background: #f0f0f0; color: #2B3AA8 !important; }
     .result-guide-link a:hover { text-decoration: underline !important; }
 }
+
+/* ── Map ───────────────────────────────────────────────────────────── */
+#lib-map {
+    width: 100%;
+    height: 400px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 2rem;
+    cursor: default !important;
+}
+
+
+.lib-map-pin {
+    width: 14px;
+    height: 14px;
+    background: #2B3AA8;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.lib-popup-name {
+    font-size: 0.78rem;
+    font-weight: 300;
+    color: #1a1a1a;
+    margin: 0 0 0.15rem 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.lib-popup-inst {
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 0 0 0.5rem 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.lib-popup-link {
+    font-size: 0.7rem;
+    color: #2B3AA8;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.lib-popup-link:hover { text-decoration: underline; }
 </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 
 
 
@@ -787,6 +843,8 @@
 
     <!-- Results -->
     <main class="partners-main">
+        <!-- Map -->
+        <div id="lib-map"></div>
         <div class="results-header">32 libraries</div>
 
         <ul class="results-list">
@@ -3104,6 +3162,402 @@
     </main>
 
 </div>
+
+<script>
+// ── Library data from Jekyll ─────────────────────────────────────────
+const libData = [
+  
+  
+  {
+    lat: 34.0967,
+    lng: -117.7198,
+    libname: "Asian Library",
+    institution: "Claremont Colleges",
+    slug: "lib-asian-library"
+  },
+  
+  
+  
+  {
+    lat: 40.8075,
+    lng: -73.9626,
+    libname: "C.V. Starr East Asian Library",
+    institution: "Columbia University",
+    slug: "lib-c-v-starr-east-asian-library"
+  },
+  
+  
+  
+  {
+    lat: 40.81,
+    lng: -73.961,
+    libname: "Burke Library at Union Theological Seminary",
+    institution: "Columbia University",
+    slug: "lib-burke-library-at-union-theological-seminary"
+  },
+  
+  
+  
+  {
+    lat: 42.4534,
+    lng: -76.4735,
+    libname: "Wason Collection on East Asia",
+    institution: "Cornell University",
+    slug: "lib-wason-collection-on-east-asia"
+  },
+  
+  
+  
+  {
+    lat: 35.994,
+    lng: -78.8986,
+    libname: "Duke University Libraries",
+    institution: "Duke University",
+    slug: "lib-duke-university-libraries"
+  },
+  
+  
+  
+  {
+    lat: 42.377,
+    lng: -71.1167,
+    libname: "Harvard-Yenching Library",
+    institution: "Harvard University",
+    slug: "lib-harvard-yenching-library"
+  },
+  
+  
+  
+  {
+    lat: 42.3753,
+    lng: -71.1152,
+    libname: "Houghton Library",
+    institution: "Harvard University",
+    slug: "lib-houghton-library"
+  },
+  
+  
+  
+  {
+    lat: 42.3745,
+    lng: -71.118,
+    libname: "H.C. Fung Library",
+    institution: "Harvard University (Fairbank Center for Chinese Studies)",
+    slug: "lib-h-c-fung-library"
+  },
+  
+  
+  
+  {
+    lat: 38.8887,
+    lng: -77.0047,
+    libname: "Asian Reading Room",
+    institution: "Library of Congress",
+    slug: "lib-asian-reading-room"
+  },
+  
+  
+  
+  {
+    lat: 40.0076,
+    lng: -83.03,
+    libname: "Ohio State University Libraries",
+    institution: "Ohio State University",
+    slug: "lib-ohio-state-university-libraries"
+  },
+  
+  
+  
+  {
+    lat: 40.3431,
+    lng: -74.6551,
+    libname: "East Asian Library",
+    institution: "Princeton University",
+    slug: "lib-east-asian-library"
+  },
+  
+  
+  
+  {
+    lat: 37.4275,
+    lng: -122.1697,
+    libname: "East Asia Library",
+    institution: "Stanford University",
+    slug: "lib-east-asia-library"
+  },
+  
+  
+  
+  {
+    lat: 37.4268,
+    lng: -122.1671,
+    libname: "Hoover Institution Library & Archives",
+    institution: "Stanford University",
+    slug: "lib-hoover-institution-library-archives"
+  },
+  
+  
+  
+  {
+    lat: 49.2606,
+    lng: -123.246,
+    libname: "Asian Library",
+    institution: "University of British Columbia",
+    slug: "lib-asian-library"
+  },
+  
+  
+  
+  {
+    lat: 32.8801,
+    lng: -117.234,
+    libname: "UCSD Library East Asia Collection",
+    institution: "University of California San Diego",
+    slug: "lib-ucsd-library-east-asia-collection"
+  },
+  
+  
+  
+  {
+    lat: 37.8724,
+    lng: -122.2595,
+    libname: "C.V. Starr East Asian Library",
+    institution: "University of California, Berkeley",
+    slug: "lib-c-v-starr-east-asian-library"
+  },
+  
+  
+  
+  {
+    lat: 41.7886,
+    lng: -87.5987,
+    libname: "East Asian Collection",
+    institution: "University of Chicago",
+    slug: "lib-east-asian-collection"
+  },
+  
+  
+  
+  {
+    lat: 40.102,
+    lng: -88.2272,
+    libname: "Chinese Collection",
+    institution: "University of Illinois Urbana-Champaign",
+    slug: "lib-chinese-collection"
+  },
+  
+  
+  
+  {
+    lat: 42.278,
+    lng: -83.7382,
+    libname: "Asia Library",
+    institution: "University of Michigan",
+    slug: "lib-asia-library"
+  },
+  
+  
+  
+  {
+    lat: 44.9749,
+    lng: -93.2352,
+    libname: "Kautz Family YMCA Archives",
+    institution: "University of Minnesota",
+    slug: "lib-kautz-family-ymca-archives"
+  },
+  
+  
+  
+  {
+    lat: 44.0459,
+    lng: -123.0719,
+    libname: "Knight Library Special Collections and University Archives",
+    institution: "University of Oregon",
+    slug: "lib-knight-library-special-collections-and-university-archives"
+  },
+  
+  
+  
+  {
+    lat: 39.9522,
+    lng: -75.1932,
+    libname: "Chinese Studies Collection",
+    institution: "University of Pennsylvania",
+    slug: "lib-chinese-studies-collection"
+  },
+  
+  
+  
+  {
+    lat: 40.4444,
+    lng: -79.9606,
+    libname: "East Asian Library",
+    institution: "University of Pittsburgh",
+    slug: "lib-east-asian-library"
+  },
+  
+  
+  
+  {
+    lat: 34.0224,
+    lng: -118.2851,
+    libname: "East Asian Library",
+    institution: "University of Southern California",
+    slug: "lib-east-asian-library"
+  },
+  
+  
+  
+  {
+    lat: 30.2862,
+    lng: -97.7394,
+    libname: "East Asian Collections",
+    institution: "University of Texas at Austin",
+    slug: "lib-east-asian-collections"
+  },
+  
+  
+  
+  {
+    lat: 43.6629,
+    lng: -79.3957,
+    libname: "Cheng Yu Tung East Asian Library",
+    institution: "University of Toronto",
+    slug: "lib-cheng-yu-tung-east-asian-library"
+  },
+  
+  
+  
+  {
+    lat: 43.665,
+    lng: -79.394,
+    libname: "Richard Charles Lee Chinese Canadian Archives",
+    institution: "University of Toronto",
+    slug: "lib-richard-charles-lee-chinese-canadian-archives"
+  },
+  
+  
+  
+  {
+    lat: 38.0336,
+    lng: -78.508,
+    libname: "Albert and Shirley Small Special Collections Library",
+    institution: "University of Virginia",
+    slug: "lib-albert-and-shirley-small-special-collections-library"
+  },
+  
+  
+  
+  {
+    lat: 47.6553,
+    lng: -122.3035,
+    libname: "Tateuchi East Asia Library",
+    institution: "University of Washington",
+    slug: "lib-tateuchi-east-asia-library"
+  },
+  
+  
+  
+  {
+    lat: 38.6488,
+    lng: -90.3108,
+    libname: "East Asian Library",
+    institution: "Washington University in St. Louis",
+    slug: "lib-east-asian-library"
+  },
+  
+  
+  
+  {
+    lat: 41.3163,
+    lng: -72.9223,
+    libname: "East Asia Library",
+    institution: "Yale University",
+    slug: "lib-east-asia-library"
+  },
+  
+  
+  
+  {
+    lat: 41.3203,
+    lng: -72.9248,
+    libname: "Yale Divinity Library",
+    institution: "Yale University",
+    slug: "lib-yale-divinity-library"
+  }
+  
+  
+];
+
+// ── Leaflet map (static — no dragging or zoom) ────────────────────────
+(function() {
+  const defaultCenter = [39, -95];
+  const defaultZoom = 4;
+  const map = L.map('lib-map', {
+    attributionControl: false,
+    center: defaultCenter,
+    zoom: defaultZoom,
+    dragging: false,
+    touchZoom: false,
+    doubleClickZoom: false,
+    scrollWheelZoom: false,
+    boxZoom: false,
+    keyboard: false,
+    zoomControl: false
+  });
+
+  L.control.attribution({ position: 'topright', prefix: false }).addTo(map);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> | <a href="https://carto.com/attributions">CartoDB</a> | <a href="https://leafletjs.com">Leaflet</a>',
+    maxZoom: 19
+  }).addTo(map);
+
+  const pinIcon = L.divIcon({
+    className: '',
+    html: '<div class="lib-map-pin"></div>',
+    iconSize: [14, 14],
+    iconAnchor: [7, 7],
+    popupAnchor: [0, 10]
+  });
+
+  // Group libraries by institution
+  const instMap = {};
+  libData.forEach(function(lib) {
+    const instShort = lib.institution.split(' (')[0];
+    if (!instMap[instShort]) {
+      instMap[instShort] = { lat: lib.lat, lng: lib.lng, inst: instShort, libs: [] };
+    }
+    instMap[instShort].libs.push({ libname: lib.libname, slug: lib.slug });
+  });
+
+  // One marker per institution
+  Object.values(instMap).forEach(function(group) {
+    const marker = L.marker([group.lat, group.lng], { icon: pinIcon }).addTo(map);
+
+    let popupHtml = '<p class="lib-popup-inst">' + group.inst + '</p>';
+    group.libs.forEach(function(lib) {
+      popupHtml +=
+        '<p class="lib-popup-name">' + lib.libname + '</p>' +
+        '<button class="lib-popup-link" onclick="goToEntry(\'' + lib.slug + '\')">View ↓</button>';
+    });
+
+    marker.bindPopup(popupHtml, { maxWidth: 240 });
+  });
+
+  // ── Recenter map when popup closes ───────────────────────────────────
+  map.on('popupclose', function() {
+    map.setView(defaultCenter, defaultZoom, { animate: true });
+  });
+
+})();
+
+// ── Click pin → scroll to list entry ─────────────────────────────────
+function goToEntry(slug) {
+  const el = document.getElementById(slug);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
 
         
       </section>

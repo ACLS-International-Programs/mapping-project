@@ -1838,5 +1838,5 @@ var store = [{
     "excerpt":"UNDER CONSTRUCTION","url": "/databaseworkflows/"
   },{
     "title": "NEWS AND ANNOUNCEMENTS",
-    "excerpt":"  {% if site.data.acls_news and site.data.acls_news.items.size > 0 %}       {% for item in site.data.acls_news.items %}        {% if item.date != \"\" %}     {{ item.date }}      {% endif %}     {{ item.title }}     {% if item.excerpt != \"\" %}     {{ item.excerpt }}     {% endif %}      {% endfor %}     {% elsif site.data.acls_news and site.data.acls_news.error %}         News could not be loaded at build time. Visit the     ACLS news page     directly for the latest announcements.      {% else %}    No news items found.   {% endif %} ","url": "/news/"
+    "excerpt":"  {% if site.data.acls_news and site.data.acls_news.items.size > 0 %}       {% for item in site.data.acls_news.items %}        {% if item.date != \"\" %}     {{ item.date }}      {% endif %}     {{ item.title }}     {% if item.excerpt != \"\" %}     {{ item.excerpt }}      {% endif %}      {% endfor %}     {% elsif site.data.acls_news and site.data.acls_news.error %}         News could not be loaded at build time. Visit the     ACLS news page     directly for the latest announcements.      {% else %}    No news items found.   {% endif %} ","url": "/news/"
   }]
