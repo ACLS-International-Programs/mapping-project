@@ -395,12 +395,12 @@ header:
                 {% assign inst_name = group.name | split: ' (' | first %}
                 <li>
                     {% if group.items.size == 1 %}
-                    <a href="#lib-{{ group.items[0].libname | slugify }}">{{ inst_name }}</a>
+                    <a href="#lib-{{ group.items[0].displayname | slugify }}">{{ inst_name }}</a>
                     {% else %}
                     <span class="toc-parent-label">{{ inst_name }}</span>
                     <ul class="toc-child-list">
                         {% for child in group.items %}
-                        <li><a href="#lib-{{ child.libname | slugify }}">{{ child.libname }}</a></li>
+                        <li><a href="#lib-{{ child.displayname | slugify }}">{{ child.libname }}</a></li>
                         {% endfor %}
                     </ul>
                     {% endif %}
@@ -418,7 +418,7 @@ header:
 
         <ul class="results-list">
             {% for lib in libraries %}
-            <li class="result-item" id="lib-{{ lib.libname | slugify }}">
+            <li class="result-item" id="lib-{{ lib.displayname | slugify }}">
 
                 <h3 class="result-title">{{ lib.libname }}</h3>
                 {% assign display_inst = lib.institution | split: ' (' | first %}
@@ -495,7 +495,7 @@ const libData = [
     lng: {{ lib.lng }},
     libname: {{ lib.libname | jsonify }},
     institution: {{ lib.institution | jsonify }},
-    slug: "lib-{{ lib.libname | slugify }}"
+    slug: "lib-{{ lib.displayname | slugify }}"
   }{% unless forloop.last %},{% endunless %}
   {% endif %}
   {% endfor %}
