@@ -8,6 +8,8 @@ task :reset do
 end
 
 task :build do
+  sh "ruby src/_scripts/csv_to_yaml.rb"
+  sh "ruby src/_scripts/generate_resources.rb"
   puts @baseurl
   sh "bundle exec jekyll build -b '#{@baseurl}'"
 end
