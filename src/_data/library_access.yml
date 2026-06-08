@@ -63,8 +63,8 @@
   note: 'See also: Burke Library at Union Theological Seminary (physically housed
     at Columbia; separate institution)'
   displayname: C.V. Starr East Asian Library | Columbia University
-  lat: '40.8075'
-  lng: "-73.9626"
+  lat: '40.807536'
+  lng: "-73.962573"
 - libname: Duke University Libraries
   institution: Duke University
   url: https://guides.library.duke.edu/china
@@ -95,8 +95,8 @@
   travelgrant: false
   note: ''
   displayname: Duke University Libraries | Duke University
-  lat: '35.994'
-  lng: "-78.8986"
+  lat: '36.001480'
+  lng: "-78.938492"
 - libname: Harvard-Yenching Library
   institution: Harvard University
   url: https://library.harvard.edu/collections/chinese-collection
@@ -152,8 +152,8 @@
   travelgrant: true
   note: 'See also: Houghton Library and H.C. Fung Library | Harvard University'
   displayname: Harvard-Yenching Library | Harvard University
-  lat: '42.377'
-  lng: "-71.1167"
+  lat: '42.374443'
+  lng: "-71.116943"
 - libname: East Asian Library
   institution: Princeton University
   url: https://libguides.princeton.edu/c.php?g=1071063&p=9194766
@@ -177,10 +177,14 @@
   librarian: Joshua Seufert
   libemail: jseufert@princeton.edu
   travelgrant: true
-  note: ''
+  note: 'Note: The library offers competitive Friends of Princeton University Library
+    Research Grants with a value of up to $6,000 plus transportation costs for research
+    between two and four weeks that make use of archives, manuscripts, rare books,
+    and other rare and unique holdings. The application usually opens in October and
+    closes in January.'
   displayname: East Asian Library | Princeton University
-  lat: '40.3431'
-  lng: "-74.6551"
+  lat: '40.343182'
+  lng: "-74.651190"
 - libname: Chinese Collection
   institution: University of Illinois Urbana-Champaign
   url: https://www.library.illinois.edu/chinese/
@@ -205,8 +209,8 @@
   travelgrant: false
   note: ''
   displayname: Chinese Collection | University of Illinois Urbana-Champaign
-  lat: '40.102'
-  lng: "-88.2272"
+  lat: '40.102038'
+  lng: "-88.227203"
 - libname: Chinese Studies Collection
   institution: University of Pennsylvania
   url: https://www.library.upenn.edu/collections/subject/chinese-studies-collection
@@ -228,8 +232,8 @@
   travelgrant: false
   note: 'For additional Kislak Center holdings search: findingaids.library.upenn.edu'
   displayname: Chinese Studies Collection | University of Pennsylvania
-  lat: '39.9522'
-  lng: "-75.1932"
+  lat: '39.952271'
+  lng: "-75.193220"
 - libname: East Asia Library
   institution: Yale University
   url: https://guides.library.yale.edu/China
@@ -285,11 +289,11 @@
   travelgrant: false
   note: 'See also: Yale Divinity Library | Yale University'
   displayname: East Asia Library | Yale University
-  lat: '41.3163'
-  lng: "-72.9223"
+  lat: '41.316300'
+  lng: "-72.922400"
 - libname: C.V. Starr East Asian Library
   institution: University of California, Berkeley
-  url: https://www.lib.berkeley.edu/visit/east-asian
+  url: https://guides.lib.berkeley.edu/c.php?g=273436
   collections: |-
     - Ann Tompkins (Tang Fandi) and Lincoln Cushing Collection of Chinese Posters. Approximately 500 posters, 1962–1988, majority from 1965–1981; described as possibly the largest collection of Chinese political posters from this period in the United States.
     - Chinese Rubbings Collection. Over 2,700 rubbings of textual and pictorial engravings; half from the Teihōkaku collection of Mitsui Takakata acquired in 1950; one of the largest and richest collections of Chinese rubbings outside East Asia.
@@ -314,11 +318,11 @@
   travelgrant: false
   note: ''
   displayname: C.V. Starr East Asian Library | University of California, Berkeley
-  lat: '37.8724'
-  lng: "-122.2595"
+  lat: '37.872363'
+  lng: "-122.259514"
 - libname: East Asian Collection
   institution: University of Chicago
-  url: https://www.lib.uchicago.edu/about/directory/departments/eastasia/
+  url: https://guides.lib.uchicago.edu/chinese
   collections: |-
     - Chinese Maritime Customs Service Publications Archive, 1850–1940. Statistical returns, trade reports, and administrative records of the foreign-managed Imperial Maritime Customs Service.
     - Archives from the Ming and Qing Dynasties (Qing shilu 清實錄 and Qing huidian 清會典). Official dynastic records and administrative codes; physical set holdings.
@@ -341,13 +345,13 @@
     current government-issued photo ID; East Asian Collection on Regenstein 5th Floor;
     faculty and staff from other academic institutions may be granted borrowing privileges
     with appropriate research need
-  librarian: Hyeonjin Schubert
-  libemail: hschubert@uchicago.edu
+  librarian: Shuo Liang
+  libemail: sliang2@uchicago.edu
   travelgrant: true
   note: ''
   displayname: East Asian Collection | University of Chicago
-  lat: '41.7886'
-  lng: "-87.5987"
+  lat: '41.788619'
+  lng: "-87.598724"
 - libname: Wason Collection on East Asia
   institution: Cornell University
   url: https://asia.library.cornell.edu/wason/
@@ -382,8 +386,8 @@
   travelgrant: false
   note: ''
   displayname: Wason Collection on East Asia | Cornell University
-  lat: '42.4534'
-  lng: "-76.4735"
+  lat: '42.453418'
+  lng: "-76.473640"
 - libname: East Asia Library
   institution: Stanford University
   url: https://library.stanford.edu/chinese-studies
@@ -428,8 +432,8 @@
     CEAS travel grants available up to $1,000; priority for scholars at institutions
     with limited East Asian language resources.'
   displayname: East Asia Library | Stanford University
-  lat: '37.4275'
-  lng: "-122.1697"
+  lat: '37.427475'
+  lng: "-122.169719"
 - libname: Asia Library
   institution: University of Michigan
   url: https://guides.lib.umich.edu/chinesestudies
@@ -446,18 +450,18 @@
     are available by appointment through the Asia Library.
   walkin: Any member of the public is welcome to visit in person and use almost all
     licensed electronic resources from guest workstations; access to open stacks
-  librarian: Liangyu Fu
-  libemail: liangyuf@umich.edu
+  librarian: Yung-Hui Chou
+  libemail: yunghuic@umich.edu
   travelgrant: true
   note: 'Asia Library Travel Grants: up to $1,000 for faculty and advanced graduate
     students at other institutions; apply via Lieberthal-Rogel Center for Chinese
     Studies or Center for Japanese Studies'
   displayname: Asia Library | University of Michigan
-  lat: '42.278'
-  lng: "-83.7382"
+  lat: '42.278048'
+  lng: "-83.738218"
 - libname: Tateuchi East Asia Library
   institution: University of Washington
-  url: https://guides.lib.uw.edu/research/lucyzli
+  url: https://guides.lib.uw.edu/research/chinesestudies
   collections: |-
     - Chinese Rare Books. Over 3,200 pre-1912 Chinese rare books from the Ming and Qing dynasties.
     - Wu Xianzi Papers 伍憑子, 1881–1959. Chinese republican politician and constitutional scholar; includes posthumous writings and collected documents.
@@ -479,8 +483,8 @@
   travelgrant: false
   note: ''
   displayname: Tateuchi East Asia Library | University of Washington
-  lat: '47.6553'
-  lng: "-122.3035"
+  lat: '47.655548'
+  lng: "-122.303200"
 - libname: Asian Reading Room
   institution: Library of Congress
   url: https://www.loc.gov/rr/asian/
@@ -518,11 +522,11 @@
   travelgrant: false
   note: ''
   displayname: Asian Reading Room | Library of Congress
-  lat: '38.8887'
-  lng: "-77.0047"
+  lat: '38.888611'
+  lng: "-77.004723"
 - libname: Asian Library
   institution: University of British Columbia
-  url: https://asian.library.ubc.ca/
+  url: https://guides.library.ubc.ca/chinese
   collections: |-
     - Puban Collection 蒲崂藏書. A collection of rare Chinese books originally from the Nanzhou Shu Lou, a private library owned by Xu Shaoqi; focuses on census and historical records and literature of Guangdong province, with unique original copies. Enlarged by Mr. Yao Junshi.
     - Pang Jingtang Collection 龐鏡塗藏書. Acquired in 2000; 94 titles and 841 volumes produced prior to 1796, including many Ming editions and some unique manuscripts.
@@ -550,11 +554,11 @@
   travelgrant: false
   note: ''
   displayname: Asian Library | University of British Columbia
-  lat: '49.2606'
-  lng: "-123.246"
+  lat: '49.260605'
+  lng: "-123.245803"
 - libname: East Asian Library
   institution: University of Pittsburgh
-  url: https://library.pitt.edu/east-asian-library
+  url: https://pitt.libguides.com/chinafocus
   collections: |-
     - Mu Collection 慕氏藏書. A major collection acquired from China in the 1930s; 227 titles and 2,097 volumes of Chinese rare books from Song, Ming, and Qing dynasty editions.
     - The Collection of Important Documents & Materials in CCP History 中共重要历史文献资料汇编 (physical volumes reprinting primary sources on the history of the Chinese Communist Party).
@@ -581,8 +585,8 @@
   travelgrant: false
   note: ''
   displayname: East Asian Library | University of Pittsburgh
-  lat: '40.4444'
-  lng: "-79.9606"
+  lat: '40.444368'
+  lng: "-79.960590"
 - libname: Cheng Yu Tung East Asian Library
   institution: University of Toronto
   url: https://east.library.utoronto.ca/resource/chinese-studies-resources
@@ -604,11 +608,11 @@
   travelgrant: true
   note: 'See also: Richard Charles Lee Chinese Canadian Archives | University of Toronto'
   displayname: Cheng Yu Tung East Asian Library | University of Toronto
-  lat: '43.6629'
-  lng: "-79.3957"
+  lat: '43.662900'
+  lng: "-79.395800"
 - libname: Hoover Institution Library & Archives
   institution: Stanford University
-  url: https://www.hoover.org/library-archives
+  url: https://www.hoover.org/library-archives/collections/china
   collections: |-
     - Chiang Kai-shek Diaries 蔣介石日記. Personal diaries of the Republic of China president spanning several decades of 20th-century Chinese political history.
     - T. V. Soong Papers 宋子文 (ROC finance minister; brother-in-law of Chiang Kai-shek; new increment acquired 2024).
@@ -680,8 +684,8 @@
   travelgrant: false
   note: 'See also: East Asia Library | Stanford University'
   displayname: Hoover Institution Library & Archives | Stanford University
-  lat: '37.4268'
-  lng: "-122.1671"
+  lat: '37.427475'
+  lng: "-122.169719"
 - libname: East Asian Library
   institution: Washington University in St. Louis
   url: https://libguides.wustl.edu/chinese
@@ -702,11 +706,11 @@
   travelgrant: false
   note: ''
   displayname: East Asian Library | Washington University in St. Louis
-  lat: '38.6488'
-  lng: "-90.3108"
+  lat: '38.648651'
+  lng: "-90.308571"
 - libname: East Asian Collections
   institution: University of Texas at Austin
-  url: https://www.lib.utexas.edu/about/collections/east-asian-collections
+  url: https://guides.lib.utexas.edu/eastasian
   collections: |-
     - China Political Reports, 1911–1960 (microfilm).
     - Taiwan Political and Economic Reports, 1861–1960 (microfilm).
@@ -727,8 +731,8 @@
   travelgrant: false
   note: Taiwan Resource Center for Chinese Studies located at Perry-Castañeda Library
   displayname: East Asian Collections | University of Texas at Austin
-  lat: '30.2862'
-  lng: "-97.7394"
+  lat: '30.284875'
+  lng: "-97.734127"
 - libname: H.C. Fung Library
   institution: Harvard University (Fairbank Center for Chinese Studies)
   url: https://fairbank.fas.harvard.edu/h-c-fung-library/
@@ -754,11 +758,11 @@
   note: 'See also: Harvard-Yenching Library and Houghton Library | Harvard University'
   displayname: H.C. Fung Library | Harvard University (Fairbank Center for Chinese
     Studies)
-  lat: '42.3745'
-  lng: "-71.118"
+  lat: '42.374443'
+  lng: "-71.116943"
 - libname: East Asian Library
   institution: University of Southern California
-  url: https://libraries.usc.edu/locations/east-asian-library
+  url: https://libguides.usc.edu/chinese_studies
   collections: |-
     - Ailing Zhang (Eileen Chang) Papers 張愛玲檔案. Papers of the acclaimed Chinese author, including correspondence with literary critic C.T. Hsia, manuscripts, photographs, essays, and a newly discovered 2023 addition documenting her later years in Los Angeles.
     - Bill Einreinhofer China Archive (photographs and documents related to China).
@@ -801,8 +805,8 @@
   travelgrant: false
   note: ''
   displayname: East Asian Library | University of Southern California
-  lat: '34.0224'
-  lng: "-118.2851"
+  lat: '34.022415'
+  lng: "-118.285117"
 - libname: Yale Divinity Library
   institution: Yale University
   url: https://web.library.yale.edu/divinity/information-for-researchers
@@ -879,8 +883,8 @@
   travelgrant: false
   note: 'See also: East Asia Library | Yale University'
   displayname: Yale Divinity Library | Yale University
-  lat: '41.3203'
-  lng: "-72.9248"
+  lat: '41.316300'
+  lng: "-72.922400"
 - libname: Kautz Family YMCA Archives
   institution: University of Minnesota
   url: https://www.lib.umn.edu/collections/special/ymca
@@ -915,11 +919,11 @@
   travelgrant: false
   note: ''
   displayname: Kautz Family YMCA Archives | University of Minnesota
-  lat: '44.9749'
-  lng: "-93.2352"
+  lat: '44.974000'
+  lng: "-93.227700"
 - libname: Houghton Library
   institution: Harvard University
-  url: https://library.harvard.edu/libraries/houghton
+  url: https://guides.library.harvard.edu/Chinese
   collections: ''
   ag: |-
     - Roger Sherman Greene Papers, 1896–1947 (Rockefeller Foundation and China Medical Board administrator).
@@ -951,8 +955,8 @@
   travelgrant: false
   note: 'See also: Harvard-Yenching Library and H.C. Fung Library | Harvard University'
   displayname: Houghton Library | Harvard University
-  lat: '42.3753'
-  lng: "-71.1152"
+  lat: '42.374443'
+  lng: "-71.116943"
 - libname: Richard Charles Lee Chinese Canadian Archives
   institution: University of Toronto
   url: https://discoverarchives.library.utoronto.ca/index.php/richard-charles-lee-canada-hong-kong-library
@@ -980,11 +984,11 @@
   travelgrant: false
   note: 'See also: Cheng Yu Tung East Asian Library | University of Toronto'
   displayname: Richard Charles Lee Chinese Canadian Archives | University of Toronto
-  lat: '43.665'
-  lng: "-79.394"
+  lat: '43.662900'
+  lng: "-79.395800"
 - libname: Knight Library Special Collections and University Archives
   institution: University of Oregon
-  url: https://library.uoregon.edu/special-collections
+  url: https://researchguides.uoregon.edu/Chinese-Studies
   collections: |-
     - Gertrude Bass Warner Papers, 1879–1954. Papers, business records, photographs, and an unpublished manuscript documenting Warner’s collecting of Asian art and culture; includes materials on China, Japan, Korea, and Cambodia. Digitized selections available via Oregon Digital.
     - Gertrude Bass Warner Lantern Slides, 1904–1929. Approximately 5,500 hand-tinted lantern slides documenting art and culture in China, Japan, Korea, and Cambodia; separate finding aid available via Archives West.
@@ -1008,11 +1012,11 @@
   note: ''
   displayname: Knight Library Special Collections and University Archives | University
     of Oregon
-  lat: '44.0459'
-  lng: "-123.0719"
+  lat: '44.045994'
+  lng: "-123.072326"
 - libname: UCSD Library East Asia Collection
   institution: University of California San Diego
-  url: https://library.ucsd.edu/research-and-collections/special-collections-and-archives/services/index.html
+  url: https://ucsd.libguides.com/chinese_e_resources
   collections: |-
     - Chinese Cultural Revolution Posters Collection. Propaganda posters created by various Chinese agencies, 1968–1989.
     - Committee of Concerned Asian Scholars (CCAS) Friendship Delegations Digital Archive. Photographs and documents contributed by CCAS delegates who traveled to China in 1971 and 1972; documents early U.S.-China scholarly exchange during the period of détente.
@@ -1035,11 +1039,11 @@
   travelgrant: false
   note: ''
   displayname: UCSD Library East Asia Collection | University of California San Diego
-  lat: '32.8801'
-  lng: "-117.234"
+  lat: '32.880105'
+  lng: "-117.234038"
 - libname: Ohio State University Libraries
   institution: Ohio State University
-  url: https://library.osu.edu/rbml
+  url: https://guides.osu.edu/EastAsian
   collections: |-
     - Philip K. Dumaresq Diary Kept While Employed by the Pacific Mail Steamship Company in China and Japan. Diary of an American special agent primarily stationed in Shanghai in the late 19th century; held in the Rare Books and Manuscripts Library.
     - Hong Shen Papers. Photographs, correspondence, and promotional materials related to the playwright and film director Hong Shen; held in the Jerome Lawrence and Robert E. Lee Theatre Research Institute.
@@ -1057,11 +1061,11 @@
   travelgrant: false
   note: ''
   displayname: Ohio State University Libraries | Ohio State University
-  lat: '40.0076'
-  lng: "-83.03"
+  lat: '40.007580'
+  lng: "-83.030060"
 - libname: Albert and Shirley Small Special Collections Library
   institution: University of Virginia
-  url: https://library.virginia.edu/special-collections
+  url: https://guides.lib.virginia.edu/chinesestudies
   collections: "- Guanhailou Collection. Comprises more than 500 items, primarily
     Chinese rare books, ink rubbings, scrolls, wood blocks, and calligraphic materials;
     a recently acquired physical collection."
@@ -1080,8 +1084,8 @@
   note: ''
   displayname: Albert and Shirley Small Special Collections Library | University of
     Virginia
-  lat: '38.0336'
-  lng: "-78.508"
+  lat: '38.033554'
+  lng: "-78.507980"
 - libname: Asian Library
   institution: Claremont Colleges
   url: https://library.claremont.edu/asian-library-special-collections/
@@ -1106,8 +1110,8 @@
   travelgrant: false
   note: ''
   displayname: Asian Library | Claremont Colleges
-  lat: '34.0967'
-  lng: "-117.7198"
+  lat: '34.097200'
+  lng: "-117.710900"
 - libname: Burke Library at Union Theological Seminary
   institution: Columbia University
   url: https://library.columbia.edu/libraries/burke.html
@@ -1166,5 +1170,84 @@
   note: 'See also: C.V. Starr East Asian Library | Columbia University (separate library
     at same location)'
   displayname: Burke Library at Union Theological Seminary | Columbia University
-  lat: '40.81'
-  lng: "-73.961"
+  lat: '40.807536'
+  lng: "-73.962573"
+- libname: Cotsen Children's Library
+  institution: Princeton University
+  url: https://libguides.princeton.edu/cotsen/homepage
+  collections: ''
+  ag: ''
+  description: The research collection of the Cotsen Children's Library is a major
+    historical collection of rare illustrated children's books, manuscripts, original
+    artwork, prints, and educational toys from the 15th century to the present day
+    in over thirty languages. The collection has important holdings of materials in
+    the English, Chinese, Czech, Dutch, French, German, Greek, Hebrew, Italian, Japanese,
+    Latin, and Russian languages. Cotsen is home to the largest collection of Chinese
+    children's materials outside of China.
+  walkin: Open to the public; No appointment is necessary, but we recommend that you
+    request materials three business days in advance of your visit. Materials can
+    be viewed in the special collections reading room of Firestone Library. Visitors
+    are asked to register for a Special Collections Research Account; During registration,
+    you will accept the Rules and Regulations of using Special Collections and fill
+    out a brief form. For access visitors will be asked to show photo ID such as a
+    driver's license or academic/work ID when they arrive.
+  librarian: Minjie Chen
+  libemail: chenminjie@princeton.edu
+  travelgrant: true
+  note: The library offers competitive Friends of Princeton University Library Research
+    Grants with a value of up to $6,000 plus transportation costs for research between
+    two and four weeks that make use of archives, manuscripts, rare books, and other
+    rare and unique holdings. The application usually opens in October and closes
+    in January.
+  displayname: Cotsen Children's Library | Princeton University
+  lat: '40.345500'
+  lng: "-74.653000"
+- libname: Elling O. Eide Library
+  institution: Elling Eide Center
+  url: https://ellingoeide.org/homepage/libraryhome/
+  collections: ''
+  ag: ''
+  description: The Elling O. Eide Library is a private, independent, non-profit, non-circulating
+    special collections research library named for its founder, Elling Oliver Eide
+    (1935–2012). With over 75,000 volumes — including more than 60,000 Chinese books
+    — it is one of the largest private Chinese libraries in the world. Holdings of
+    printed materials, manuscripts, rare books, artwork and objects, ephemera, audio-visual
+    materials, and works on paper span the entire history of China from antiquity
+    to the modern period, with particular depth in the literature, linguistics, history,
+    and culture of medieval China (200–1000 CE) and neighboring regions of greater
+    East Asia, including Inner Asia. The library has a collaborative agreement with
+    Taiwan's National Central Library for the Union Catalog of Rare Chinese Books
+    and is actively expanding and digitizing its holdings.
+  walkin: 'Open by application and appointment only. Access requires establishing
+    a research need that makes use of the Library''s General or Special Collections.
+    Access to special collections may require at least 2 weeks'' advance notice. Contact:
+    librarian@eidecenter.org'
+  librarian: Yulia Mylnikova
+  libemail: ymylnikova@ellingoeide.org
+  travelgrant: true
+  note: ''
+  displayname: Elling O. Eide Library | Elling Eide Center
+  lat: '27.336000'
+  lng: "-82.531000"
+- libname: Oberlin College Library
+  institution: Oberlin College
+  url: https://libguides.oberlin.edu/eas/Introduction
+  collections: "- Shansi Memorial Association Records. Documents Oberlin College's
+    engagement with Shanxi province, China, through the Oberlin-in-China mission from
+    the 1880s to the 1950s. Includes correspondence, photographs, and institutional
+    records from missionaries and Shansi representatives."
+  ag: ''
+  description: Oberlin College Library holds special collections documenting Oberlin's
+    missionary engagement in Shanxi province, China, including the Shansi Memorial
+    Association records. The collections include correspondence, photographs, and
+    institutional records relating to the Oberlin-in-China mission.
+  walkin: ''
+  librarian: La Yilin
+  libemail: yla@oberlin.edu
+  travelgrant: false
+  note: 'The Shansi collection is also available digitally: full introduction at https://www2.oberlin.edu/library/digital/shansi/intro.html;
+    searchable digital archive at http://dcollections.oberlin.edu/digital/collection/shansi/search;
+    full digital collection at https://scalar.oberlincollegelibrary.org/shansi'
+  displayname: Oberlin College Library | Oberlin College
+  lat: '41.293000'
+  lng: "-82.217000"
