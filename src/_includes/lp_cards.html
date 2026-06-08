@@ -2,7 +2,7 @@
   {% for card in include.cards %}
   <a href="{{ card.url }}" class="lp-card">
     <div class="lp-card-thumb">
-      <img src="{{ card.image }}" alt="{{ card.image_alt }}">
+      <img src="{{ card.image }}" alt="{{ card.image_alt }}" loading="lazy">
     </div>
     <div class="lp-card-body">
       <div class="lp-card-title">{{ card.title }}</div>

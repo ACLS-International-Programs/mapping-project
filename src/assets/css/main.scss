@@ -1079,31 +1079,43 @@ body.article-page {
     }
   }
 
-  // Mobile: centre the image so graphic doesn't dominate,
-  // restore white text + shadow for readability over mixed background
+  // Mobile: use cropped WebP versions, keep dark text matching desktop
   @media screen and (max-width: 768px) {
-    background-image: none !important;
-    background-color: #4A5568 !important;
+    background-size: cover !important;
+    background-position: right center !important;
     padding: 1.25em 0 !important;
 
     .page__title {
-      color: #ffffff !important;
+      color: #2C3340 !important;
       text-shadow: none !important;
       font-size: 1.2em !important;
     }
 
     p {
-      color: #ffffff !important;
+      color: #2C3340 !important;
       text-shadow: none !important;
       font-size: 0.75rem !important;
     }
 
     .btn {
-      color: #ffffff !important;
-      border-color: rgba(255, 255, 255, 0.6) !important;
-      background: rgba(255, 255, 255, 0.1) !important;
+      color: #2C3340 !important;
+      border-color: rgba(44, 51, 64, 0.5) !important;
+      background: rgba(255, 255, 255, 0.25) !important;
       text-shadow: none !important;
-      font-size: 0.55rem !important;
+      font-size: 0.75rem !important;
     }
+  }
+}
+
+// Mobile hero image overrides — serve cropped WebP per page
+@media screen and (max-width: 768px) {
+  .page-accesspartners .page__hero--overlay {
+    background-image: url('/assets/images/mp_hero_grid_simple_slate_mobile.webp') !important;
+  }
+  .page-dispersed .page__hero--overlay {
+    background-image: url('/assets/images/mp_hero_grid_dispersed_slate_mobile.webp') !important;
+  }
+  .page-layered .page__hero--overlay {
+    background-image: url('/assets/images/mp_hero_grid_layered_slate_mobile.webp') !important;
   }
 }
