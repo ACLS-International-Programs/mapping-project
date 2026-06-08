@@ -1025,8 +1025,8 @@ var store = [{
       },{
         "title": "Wenshi ziliao indexes",
         "alternatetitle": "文史资料",
-        "description": "Wenshi ziliao are collections on local history that are being published on all administrative levels in form of open-ended series. The collecting and editing of Wenshi ziliao was first suggested in April 1959 by Zhou Enlai to document the experience of modernization 60 years after the reform movement of 1898. Local 文史研究馆所 were set up and supported by the Political Consultative Conference. During the past 60+ years they have often changed from internal to open publications and back. Estimations of the amount of Wenshi ziliao issues are hovering between 80,000 to 100,000 volumes. Here table of contents indexes are available for searching on each administrative level (with some exceptions like Xinjiang), and the underlying PDFs can also be downloaded for local use. Altogether there are about 1,250 documents with about 45,800 pages of article information for about 500,000 articles. So far online access is only available to a small subset of Wenshi ziliao. Lately the 抗日战争与近代中日关系文献数据平台of the CASS 近代史研究所 made some 16,000 volumes of Wenshi ziliao freely accessible .",
-        "institution": "",
+        "description": "Wenshi ziliao (文史资料) are open-ended local history collections published across all administrative levels in China, first organized under the Political Consultative Conference beginning in 1959; estimates place the total at 80,000–100,000 volumes spanning the late imperial through contemporary periods. Table of contents indexes covering approximately 500,000 articles from around 1,250 documents are freely accessible — no subscription or login required — through Princeton University’s East Asian Library digital repository at https://dpul.princeton.edu/ealtoc, searchable by administrative level (with some exceptions, such as Xinjiang); underlying PDFs can also be downloaded for local use. Note: online full-text access currently remains available only for a limited subset of volumes.",
+        "institution": "Princeton University",
         "category": "Archival Material",
         "tags": ["Historical archive","Republican era (1912–1949)","Late Imperial (1368–1912)","Local history","Contemporary (post-1978)","Full-text","Early PRC (1949–1966)"],
         "url": "/resources/1019/"
@@ -1305,7 +1305,7 @@ var store = [{
       },{
         "title": "Zhongguo dabaike quanshu",
         "alternatetitle": "中国大百科全书",
-        "description": "China's first modern large-entry encyclopedia in the Chinese language, published by the Encyclopedia of China Publishing House. The third edition was launched online in 2014 as the Digital Zhongguo Dabaike Quanshu, incorporating multimedia and structured into professional, thematic, and popular sections. As of 2023 the platform hosts over 210,000 entries covering all major fields of knowledge with full-text search across articles, images, and multimedia.",
+        "description": "China’s first modern large-entry encyclopedia in the Chinese language, published by the Encyclopedia of China Publishing House. The third edition was launched online in 2014 as the Digital Zhongguo Dabaike Quanshu, incorporating multimedia and structured into professional, thematic, and popular sections. As of 2023 the platform hosts over 210,000 entries covering all major fields of knowledge with full-text search across articles, images, and multimedia. Access is free but requires creating a personal account at zgbk.com; no paid subscription or institutional license is needed.",
         "institution": "Encyclopedia of China Publishing House",
         "category": "Encyclopedias",
         "tags": ["Full-text"],
