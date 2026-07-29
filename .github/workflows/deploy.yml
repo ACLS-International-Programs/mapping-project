@@ -28,9 +28,6 @@ jobs:
         id: fetch_news
         continue-on-error: true
         run: node ci/fetch_acls_news.js
-      - name: convert acls news to yaml
-        if: steps.fetch_news.outcome == 'success'
-        run: bundle exec ruby src/_scripts/acls_news_to_yaml.rb
       - name: pregenerate pages
         run: ruby src/_scripts/generate_resources.rb
       - name: prod build

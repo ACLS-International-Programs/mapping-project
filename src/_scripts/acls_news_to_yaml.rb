@@ -1,41 +1,55 @@
 #!/usr/bin/env ruby
 # acls_news_to_yaml.rb
 #
-# Converts JSON pages from the ACLS WordPress REST API into acls_news.yml.
+# MANUAL, LAST-RESORT FALLBACK ONLY.
 #
-# This script has two callers:
+# As of 2026-07-29, the automated pipeline no longer uses this script.
+# ci/fetch_acls_news.js fetches ACLS's own "China Studies" news facet
+# directly (https://www.acls.org/acls-news/?_news_related_program=25469)
+# via a real headless browser, and writes src/_data/acls_news.yml itself —
+# no Ruby conversion step involved. That approach is both more reliable
+# (works around Cloudflare, which blocks plain requests) and more accurate
+# than this script, because it reads ACLS's own editorially-curated facet
+# directly instead of guessing from keywords.
 #
-# 1. AUTOMATIC (CI): .github/workflows/deploy.yml runs ci/fetch_acls_news.js
-#    first, which uses a real headless browser to fetch fresh JSON pages into
-#    src/_data/downloads/ (a plain HTTP request from Ruby gets blocked by
-#    acls.org's Cloudflare protection with an HTTP 403 — confirmed directly —
-#    so a real browser is used instead; see ci/fetch_acls_news.js for details).
-#    This script then runs automatically to convert those pages into
-#    src/_data/acls_news.yml before the Jekyll build.
+# This script is kept only for the scenario where the CI browser fetch
+# breaks entirely (e.g. ACLS redesigns the news page and the CSS selectors
+# in ci/fetch_acls_news.js no longer match). Check the deploy log for a
+# failed "fetch acls news" step before reaching for this.
 #
-# 2. MANUAL FALLBACK: if the CI browser fetch ever breaks (check the deploy
-#    log for a failed "fetch acls news" step), you can populate
-#    src/_data/downloads/ by hand and run this script yourself:
+# IMPORTANT ACCURACY CAVEAT: this script relies on keyword matching
+# (CHINA_KEYWORDS below) as a fallback whenever the WordPress REST API
+# doesn't expose the news_related_program taxonomy on an item — which in
+# practice is nearly always; testing showed this field essentially never
+# appears in API responses, and a news_related_program=25469 query
+# parameter is silently ignored by the API. Keyword matching is inherently
+# imprecise: it previously produced false positives on stories like
+# "Celebrating Three Decades of Luce/ACLS Dissertation Fellowships in
+# American Art" and "Luce/ACLS Fellow in Religion", because "Luce/ACLS" is
+# a brand name shared by several unrelated ACLS programs. The current
+# CHINA_KEYWORDS logic requires "China" to co-occur with any Luce/ACLS
+# mention to reduce (not eliminate) this risk. Review the output by hand
+# before trusting it.
 #
-#    a. Open this URL in your browser and save the page (Cmd+S or File > Save):
+# USAGE (only if the CI browser fetch is broken):
 #
-#         https://www.acls.org/wp-json/wp/v2/news?per_page=100&page=1&_fields=id,title,link,date,excerpt,news_related_program
+# 1. Open this URL in your browser and save the page (Cmd+S or File > Save):
 #
-#       Repeat for pages 2, 3 … until you have all pages (check X-WP-TotalPages
-#       in the Network tab, or just stop when a page returns fewer than 100
-#       items). Save each file as, e.g.:
-#         src/_data/downloads/acls_news_p1.json
-#         src/_data/downloads/acls_news_p2.json
+#      https://www.acls.org/wp-json/wp/v2/news?per_page=100&page=1&_fields=id,title,link,date,excerpt,news_related_program
 #
-#    b. Run:
-#         bundle exec ruby src/_scripts/acls_news_to_yaml.rb
+#    Repeat for pages 2, 3 … until you have all pages (check X-WP-TotalPages
+#    in the Network tab, or just stop when a page returns fewer than 100
+#    items). Save each file as, e.g.:
+#      src/_data/downloads/acls_news_p1.json
+#      src/_data/downloads/acls_news_p2.json
 #
-# Either way, this script reads every *.json file in src/_data/downloads/,
-# filters for items tagged with term 25469 (Luce/ACLS Program in China
-# Studies), and writes src/_data/acls_news.yml.
+# 2. Run:
+#      bundle exec ruby src/_scripts/acls_news_to_yaml.rb
 #
-# NOTE: If news_related_program is not present in the JSON (field not exposed
-# by the API), the script falls back to title-based keyword matching.
+# This reads every *.json file in src/_data/downloads/, filters for items
+# tagged with term 25469 (Luce/ACLS Program in China Studies) — falling
+# back to keyword matching as described above — and writes
+# src/_data/acls_news.yml.
 
 require 'date'
 require 'yaml'

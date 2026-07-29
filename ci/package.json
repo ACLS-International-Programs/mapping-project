@@ -2,12 +2,13 @@
   "name": "acls-news-fetcher",
   "private": true,
   "version": "1.0.0",
-  "description": "CI-only helper that fetches ACLS news via a real headless browser, since acls.org's Cloudflare protection blocks plain HTTP requests.",
+  "description": "CI-only helper that fetches ACLS's own China Studies news facet via a real headless browser, since acls.org's Cloudflare protection blocks plain HTTP requests and the REST API doesn't reliably expose or filter by program.",
   "main": "fetch_acls_news.js",
   "scripts": {
     "fetch": "node fetch_acls_news.js"
   },
   "dependencies": {
-    "playwright": "^1.47.0"
+    "playwright": "^1.47.0",
+    "yaml": "^2.5.0"
   }
 }

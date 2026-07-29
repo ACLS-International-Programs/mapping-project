@@ -2,152 +2,102 @@
 /**
  * fetch_acls_news.js
  *
- * CI-only helper: uses a real headless browser (Playwright/Chromium) to
- * fetch paginated JSON from the ACLS WordPress REST API.
+ * Fetches the 10 most recent items from ACLS's own "China Studies" news
+ * facet directly via a real headless browser (Playwright/Chromium), and
+ * writes the results straight to src/_data/acls_news.yml in the exact
+ * format the Jekyll site expects.
  *
- * BACKGROUND: acls.org's Cloudflare protection blocks plain HTTP requests —
- * confirmed directly (a Ruby Net::HTTP request from a real home network
- * returned HTTP 403) even though it does not block a real, JavaScript-
- * capable browser session. This script exists to bridge that gap: it does
- * NOT try to out-clever Cloudflare with headers or user-agent spoofing —
- * it just uses an actual browser, which is what Cloudflare's checks are
- * designed to let through.
+ * SCOPE: only the first page (10 most recent items) is fetched. The
+ * Mapping Project's news section is meant as a recent-highlights feed, not
+ * a full archive — a link at the bottom of the site's news page points to
+ * ACLS's own facet (see src/news.html) for anyone who wants the complete
+ * history. This deliberately keeps the script simple: no pagination, no
+ * "click next and wait" handling, no page-count safety cap.
  *
- * This script ONLY fetches and saves raw JSON pages to
- * src/_data/downloads/acls_news_pN.json. It does not filter or convert
- * anything to YAML — that's handled afterward by:
- *   ruby src/_scripts/acls_news_to_yaml.rb
+ * WHY THIS APPROACH (rather than the WordPress REST API):
+ *   - acls.org's Cloudflare protection blocks plain HTTP requests, so a
+ *     real browser is required regardless — confirmed directly (a Ruby
+ *     Net::HTTP request got HTTP 403 even from a home network).
+ *   - The REST API doesn't reliably expose or filter by the
+ *     news_related_program taxonomy: testing showed the field never
+ *     appears in API responses, and the news_related_program=25469 query
+ *     parameter is silently ignored, returning unrelated posts.
+ *   - The keyword-based fallback filter previously used to guess which
+ *     items were "China Studies" repeatedly produced false positives —
+ *     e.g. matching "Luce/ACLS Fellow in Religion" and "...Dissertation
+ *     Fellowships in American Art" just because they mention "Luce/ACLS",
+ *     a brand name shared by several unrelated ACLS programs.
+ *   - ACLS's own site has a faceted search (FacetWP) that filters news by
+ *     program, editorially maintained by ACLS staff. Navigating to
+ *         https://www.acls.org/acls-news/?_news_related_program=25469
+ *     and reading the rendered results is authoritative — no guessing.
+ *     (Fetching this URL with a plain, non-JS request returns the generic
+ *     unfiltered news list — a cache layer appears to ignore the query
+ *     string for non-browser requests — which is why a real browser
+ *     session is required here too, not just for the Cloudflare check.)
  *
- * ATOMICITY: all pages are fetched into a temporary staging directory
- * first. Only if every page fetches successfully (or a "last page" is
- * reached cleanly) do the staged files replace whatever is in
- * src/_data/downloads/. If anything fails partway through, the staging
- * directory is discarded and src/_data/downloads/ (and therefore
- * _data/acls_news.yml, which nothing here touches directly) is left
- * completely untouched. The script exits non-zero on any failure so the
- * calling CI step can be marked accordingly and the build can fall back to
- * whatever acls_news.yml is already checked out from git.
+ * This script writes YAML directly (via the `yaml` npm package), so no
+ * separate Ruby conversion step is needed in CI.
+ *
+ * SAFETY: the output file is only written after the page is read
+ * successfully, and even then via a temp-file-plus-rename so a crash
+ * mid-write can't corrupt anything. Any failure — network, layout change,
+ * timeout — leaves _data/acls_news.yml completely untouched, and the
+ * script exits non-zero so CI can fall back to whatever is already
+ * committed.
  *
  * Usage (from repo root):
  *   cd ci && npm install && npx playwright install --with-deps chromium
  *   node ci/fetch_acls_news.js
  *
- * Wired into .github/workflows/deploy.yml to run before the Jekyll build.
- * If it fails, use the manual fallback documented in
- * src/_scripts/acls_news_to_yaml.rb.
+ * If this breaks (e.g. ACLS redesigns the news page), fall back to the
+ * manual, keyword-based method documented in
+ * src/_scripts/acls_news_to_yaml.rb. It's less accurate but self-contained.
  */
 
 const { chromium } = require('playwright');
+const YAML = require('yaml');
 const fs = require('fs');
-const os = require('os');
 const path = require('path');
 
-const API_BASE = 'https://www.acls.org/wp-json/wp/v2/news';
-const PER_PAGE = 100;
-const MAX_PAGES = 10;
-const NAV_TIMEOUT_MS = 20000;
+const START_URL = 'https://www.acls.org/acls-news/?_news_related_program=25469';
+const NAV_TIMEOUT_MS = 30000;
 const REPO_ROOT = path.join(__dirname, '..');
-const DOWNLOADS_DIR = path.join(REPO_ROOT, 'src', '_data', 'downloads');
+const DATA_FILE = path.join(REPO_ROOT, 'src', '_data', 'acls_news.yml');
 
 const USER_AGENT =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 ' +
   '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
 
-/**
- * Fetches one page of the API using a real browser page object.
- * Throws on any non-OK response, empty body, or invalid JSON.
- */
-async function fetchPage(page, pageNum) {
-  const url =
-    `${API_BASE}?per_page=${PER_PAGE}&page=${pageNum}` +
-    '&_fields=id,title,link,date,excerpt,news_related_program';
+/** Extracts {title, url, date, excerpt} for every article on the current page. */
+async function extractArticles(page) {
+  return page.$$eval('article.teaser', (nodes) =>
+    nodes.map((el) => {
+      const titleLink = el.querySelector('.teaser__title a');
+      return {
+        title: titleLink ? titleLink.textContent.trim() : '',
+        url: titleLink ? titleLink.href : '',
+        date: el.querySelector('.teaser__date')?.textContent.trim() || '',
+        excerpt: el.querySelector('.teaser__summary')?.textContent.trim() || ''
+      };
+    })
+  );
+}
 
-  const response = await page.goto(url, {
-    waitUntil: 'domcontentloaded',
-    timeout: NAV_TIMEOUT_MS
+/** Dedupes by URL and sorts newest-first. */
+function sortAndDedupe(items) {
+  const seen = new Set();
+  const deduped = items.filter((item) => {
+    if (!item.url || seen.has(item.url)) return false;
+    seen.add(item.url);
+    return true;
   });
 
-  if (!response) {
-    throw new Error(`No response received for page ${pageNum}`);
-  }
-  if (!response.ok()) {
-    throw new Error(`HTTP ${response.status()} on page ${pageNum}`);
-  }
-
-  const text = (await page.evaluate(() => document.body.innerText || '')).trim();
-  if (!text) {
-    throw new Error(`Empty response body on page ${pageNum}`);
-  }
-
-  let data;
-  try {
-    data = JSON.parse(text);
-  } catch (err) {
-    throw new Error(`Non-JSON response on page ${pageNum}: ${err.message}`);
-  }
-
-  return { text, data };
-}
-
-/**
- * Runs the full paginated fetch using the provided fetchPageFn, writing
- * complete results into stagingDir. Pure logic, no browser dependency —
- * this is what gets exercised in tests with a stubbed fetchPageFn.
- */
-async function runFetchLoop(fetchPageFn, stagingDir) {
-  fs.mkdirSync(stagingDir, { recursive: true });
-
-  let pageNum = 1;
-  let totalItems = 0;
-  const savedFiles = [];
-
-  while (pageNum <= MAX_PAGES) {
-    const { text, data } = await fetchPageFn(pageNum);
-    const items = Array.isArray(data) ? data : [data];
-
-    if (items.length === 0) {
-      break;
-    }
-
-    const outPath = path.join(stagingDir, `acls_news_p${pageNum}.json`);
-    fs.writeFileSync(outPath, text);
-    savedFiles.push(outPath);
-    totalItems += items.length;
-
-    if (items.length < PER_PAGE) {
-      break;
-    }
-    pageNum += 1;
-  }
-
-  if (savedFiles.length === 0) {
-    throw new Error('No pages were successfully fetched — nothing to stage.');
-  }
-
-  return { savedFiles, totalItems };
-}
-
-/**
- * Atomically replaces the contents of targetDir with the contents of
- * stagingDir. Only called after a fully successful fetch.
- */
-function promoteStagingToTarget(stagingDir, targetDir) {
-  fs.mkdirSync(targetDir, { recursive: true });
-
-  for (const entry of fs.readdirSync(targetDir)) {
-    if (entry.endsWith('.json')) {
-      fs.rmSync(path.join(targetDir, entry));
-    }
-  }
-
-  for (const entry of fs.readdirSync(stagingDir)) {
-    fs.renameSync(path.join(stagingDir, entry), path.join(targetDir, entry));
-  }
+  deduped.sort((a, b) => new Date(b.date) - new Date(a.date));
+  return deduped;
 }
 
 async function main() {
-  const stagingDir = fs.mkdtempSync(path.join(os.tmpdir(), 'acls-news-staging-'));
-
   const browser = await chromium.launch({
     args: ['--disable-blink-features=AutomationControlled']
   });
@@ -159,28 +109,33 @@ async function main() {
     });
     const page = await context.newPage();
 
-    const { savedFiles, totalItems } = await runFetchLoop(
-      (pageNum) => fetchPage(page, pageNum),
-      stagingDir
-    );
+    await page.goto(START_URL, { waitUntil: 'domcontentloaded', timeout: NAV_TIMEOUT_MS });
+    await page.waitForSelector('article.teaser', { timeout: NAV_TIMEOUT_MS });
 
-    promoteStagingToTarget(stagingDir, DOWNLOADS_DIR);
-    console.log(
-      `Fetched ${totalItems} item(s) across ${savedFiles.length} page(s) ` +
-      `and staged into ${DOWNLOADS_DIR}`
-    );
+    const items = await extractArticles(page);
+    if (items.length === 0) {
+      throw new Error('No China Studies items found — the facet page layout may have changed.');
+    }
+
+    const deduped = sortAndDedupe(items);
+    const yamlText = YAML.stringify({ items: deduped });
+
+    const tmpFile = `${DATA_FILE}.tmp-${process.pid}`;
+    fs.writeFileSync(tmpFile, yamlText);
+    fs.renameSync(tmpFile, DATA_FILE);
+
+    console.log(`Fetched ${deduped.length} China Studies item(s) and wrote ${DATA_FILE}`);
   } finally {
     await browser.close();
-    fs.rmSync(stagingDir, { recursive: true, force: true });
   }
 }
 
 if (require.main === module) {
   main().catch((err) => {
     console.error(`fetch_acls_news.js failed: ${err.message}`);
-    console.error('src/_data/downloads/ and _data/acls_news.yml were left untouched.');
+    console.error('_data/acls_news.yml was left untouched.');
     process.exit(1);
   });
 }
 
-module.exports = { runFetchLoop, promoteStagingToTarget, fetchPage };
+module.exports = { extractArticles, sortAndDedupe };

@@ -955,6 +955,18 @@ a {
   font-size: 16px !important;
 }
 
+.news-view-more {
+  margin: 1.5rem 0 0 0 !important;
+  font-size: 0.85rem !important;
+
+  a {
+    color: #2B3AA8 !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 3px !important;
+  }
+}
+
 // ============================================================================
 // 15. ARTICLE PAGE
 // ============================================================================
