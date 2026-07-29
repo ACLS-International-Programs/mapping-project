@@ -1,5 +1,17 @@
 #!/usr/bin/env ruby
-# fetch_acls_news.rb
+# fetch_acls_news_manual_backup.rb
+#
+# MANUAL BACKUP / FALLBACK METHOD.
+#
+# As of 2026-07-29, news fetching is automatic: src/_plugins/fetch_acls_news.rb
+# fetches live from the ACLS WordPress API on every `jekyll build` / `jekyll
+# serve`, no manual steps required. This script is kept as a fallback for the
+# scenario that put it here in the first place: acls.org's Cloudflare bot
+# protection blocking automated requests. If that protection is re-enabled
+# (or changes in a way that blocks the automatic plugin again — check the
+# build log for "ACLS News: Live fetch failed" warnings), use this script to
+# update the news feed by hand until live fetching works again.
+#
 # Converts a JSON export from the ACLS WordPress REST API into acls_news.yml.
 #
 # USAGE
@@ -15,7 +27,7 @@
 #      src/_data/downloads/acls_news_p2.json
 #
 # 2. Run:
-#      bundle exec ruby src/_scripts/fetch_acls_news.rb
+#      bundle exec ruby src/_scripts/fetch_acls_news_manual_backup.rb
 #
 # The script reads every *.json file in src/_data/downloads/, filters for
 # items tagged with term 25469 (Luce/ACLS Program in China Studies), and
