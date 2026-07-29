@@ -1,37 +1,38 @@
 #!/usr/bin/env ruby
-# fetch_acls_news_manual_backup.rb
+# acls_news_to_yaml.rb
 #
-# MANUAL BACKUP / FALLBACK METHOD.
+# Converts JSON pages from the ACLS WordPress REST API into acls_news.yml.
 #
-# As of 2026-07-29, news fetching is automatic: src/_plugins/fetch_acls_news.rb
-# fetches live from the ACLS WordPress API on every `jekyll build` / `jekyll
-# serve`, no manual steps required. This script is kept as a fallback for the
-# scenario that put it here in the first place: acls.org's Cloudflare bot
-# protection blocking automated requests. If that protection is re-enabled
-# (or changes in a way that blocks the automatic plugin again — check the
-# build log for "ACLS News: Live fetch failed" warnings), use this script to
-# update the news feed by hand until live fetching works again.
+# This script has two callers:
 #
-# Converts a JSON export from the ACLS WordPress REST API into acls_news.yml.
+# 1. AUTOMATIC (CI): .github/workflows/deploy.yml runs ci/fetch_acls_news.js
+#    first, which uses a real headless browser to fetch fresh JSON pages into
+#    src/_data/downloads/ (a plain HTTP request from Ruby gets blocked by
+#    acls.org's Cloudflare protection with an HTTP 403 — confirmed directly —
+#    so a real browser is used instead; see ci/fetch_acls_news.js for details).
+#    This script then runs automatically to convert those pages into
+#    src/_data/acls_news.yml before the Jekyll build.
 #
-# USAGE
-# -----
-# 1. Open this URL in your browser and save the page (Cmd+S or File > Save):
+# 2. MANUAL FALLBACK: if the CI browser fetch ever breaks (check the deploy
+#    log for a failed "fetch acls news" step), you can populate
+#    src/_data/downloads/ by hand and run this script yourself:
 #
-#      https://www.acls.org/wp-json/wp/v2/news?per_page=100&page=1&_fields=id,title,link,date,excerpt,news_related_program
+#    a. Open this URL in your browser and save the page (Cmd+S or File > Save):
 #
-#    Repeat for pages 2, 3 … until you have all pages (check X-WP-TotalPages
-#    in the Network tab, or just stop when a page returns fewer than 100 items).
-#    Save each file as, e.g.:
-#      src/_data/downloads/acls_news_p1.json
-#      src/_data/downloads/acls_news_p2.json
+#         https://www.acls.org/wp-json/wp/v2/news?per_page=100&page=1&_fields=id,title,link,date,excerpt,news_related_program
 #
-# 2. Run:
-#      bundle exec ruby src/_scripts/fetch_acls_news_manual_backup.rb
+#       Repeat for pages 2, 3 … until you have all pages (check X-WP-TotalPages
+#       in the Network tab, or just stop when a page returns fewer than 100
+#       items). Save each file as, e.g.:
+#         src/_data/downloads/acls_news_p1.json
+#         src/_data/downloads/acls_news_p2.json
 #
-# The script reads every *.json file in src/_data/downloads/, filters for
-# items tagged with term 25469 (Luce/ACLS Program in China Studies), and
-# writes src/_data/acls_news.yml.
+#    b. Run:
+#         bundle exec ruby src/_scripts/acls_news_to_yaml.rb
+#
+# Either way, this script reads every *.json file in src/_data/downloads/,
+# filters for items tagged with term 25469 (Luce/ACLS Program in China
+# Studies), and writes src/_data/acls_news.yml.
 #
 # NOTE: If news_related_program is not present in the JSON (field not exposed
 # by the API), the script falls back to title-based keyword matching.
@@ -94,7 +95,12 @@ if json_files.empty?
 
     No JSON files found in src/_data/downloads/.
 
-    To update the news feed:
+    If you're running this after the automatic CI browser fetch, this means
+    that step didn't run or didn't complete — check the deploy log for a
+    "fetch acls news" step failure. The build will fall back to whatever
+    acls_news.yml is already committed, so nothing is broken.
+
+    To update the news feed manually instead:
 
     1. Open this URL in your browser:
          https://www.acls.org/wp-json/wp/v2/news?per_page=100&page=1&_fields=id,title,link,date,excerpt,news_related_program

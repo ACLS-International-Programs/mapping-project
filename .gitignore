@@ -6,3 +6,5 @@ vendor
 .DS_Store
 pagemaster
 src/assets/files/mapping-project.csv
+src/_data/downloads/
+ci/node_modules
