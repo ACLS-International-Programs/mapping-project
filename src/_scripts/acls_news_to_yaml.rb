@@ -47,7 +47,6 @@ PROGRAM_TERM  = 25_469
 
 CHINA_KEYWORDS = [
   /china studies/i,
-  /luce.?acls/i,
   /east asia/i,
   /asian studies/i,
   /china studies digital/i,
@@ -74,8 +73,19 @@ def china_studies?(item)
   if programs.is_a?(Array) && !programs.empty?
     return programs.include?(PROGRAM_TERM)
   end
-  # Fallback: check title and excerpt for relevant keywords
+
+  # Fallback: check title and excerpt for relevant keywords. This only runs
+  # when news_related_program isn't present on the item.
   text = "#{item.dig('title', 'rendered')} #{item.dig('excerpt', 'rendered')}"
+
+  # "Luce/ACLS" alone is NOT China-specific — ACLS runs several distinct
+  # Luce-funded programs that share that brand name (American Art, Religion,
+  # China Studies, etc.). Matching on the phrase alone previously pulled in
+  # unrelated stories like "Celebrating Three Decades of Luce/ACLS
+  # Dissertation Fellowships in American Art" and "Luce/ACLS Fellow in
+  # Religion". Only treat it as a match when "China" also appears.
+  return true if text.match?(/luce.?acls/i) && text.match?(/china/i)
+
   CHINA_KEYWORDS.any? { |kw| text.match?(kw) }
 end
 
