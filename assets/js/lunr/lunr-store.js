@@ -879,6 +879,46 @@ var store = [{
         "tags": ["Historical archive","Middle Period (220–1368)","Late Imperial (1368–1912)","Early China (before 220 CE)","Archaeology"],
         "url": "/resources/110/"
       },{
+        "title": "Annotated Bibliography for Sinophone Studies",
+        "alternatetitle": "",
+        "description": "The Annotated Bibliography for Sinophone Studies is a collaboratively maintained, openly accessible research guide providing 310 curated and annotated bibliographic records of monographs, journal articles, book chapters, theses, dissertations, and selected primary sources in English, Chinese, and other languages relevant to Sinophone literature, culture, and diaspora communities. The platform supports interdisciplinary research discovery across literature, history, media studies, anthropology, and linguistics through traditional and AI-assisted search, thematic browsing, and interactive geographic mapping tools. Designed as a continuously evolving resource, it accepts community contributions and new entry submissions, and is intended for students, educators, and scholars in Sinophone studies.",
+        "institution": "University of Southern California, University of Hawaiʻi at Mānoa",
+        "category": "Subject Guides and Bibliographies",
+        "tags": ["Literature","Digital humanities","Secondary sources","Global China","Diaspora","Pedagogy","Hong Kong","Taiwan"],
+        "url": "/resources/111/"
+      },{
+        "title": "CHIND: Dictionarium sinico-latinum",
+        "alternatetitle": "漢拉字典",
+        "description": "A digital edition and research site for Basilio Brollo's Chinese-Latin dictionary. Brollo was a Franciscan missionary (1648–1704), and the dictionary exists in two versions traditionally dated to about 1694 and 1699. The site is built on manuscript Rinuccini 22 (Biblioteca Medicea Laurenziana, Florence). You can browse the manuscript page by page, search characters and historical romanisations, and open character records with readings, definitions, variants, and relationships. It also has Latin lexical analysis tools and a tool for comparing an outside Chinese text against the dictionary, and it is meant to be used with Gabriele Tola's open access critical edition (John Benjamins, 2026).",
+        "institution": "Sapienza University of Rome",
+        "category": "Dictionaries",
+        "tags": ["Missionaries","Late Imperial (1368–1912)","Digital humanities","Translation"],
+        "url": "/resources/112/"
+      },{
+        "title": "Sinophone Radio Studies",
+        "alternatetitle": "",
+        "description": "A site on Chinese amateur (\"ham\") radio periodicals published between 1928 and 1949. It points to a collection of 22 digitized periodicals that the Chinese Radio Amateurs Club (CRAC) made public in 2015. The public version (about 11 GB) is open access through CRAC's website, with files hosted on Baidu Wangpan, and a restricted version is available from CRAC. The site itself has OCR searchable full text of one title, Collections of Radio Q&A 無線電問答彙刊 (Shanghai, 1932; 21 issues, 985 pages), and offers English translations of three articles on how the collection was assembled.",
+        "institution": "Independent project (Xiangjun Feng)",
+        "category": "Magazines",
+        "tags": ["Republican era (1912–1949)","Popular media","Science and Technology","Historical archive","Full-text"],
+        "url": "/resources/113/"
+      },{
+        "title": "BRI DataLab",
+        "alternatetitle": "",
+        "description": "An open-source research platform on Chinese overseas infrastructure finance and the Belt and Road Initiative, documented in a 2026 article in Frontiers in Big Data. It combines a cleaned dataset of 4,861 infrastructure projects in 183 countries, built from AidData's China's Global Loans and Grants Dataset (2000–2023), with a library of 42 policy documents, institutional reports, and academic sources (2015–2026). Researchers can filter the data by region, sector, flow type, and period on a map, charts, and table, or ask questions in plain language and get answers with named sources. Figures show financing commitments rather than money paid out, and the documents are in English only.",
+        "institution": "Indian Institute of Technology Madras",
+        "category": "Statistics and Data",
+        "tags": ["Global China","Economy","International relations","Dataset","Contemporary (post-1978)"],
+        "url": "/resources/114/"
+      },{
+        "title": "Know China AI",
+        "alternatetitle": "",
+        "description": "An AI research tool that answers questions, in English or other languages, from Chinese-language sources and cites the original passages, with an English rendering on request. The corpus holds about ten million documents and is continuously updated: some six million central to county-level government policy documents, over four million full-text articles from core social-science journals, and about 9,500 Party-history volumes, local gazetteers, and archive collections. A corpus search offers author, journal or issuer, document type, and year filters with BibTeX and RIS export, and a catalog covers over ten thousand datasets and a bibliographic index of over 100 million books and articles; the tool can also search English-language scholarship live. An account is required, with a free allowance and paid plans, and the operator offers institutional licenses and API access; answers are generated by language models and should be checked against the cited originals.",
+        "institution": "Commontale, Inc.",
+        "category": "Political Documents (Contemporary)",
+        "tags": ["Full-text","Law and Government","Secondary sources","Local history","Translation"],
+        "url": "/resources/115/"
+      },{
         "title": "Bibliography of Asian Studies",
         "alternatetitle": "",
         "description": "The Bibliography of Asian Studies (BAS) contains more than 700,000 records on all subjects (especially humanities and social sciences) pertaining to East, Southeast, and South Asia published worldwide from 1971 to the present. Through the 1991 printed version, the BAS included citations to western-language periodical articles, individually authored monographs, chapters in edited volumes, conference proceedings, anthologies, and Festschriften, etc. Since 1992, newly published individual monographs are no longer being added to the database, and users seeking monographs are urged to consult other general resources and databases. The online BAS contains the full data of all printed editions of the BAS issued from 1971 up to the 1991 edition (published 1997), as well as thousands of entries compiled since. To quickly bridge the gap in coverage from 1991 to the present, the BAS staff have identified the most important 100+ periodicals in Asian Studies, and have given these high priority for indexing to make their coverage as up-to-date as possible. For any particular journal, full information on years of coverage should be provided through the Journal Title Browse function, although this part seems often out of sync with the rest of the database. You can search by phrase in specified field, can combine searches, and can specify your desired display, with or without diacritics; a downloadable font is provided. You can limit your searches to specific countries. Subject searching is also provided, but subject ranges are broad and have changed over the years.",
@@ -1709,7 +1749,7 @@ var store = [{
         "institution": "Academia Sinica",
         "category": "Maps and GIS",
         "tags": ["Archaeology","Digital humanities","Local history","Historical archive","Early China (before 220 CE)","Taiwan"],
-        "url": "/resources/1105/"
+        "url": "/resources/1104/"
       },{
         "title": "China Government Gazettes",
         "alternatetitle": "中国政报公报期刊文献总库",
@@ -1717,7 +1757,7 @@ var store = [{
         "institution": "CNKI (China National Knowledge Infrastructure)",
         "category": "Political Documents (Contemporary)",
         "tags": ["Contemporary (post-1978)","Economy","Science and Technology","Law and Government","Full-text"],
-        "url": "/resources/1106/"
+        "url": "/resources/1105/"
       },{
         "title": "National People's Congress Database (PRC)",
         "alternatetitle": "全国人大资料信息库",
@@ -1725,7 +1765,7 @@ var store = [{
         "institution": "Oriprobe",
         "category": "Political Documents (Contemporary)",
         "tags": ["Early PRC (1949–1966)","Contemporary (post-1978)","Law and Government","Full-text","Historical archive"],
-        "url": "/resources/1107/"
+        "url": "/resources/1106/"
       },{
         "title": "Party and Government Documents in English (PR of China)",
         "alternatetitle": "",
@@ -1733,7 +1773,7 @@ var store = [{
         "institution": "Oriprobe",
         "category": "Political Documents (Contemporary)",
         "tags": ["Cultural Revolution (1966–1976)","Contemporary (post-1978)","International relations","Translation","Full-text","Early PRC (1949–1966)"],
-        "url": "/resources/1108/"
+        "url": "/resources/1107/"
       },{
         "title": "PRC Ministry of Foreign Affairs - Speeches archive (Chinese)",
         "alternatetitle": "",
@@ -1741,7 +1781,7 @@ var store = [{
         "institution": "Ministry of Foreign Affairs, People's Republic of China",
         "category": "Political Documents (Contemporary)",
         "tags": ["Contemporary (post-1978)","International relations","Law and Government","Full-text"],
-        "url": "/resources/1109/"
+        "url": "/resources/1108/"
       },{
         "title": "China Business Reference (China BRef)",
         "alternatetitle": "",
@@ -1749,7 +1789,7 @@ var store = [{
         "institution": "Wanfang Data Co., Ltd.",
         "category": "Legal sources",
         "tags": ["Law","Full-text","Contemporary (post-1978)"],
-        "url": "/resources/1110/"
+        "url": "/resources/1109/"
       },{
         "title": "China Economic and Social Data Platform",
         "alternatetitle": "中国经济社会大数据研究平台",
@@ -1757,7 +1797,7 @@ var store = [{
         "institution": "CNKI (China National Knowledge Infrastructure)",
         "category": "Statistics and Data",
         "tags": ["Economy","Dataset","Contemporary (post-1978)"],
-        "url": "/resources/1111/"
+        "url": "/resources/1110/"
       },{
         "title": "China Premium Database (CEIC)",
         "alternatetitle": "",
@@ -1765,7 +1805,7 @@ var store = [{
         "institution": "CEIC Data (ISI Emerging Markets Group)",
         "category": "Statistics and Data",
         "tags": ["Economy","Dataset","Contemporary (post-1978)"],
-        "url": "/resources/1112/"
+        "url": "/resources/1111/"
       },{
         "title": "National Bureau of Statistics of China",
         "alternatetitle": "",
@@ -1773,7 +1813,7 @@ var store = [{
         "institution": "National Bureau of Statistics, People's Republic of China",
         "category": "Statistics and Data",
         "tags": ["Contemporary (post-1978)","Economy","Dataset"],
-        "url": "/resources/1113/"
+        "url": "/resources/1112/"
       },{
         "title": "EPS China Statistics",
         "alternatetitle": "",
@@ -1781,7 +1821,7 @@ var store = [{
         "institution": "Beijing Focus Information Technology Co., Ltd.",
         "category": "Statistics and Data",
         "tags": ["Economy","Dataset","Contemporary (post-1978)"],
-        "url": "/resources/1114/"
+        "url": "/resources/1113/"
       },{
         "title": "Japanese-occupied China Collection - Stanford University Library and Hoover Institution",
         "alternatetitle": "",
@@ -1789,7 +1829,7 @@ var store = [{
         "institution": "Stanford University",
         "category": "Subject Guides and Bibliographies",
         "tags": ["Military","Colonialism","Republican era (1912–1949)","Historical archive"],
-        "url": "/resources/1115/"
+        "url": "/resources/1114/"
       },{
         "title": "Oxford Bibliographies: Chinese Studies",
         "alternatetitle": "",
@@ -1797,7 +1837,7 @@ var store = [{
         "institution": "Oxford University Press",
         "category": "Subject Guides and Bibliographies",
         "tags": ["Secondary sources"],
-        "url": "/resources/1116/"
+        "url": "/resources/1115/"
       },{
         "title": "Traditional Chinese Medicine Database (CNKI TCMD)",
         "alternatetitle": "中医药系列知识服务平台",
@@ -1805,7 +1845,7 @@ var store = [{
         "institution": "CNKI (China National Knowledge Infrastructure)",
         "category": "E-books (Contemporary)",
         "tags": ["Medicine","Full-text"],
-        "url": "/resources/1117/"
+        "url": "/resources/1116/"
       },{
         "title": "Chinese Film and Newsreel Scripts from the Cultural Revolution Online",
         "alternatetitle": "",
@@ -1813,7 +1853,7 @@ var store = [{
         "institution": "Brill",
         "category": "Archival Material",
         "tags": ["Cultural Revolution (1966–1976)","Military","Full-text","Historical archive","Popular media","Early PRC (1949–1966)"],
-        "url": "/resources/1118/"
+        "url": "/resources/1117/"
       },{
         "title": "Socialism on Film: The Cold War and International Propaganda",
         "alternatetitle": "",
@@ -1821,6 +1861,14 @@ var store = [{
         "institution": "Adam Matthew Digital",
         "category": "Videos and Films",
         "tags": ["Military","Video","International relations","Early PRC (1949–1966)","Cultural Revolution (1966–1976)","Global China"],
+        "url": "/resources/1118/"
+      },{
+        "title": "World Newsreels Online",
+        "alternatetitle": "",
+        "description": "World Newsreels Online is a streaming video collection of international newsreels produced between 1929 and 1966, including footage from Japan, France, the United States, the Netherlands, and other countries. All items are accompanied by transcripts, with non-English content translated into English. The collection covers key events of the mid-twentieth century including World War II and the Second Sino-Japanese War (1937–1945), comprising nine distinct newsreel series — including France Actualités, Nippon News, and The March of Time — totaling over 500 hours of content.",
+        "institution": "Alexander Street (Clarivate)",
+        "category": "Videos and Films",
+        "tags": ["Republican era (1912–1949)","Military","Translation","Video","International relations","Early PRC (1949–1966)"],
         "url": "/resources/1119/"
       },{
         "title": "World Newsreels Online",
@@ -1838,5 +1886,5 @@ var store = [{
     "excerpt":"UNDER CONSTRUCTION","url": "/databaseworkflows/"
   },{
     "title": "NEWS AND ANNOUNCEMENTS",
-    "excerpt":"  {% if site.data.acls_news and site.data.acls_news.items.size > 0 %}       {% for item in site.data.acls_news.items %}        {% if item.date != \"\" %}     {{ item.date }}      {% endif %}     {{ item.title }}     {% if item.excerpt != \"\" %}     {{ item.excerpt }}      {% endif %}      {% endfor %}            View the full China Studies news archive on ACLS.org →      {% elsif site.data.acls_news and site.data.acls_news.error %}         News could not be loaded at build time. Visit the     ACLS news page     directly for the latest announcements.      {% else %}    No news items found.   {% endif %} ","url": "/news/"
+    "excerpt":"  {% if site.data.acls_news and site.data.acls_news.items.size > 0 %}       {% for item in site.data.acls_news.items %}        {% if item.date != \"\" %}     {{ item.date }}      {% endif %}     {{ item.title }}     {% if item.excerpt != \"\" %}     {{ item.excerpt }}      {% endif %}      {% endfor %}            View more China studies and ACLS news at acls.org →      {% elsif site.data.acls_news and site.data.acls_news.error %}         News could not be loaded at build time. Visit the     ACLS news page     directly for the latest announcements.      {% else %}    No news items found.   {% endif %} ","url": "/news/"
   }]
